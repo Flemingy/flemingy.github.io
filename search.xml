@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -60,48 +102,6 @@
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -543,6 +543,127 @@
       </tags>
   </entry>
   <entry>
+    <title>帧速率、刷新率、广播级视频标准</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
+<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
+<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
+<p>（帧数越多，画面越流畅，实际体验越好）</p>
+<br/>
+
+<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
+<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
+<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
+<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
+<br/>
+
+<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
+<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
+<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
+<br/>
+
+<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
+<p>NTSC 29.97帧/秒</p>
+<p>SECAM 25帧/秒</p>
+<p>Film 24帧/秒</p>
+<br/>
+
+<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
+<p>NTSC 720×480</p>
+<p>SECAM 720×576</p>
+<p><strong>现代视频分辨率</strong></p>
+<p>8K  7680×4320</p>
+<p>6K  6144×3160</p>
+<p>4K  4096×2160</p>
+<p>UHD  3840×2160</p>
+<p>2K  2048×1080</p>
+<p>FHD  1920×1080</p>
+<p>HD  1280 ×720</p>
+<br/>
+
+<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
+<p>1080p 逐行扫描技术</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>会议拍摄、相机档位、基础布光</title>
+    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
+<p>​        集体  [横向拍]</p>
+<p>​            （正面拍一张、左右侧面各拍一张）</p>
+<p>​        单人  [领导挨得近选择竖拍]</p>
+<p>​            （把专属牌子拍上，前面的水移开）</p>
+<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
+<p><strong>2.观众</strong></p>
+<p>​        集体</p>
+<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
+<p>​        单人</p>
+<p>​            （突出主题，特写个人表现）</p>
+<p><strong>3.主题</strong></p>
+<p>​        ①包括参会者在内的主题大场景</p>
+<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
+<br/>
+
+<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
+<p><strong>2.B门</strong>（慢门）</p>
+<p>​    拍摄星空、车灯轨迹、灯绘</p>
+<p><strong>3.AV档</strong>（光圈优先）</p>
+<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
+<p>​    大光圈虚化背景拍摄人像、静物</p>
+<p>​    F 数小——孔大——虚</p>
+<p>​    F 数大——孔小——实</p>
+<p>​    F8—F16区间中，前后虚实一致</p>
+<p><strong>4.TV档</strong>（快门优先）</p>
+<p>​    【拍摄动作幅度不是很大的场景】</p>
+<p>​        1/60 用于环境较亮的情况</p>
+<p>​        1/90 用于环境较暗的情况 </p>
+<p>​    【拍摄动作幅度很大的场景】</p>
+<p>​        1/2000 用于移动速度极快</p>
+<p><strong>5.M档</strong>（手动档）</p>
+<p>​    ①室外</p>
+<p>​        较暗  ISO设置到100 </p>
+<p>​        阴影天  ISO设置到 400</p>
+<p>​    ②室内 </p>
+<p>​        光线好 ISO设置到800</p>
+<p>​        光线差 ISO设置到1600</p>
+<p>​    佳能相机型号数字越小价格越高</p>
+<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
+<p>（依据相机品质ISO设置到3000——2000以下）</p>
+<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
+<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
+<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
+<br/>
+
+<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
+<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
+<p>黄灯提供（造型光）</p>
+<p>柔光箱提供（柔光）</p>
+<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
+<p><strong>1.一点布光：</strong></p>
+<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
+<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
+<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
+<p><strong>2.两点布光：</strong></p>
+<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
+<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
+<p><strong>3.三点布光：</strong></p>
+<p>​    轮廓光，在主光的斜对面</p>
+<p>​    勾勒人的暗部轮廓</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Software QA Engineer岗位解读</title>
     <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
@@ -623,78 +744,6 @@
       </tags>
   </entry>
   <entry>
-    <title>会议拍摄、相机档位、基础布光</title>
-    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
-<p>​        集体  [横向拍]</p>
-<p>​            （正面拍一张、左右侧面各拍一张）</p>
-<p>​        单人  [领导挨得近选择竖拍]</p>
-<p>​            （把专属牌子拍上，前面的水移开）</p>
-<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
-<p><strong>2.观众</strong></p>
-<p>​        集体</p>
-<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
-<p>​        单人</p>
-<p>​            （突出主题，特写个人表现）</p>
-<p><strong>3.主题</strong></p>
-<p>​        ①包括参会者在内的主题大场景</p>
-<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
-<br/>
-
-<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
-<p><strong>2.B门</strong>（慢门）</p>
-<p>​    拍摄星空、车灯轨迹、灯绘</p>
-<p><strong>3.AV档</strong>（光圈优先）</p>
-<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
-<p>​    大光圈虚化背景拍摄人像、静物</p>
-<p>​    F 数小——孔大——虚</p>
-<p>​    F 数大——孔小——实</p>
-<p>​    F8—F16区间中，前后虚实一致</p>
-<p><strong>4.TV档</strong>（快门优先）</p>
-<p>​    【拍摄动作幅度不是很大的场景】</p>
-<p>​        1/60 用于环境较亮的情况</p>
-<p>​        1/90 用于环境较暗的情况 </p>
-<p>​    【拍摄动作幅度很大的场景】</p>
-<p>​        1/2000 用于移动速度极快</p>
-<p><strong>5.M档</strong>（手动档）</p>
-<p>​    ①室外</p>
-<p>​        较暗  ISO设置到100 </p>
-<p>​        阴影天  ISO设置到 400</p>
-<p>​    ②室内 </p>
-<p>​        光线好 ISO设置到800</p>
-<p>​        光线差 ISO设置到1600</p>
-<p>​    佳能相机型号数字越小价格越高</p>
-<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
-<p>（依据相机品质ISO设置到3000——2000以下）</p>
-<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
-<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
-<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
-<br/>
-
-<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
-<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
-<p>黄灯提供（造型光）</p>
-<p>柔光箱提供（柔光）</p>
-<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
-<p><strong>1.一点布光：</strong></p>
-<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
-<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
-<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
-<p><strong>2.两点布光：</strong></p>
-<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
-<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
-<p><strong>3.三点布光：</strong></p>
-<p>​    轮廓光，在主光的斜对面</p>
-<p>​    勾勒人的暗部轮廓</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>视频后期剪辑与特效软件PR&amp;AE</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
@@ -747,100 +796,6 @@
       </tags>
   </entry>
   <entry>
-    <title>帧速率、刷新率、广播级视频标准</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
-<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
-<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
-<p>（帧数越多，画面越流畅，实际体验越好）</p>
-<br/>
-
-<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
-<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
-<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
-<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
-<br/>
-
-<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
-<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
-<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
-<br/>
-
-<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
-<p>NTSC 29.97帧/秒</p>
-<p>SECAM 25帧/秒</p>
-<p>Film 24帧/秒</p>
-<br/>
-
-<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
-<p>NTSC 720×480</p>
-<p>SECAM 720×576</p>
-<p><strong>现代视频分辨率</strong></p>
-<p>8K  7680×4320</p>
-<p>6K  6144×3160</p>
-<p>4K  4096×2160</p>
-<p>UHD  3840×2160</p>
-<p>2K  2048×1080</p>
-<p>FHD  1920×1080</p>
-<p>HD  1280 ×720</p>
-<br/>
-
-<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
-<p>1080p 逐行扫描技术</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>通过ssh协议连接github时遇到的问题</title>
     <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
@@ -848,7 +803,7 @@
 <p><strong>需要对ssh 进行重置</strong></p>
 <p>1、重置用户名和邮箱</p>
 <p>git config –global user.name “yourname”</p>
-<p>git config –global user.email “<a href="mailto:&#121;&#111;&#117;&#114;&#x40;&#101;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#109;">&#121;&#111;&#117;&#114;&#x40;&#101;&#x6d;&#97;&#x69;&#x6c;&#46;&#x63;&#111;&#109;</a>“</p>
+<p>git config –global user.email “<a href="mailto:&#x79;&#111;&#117;&#114;&#64;&#x65;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;">&#x79;&#111;&#117;&#114;&#64;&#x65;&#x6d;&#x61;&#105;&#108;&#46;&#99;&#111;&#109;</a>“</p>
 <p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
 <br/>
 
@@ -856,7 +811,7 @@
 <br/>
 
 <p>3、git输入命令</p>
-<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#x75;&#x72;&#64;&#101;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;">&#121;&#111;&#x75;&#x72;&#64;&#101;&#x6d;&#97;&#105;&#x6c;&#x2e;&#x63;&#111;&#x6d;</a>“（请填你设置的邮箱地址）</p>
+<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#x6f;&#117;&#114;&#64;&#101;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;">&#x79;&#x6f;&#117;&#114;&#64;&#101;&#x6d;&#97;&#105;&#108;&#x2e;&#99;&#x6f;&#x6d;</a>“（请填你设置的邮箱地址）</p>
 <p>一路yes和回车</p>
 <p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
 <p>用记事本打开id_rsa.pub </p>
@@ -895,7 +850,7 @@
 <br/>
 
 <p>然后在执行</p>
-<p>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#x74;&#64;&#103;&#105;&#116;&#x68;&#x75;&#98;&#x2e;&#99;&#111;&#x6d;</a> </p>
+<p>ssh -T <a href="mailto:&#103;&#x69;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;">&#103;&#x69;&#x74;&#64;&#103;&#105;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#109;</a> </p>
 <p>查看是否可以连接</p>
 <br/>
 
@@ -953,6 +908,51 @@
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>郑强教授谈《创新欲望与创新能力》随想</title>
+    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
+<br/>
+
+<p>现今中国的大学？ </p>
+<p><strong>缺少基础研究、知识创新。</strong></p>
+<p>没有原始创新欲望，被伤透了。</p>
+<br/>
+
+<p>日本为什么老能得诺奖？</p>
+<p>我们为什么被卡脖子？</p>
+<p><strong>浮躁，不专精于某个方向。</strong></p>
+<br/>
+
+<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
+<p>因为人生不是冲刺跑，是马拉松。</p>
+<br/>
+
+<p>尊重人的天性，不要抹杀天性。</p>
+<br/>
+
+<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
+<br/>
+
+<p>第一步是勇于付出，</p>
+<p>首先要<strong>坚定意志。</strong></p>
+<br/>
+
+<p>求道：是求得怎么去做······</p>
+<br/>
+
+<p><strong>先宽后专，知行合一。</strong></p>
+<br/>
+
+<p><strong>培养爱和价值观······</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
 </search>

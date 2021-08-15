@@ -43,68 +43,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML参考手册&amp;代码规范</title>
-    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
-
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
-<ul>
-<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
-</ul>
-<ul>
-<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
-</ul>
-<ul>
-<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
-</ul>
-<ul>
-<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
-<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
-<br/>
-
-<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
-<ul>
-<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
-</ul>
-<ul>
-<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
-</ul>
-<ul>
-<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
-</ul>
-<ul>
-<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
-</ul>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
-<br/>
-
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
-<ul>
-<li>HTML5中包含更多JavaScript 的应用。</li>
-</ul>
-<ul>
-<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
-</ul>
-<ul>
-<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
-</ul>
-<ul>
-<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
-<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>XML &amp; XSLT &amp; XQuery···</title>
     <url>/2021/08/12/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94XML%20&amp;%20XSLT%20&amp;%20XQuery%C2%B7%C2%B7%C2%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合XML、XML-DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容"><a href="#本篇整合XML、XML-DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容" class="headerlink" title="本篇整合XML、XML DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容"></a>本篇整合XML、XML DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅XML知识"><a href="#目的是方便个人在前端场景下能够快速查阅XML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅XML知识"></a>目的是方便个人在前端场景下能够快速查阅XML知识</h3><br/>
@@ -230,6 +168,68 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML参考手册&amp;代码规范</title>
+    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
+
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
+<ul>
+<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
+</ul>
+<ul>
+<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
+</ul>
+<ul>
+<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
+</ul>
+<ul>
+<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
+<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
+<br/>
+
+<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
+<ul>
+<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
+</ul>
+<ul>
+<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
+</ul>
+<ul>
+<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
+</ul>
+<ul>
+<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
+</ul>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
+<br/>
+
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
+<ul>
+<li>HTML5中包含更多JavaScript 的应用。</li>
+</ul>
+<ul>
+<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
+</ul>
+<ul>
+<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
+</ul>
+<ul>
+<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
+<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>古代西方女性哲学</title>
     <url>/2021/08/10/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>“女人在回避经济上的危险的同时，也回避自由带来的形而上学的危险：这种自由要孤立无援地创造目的。凡是个体都力图确定自身是主体，这是一种伦理上的抱负，事实上，除此之外，人身上还有逃避自由和成为物的意图：这是一条险恶的道路，因为人被动、异化、迷失，就会成为外来意志的牺牲品，与其超越性分离了，被剥夺了一切价值。不过，这是一条容易走的路：这样就避免了本真地承担生存所带来的焦虑和紧张。”</p>
@@ -294,91 +294,6 @@
 <p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
 <p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
 <p>了解事实与真相，铭记战争带来的悲痛。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Alex Webb——复杂构图、鲜明色彩</title>
-    <url>/2021/07/23/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E8%A1%97%E5%A4%B4%E6%91%84%E5%BD%B1%E5%A4%A7%E5%B8%88Alex%20Webb/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在GNU看到一组照片，题名为“复杂构图|摄影大师Alex Webb”,</p>
-<p>Alex Webb的每一张照片都包含着些许生命的活力,</p>
-<p>我急于探求这种生命与情感的张力来源何处？</p>
-<br/>
-
-<p><strong>一、鲜明的色彩差异</strong></p>
-<p>高饱和、鲜明的色彩差异…</p>
-<p>这些方式无不体现着生命力。</p>
-<p>我们形容一个鲜活的物体，她是多彩的，</p>
-<p>Alex用鲜艳的色彩，诠释着生命的张力，</p>
-<p>细微之处在于，情绪体现在色彩之上，</p>
-<p>色彩丰富时能够看出喜悦的情绪，</p>
-<p>色彩平淡时又会给人些许压抑感。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/6.jpg"></p>
-<br/>
-
-<p><strong>二、多种元素带来的糖果般的喜悦感</strong></p>
-<p>Alex作品中通常包含着众多的元素，</p>
-<p>或许是同一环境中不同状态的人，</p>
-<p>又或许是背景与主体间偶然的关系，</p>
-<p>仔细观察其中的每一个细节，总能发现一些奇妙的元素。</p>
-<p>他总能在元素众多的条件下，</p>
-<p>构出巧妙舒适，不显繁杂的图，</p>
-<p>将视觉中心巧妙的转移来创造出新奇感。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/4.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/9.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/10.jpg"></p>
-<br/>
-
-<p><strong>三、单一元素的模糊动感</strong></p>
-<p>观察他的作品，大多数照片快门速度像是保持在1/60s-1/90s左右区间范围，</p>
-<p>以至于每张照片都有着动和静这样两种状态，</p>
-<p>作品中大部分是静景，而单一元素的动却为平面的照片创造了几分“立体感”，</p>
-<p>这种“立体感”为照片增添了不少的活力。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/7.jpg"></p>
-<br/>
-
-<p><strong>四、利用镜子添加元素</strong></p>
-<p>能够做到一张图片上众多元素的展现，</p>
-<p>镜子总有着不少的功劳，</p>
-<p>相机正对的方向是一个世界，</p>
-<p>镜子反射出来的同样是另外一个情绪世界。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/13.jpg"></p>
-<br/>
-
-<p><strong>之后我试图去了解Alex Webb以及他的成长史，</strong></p>
-<p><strong>从几篇文章中拼凑出他的前半个摄影人生：</strong></p>
-<p> Alex Webb，1952年5月5日出生于美国旧金山，著名美国摄影师，马格南摄图片社成员。他的作品展现他高超的纪实摄影技巧，卓越的色彩修养，他的作品以其复杂的构图而闻名，依旧沿袭了布列松“决定性瞬间”的摄影美学。他的作品在世界各地进行展出，包括在沃克艺术中心，摄影艺术博物馆，国际摄影中心，高艺术博物馆等等。</p>
-<p>1975年，21岁的摄影师Alex Webb来到美国和墨西哥的边境，开始了长达数十年的纪实摄影。他常常拍摄波士顿和纽约等地的美国社会景观，但也常常觉得这些地方没有灵魂，冷漠无情。1975年的他已经是大名鼎鼎的马格南图片社的成员，却不可抗拒地被“边境”这一特殊的环境吸引。</p>
-<p>尽管比邻而居，美国和墨西哥却有着根本性的不同，“西方社会的文化源于新教，资本主义，和个人主义”。Alex Webb前往海地、加勒比海国家等地，最后去到了墨西哥，并且迷上了墨西哥和美国之间巨大的文化差异。他说，“而墨西哥相信西班牙天主教、土著和集体文化，墨西哥的文化在拥抱神秘。”美墨间那条暧昧又复杂的国界线，成为Alex Webb探寻文化交融与冲突的宝地。</p>
-<p>1986年，Alex Webb访问了革命后的海地，触动很深，也成为他摄影生涯中最重要的转折点。Alex Webb说，“在海地旅行彻底改变了我——不仅作为一个摄影师，也作为一个普通人。我拍摄到了一个我从未经历过的世界，一个充满活力和激情的世界:原始的，脱节的，通常往往是悲剧的。”</p>
-<p>从那以后，他决定从拍摄黑白相片转为拍摄彩色相片。那时的摄影界黑白相片是主流，而彩色相片并不被人看好。但Alex Webb认为“世界是一个复杂的地方，如果你开始单纯地以非黑即白的方式看待一切，就会面临巨大的危险。”</p>
-<p>而色彩，也是刻在墨西哥的基因里的。看到Alex Webb的作品，首先吸引人眼球的就是大胆丰富的色彩。这些色彩是当地人的灵魂和精神，色彩本身就在讲故事。</p>
-<p>近半个世纪以来，Alex Webb的作品几乎见证了中美洲的变化。但他的作品并不直面社会变革的新闻现场，而是从细小入微的人文角度，描绘个体的生活与情感。他希望避免任何先入为主的观念，而是讲述一个包罗万象的故事。他相信，在街头巷尾，普通人的神色中，有着这个社会的未来最真实的秘密。</p>
-<br/>
-
-<p>观者可以欣赏<strong>Alex Webb</strong>最有名的画册<a href="https://www.sohu.com/a/315799198_120065912"><strong>《The Suffering of Light》</strong></a>，或者看看<a href="https://zhuanlan.zhihu.com/p/58186067">他人的解读</a>。</p>
-<p>在他的摄影集<strong>《La Calle》</strong>最后，他以一段墨西哥诗人奥克塔维奥帕斯的《街》作为结尾,</p>
-<p>我们也以此作为结尾，感受Alex Webb作品的魅力：</p>
-<p>一条沉寂的长街。</p>
-<p>我在黑暗中行走，跌倒</p>
-<p>又站起，我盲目而行，双脚</p>
-<p>踏上静默的石头和枯叶。</p>
-<p>有人在我身后也踏上石头、树叶：</p>
-<p>如果我减速，他也减速；</p>
-<p>如果我奔跑，他也奔跑。我转身：无人。</p>
-<p>一切都黑暗而无门。</p>
 ]]></content>
       <categories>
         <category>艺术</category>
@@ -540,6 +455,91 @@
       </categories>
       <tags>
         <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Alex Webb——复杂构图、鲜明色彩</title>
+    <url>/2021/07/23/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E8%A1%97%E5%A4%B4%E6%91%84%E5%BD%B1%E5%A4%A7%E5%B8%88Alex%20Webb/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在GNU看到一组照片，题名为“复杂构图|摄影大师Alex Webb”,</p>
+<p>Alex Webb的每一张照片都包含着些许生命的活力,</p>
+<p>我急于探求这种生命与情感的张力来源何处？</p>
+<br/>
+
+<p><strong>一、鲜明的色彩差异</strong></p>
+<p>高饱和、鲜明的色彩差异…</p>
+<p>这些方式无不体现着生命力。</p>
+<p>我们形容一个鲜活的物体，她是多彩的，</p>
+<p>Alex用鲜艳的色彩，诠释着生命的张力，</p>
+<p>细微之处在于，情绪体现在色彩之上，</p>
+<p>色彩丰富时能够看出喜悦的情绪，</p>
+<p>色彩平淡时又会给人些许压抑感。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/8.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/6.jpg"></p>
+<br/>
+
+<p><strong>二、多种元素带来的糖果般的喜悦感</strong></p>
+<p>Alex作品中通常包含着众多的元素，</p>
+<p>或许是同一环境中不同状态的人，</p>
+<p>又或许是背景与主体间偶然的关系，</p>
+<p>仔细观察其中的每一个细节，总能发现一些奇妙的元素。</p>
+<p>他总能在元素众多的条件下，</p>
+<p>构出巧妙舒适，不显繁杂的图，</p>
+<p>将视觉中心巧妙的转移来创造出新奇感。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/4.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/9.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/12.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/11.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/10.jpg"></p>
+<br/>
+
+<p><strong>三、单一元素的模糊动感</strong></p>
+<p>观察他的作品，大多数照片快门速度像是保持在1/60s-1/90s左右区间范围，</p>
+<p>以至于每张照片都有着动和静这样两种状态，</p>
+<p>作品中大部分是静景，而单一元素的动却为平面的照片创造了几分“立体感”，</p>
+<p>这种“立体感”为照片增添了不少的活力。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/1.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/5.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/7.jpg"></p>
+<br/>
+
+<p><strong>四、利用镜子添加元素</strong></p>
+<p>能够做到一张图片上众多元素的展现，</p>
+<p>镜子总有着不少的功劳，</p>
+<p>相机正对的方向是一个世界，</p>
+<p>镜子反射出来的同样是另外一个情绪世界。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/2.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/3.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/13.jpg"></p>
+<br/>
+
+<p><strong>之后我试图去了解Alex Webb以及他的成长史，</strong></p>
+<p><strong>从几篇文章中拼凑出他的前半个摄影人生：</strong></p>
+<p> Alex Webb，1952年5月5日出生于美国旧金山，著名美国摄影师，马格南摄图片社成员。他的作品展现他高超的纪实摄影技巧，卓越的色彩修养，他的作品以其复杂的构图而闻名，依旧沿袭了布列松“决定性瞬间”的摄影美学。他的作品在世界各地进行展出，包括在沃克艺术中心，摄影艺术博物馆，国际摄影中心，高艺术博物馆等等。</p>
+<p>1975年，21岁的摄影师Alex Webb来到美国和墨西哥的边境，开始了长达数十年的纪实摄影。他常常拍摄波士顿和纽约等地的美国社会景观，但也常常觉得这些地方没有灵魂，冷漠无情。1975年的他已经是大名鼎鼎的马格南图片社的成员，却不可抗拒地被“边境”这一特殊的环境吸引。</p>
+<p>尽管比邻而居，美国和墨西哥却有着根本性的不同，“西方社会的文化源于新教，资本主义，和个人主义”。Alex Webb前往海地、加勒比海国家等地，最后去到了墨西哥，并且迷上了墨西哥和美国之间巨大的文化差异。他说，“而墨西哥相信西班牙天主教、土著和集体文化，墨西哥的文化在拥抱神秘。”美墨间那条暧昧又复杂的国界线，成为Alex Webb探寻文化交融与冲突的宝地。</p>
+<p>1986年，Alex Webb访问了革命后的海地，触动很深，也成为他摄影生涯中最重要的转折点。Alex Webb说，“在海地旅行彻底改变了我——不仅作为一个摄影师，也作为一个普通人。我拍摄到了一个我从未经历过的世界，一个充满活力和激情的世界:原始的，脱节的，通常往往是悲剧的。”</p>
+<p>从那以后，他决定从拍摄黑白相片转为拍摄彩色相片。那时的摄影界黑白相片是主流，而彩色相片并不被人看好。但Alex Webb认为“世界是一个复杂的地方，如果你开始单纯地以非黑即白的方式看待一切，就会面临巨大的危险。”</p>
+<p>而色彩，也是刻在墨西哥的基因里的。看到Alex Webb的作品，首先吸引人眼球的就是大胆丰富的色彩。这些色彩是当地人的灵魂和精神，色彩本身就在讲故事。</p>
+<p>近半个世纪以来，Alex Webb的作品几乎见证了中美洲的变化。但他的作品并不直面社会变革的新闻现场，而是从细小入微的人文角度，描绘个体的生活与情感。他希望避免任何先入为主的观念，而是讲述一个包罗万象的故事。他相信，在街头巷尾，普通人的神色中，有着这个社会的未来最真实的秘密。</p>
+<br/>
+
+<p>观者可以欣赏<strong>Alex Webb</strong>最有名的画册<a href="https://www.sohu.com/a/315799198_120065912"><strong>《The Suffering of Light》</strong></a>，或者看看<a href="https://zhuanlan.zhihu.com/p/58186067">他人的解读</a>。</p>
+<p>在他的摄影集<strong>《La Calle》</strong>最后，他以一段墨西哥诗人奥克塔维奥帕斯的《街》作为结尾,</p>
+<p>我们也以此作为结尾，感受Alex Webb作品的魅力：</p>
+<p>一条沉寂的长街。</p>
+<p>我在黑暗中行走，跌倒</p>
+<p>又站起，我盲目而行，双脚</p>
+<p>踏上静默的石头和枯叶。</p>
+<p>有人在我身后也踏上石头、树叶：</p>
+<p>如果我减速，他也减速；</p>
+<p>如果我奔跑，他也奔跑。我转身：无人。</p>
+<p>一切都黑暗而无门。</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>审美</tag>
       </tags>
   </entry>
   <entry>
@@ -803,7 +803,7 @@
 <p><strong>需要对ssh 进行重置</strong></p>
 <p>1、重置用户名和邮箱</p>
 <p>git config –global user.name “yourname”</p>
-<p>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#x75;&#x72;&#x40;&#x65;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#x79;&#x6f;&#x75;&#x72;&#x40;&#x65;&#x6d;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;</a>“</p>
+<p>git config –global user.email “<a href="mailto:&#x79;&#111;&#117;&#x72;&#x40;&#101;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;">&#x79;&#111;&#117;&#x72;&#x40;&#101;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#x6f;&#109;</a>“</p>
 <p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
 <br/>
 
@@ -811,7 +811,7 @@
 <br/>
 
 <p>3、git输入命令</p>
-<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#111;&#x75;&#x72;&#64;&#x65;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#109;">&#x79;&#111;&#x75;&#x72;&#64;&#x65;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#109;</a>“（请填你设置的邮箱地址）</p>
+<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#x79;&#x6f;&#117;&#x72;&#64;&#101;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#x79;&#x6f;&#117;&#x72;&#64;&#101;&#109;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a>“（请填你设置的邮箱地址）</p>
 <p>一路yes和回车</p>
 <p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
 <p>用记事本打开id_rsa.pub </p>
@@ -850,7 +850,7 @@
 <br/>
 
 <p>然后在执行</p>
-<p>ssh -T <a href="mailto:&#x67;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#103;&#105;&#x74;&#104;&#117;&#98;&#x2e;&#x63;&#111;&#109;</a> </p>
+<p>ssh -T <a href="mailto:&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;">&#103;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#x68;&#117;&#98;&#x2e;&#x63;&#x6f;&#x6d;</a> </p>
 <p>查看是否可以连接</p>
 <br/>
 
@@ -861,126 +861,6 @@
       </categories>
       <tags>
         <tag>解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>windows实用软件工具记载</title>
-    <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7%E8%AE%B0%E8%BD%BD/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
-<p>出来混有些东西迟早是要还的，</p>
-<p>尊重知识产权，支持正版软件。</p>
-<br/>
-
-<h1 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h1><h3 id="杀毒软件"><a href="#杀毒软件" class="headerlink" title="杀毒软件"></a>杀毒软件</h3><ul>
-<li><h4 id="Avast"><a href="#Avast" class="headerlink" title="Avast"></a>Avast</h4></li>
-</ul>
-<h3 id="垃圾清理"><a href="#垃圾清理" class="headerlink" title="垃圾清理"></a>垃圾清理</h3><ul>
-<li><h4 id="CleanMYPC"><a href="#CleanMYPC" class="headerlink" title="CleanMYPC"></a>CleanMYPC</h4></li>
-<li><h4 id="CCleaner"><a href="#CCleaner" class="headerlink" title="CCleaner"></a>CCleaner</h4></li>
-</ul>
-<h3 id="压缩软件"><a href="#压缩软件" class="headerlink" title="压缩软件"></a>压缩软件</h3><ul>
-<li><h4 id="7zip（开源）"><a href="#7zip（开源）" class="headerlink" title="7zip（开源）"></a>7zip（开源）</h4></li>
-<li><h4 id="winrar"><a href="#winrar" class="headerlink" title="winrar"></a>winrar</h4></li>
-<li><h4 id="bandizip"><a href="#bandizip" class="headerlink" title="bandizip"></a>bandizip</h4></li>
-</ul>
-<h3 id="图像查看器"><a href="#图像查看器" class="headerlink" title="图像查看器"></a>图像查看器</h3><ul>
-<li><h4 id="Honeyview-开源"><a href="#Honeyview-开源" class="headerlink" title="Honeyview(开源)"></a>Honeyview(开源)</h4></li>
-</ul>
-<h3 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h3><ul>
-<li><h4 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h4></li>
-</ul>
-<h3 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h3><ul>
-<li><h4 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h4></li>
-</ul>
-<h3 id="输入法"><a href="#输入法" class="headerlink" title="输入法"></a>输入法</h3><ul>
-<li><h4 id="Rime（开源）"><a href="#Rime（开源）" class="headerlink" title="Rime（开源）"></a>Rime（开源）</h4></li>
-<li><h4 id="微软输入法"><a href="#微软输入法" class="headerlink" title="微软输入法"></a>微软输入法</h4></li>
-</ul>
-<h3 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h3><ul>
-<li><h4 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h4></li>
-<li><h4 id="FireFox"><a href="#FireFox" class="headerlink" title="FireFox"></a>FireFox</h4></li>
-</ul>
-<br/>
-
-<h1 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h1><h3 id="下载工具"><a href="#下载工具" class="headerlink" title="下载工具"></a>下载工具</h3><ul>
-<li><h4 id="Internet-Download-Manager（IDM）"><a href="#Internet-Download-Manager（IDM）" class="headerlink" title="Internet Download Manager（IDM）"></a>Internet Download Manager（IDM）</h4></li>
-<li><h4 id="Motrix"><a href="#Motrix" class="headerlink" title="Motrix"></a>Motrix</h4></li>
-<li><h4 id="迅雷"><a href="#迅雷" class="headerlink" title="迅雷"></a>迅雷</h4></li>
-</ul>
-<h3 id="卸载工具"><a href="#卸载工具" class="headerlink" title="卸载工具"></a>卸载工具</h3><ul>
-<li><h4 id="geek"><a href="#geek" class="headerlink" title="geek"></a>geek</h4></li>
-</ul>
-<h3 id="检索工具"><a href="#检索工具" class="headerlink" title="检索工具"></a>检索工具</h3><ul>
-<li><h4 id="Everything"><a href="#Everything" class="headerlink" title="Everything"></a>Everything</h4></li>
-</ul>
-<h3 id="录屏工具"><a href="#录屏工具" class="headerlink" title="录屏工具"></a>录屏工具</h3><ul>
-<li><h4 id="Camtasia-Studio"><a href="#Camtasia-Studio" class="headerlink" title="Camtasia Studio"></a>Camtasia Studio</h4></li>
-</ul>
-<h3 id="截图工具"><a href="#截图工具" class="headerlink" title="截图工具"></a>截图工具</h3><ul>
-<li><h4 id="Snipaste"><a href="#Snipaste" class="headerlink" title="Snipaste"></a>Snipaste</h4></li>
-<li><h4 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h4></li>
-</ul>
-<h3 id="格式转换"><a href="#格式转换" class="headerlink" title="格式转换"></a>格式转换</h3><ul>
-<li><h4 id="FormatFactory（格式工厂）"><a href="#FormatFactory（格式工厂）" class="headerlink" title="FormatFactory（格式工厂）"></a>FormatFactory（格式工厂）</h4></li>
-</ul>
-<h3 id="终端工具"><a href="#终端工具" class="headerlink" title="终端工具"></a>终端工具</h3><ul>
-<li><h4 id="Hyper"><a href="#Hyper" class="headerlink" title="Hyper"></a>Hyper</h4></li>
-</ul>
-<h3 id="工具合集"><a href="#工具合集" class="headerlink" title="工具合集"></a>工具合集</h3><ul>
-<li><h4 id="Power-Toys"><a href="#Power-Toys" class="headerlink" title="Power Toys"></a>Power Toys</h4></li>
-<li><h4 id="UTools（免费但不开源？考虑安全性）"><a href="#UTools（免费但不开源？考虑安全性）" class="headerlink" title="UTools（免费但不开源？考虑安全性）"></a>UTools（免费但不开源？考虑安全性）</h4></li>
-</ul>
-<h3 id="图表编辑"><a href="#图表编辑" class="headerlink" title="图表编辑"></a>图表编辑</h3><ul>
-<li><h4 id="draw-io"><a href="#draw-io" class="headerlink" title="draw.io"></a>draw.io</h4></li>
-</ul>
-<h3 id="桌面美化"><a href="#桌面美化" class="headerlink" title="桌面美化"></a>桌面美化</h3><ul>
-<li><h4 id="TranslucentTB"><a href="#TranslucentTB" class="headerlink" title="TranslucentTB"></a>TranslucentTB</h4></li>
-<li><h4 id="Rainmeter"><a href="#Rainmeter" class="headerlink" title="Rainmeter"></a>Rainmeter</h4></li>
-</ul>
-<h3 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h3><ul>
-<li><h4 id="Teamviewer"><a href="#Teamviewer" class="headerlink" title="Teamviewer"></a>Teamviewer</h4></li>
-<li><h4 id="AnyDesk"><a href="#AnyDesk" class="headerlink" title="AnyDesk"></a>AnyDesk</h4></li>
-<li><h4 id="RustDesk（开源）"><a href="#RustDesk（开源）" class="headerlink" title="RustDesk（开源）"></a>RustDesk（开源）</h4></li>
-<li><h4 id="向日葵"><a href="#向日葵" class="headerlink" title="向日葵"></a>向日葵</h4></li>
-</ul>
-<h3 id="文本编辑"><a href="#文本编辑" class="headerlink" title="文本编辑"></a>文本编辑</h3><ul>
-<li><h4 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h4></li>
-</ul>
-<h3 id="剪贴板"><a href="#剪贴板" class="headerlink" title="剪贴板"></a>剪贴板</h3><ul>
-<li><h4 id="Ditto（开源）"><a href="#Ditto（开源）" class="headerlink" title="Ditto（开源）"></a>Ditto（开源）</h4></li>
-</ul>
-<h3 id="解码器"><a href="#解码器" class="headerlink" title="解码器"></a>解码器</h3><ul>
-<li><h4 id="LAVFilters"><a href="#LAVFilters" class="headerlink" title="LAVFilters"></a>LAVFilters</h4></li>
-</ul>
-<br/>
-
-<h1 id="检测工具"><a href="#检测工具" class="headerlink" title="检测工具"></a>检测工具</h1><h3 id="温度监控"><a href="#温度监控" class="headerlink" title="温度监控"></a>温度监控</h3><ul>
-<li><h4 id="Core-Temp"><a href="#Core-Temp" class="headerlink" title="Core Temp"></a>Core Temp</h4></li>
-</ul>
-<h3 id="CPU检测"><a href="#CPU检测" class="headerlink" title="CPU检测"></a>CPU检测</h3><ul>
-<li><h4 id="CPU-Z"><a href="#CPU-Z" class="headerlink" title="CPU-Z"></a>CPU-Z</h4></li>
-</ul>
-<h3 id="GPU检测"><a href="#GPU检测" class="headerlink" title="GPU检测"></a>GPU检测</h3><ul>
-<li><h4 id="GPU-Z"><a href="#GPU-Z" class="headerlink" title="GPU-Z"></a>GPU-Z</h4></li>
-</ul>
-<h3 id="硬盘检测"><a href="#硬盘检测" class="headerlink" title="硬盘检测"></a>硬盘检测</h3><ul>
-<li><h4 id="CrystalDiskMark"><a href="#CrystalDiskMark" class="headerlink" title="CrystalDiskMark"></a>CrystalDiskMark</h4></li>
-</ul>
-<h3 id="频率调节"><a href="#频率调节" class="headerlink" title="频率调节"></a>频率调节</h3><ul>
-<li><h4 id="ThrottleStop"><a href="#ThrottleStop" class="headerlink" title="ThrottleStop"></a>ThrottleStop</h4></li>
-</ul>
-<h3 id="网速监控"><a href="#网速监控" class="headerlink" title="网速监控"></a>网速监控</h3><ul>
-<li><h4 id="TrafficMonitor"><a href="#TrafficMonitor" class="headerlink" title="TrafficMonitor"></a>TrafficMonitor</h4></li>
-</ul>
-<h3 id="性能监控"><a href="#性能监控" class="headerlink" title="性能监控"></a>性能监控</h3><ul>
-<li><h4 id="MSI-Afterburner"><a href="#MSI-Afterburner" class="headerlink" title="MSI Afterburner"></a>MSI Afterburner</h4></li>
-</ul>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1021,6 +901,126 @@
 <li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
 <li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
 <li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
+</ul>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows实用软件工具记载</title>
+    <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%B7%A5%E5%85%B7%E8%AE%B0%E8%BD%BD/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
+<p>出来混有些东西迟早是要还的，</p>
+<p>尊重知识产权，支持正版软件。</p>
+<br/>
+
+<h1 id="软件推荐"><a href="#软件推荐" class="headerlink" title="软件推荐"></a>软件推荐</h1><h2 id="杀毒软件"><a href="#杀毒软件" class="headerlink" title="杀毒软件"></a>杀毒软件</h2><ul>
+<li><h4 id="Avast"><a href="#Avast" class="headerlink" title="Avast"></a>Avast</h4></li>
+</ul>
+<h2 id="垃圾清理"><a href="#垃圾清理" class="headerlink" title="垃圾清理"></a>垃圾清理</h2><ul>
+<li><h4 id="CleanMYPC"><a href="#CleanMYPC" class="headerlink" title="CleanMYPC"></a>CleanMYPC</h4></li>
+<li><h4 id="CCleaner"><a href="#CCleaner" class="headerlink" title="CCleaner"></a>CCleaner</h4></li>
+</ul>
+<h2 id="压缩软件"><a href="#压缩软件" class="headerlink" title="压缩软件"></a>压缩软件</h2><ul>
+<li><h4 id="7zip（开源）"><a href="#7zip（开源）" class="headerlink" title="7zip（开源）"></a>7zip（开源）</h4></li>
+<li><h4 id="winrar"><a href="#winrar" class="headerlink" title="winrar"></a>winrar</h4></li>
+<li><h4 id="bandizip"><a href="#bandizip" class="headerlink" title="bandizip"></a>bandizip</h4></li>
+</ul>
+<h2 id="图像查看器"><a href="#图像查看器" class="headerlink" title="图像查看器"></a>图像查看器</h2><ul>
+<li><h4 id="Honeyview-开源"><a href="#Honeyview-开源" class="headerlink" title="Honeyview(开源)"></a>Honeyview(开源)</h4></li>
+</ul>
+<h2 id="音乐播放器"><a href="#音乐播放器" class="headerlink" title="音乐播放器"></a>音乐播放器</h2><ul>
+<li><h4 id="Spotify"><a href="#Spotify" class="headerlink" title="Spotify"></a>Spotify</h4></li>
+</ul>
+<h2 id="视频播放器"><a href="#视频播放器" class="headerlink" title="视频播放器"></a>视频播放器</h2><ul>
+<li><h4 id="PotPlayer"><a href="#PotPlayer" class="headerlink" title="PotPlayer"></a>PotPlayer</h4></li>
+</ul>
+<h2 id="输入法"><a href="#输入法" class="headerlink" title="输入法"></a>输入法</h2><ul>
+<li><h4 id="Rime（开源）"><a href="#Rime（开源）" class="headerlink" title="Rime（开源）"></a>Rime（开源）</h4></li>
+<li><h4 id="微软输入法"><a href="#微软输入法" class="headerlink" title="微软输入法"></a>微软输入法</h4></li>
+</ul>
+<h2 id="浏览器"><a href="#浏览器" class="headerlink" title="浏览器"></a>浏览器</h2><ul>
+<li><h4 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h4></li>
+<li><h4 id="FireFox"><a href="#FireFox" class="headerlink" title="FireFox"></a>FireFox</h4></li>
+</ul>
+<br/>
+
+<h1 id="工具推荐"><a href="#工具推荐" class="headerlink" title="工具推荐"></a>工具推荐</h1><h2 id="下载工具"><a href="#下载工具" class="headerlink" title="下载工具"></a>下载工具</h2><ul>
+<li><h4 id="Internet-Download-Manager（IDM）"><a href="#Internet-Download-Manager（IDM）" class="headerlink" title="Internet Download Manager（IDM）"></a>Internet Download Manager（IDM）</h4></li>
+<li><h4 id="Motrix"><a href="#Motrix" class="headerlink" title="Motrix"></a>Motrix</h4></li>
+<li><h4 id="迅雷"><a href="#迅雷" class="headerlink" title="迅雷"></a>迅雷</h4></li>
+</ul>
+<h2 id="卸载工具"><a href="#卸载工具" class="headerlink" title="卸载工具"></a>卸载工具</h2><ul>
+<li><h4 id="geek"><a href="#geek" class="headerlink" title="geek"></a>geek</h4></li>
+</ul>
+<h2 id="检索工具"><a href="#检索工具" class="headerlink" title="检索工具"></a>检索工具</h2><ul>
+<li><h4 id="Everything"><a href="#Everything" class="headerlink" title="Everything"></a>Everything</h4></li>
+</ul>
+<h2 id="录屏工具"><a href="#录屏工具" class="headerlink" title="录屏工具"></a>录屏工具</h2><ul>
+<li><h4 id="Camtasia-Studio"><a href="#Camtasia-Studio" class="headerlink" title="Camtasia Studio"></a>Camtasia Studio</h4></li>
+</ul>
+<h2 id="截图工具"><a href="#截图工具" class="headerlink" title="截图工具"></a>截图工具</h2><ul>
+<li><h4 id="Snipaste"><a href="#Snipaste" class="headerlink" title="Snipaste"></a>Snipaste</h4></li>
+<li><h4 id="FastStone-Capture"><a href="#FastStone-Capture" class="headerlink" title="FastStone Capture"></a>FastStone Capture</h4></li>
+</ul>
+<h2 id="格式转换"><a href="#格式转换" class="headerlink" title="格式转换"></a>格式转换</h2><ul>
+<li><h4 id="FormatFactory（格式工厂）"><a href="#FormatFactory（格式工厂）" class="headerlink" title="FormatFactory（格式工厂）"></a>FormatFactory（格式工厂）</h4></li>
+</ul>
+<h2 id="终端工具"><a href="#终端工具" class="headerlink" title="终端工具"></a>终端工具</h2><ul>
+<li><h4 id="Hyper"><a href="#Hyper" class="headerlink" title="Hyper"></a>Hyper</h4></li>
+</ul>
+<h2 id="工具合集"><a href="#工具合集" class="headerlink" title="工具合集"></a>工具合集</h2><ul>
+<li><h4 id="Power-Toys"><a href="#Power-Toys" class="headerlink" title="Power Toys"></a>Power Toys</h4></li>
+<li><h4 id="UTools（免费但不开源？考虑安全性）"><a href="#UTools（免费但不开源？考虑安全性）" class="headerlink" title="UTools（免费但不开源？考虑安全性）"></a>UTools（免费但不开源？考虑安全性）</h4></li>
+</ul>
+<h2 id="图表编辑"><a href="#图表编辑" class="headerlink" title="图表编辑"></a>图表编辑</h2><ul>
+<li><h4 id="draw-io"><a href="#draw-io" class="headerlink" title="draw.io"></a>draw.io</h4></li>
+</ul>
+<h2 id="桌面美化"><a href="#桌面美化" class="headerlink" title="桌面美化"></a>桌面美化</h2><ul>
+<li><h4 id="TranslucentTB"><a href="#TranslucentTB" class="headerlink" title="TranslucentTB"></a>TranslucentTB</h4></li>
+<li><h4 id="Rainmeter"><a href="#Rainmeter" class="headerlink" title="Rainmeter"></a>Rainmeter</h4></li>
+</ul>
+<h2 id="远程控制"><a href="#远程控制" class="headerlink" title="远程控制"></a>远程控制</h2><ul>
+<li><h4 id="Teamviewer"><a href="#Teamviewer" class="headerlink" title="Teamviewer"></a>Teamviewer</h4></li>
+<li><h4 id="AnyDesk"><a href="#AnyDesk" class="headerlink" title="AnyDesk"></a>AnyDesk</h4></li>
+<li><h4 id="RustDesk（开源）"><a href="#RustDesk（开源）" class="headerlink" title="RustDesk（开源）"></a>RustDesk（开源）</h4></li>
+<li><h4 id="向日葵"><a href="#向日葵" class="headerlink" title="向日葵"></a>向日葵</h4></li>
+</ul>
+<h2 id="文本编辑"><a href="#文本编辑" class="headerlink" title="文本编辑"></a>文本编辑</h2><ul>
+<li><h4 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a>Typora</h4></li>
+</ul>
+<h2 id="剪贴板"><a href="#剪贴板" class="headerlink" title="剪贴板"></a>剪贴板</h2><ul>
+<li><h4 id="Ditto（开源）"><a href="#Ditto（开源）" class="headerlink" title="Ditto（开源）"></a>Ditto（开源）</h4></li>
+</ul>
+<h2 id="解码器"><a href="#解码器" class="headerlink" title="解码器"></a>解码器</h2><ul>
+<li><h4 id="LAVFilters"><a href="#LAVFilters" class="headerlink" title="LAVFilters"></a>LAVFilters</h4></li>
+</ul>
+<br/>
+
+<h1 id="检测工具"><a href="#检测工具" class="headerlink" title="检测工具"></a>检测工具</h1><h2 id="温度监控"><a href="#温度监控" class="headerlink" title="温度监控"></a>温度监控</h2><ul>
+<li><h4 id="Core-Temp"><a href="#Core-Temp" class="headerlink" title="Core Temp"></a>Core Temp</h4></li>
+</ul>
+<h2 id="CPU检测"><a href="#CPU检测" class="headerlink" title="CPU检测"></a>CPU检测</h2><ul>
+<li><h4 id="CPU-Z"><a href="#CPU-Z" class="headerlink" title="CPU-Z"></a>CPU-Z</h4></li>
+</ul>
+<h2 id="GPU检测"><a href="#GPU检测" class="headerlink" title="GPU检测"></a>GPU检测</h2><ul>
+<li><h4 id="GPU-Z"><a href="#GPU-Z" class="headerlink" title="GPU-Z"></a>GPU-Z</h4></li>
+</ul>
+<h2 id="硬盘检测"><a href="#硬盘检测" class="headerlink" title="硬盘检测"></a>硬盘检测</h2><ul>
+<li><h4 id="CrystalDiskMark"><a href="#CrystalDiskMark" class="headerlink" title="CrystalDiskMark"></a>CrystalDiskMark</h4></li>
+</ul>
+<h2 id="频率调节"><a href="#频率调节" class="headerlink" title="频率调节"></a>频率调节</h2><ul>
+<li><h4 id="ThrottleStop"><a href="#ThrottleStop" class="headerlink" title="ThrottleStop"></a>ThrottleStop</h4></li>
+</ul>
+<h2 id="网速监控"><a href="#网速监控" class="headerlink" title="网速监控"></a>网速监控</h2><ul>
+<li><h4 id="TrafficMonitor"><a href="#TrafficMonitor" class="headerlink" title="TrafficMonitor"></a>TrafficMonitor</h4></li>
+</ul>
+<h2 id="性能监控"><a href="#性能监控" class="headerlink" title="性能监控"></a>性能监控</h2><ul>
+<li><h4 id="MSI-Afterburner"><a href="#MSI-Afterburner" class="headerlink" title="MSI Afterburner"></a>MSI Afterburner</h4></li>
 </ul>
 ]]></content>
       <categories>

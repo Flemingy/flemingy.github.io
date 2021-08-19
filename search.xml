@@ -1,110 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML参考手册&amp;代码规范</title>
-    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
-
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
-<ul>
-<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
-</ul>
-<ul>
-<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
-</ul>
-<ul>
-<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
-</ul>
-<ul>
-<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
-<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
-<br/>
-
-<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
-<ul>
-<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
-</ul>
-<ul>
-<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
-</ul>
-<ul>
-<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
-</ul>
-<ul>
-<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
-</ul>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
-<br/>
-
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
-<ul>
-<li>HTML5中包含更多JavaScript 的应用。</li>
-</ul>
-<ul>
-<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
-</ul>
-<ul>
-<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
-</ul>
-<ul>
-<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
-<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>XML &amp; XSLT &amp; XQuery···</title>
     <url>/2021/08/12/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94XML%20&amp;%20XSLT%20&amp;%20XQuery%C2%B7%C2%B7%C2%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合XML、XML-DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容"><a href="#本篇整合XML、XML-DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容" class="headerlink" title="本篇整合XML、XML DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容"></a>本篇整合XML、XML DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅XML知识"><a href="#目的是方便个人在前端场景下能够快速查阅XML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅XML知识"></a>目的是方便个人在前端场景下能够快速查阅XML知识</h3><br/>
@@ -230,13 +126,118 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML参考手册&amp;代码规范</title>
+    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
+
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
+<ul>
+<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
+</ul>
+<ul>
+<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
+</ul>
+<ul>
+<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
+</ul>
+<ul>
+<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
+<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
+<br/>
+
+<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
+<ul>
+<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
+</ul>
+<ul>
+<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
+</ul>
+<ul>
+<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
+</ul>
+<ul>
+<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
+</ul>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
+<br/>
+
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
+<ul>
+<li>HTML5中包含更多JavaScript 的应用。</li>
+</ul>
+<ul>
+<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
+</ul>
+<ul>
+<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
+</ul>
+<ul>
+<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
+<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
     <url>/2021/08/10/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
-<p>从生物学角度谈受精现象，认为：</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
+<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
+<p>从生物学角度谈受精现象时认为：</p>
 <ul>
 <li>雄性提供新生命产生的机会</li>
-<li>雌性为新生命的创造了一个稳定环境</li>
+<li>雌性为新生命创造了一个稳定环境</li>
 </ul>
 <p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
 <p>它们依据受精现象对雌雄进行了概念划定：</p>
@@ -245,20 +246,20 @@
 <li>雌性：容器</li>
 </ul>
 <p>同样，现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
-<p>但是，生物学并不能解释第二性。</p>
+<p>但是，生物学并不能解释“第二性”。</p>
 <br/>
 
 <h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
 <ul>
 <li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
-<li>女性：童年期发育阴蒂，青春期发育阴道。其对比发生产生（导致自卑情结）</li>
+<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
 </ul>
 <p>以此为分界线女性进行了两种方式的反抗：</p>
 <ul>
 <li>男性化</li>
 <li>用女性武器向男性挑战</li>
 </ul>
-<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的劣等性。</p>
+<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
 <p>因此可知精神分析学家的看法：</p>
 <ul>
 <li>男人：人</li>
@@ -272,79 +273,13 @@
 <p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义枉费心机地想对性这一问题故意不予理睬。所以我们需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
 <br/>
 
-<br/>
-
-<p>“女人在回避经济上的危险的同时，也回避自由带来的形而上学的危险：这种自由要孤立无援地创造目的。凡是个体都力图确定自身是主体，这是一种伦理上的抱负，事实上，除此之外，人身上还有逃避自由和成为物的意图：这是一条险恶的道路，因为人被动、异化、迷失，就会成为外来意志的牺牲品，与其超越性分离了，被剥夺了一切价值。不过，这是一条容易走的路：这样就避免了本真地承担生存所带来的焦虑和紧张。”——西蒙娜·波伏娃</p>
-<br/>
-
-<p>从存在主义角度我们能够解释第二性的产生·······</p>
+<p>从存在主义角度或许我们能够解释第二性的产生并有所反思·······</p>
 ]]></content>
       <categories>
         <category>随想</category>
       </categories>
       <tags>
         <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Robert Capa——战地记者与《失焦》</title>
-    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
-<p><strong>——罗伯特·卡帕</strong></p>
-<br/>
-
-<p>相片是历史的定格，</p>
-<p>记录情绪，记录生与死，</p>
-<p>又记录下战争的残酷无情…..</p>
-<br/>
-
-<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
-<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
-<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
-<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
-<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
-<br/>
-
-<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
-<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
-<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
-<br/>
-
-<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
-<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
-<br/>
-
-<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
-<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
-<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
-<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
-<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
-<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
-<p>了解事实与真相，铭记战争带来的悲痛。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
       </tags>
   </entry>
   <entry>
@@ -430,6 +365,147 @@
       </categories>
       <tags>
         <tag>审美</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Robert Capa——战地记者与《失焦》</title>
+    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
+<p><strong>——罗伯特·卡帕</strong></p>
+<br/>
+
+<p>相片是历史的定格，</p>
+<p>记录情绪，记录生与死，</p>
+<p>又记录下战争的残酷无情…..</p>
+<br/>
+
+<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
+<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
+<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
+<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
+<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
+<br/>
+
+<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
+<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
+<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
+<br/>
+
+<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
+<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
+<br/>
+
+<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
+<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
+<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
+<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
+<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
+<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
+<p>了解事实与真相，铭记战争带来的悲痛。</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>审美</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
+<br/>
+
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<br/>
+
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>扩展</tag>
       </tags>
   </entry>
   <entry>
@@ -660,86 +736,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
-<br/>
-
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
-<br/>
-
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>帧速率、刷新率、广播级视频标准</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
@@ -841,6 +837,277 @@
       </tags>
   </entry>
   <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>希望、祝福、爱情、风与晚霞</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E5%B8%8C%E6%9C%9B%E3%80%81%E7%A5%9D%E7%A6%8F%E3%80%81%E7%88%B1%E6%83%85%E3%80%81%E9%A3%8E%E4%B8%8E%E6%99%9A%E9%9C%9E/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="希望"><a href="#希望" class="headerlink" title="希望"></a>希望</h1><ol>
+<li><p>愿希望和你同行，向着光，所向披靡。</p>
+</li>
+<li><p>少年与爱永不老去，即便披荆斩，丢失怒马鲜衣。</p>
+<p>——莫峻</p>
+</li>
+<li><p>你才二十几岁，你可以成为任何你想成为的人。</p>
+<p>——是枝裕和《步履不停》</p>
+</li>
+<li><p>没有谁的生活会一直完美，但无论什么时候都要眼看前方，满怀希望就会所向披靡。</p>
+<p>——巫哲《撒野》</p>
+</li>
+<li><p>你一定要走，走到灯火通明。</p>
+<p>——卢思浩《你要去相信，没有到不了的明天》</p>
+</li>
+<li><p>你必须只有内心丰富，才能拜托这些生活表面的相似。</p>
+<p>——王明《致女儿书》</p>
+</li>
+<li><p>该忘记的早就忘记，该留下的永远留下 答应我，忍住你的痛苦，不发一言，穿过这整座城市。</p>
+<p>——海子《太阳和野花》</p>
+</li>
+<li><p>看清楚这个世界，并不能让这个世界变得更美好。但可能让你走看清楚这个世界是个怎样的世界后，把自己变得更好。</p>
+<p>——朱德庸</p>
+</li>
+<li><p>心里的火永远不要灭，哪怕别人只能看见烟。</p>
+<p>——梁秋实</p>
+</li>
+<li><p>我相信，那一切都是种子。只有经历过埋葬，才有生机。</p>
+<p>——顾城城《给我的恩师安徒生》</p>
+</li>
+<li><p>日出之美便在于它脱胎于最深的黑暗。</p>
+<p>——辛夷坞《山月不知心底事》</p>
+</li>
+<li><p>无论何人何时，人们总要在乌云周围寻索着浪漫的微光活下去。</p>
+<p>——村上春树《无比荒杂的心绪》</p>
+</li>
+<li><p>没有不可治愈的伤痛，没有不能结束的沉沦，所有失去的，会以另一种方式归来。</p>
+<p>——约翰肖尔思《许愿树》</p>
+</li>
+<li><p>人活一生，值得爱的东西很多，不要因为一个不满意，就灰心。</p>
+<p>——陆瑶《人生》</p>
+</li>
+<li><p>秋虽然来，冬虽然来，而此后接着还是春。</p>
+<p>——鲁迅《秋夜》</p>
+</li>
+<li><p>所有的改变都是一种深思熟虑过后的奇迹每瞬间奇迹都在发生。</p>
+<p>——梭罗《瓦尔登湖》</p>
+</li>
+<li><p>雪融化后，会变成什么呢？是春天吧。</p>
+<p>——高屋奈月</p>
+</li>
+<li><p>明年有明年的雪，明年的雾色，明年的永无休止的阳光，还有明年数不尽的生机。</p>
+<p>——林清玄</p>
+</li>
+<li><p>论这个世界对你怎样，都请你一如既往的努力、勇敢、充满希望。</p>
+<p>——毕淑敏《愿你与这世界温暖相拥》</p>
+</li>
+</ol>
+<br/>
+
+<br/>
+
+
+
+<h1 id="祝福"><a href="#祝福" class="headerlink" title="祝福"></a>祝福</h1><ol>
+<li><p>宇宙很大，生活更大，也许以后还有缘相见。<br>——刘慈欣《三体》</p>
+<br/></li>
+<li><p>如果再也见不到你，那就祝你早安，午安，晚安。<br>——电影《楚门的世界》</p>
+<br/></li>
+<li><p>愿你有一个灿烂的前程，愿你有情人终成眷属，愿你在尘世获得幸福。<br>——海子《面朝大海，春暖花开》</p>
+<br/></li>
+<li><p>照十一世纪中国哲学家邵雍计算，世界上的事物，在一二万九千六百年后完全重现重演，现在我与你们约定，一二万九千年后，我们会在这间屋子里会面罢。<br>——萧公权教授1968年在华盛顿大学的告别演讲</p>
+<br/></li>
+<li><p>纵有千古，横有八荒；前途似海，来日方长。<br>——梁启超《少年中国说》</p>
+<br/></li>
+<li><p>书上说，天下没有不散的宴席。不要怕，书上还说，人生何处不相逢。<br>——烽火戏诸侯《雪中悍刀行》</p>
+<br/></li>
+<li><p>渡口旁找不到一朵可以相送的花，就把祝福别在襟上吧，而明日，明日又隔天涯。<br>——席慕容《渡口》</p>
+<br/></li>
+<li><p>拜拜，朋友，希望春天以后，我能成为那个你，我能成为那个我。<br>——旅行团乐队《于是我不再唱歌》</p>
+<br/></li>
+<li><p>世事不能说死，有些事情总值得尝试。永不言放弃，前方总有希望在等待。<br>——电影《放牛班的春天》</p>
+<br/></li>
+<li><p>其实真正的送别，没有长亭古道，没有劝君更尽一杯酒，就是在一个和平时一样的清晨，有的人留在昨天了。<br>——《克斯维尔的明天》</p>
+<br/></li>
+<li><p>愿你自己有充分的忍耐去担当，有充分单纯的心去信仰。<br>——里尔克《给青年诗人的信》</p>
+<br/></li>
+<li><p>愿你在迷茫时，坚信你的珍贵，爱你所爱，行你所行，听从你心，无问西东。<br>——电影《无问西东》</p>
+<br/></li>
+<li><p>不管遇到多大困难，告诉你的心”All is well”<br>——电影《三傻大闹宝莱坞》</p>
+<br/></li>
+<li><p>愿少年乘风破浪，他日勿忘化雨功。<br>——汪曾祺《徒》</p>
+<br/></li>
+<li><p>希望你们也找到自己的路，找到自己的步伐、步调，任何方向，任何东西都行，不管是自负也好，愚蠢也罢，什么都行。<br>——电影《死亡诗社》</p>
+<br/></li>
+<li><p>毕业是千百万个夏天的故事，千百万个人，千百万个不同的夏天，相同的只是告别。<br>——里则林</p>
+<br/></li>
+<li><p>我们首先应该善良，其次要诚实，再次是以后永远不要相互遗忘。<br>——陀思妥耶夫斯基《卡拉马佐夫兄弟》</p>
+<br/></li>
+<li><p>我希望，你能活出最精彩的自己，见识到令你惊奇的事物，体验从未有过的情感，遇见一些想法不同的人，为你自己的人生感到骄傲，如果你还没有做到，我希望，你有勇气，重头再来。<br>——电影《本杰明巴顿奇事》</p>
+<br/></li>
+<li><p>跃入人海，各有风雨灿烂。<br>——《入海》</p>
+<br/>
+
+<br/></li>
+</ol>
+<h1 id="爱情"><a href="#爱情" class="headerlink" title="爱情"></a>爱情</h1><ol>
+<li><p>好的爱情是双方以自由为最高赠礼的洒脱，以及决不滥用这一份自由的珍惜。</p>
+<br/></li>
+<li><p>真正的爱慕，往往是从对方身上感触到自己人生理想的准则开始的。</p>
+<br/></li>
+<li><p>你是我温暖的手套，冰冷的啤酒，带着阳光味道的衬衫，日复一日的梦想。</p>
+<br/></li>
+<li><p>朱先生恰在那一刻瞧见她的模样，转身就离开涝池上了官道，对媒人说：“就是这个，八字不合也是这个”。</p>
+<br/></li>
+<li><p>一旦喜欢上谁就别无所求，只要能每天见到他就已经觉得很庆幸，一辈子很短，如白驹过隙，转瞬即逝。可这种心情很长，如高山大川，延绵不绝。</p>
+<br/></li>
+<li><p>我最爱的就是她，可以肯定，就像自己必死一样肯定。昔日的如花妖女，现在只剩下枯叶回乡，苍白，混俗，臃肿，腹中的骨肉是别人的，但我爱她，她可以褪色，可以萎谢，怎样都可以，但我只看她一眼，万般柔情，涌上心头。</p>
+<br/></li>
+<li><p>有一种东西，它会在某一个夏天的夜晚，像风一样袭来。让你措不及防，无法安宁，与你形影相随，挥之不去，我不知道那是什么，只能称它为爱情。</p>
+<br/></li>
+<li><p>我甚至相信你拥有整个宇宙，我要从山上带给你快乐的花朵，带给你钟形花，黑榛实，以及一篮篮野生的吻。我要，像春天对待樱花树般地对待你。</p>
+<br/></li>
+<li><p>爱的真谛：毫无企图心的尊重。</p>
+<br/></li>
+<li><p>喜欢，是看某物好甚至极好，随之而来的念头是【占有欲】。爱，则多是看某物不好或还不够好，其实是期盼它好以至非常好，随之而得的激励是【愿付出】</p>
+<br/>
+
+<br/></li>
+</ol>
+<h1 id="风与晚霞"><a href="#风与晚霞" class="headerlink" title="风与晚霞"></a>风与晚霞</h1><ol>
+<li><p>最是那一低头的温柔，像一朵水莲花不胜凉风的娇羞 。</p>
+<p>——徐志摩《沙扬娜拉赠日本女郎》</p>
+<br/></li>
+<li><p>原你的生命中有够多的云翳，来造成一个美丽的黄昏。</p>
+<p>——冰心《谈生命》</p>
+<br/></li>
+<li><p>我沉闷地走着，没有回过头看你。在这个令人恍惚的世界，每一片雪，都蓄着经年的泪水。</p>
+<p>——李松山《雪》</p>
+<br/></li>
+<li><p>望着窗外，只要想起一生中后悔的事，梅花便落满了南山。</p>
+<p>——张枣《镜中》</p>
+<br/></li>
+<li><p>从童年起，我便独自一人，照顾着，历代的星辰。</p>
+<p>——白鹤林《孤独》</p>
+<br/></li>
+<li><p>我想变成天边那朵白云，用尽整日晴天，只从左边，移到右边。</p>
+<p>——夏南《不急》</p>
+<br/></li>
+<li><p>我是春天里出生的绿皮野兽，在秋夜里悄悄吞下十瓣月亮。</p>
+<p>——高鹤鸣《桔子》</p>
+<br/></li>
+<li><p>春天的酒如果没来得及喝掉，就该洒在泥土里，不能灌醉你，灌醉一朵小花也好哇。</p>
+<p>——林蜻蜓《浮一大白》</p>
+<br/></li>
+<li><p>你一会儿看云，一会儿看我。我觉得，你看我时很远，你看云时很近。</p>
+<p>——顾城《远和近》</p>
+<br/></li>
+<li><p>青青的野葡萄，淡黄的小月亮，妈妈发愁了，怎么做果酱。我说：别加糖，在早晨的篱笆上，有一枚甜甜的，红太阳。</p>
+<p>——顾城《安慰》</p>
+<br/></li>
+<li><p>多少年只写了一行，弯弯曲曲寄向海洋。</p>
+<p>——王竞成《小溪的请诗》</p>
+<br/></li>
+<li><p>大风吹着我和山岗，我面前有一万座村庄，我身后有一万座村庄，千灯万盏，我只有一轮月亮。</p>
+<p>——王艺彭《流浪》</p>
+<br/></li>
+<li><p>那晚没有月亮，星星也是那么的暗淡。人置身在那样的黑夜里，也就成了黑夜。</p>
+<p>——迟子建《额尔古纳河右岸》</p>
+<br/></li>
+<li><p>借我一个暮年，借我碎片，借我瞻前与顾后，借我执如少年。</p>
+<p>——樊小纯《借我》</p>
+<br/></li>
+<li><p>所有的改变都是一种深思熟虑过后的奇迹 每瞬间奇迹都在发生。</p>
+<p>——梭罗《瓦尔登湖》</p>
+<br/></li>
+<li><p>走六小时寂寞的长途，到你头边放一束红山茶。我等待着，长夜漫漫。你却卧听海涛闲话。</p>
+<p>——戴望舒《萧红墓前口占》</p>
+<br/></li>
+<li><p>这些诗，只为你灵魂的黑夜而作，一经被人窥破，便要苍白失色。</p>
+<p>——苏利·普吕多姆《献词》</p>
+<br/>
+
+<br/></li>
+</ol>
+<ol>
+<li><p>晚霞能令人回忆起童年的往事，不是吗？ </p>
+<br/></li>
+<li><p>雷声荒猛，仿佛夏天踉跄着要去自杀。</p>
+<br/></li>
+<li><p>如果一朵花很美，那么有时我会不由自主地想到要“活下去”。</p>
+<br/></li>
+<li><p>我和你来自不同的世界，我将终生向往你，回忆你，感谢你。</p>
+<br/></li>
+<li><p>与人相见时应尽量热情，也许什么时候会分离，也许再也无法再见。</p>
+<br/></li>
+<li><p>花给空气着彩，就连着身体也好像染上了颜色。</p>
+<br/></li>
+<li><p>苦恼一旦过去，就不会留下痕迹吗？一旦过去，有时还会令人怀念呢。</p>
+<br/></li>
+<li><p>当我失去你，即便面对鸟语花香我也索然无味，一切显得落寞、虚空。</p>
+<br/></li>
+<li><p>她的眼睛同灯光重叠的那一瞬间，就像在夕阳的余晖里飞舞的妖艳而美丽的夜光虫。</p>
+<br/></li>
+<li><p>感情这种东西，已经不可依赖，如今世道变成这个样子，越是有才能的人，感情就越脆弱。</p>
+<br/></li>
+<li><p>初识爱情在这样年轻的年纪，在这样如梦似幻的山里，就注定这是一场足以铭记但是却不可能结果的感情。</p>
+<br/></li>
+<li><p>花是活的，它的生命虽然短暂，但活得绚丽夺目，来年再含苞，开花，就像大自然一样充满生机。</p>
+<br/></li>
+<li><p>爱情来临的时候，你永远不知道等待你的是甜蜜还是痛楚。</p>
+<br/></li>
+<li><p>人的记忆与回忆，也许唯有新与旧的区别，而难以用真正的远近来区分吧。</p>
+<br/></li>
+<li><p>还有平凡的婚姻吗？你骗人，每个婚姻都是非凡的。</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>通过ssh协议连接github时遇到的问题</title>
     <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
@@ -848,7 +1115,7 @@
 <p><strong>需要对ssh 进行重置</strong></p>
 <p>1、重置用户名和邮箱</p>
 <p>git config –global user.name “yourname”</p>
-<p>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x72;&#x40;&#x65;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#121;&#111;&#x75;&#x72;&#x40;&#x65;&#x6d;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a>“</p>
+<p>git config –global user.email “<a href="mailto:&#x79;&#x6f;&#117;&#x72;&#x40;&#101;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;">&#x79;&#x6f;&#117;&#x72;&#x40;&#101;&#x6d;&#x61;&#105;&#108;&#46;&#x63;&#x6f;&#x6d;</a>“</p>
 <p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
 <br/>
 
@@ -856,7 +1123,7 @@
 <br/>
 
 <p>3、git输入命令</p>
-<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#117;&#x72;&#x40;&#101;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;">&#121;&#111;&#117;&#x72;&#x40;&#101;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#x6d;</a>“（请填你设置的邮箱地址）</p>
+<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#117;&#114;&#x40;&#x65;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#117;&#114;&#x40;&#x65;&#109;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a>“（请填你设置的邮箱地址）</p>
 <p>一路yes和回车</p>
 <p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
 <p>用记事本打开id_rsa.pub </p>
@@ -895,7 +1162,7 @@
 <br/>
 
 <p>然后在执行</p>
-<p>ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#105;&#x74;&#64;&#x67;&#105;&#x74;&#x68;&#117;&#x62;&#46;&#x63;&#111;&#x6d;</a> </p>
+<p>ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#x67;&#x69;&#116;&#104;&#117;&#x62;&#x2e;&#x63;&#x6f;&#x6d;</a> </p>
 <p>查看是否可以连接</p>
 <br/>
 

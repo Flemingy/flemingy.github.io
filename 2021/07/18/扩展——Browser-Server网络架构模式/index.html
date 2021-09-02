@@ -389,26 +389,26 @@
 <h1 id="3-开发B-S软件需要的人才"><a href="#3-开发B-S软件需要的人才" class="headerlink" title="3. 开发B/S软件需要的人才"></a>3. 开发B/S软件需要的人才</h1><h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88/10410690?fr=aladdin">前端</a></h2><h2 id="后端"><a href="#后端" class="headerlink" title="后端"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%90%8E%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88">后端</a></h2><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88/1907788?fr=aladdin">测试</a></h2><h2 id="运维"><a href="#运维" class="headerlink" title="运维"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88">运维</a></h2><h2 id="架构师"><a href="#架构师" class="headerlink" title="架构师"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88?fromtitle=%E6%9E%B6%E6%9E%84%E5%B8%88&fromid=8281290">架构师</a></h2><h2 id="产品经理（PM）"><a href="#产品经理（PM）" class="headerlink" title="产品经理（PM）"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86">产品经理（PM）</a></h2><h2 id="首席技术官CTO"><a href="#首席技术官CTO" class="headerlink" title="首席技术官CTO"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%A6%96%E5%B8%AD%E6%8A%80%E6%9C%AF%E5%AE%98">首席技术官CTO</a></h2><br/>
 
 <h1 id="4-前端软件准备"><a href="#4-前端软件准备" class="headerlink" title="4. 前端软件准备"></a>4. 前端软件准备</h1><h2 id="Vs-Code"><a href="#Vs-Code" class="headerlink" title="Vs Code"></a>Vs Code</h2><h2 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h2><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><ul>
-<li>设置淘宝镜像命令：</li>
+<li><p>设置淘宝镜像命令：</p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
 <h2 id="Yarn（可选）"><a href="#Yarn（可选）" class="headerlink" title="Yarn（可选）"></a>Yarn（可选）</h2><p>如果你要安装它，前提是必须安装Node.js</p>
 <ul>
-<li>查看当前镜像源</li>
+<li><p>查看当前镜像源</p>
+<pre><code>config get registry
+</code></pre>
+</li>
+<li><p>修改淘宝镜像</p>
+<pre><code>yarn config set registry https://registry.npm.taobao.org/
+</code></pre>
+</li>
+<li><p>切换自带镜像源</p>
+<pre><code>yarn config set registry https://registry.yarnpkg.com
+</code></pre>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">config get registry</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改淘宝镜像</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn config set registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>切换自带镜像源</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yarn config set registry https://registry.yarnpkg.com</span><br></pre></td></tr></table></figure>
-
 <br/>
 
 <h1 id="5-前端"><a href="#5-前端" class="headerlink" title="5. 前端"></a>5. 前端</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（超文本标记语言——HyperText Markup Language）是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。</p>
@@ -440,17 +440,17 @@
 </li>
 </ul>
 <p>阿里镜像源</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://mirrors.aliyun.com/ubuntu/</span><br></pre></td></tr></table></figure>
-
+<pre><code>https://mirrors.aliyun.com/ubuntu/
+</code></pre>
 <p>设置root密码</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo passwd root
+</code></pre>
 <p>安装必要软件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo apt-get install openssh-server
+</code></pre>
 <p>ssh连接</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh liyoh@xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo apt-get install openssh-server
+</code></pre>
 <h2 id="后端语言：Java-Go-Nodejs-C-NET-Python-PHP"><a href="#后端语言：Java-Go-Nodejs-C-NET-Python-PHP" class="headerlink" title="后端语言：Java/Go/Nodejs/C#(.NET)/Python/PHP"></a>后端语言：Java/Go/Nodejs/C#(.NET)/Python/PHP</h2><blockquote>
 <p>JSP -&gt; html 里面扩展java代码 eg: &lt;%for…%&gt;</p>
 <p>pm2（一个带有负载均衡功能的 Node 应用进程管理器）</p>

@@ -1,48 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -102,6 +60,94 @@
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo静态个人博客网站搭建流程</title>
+    <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
+
+<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
+
+<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
+
+<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
+
+<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
+—&gt;git config --global user.name &quot;Github注册邮箱&quot;
+—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
+—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
+</code></pre>
+<br/>
+
+<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
+
+<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
+
+<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
+- respository: https://（仓库地址）
+- branch: master
+</code></pre>
+<br/>
+
+<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
+</code></pre>
+<br/>
+
+<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
+
+<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -230,6 +276,61 @@
       </tags>
   </entry>
   <entry>
+    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
+    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
+<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
+<br/>
+
+<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
+<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
+<p>从生物学角度谈受精现象时认为：</p>
+<ul>
+<li>雄性提供新生命产生的机会</li>
+<li>雌性为新生命创造了一个稳定环境</li>
+</ul>
+<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
+<p>它们依据受精现象对雌雄进行了概念划定：</p>
+<ul>
+<li>雄性：工具</li>
+<li>雌性：容器</li>
+</ul>
+<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
+<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
+<br/>
+
+<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
+<ul>
+<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
+<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
+</ul>
+<p>以此为分界线女性进行了两种方式的反抗：</p>
+<ul>
+<li>男性化</li>
+<li>用女性武器向男性挑战</li>
+</ul>
+<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
+<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
+<p>精神分析学家的看法：</p>
+<ul>
+<li>男人：人</li>
+<li>女人：雌性</li>
+</ul>
+<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
+<br/>
+
+<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
+<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
+<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Robert Capa——战地记者与《失焦》</title>
     <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
@@ -288,61 +389,6 @@
       </categories>
       <tags>
         <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
-    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
-<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
-<br/>
-
-<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
-<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
-<p>从生物学角度谈受精现象时认为：</p>
-<ul>
-<li>雄性提供新生命产生的机会</li>
-<li>雌性为新生命创造了一个稳定环境</li>
-</ul>
-<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
-<p>它们依据受精现象对雌雄进行了概念划定：</p>
-<ul>
-<li>雄性：工具</li>
-<li>雌性：容器</li>
-</ul>
-<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
-<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
-<br/>
-
-<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
-<ul>
-<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
-<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
-</ul>
-<p>以此为分界线女性进行了两种方式的反抗：</p>
-<ul>
-<li>男性化</li>
-<li>用女性武器向男性挑战</li>
-</ul>
-<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
-<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
-<p>精神分析学家的看法：</p>
-<ul>
-<li>男人：人</li>
-<li>女人：雌性</li>
-</ul>
-<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
-<br/>
-
-<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
-<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
-<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
       </tags>
   </entry>
   <entry>
@@ -455,26 +501,26 @@
 <h1 id="3-开发B-S软件需要的人才"><a href="#3-开发B-S软件需要的人才" class="headerlink" title="3. 开发B/S软件需要的人才"></a>3. 开发B/S软件需要的人才</h1><h2 id="前端"><a href="#前端" class="headerlink" title="前端"></a><a href="https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88/10410690?fr=aladdin">前端</a></h2><h2 id="后端"><a href="#后端" class="headerlink" title="后端"></a><a href="https://baike.baidu.com/item/%E5%90%8E%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%B8%88">后端</a></h2><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a><a href="https://baike.baidu.com/item/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88/1907788?fr=aladdin">测试</a></h2><h2 id="运维"><a href="#运维" class="headerlink" title="运维"></a><a href="https://baike.baidu.com/item/%E8%BF%90%E7%BB%B4%E5%B7%A5%E7%A8%8B%E5%B8%88">运维</a></h2><h2 id="架构师"><a href="#架构师" class="headerlink" title="架构师"></a><a href="https://baike.baidu.com/item/%E7%B3%BB%E7%BB%9F%E6%9E%B6%E6%9E%84%E5%B8%88?fromtitle=%E6%9E%B6%E6%9E%84%E5%B8%88&fromid=8281290">架构师</a></h2><h2 id="产品经理（PM）"><a href="#产品经理（PM）" class="headerlink" title="产品经理（PM）"></a><a href="https://baike.baidu.com/item/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86">产品经理（PM）</a></h2><h2 id="首席技术官CTO"><a href="#首席技术官CTO" class="headerlink" title="首席技术官CTO"></a><a href="https://baike.baidu.com/item/%E9%A6%96%E5%B8%AD%E6%8A%80%E6%9C%AF%E5%AE%98">首席技术官CTO</a></h2><br/>
 
 <h1 id="4-前端软件准备"><a href="#4-前端软件准备" class="headerlink" title="4. 前端软件准备"></a>4. 前端软件准备</h1><h2 id="Vs-Code"><a href="#Vs-Code" class="headerlink" title="Vs Code"></a>Vs Code</h2><h2 id="Google-Chrome"><a href="#Google-Chrome" class="headerlink" title="Google Chrome"></a>Google Chrome</h2><h2 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h2><ul>
-<li>设置淘宝镜像命令：</li>
+<li><p>设置淘宝镜像命令：</p>
+<pre><code>npm install -g cnpm --registry=https://registry.npm.taobao.org
+</code></pre>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">npm install -g cnpm --registry=https://registry.npm.taobao.org</span><br></pre></td></tr></table></figure>
-
 <h2 id="Yarn（可选）"><a href="#Yarn（可选）" class="headerlink" title="Yarn（可选）"></a>Yarn（可选）</h2><p>如果你要安装它，前提是必须安装Node.js</p>
 <ul>
-<li>查看当前镜像源</li>
+<li><p>查看当前镜像源</p>
+<pre><code>config get registry
+</code></pre>
+</li>
+<li><p>修改淘宝镜像</p>
+<pre><code>yarn config set registry https://registry.npm.taobao.org/
+</code></pre>
+</li>
+<li><p>切换自带镜像源</p>
+<pre><code>yarn config set registry https://registry.yarnpkg.com
+</code></pre>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">config get registry</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>修改淘宝镜像</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yarn config set registry https://registry.npm.taobao.org/</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>切换自带镜像源</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">yarn config set registry https://registry.yarnpkg.com</span><br></pre></td></tr></table></figure>
-
 <br/>
 
 <h1 id="5-前端"><a href="#5-前端" class="headerlink" title="5. 前端"></a>5. 前端</h1><h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（超文本标记语言——HyperText Markup Language）是构成 Web 世界的一砖一瓦。它定义了网页内容的含义和结构。</p>
@@ -506,17 +552,17 @@
 </li>
 </ul>
 <p>阿里镜像源</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">https://mirrors.aliyun.com/ubuntu/</span><br></pre></td></tr></table></figure>
-
+<pre><code>https://mirrors.aliyun.com/ubuntu/
+</code></pre>
 <p>设置root密码</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo passwd root</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo passwd root
+</code></pre>
 <p>安装必要软件</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get install openssh-server</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo apt-get install openssh-server
+</code></pre>
 <p>ssh连接</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ssh liyoh@xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo apt-get install openssh-server
+</code></pre>
 <h2 id="后端语言：Java-Go-Nodejs-C-NET-Python-PHP"><a href="#后端语言：Java-Go-Nodejs-C-NET-Python-PHP" class="headerlink" title="后端语言：Java/Go/Nodejs/C#(.NET)/Python/PHP"></a>后端语言：Java/Go/Nodejs/C#(.NET)/Python/PHP</h2><blockquote>
 <p>JSP -&gt; html 里面扩展java代码 eg: &lt;%for…%&gt;</p>
 <p>pm2（一个带有负载均衡功能的 Node 应用进程管理器）</p>
@@ -878,6 +924,49 @@
       </tags>
   </entry>
   <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>希望、祝福、爱情、风与晚霞</title>
     <url>/2021/08/10/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E5%B8%8C%E6%9C%9B%E3%80%81%E7%A5%9D%E7%A6%8F%E3%80%81%E7%88%B1%E6%83%85%E3%80%81%E9%A3%8E%E4%B8%8E%E6%99%9A%E9%9C%9E/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="希望"><a href="#希望" class="headerlink" title="希望"></a>希望</h1><ol>
@@ -1106,57 +1195,16 @@
       </tags>
   </entry>
   <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>通过ssh协议连接github时遇到的问题</title>
     <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
 
 <p><strong>需要对ssh 进行重置</strong></p>
 <p>1、重置用户名和邮箱</p>
-<p>git config –global user.name “yourname”</p>
-<p>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#x72;&#x40;&#x65;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#121;&#111;&#x75;&#x72;&#x40;&#x65;&#109;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>“</p>
+<pre><code>git config --global user.name “yourname”
+
+git config --global user.email “your@email.com&quot;
+</code></pre>
 <p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
 <br/>
 
@@ -1164,7 +1212,8 @@
 <br/>
 
 <p>3、git输入命令</p>
-<p>$ ssh-keygen -t rsa -C “<a href="mailto:&#121;&#111;&#x75;&#114;&#x40;&#x65;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;">&#121;&#111;&#x75;&#114;&#x40;&#x65;&#x6d;&#97;&#105;&#x6c;&#x2e;&#99;&#111;&#109;</a>“（请填你设置的邮箱地址）</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
+</code></pre>
 <p>一路yes和回车</p>
 <p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
 <p>用记事本打开id_rsa.pub </p>
@@ -1179,7 +1228,8 @@
 <br/>
 
 <p>5、在git中输入命令：</p>
-<p>ssh -T <a href="https://blog.csdn.net/mailto:git@github.com">git@github.com</a> </p>
+<pre><code>ssh -T git@github.com
+</code></pre>
 <p>之后会有询问提示</p>
 <p>输入命令：yes</p>
 <p>回车</p>
@@ -1198,12 +1248,23 @@
 <br/>
 
 <p>在config文件中复制下面代码：</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">Host github.com</span><br><span class="line"></span><br><span class="line">User git</span><br><span class="line"></span><br><span class="line">Hostname ssh.github.com</span><br><span class="line"></span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line"></span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line"></span><br><span class="line">Port 443</span><br></pre></td></tr></table></figure>
+<pre><code>Host github.com
 
+User git
+
+Hostname ssh.github.com
+
+PreferredAuthentications publickey
+
+IdentityFile ~/.ssh/id_rsa
+
+Port 443
+</code></pre>
 <br/>
 
 <p>然后在执行</p>
-<p>ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#x74;&#x40;&#103;&#105;&#116;&#104;&#x75;&#x62;&#46;&#x63;&#111;&#x6d;</a> </p>
+<pre><code>ssh -T git@github.com
+</code></pre>
 <p>查看是否可以连接</p>
 <br/>
 
@@ -1214,47 +1275,6 @@
       </categories>
       <tags>
         <tag>解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>中华无魔法科学冲浪方案研究</title>
-    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
-<li>Chrome（谷歌浏览器）</li>
-<li>Firefox（火狐浏览器）</li>
-<li>Edge（Microsoft浏览器）</li>
-</ol>
-<p>没有魔法设置中改用百度的搜索引擎。</p>
-<br/>
-
-<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
-<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
-<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
-<br/>
-
-<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
-<li>AdBlock Plus - 免费的广告拦截器。</li>
-<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
-<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
-<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
-<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
-<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
-<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
-<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
-</ul>
-<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
-<ul>
-<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
-<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
-<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
-<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
-</ul>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
       </tags>
   </entry>
   <entry>
@@ -1375,6 +1395,47 @@
 </ul>
 <h2 id="性能监控"><a href="#性能监控" class="headerlink" title="性能监控"></a>性能监控</h2><ul>
 <li><h4 id="MSI-Afterburner"><a href="#MSI-Afterburner" class="headerlink" title="MSI Afterburner"></a>MSI Afterburner</h4></li>
+</ul>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中华无魔法科学冲浪方案研究</title>
+    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
+<li>Chrome（谷歌浏览器）</li>
+<li>Firefox（火狐浏览器）</li>
+<li>Edge（Microsoft浏览器）</li>
+</ol>
+<p>没有魔法设置中改用百度的搜索引擎。</p>
+<br/>
+
+<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
+<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
+<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
+<br/>
+
+<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
+<li>AdBlock Plus - 免费的广告拦截器。</li>
+<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
+<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
+<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
+<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
+<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
+<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
+<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
+</ul>
+<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
+<ul>
+<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
+<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
+<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
+<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
 </ul>
 ]]></content>
       <categories>

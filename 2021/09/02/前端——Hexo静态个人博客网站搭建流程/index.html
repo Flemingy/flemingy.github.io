@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title>tags | Fleming.</title>
+  <title>Hexo静态个人博客网站搭建流程 | Fleming.</title>
   <meta name="description" content="Fleming&#39;s blog 是一个秘密空间。" />
   <meta name="keywords" content="Fleming,Linux,Java,C,艺术" />
   
@@ -327,31 +327,149 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 75px;">
-</div>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN@0.6/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN@0.6/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img">
+        <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/cartoon.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      Hexo静态个人博客网站搭建流程</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="/images/cover/headportrait.png">
+          </a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-9-2
+        
+      
+        ·<span id="readcount"></span>次阅读
+      
+      </p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
-<div id="main">
- <header class="page-header">
-   <h1 class="cat-title">
-   标签云</h1>
-   <span class="cat-des">
-     <p>
-       Tags 13</p>
-   </span>
- </header>
- <div id="main-part">
- 
-     <div class="tag-cloud">
-       <div class="tag-cloud-title">
-       </div>
-       <div class="tag-cloud-tags">
-       <a href="/tags/CSS/" style="font-size: 15px; color: #f66">CSS</a> <a href="/tags/HTML/" style="font-size: 15px; color: #f66">HTML</a> <a href="/tags/Web/" style="font-size: 15px; color: #f66">Web</a> <a href="/tags/XML/" style="font-size: 15px; color: #f66">XML</a> <a href="/tags/%E5%90%8E%E6%9C%9F/" style="font-size: 30px; color: #09c">后期</a> <a href="/tags/%E5%93%B2%E5%AD%A6/" style="font-size: 15px; color: #f66">哲学</a> <a href="/tags/%E5%AE%A1%E7%BE%8E/" style="font-size: 30px; color: #09c">审美</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 30px; color: #09c">工具</a> <a href="/tags/%E6%89%A9%E5%B1%95/" style="font-size: 30px; color: #09c">扩展</a> <a href="/tags/%E6%91%84%E5%BD%B1/" style="font-size: 30px; color: #09c">摄影</a> <a href="/tags/%E6%94%B6%E5%BD%95/" style="font-size: 30px; color: #09c">收录</a> <a href="/tags/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/" style="font-size: 15px; color: #f66">解决方案</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 15px; color: #f66">随想</a>
-       </div>
-     </div>
-   </div>
- 
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"> <!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
+
+<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
+
+<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
+
+<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
+
+<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
+—&gt;git config --global user.name &quot;Github注册邮箱&quot;
+—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
+—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
+</code></pre>
+<br/>
+
+<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
+
+<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
+
+<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
+- respository: https://（仓库地址）
+- branch: master
+</code></pre>
+<br/>
+
+<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
+</code></pre>
+<br/>
+
+<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
+
+<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
+</code></pre>
+
+        </div>
+        <!-- .entry-content -->
+        
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@masterimg/zhifubao.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@masterimg/weixin.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/" rel="next">
+              <div class="background">
+                
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/water1.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" >
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                摄影构图——突出主体、中心思想、画面简洁</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
+        </div>
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
-</div>
+
 
     </div>    
     <div class="ins-search">

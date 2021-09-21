@@ -43,6 +43,68 @@
       </tags>
   </entry>
   <entry>
+    <title>HTML参考手册&amp;代码规范</title>
+    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
+
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
+<ul>
+<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
+</ul>
+<ul>
+<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
+</ul>
+<ul>
+<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
+</ul>
+<ul>
+<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
+<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
+<br/>
+
+<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
+<ul>
+<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
+</ul>
+<ul>
+<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
+</ul>
+<ul>
+<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
+</ul>
+<ul>
+<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
+</ul>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
+<br/>
+
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
+<ul>
+<li>HTML5中包含更多JavaScript 的应用。</li>
+</ul>
+<ul>
+<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
+</ul>
+<ul>
+<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
+</ul>
+<ul>
+<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
+<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo静态个人博客网站搭建流程</title>
     <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
@@ -86,61 +148,6 @@
       </categories>
       <tags>
         <tag>Web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
-    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
-<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
-<br/>
-
-<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
-<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
-<p>从生物学角度谈受精现象时认为：</p>
-<ul>
-<li>雄性提供新生命产生的机会</li>
-<li>雌性为新生命创造了一个稳定环境</li>
-</ul>
-<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
-<p>它们依据受精现象对雌雄进行了概念划定：</p>
-<ul>
-<li>雄性：工具</li>
-<li>雌性：容器</li>
-</ul>
-<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
-<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
-<br/>
-
-<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
-<ul>
-<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
-<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
-</ul>
-<p>以此为分界线女性进行了两种方式的反抗：</p>
-<ul>
-<li>男性化</li>
-<li>用女性武器向男性挑战</li>
-</ul>
-<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
-<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
-<p>精神分析学家的看法：</p>
-<ul>
-<li>男人：人</li>
-<li>女人：雌性</li>
-</ul>
-<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
-<br/>
-
-<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
-<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
-<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
       </tags>
   </entry>
   <entry>
@@ -269,65 +276,168 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML参考手册&amp;代码规范</title>
-    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
-
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
-<ul>
-<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
-</ul>
-<ul>
-<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
-</ul>
-<ul>
-<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
-</ul>
-<ul>
-<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
-<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
+    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
+    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
+<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
 <br/>
 
-<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
+<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
+<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
+<p>从生物学角度谈受精现象时认为：</p>
 <ul>
-<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
+<li>雄性提供新生命产生的机会</li>
+<li>雌性为新生命创造了一个稳定环境</li>
 </ul>
+<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
+<p>它们依据受精现象对雌雄进行了概念划定：</p>
 <ul>
-<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
+<li>雄性：工具</li>
+<li>雌性：容器</li>
 </ul>
-<ul>
-<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
-</ul>
-<ul>
-<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
-</ul>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
+<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
+<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
 <br/>
 
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
+<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
 <ul>
-<li>HTML5中包含更多JavaScript 的应用。</li>
+<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
+<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
 </ul>
+<p>以此为分界线女性进行了两种方式的反抗：</p>
 <ul>
-<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
+<li>男性化</li>
+<li>用女性武器向男性挑战</li>
 </ul>
+<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
+<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
+<p>精神分析学家的看法：</p>
 <ul>
-<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
+<li>男人：人</li>
+<li>女人：雌性</li>
 </ul>
-<ul>
-<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
-<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
+<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
+<br/>
+
+<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
+<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
+<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>随想</category>
       </categories>
       <tags>
-        <tag>HTML</tag>
+        <tag>哲学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>幸福论</title>
+    <url>/2021/09/21/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%B9%B8%E7%A6%8F%E8%AE%BA/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、维基百科定义"><a href="#一、维基百科定义" class="headerlink" title="一、维基百科定义"></a>一、维基百科定义</h1><p><strong>幸福</strong>（<a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%B8%8C%E8%87%98%E8%AA%9E">古希腊语</a>：εὐδαιμονία、<a href="https://zh.wikipedia.org/wiki/%E6%8B%89%E4%B8%81%E8%AA%9E">拉丁语</a>：felicitas、英语：happiness）<strong>是一种持续时间较长的心灵的满足</strong>[<a href="https://zh.wikipedia.org/wiki/%E5%B9%B8%E7%A6%8F#cite_note-1">1]</a>。<a href="https://zh.wikipedia.org/wiki/%E5%80%8B%E4%BA%BA">人类</a>自古以来就对追求幸福的途径有着浓厚的兴趣。</p>
+<p>研究幸福本身，及研究何种人生态度会带来幸福等等的学问，被称为“<a href="https://zh.wikipedia.org/w/index.php?title=%E5%B9%B8%E7%A6%8F%E5%AD%A6&action=edit&redlink=1">幸福学</a>”（<em>eudaemonics</em>）。将幸福视为道德上的最高追求，并以能否带来幸福作为判断行为臧否之标准的思想，则被称为“<a href="https://zh.wikipedia.org/w/index.php?title=%E5%B9%B8%E7%A6%8F%E4%B8%BB%E4%B9%89&action=edit&redlink=1">幸福主义</a>”。古典幸福主义的代表是<a href="https://zh.wikipedia.org/wiki/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7">亚里士多德</a>，而<a href="https://zh.wikipedia.org/wiki/%E6%95%88%E7%9B%8A%E4%B8%BB%E7%BE%A9">功利主义</a>则是近代哲学中追求幸福的典型。</p>
+<br/>
+
+<h1 id="二、幸福论的前导"><a href="#二、幸福论的前导" class="headerlink" title="二、幸福论的前导"></a>二、幸福论的前导</h1><p>论幸福的前提是明晰：</p>
+<p>（1）自身和他人是不同的个体</p>
+<p>（2）每个人都会用自己的方式来塑造和阐述世界</p>
+<p>这种阐述世界的结果被称为三观——<strong>世界观、价值观、人生观</strong></p>
+<p>每个人有属于自己的三观，个体间只能称之为相似，而非一致</p>
+<br/>
+
+<h1 id="三、幸福论的三个层次"><a href="#三、幸福论的三个层次" class="headerlink" title="三、幸福论的三个层次"></a>三、幸福论的三个层次</h1><ol>
+<li><p><strong>人是什么？——个性决定命运</strong></p>
+</li>
+<li><p><strong>人有什么？——外在的事物和财富</strong></p>
+</li>
+<li><p><strong>人在他人眼里是怎么样的？——声望、名誉、社会地位</strong></p>
+</li>
+</ol>
+<br/>
+
+<h1 id="四、痛苦"><a href="#四、痛苦" class="headerlink" title="四、痛苦"></a>四、痛苦</h1><p><strong>痛苦面前，人人平等。</strong></p>
+<p>引用罗翔老师的经典语录：</p>
+<p>“古希腊哲学家爱比克泰德曾经说过他说我们登上并非我们所选择的舞台，演出并非我们所选择的剧本，各位同学有谁是自愿来到这个世界。有谁来到这个世界上，父母征求过你的意见。我们登上并非我们所选择的舞台，各位同学，有谁的人生剧本是你选择的，大家是不是很羡慕别人的剧本，老实说我有的时候也很羡慕别人的剧本。但是没有办法，你的剧本不是你选择的，你只有努力把你的剧本演好。虽然很痛苦但是只要努力的演好你的剧本，在痛苦中，也有精彩。每个人的人生剧本都是独特的，而每个人的人生剧本都是精彩的，不要去羡慕别人。”</p>
+<br/>
+
+<p>人和人可能在身份上有所差异，但事实情况是：</p>
+<p>我们终究是一个可怜的演员，不论是什么职位，什么身份，</p>
+<p>都对自己的生活充满焦虑。</p>
+<p>身份地位越高，焦虑越多······</p>
+<br/>
+
+<h1 id="五、财富"><a href="#五、财富" class="headerlink" title="五、财富"></a>五、财富</h1><p>不要误认为，我们不需要钱</p>
+<p>吃饭——生活的必需品</p>
+<p>财富——非重要，而必须</p>
+<br/>
+
+<p>然而必须有所意识：财富真的能够带来幸福吗？</p>
+<p><strong>财富能够带来一定的幸福，但终究会打扰到幸福。</strong></p>
+<br/>
+
+<p>财富两字的定义是：</p>
+<p>财富——“过剩”，它对我们提升幸福感，意义并不大。</p>
+<p>蝼蚁——许多人和蚂蚁一样勤劳，每天从早到晚为了赚钱而奔波，费尽心思钻研，如何升官发财，每天996 007，除此之外对生活和幸福，对人生都一无所知，头脑空空，浑浑噩噩。</p>
+<br/>
+
+<p>倘若此类人，最终很幸运，通过自己的努力赚到了钱，然后留给了后人继承：</p>
+<ol>
+<li>要么家产被发扬光大，财富越来愈多。</li>
+<li>要么被继承人奢侈浪费一空，家底全部败光，一块不剩，家族崩裂。</li>
+</ol>
+<p>像这样的人生，尽管算的上是轰轰烈烈、认真务实、艰苦创业，但是和那些浑浑噩噩的人有什么区别呢？</p>
+<p>最终，不过是追求一个浮夸可笑的结局。</p>
+<br/>
+
+<h1 id="六、名誉"><a href="#六、名誉" class="headerlink" title="六、名誉"></a>六、名誉</h1><p>佩特罗尼乌斯：<strong>“一个人所拥有的财产，决定这个人在他人眼中的价值。”</strong></p>
+<p>如此看来，即使名誉能够带来些许认同，但其也不过是财富的附属品。</p>
+<br/>
+
+<h1 id="七、健康"><a href="#七、健康" class="headerlink" title="七、健康"></a>七、健康</h1><p>健康、力量、外貌、气质、道德品质、教养</p>
+<p>健康比任何事物都重要，他比财富、名誉都重要。</p>
+<br/>
+
+<p><strong>你的性格乐观，你的身体健康，你是年轻人，充满活力，朝气蓬勃，拥有文化素质，有良知、善良的心，也能够洞察世界的本质。</strong></p>
+<p>试问，这样的一个个体，是财富能够换来到吗？</p>
+<br/>
+
+<h1 id="八、精神"><a href="#八、精神" class="headerlink" title="八、精神"></a>八、精神</h1><p>一个人<strong>内在拥有的东西才是决定他幸福的关键</strong>，外在的一切不是那么重要。</p>
+<p>很多人头脑空洞，想象力贫瘠，精神空虚，物以类聚，人以群分。</p>
+<p>——追求消遣娱乐，纵情感官享受，最终以荒唐结束。</p>
+<br/>
+
+<p>同样有很多人试图用外在的财富，去弥补内在的不足，常常徒劳无功。</p>
+<p>内在缺乏的人他不仅仅缺乏内在，最后连那可怜的外在财富也会失去。</p>
+<br/>
+
+<h1 id="九、性格"><a href="#九、性格" class="headerlink" title="九、性格"></a>九、性格</h1><p>性格——在社会定义下，个人对待周围世界的态度，由行为反映出。 性格随个体差异，但后天形成的社会性对其认知有重大影响，也因此体现了阶级与道德。</p>
+<p>性格结构包括四个方面：</p>
+<ul>
+<li>对现实的态度特征</li>
+<li>意志特征</li>
+<li>情绪特征</li>
+<li>理智特征</li>
+</ul>
+<p><strong>不卑不亢，有着面对生活英雄主义般的勇气。</strong></p>
+<br/>
+
+<h1 id="十、生命"><a href="#十、生命" class="headerlink" title="十、生命"></a>十、生命</h1><p>世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它。</p>
+<p>认清生活的真相，依旧有勇气活下去，有追求幸福的勇气。</p>
+<p><strong>面对悲观，战胜它。因为活着永远比死去好。</strong></p>
+<p>人是为活着本身而活着，而不是为了活着之外的任何事物所活着。——余华《活着》</p>
+<p>我们需要明白：即使生活中大部分花里胡哨的东西都被剥夺了，人们也能照样活的很好。</p>
+<br/>
+
+<h1 id="十一、时间"><a href="#十一、时间" class="headerlink" title="十一、时间"></a>十一、时间</h1><p>人生应该量力而行论，</p>
+<p>选择自己擅长的事情去发展。</p>
+<p>时间有限，你真正的对手是时间。</p>
+<p>所以我们在有限的时间内，唯一能做到的事情：</p>
+<p><strong>最大限度地利用我们具有的个人优秀品质、技能、资源，并且朝遵循一定的自身性格的方向去发展，避免其他不符合自身的情形，选择最合适我们个性的人生位置、职业和生活方式。</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
       </tags>
   </entry>
   <entry>
@@ -474,6 +584,86 @@
       </categories>
       <tags>
         <tag>审美</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
+<br/>
+
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<br/>
+
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>扩展</tag>
       </tags>
   </entry>
   <entry>
@@ -704,83 +894,52 @@
       </tags>
   </entry>
   <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
+    <title>帧速率、刷新率、广播级视频标准</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
+<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
+<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
+<p>（帧数越多，画面越流畅，实际体验越好）</p>
 <br/>
 
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
+<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
+<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
+<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
 <br/>
 
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
+<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
+<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
+<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
+<br/>
+
+<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
+<p>NTSC 29.97帧/秒</p>
+<p>SECAM 25帧/秒</p>
+<p>Film 24帧/秒</p>
+<br/>
+
+<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
+<p>NTSC 720×480</p>
+<p>SECAM 720×576</p>
+<p><strong>现代视频分辨率</strong></p>
+<p>8K  7680×4320</p>
+<p>6K  6144×3160</p>
+<p>4K  4096×2160</p>
+<p>UHD  3840×2160</p>
+<p>2K  2048×1080</p>
+<p>FHD  1920×1080</p>
+<p>HD  1280 ×720</p>
+<br/>
+
+<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
+<p>1080p 逐行扫描技术</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>艺术</category>
       </categories>
       <tags>
-        <tag>扩展</tag>
+        <tag>后期</tag>
       </tags>
   </entry>
   <entry>
@@ -866,55 +1025,6 @@
 <p>​    我们可以自己安装一些插件，也会在这个窗口中显示。</p>
 <p><strong>时间轴面板：</strong></p>
 <p>​    特效的制作基本都是在时间轴上完成的</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>帧速率、刷新率、广播级视频标准</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
-<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
-<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
-<p>（帧数越多，画面越流畅，实际体验越好）</p>
-<br/>
-
-<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
-<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
-<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
-<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
-<br/>
-
-<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
-<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
-<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
-<br/>
-
-<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
-<p>NTSC 29.97帧/秒</p>
-<p>SECAM 25帧/秒</p>
-<p>Film 24帧/秒</p>
-<br/>
-
-<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
-<p>NTSC 720×480</p>
-<p>SECAM 720×576</p>
-<p><strong>现代视频分辨率</strong></p>
-<p>8K  7680×4320</p>
-<p>6K  6144×3160</p>
-<p>4K  4096×2160</p>
-<p>UHD  3840×2160</p>
-<p>2K  2048×1080</p>
-<p>FHD  1920×1080</p>
-<p>HD  1280 ×720</p>
-<br/>
-
-<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
-<p>1080p 逐行扫描技术</p>
 ]]></content>
       <categories>
         <category>艺术</category>
@@ -1446,51 +1556,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>中华有魔法科学冲浪方案研究</title>
     <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
@@ -1544,6 +1609,51 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>郑强教授谈《创新欲望与创新能力》随想</title>
+    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
+<br/>
+
+<p>现今中国的大学？ </p>
+<p><strong>缺少基础研究、知识创新。</strong></p>
+<p>没有原始创新欲望，被伤透了。</p>
+<br/>
+
+<p>日本为什么老能得诺奖？</p>
+<p>我们为什么被卡脖子？</p>
+<p><strong>浮躁，不专精于某个方向。</strong></p>
+<br/>
+
+<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
+<p>因为人生不是冲刺跑，是马拉松。</p>
+<br/>
+
+<p>尊重人的天性，不要抹杀天性。</p>
+<br/>
+
+<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
+<br/>
+
+<p>第一步是勇于付出，</p>
+<p>首先要<strong>坚定意志。</strong></p>
+<br/>
+
+<p>求道：是求得怎么去做······</p>
+<br/>
+
+<p><strong>先宽后专，知行合一。</strong></p>
+<br/>
+
+<p><strong>培养爱和价值观······</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
 </search>

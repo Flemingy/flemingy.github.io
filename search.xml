@@ -43,6 +43,52 @@
       </tags>
   </entry>
   <entry>
+    <title>Hexo静态个人博客网站搭建流程</title>
+    <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
+
+<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
+
+<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
+
+<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
+
+<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
+—&gt;git config --global user.name &quot;Github注册邮箱&quot;
+—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
+—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
+</code></pre>
+<br/>
+
+<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
+
+<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
+
+<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
+- respository: https://（仓库地址）
+- branch: master
+</code></pre>
+<br/>
+
+<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
+</code></pre>
+<br/>
+
+<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
+
+<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -102,52 +148,6 @@
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo静态个人博客网站搭建流程</title>
-    <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
-
-<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
-</code></pre>
-<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
-
-<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
-
-<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
-
-<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
-—&gt;git config --global user.name &quot;Github注册邮箱&quot;
-—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
-—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
-</code></pre>
-<br/>
-
-<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
-
-<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
-
-<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
-- respository: https://（仓库地址）
-- branch: master
-</code></pre>
-<br/>
-
-<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
-</code></pre>
-<br/>
-
-<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
-
-<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
-</code></pre>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -441,67 +441,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Robert Capa——战地记者与《失焦》</title>
-    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
-<p><strong>——罗伯特·卡帕</strong></p>
-<br/>
-
-<p>相片是历史的定格，</p>
-<p>记录情绪，记录生与死，</p>
-<p>又记录下战争的残酷无情…..</p>
-<br/>
-
-<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
-<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
-<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
-<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
-<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
-<br/>
-
-<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
-<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
-<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
-<br/>
-
-<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
-<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
-<br/>
-
-<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
-<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
-<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
-<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
-<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
-<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
-<p>了解事实与真相，铭记战争带来的悲痛。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Alex Webb——复杂构图、鲜明色彩</title>
     <url>/2021/07/23/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E8%A1%97%E5%A4%B4%E6%91%84%E5%BD%B1%E5%A4%A7%E5%B8%88Alex%20Webb/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在GNU看到一组照片，题名为“复杂构图|摄影大师Alex Webb”,</p>
@@ -587,83 +526,136 @@
       </tags>
   </entry>
   <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
+    <title>Robert Capa——战地记者与《失焦》</title>
+    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
+<p><strong>——罗伯特·卡帕</strong></p>
 <br/>
 
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<p>相片是历史的定格，</p>
+<p>记录情绪，记录生与死，</p>
+<p>又记录下战争的残酷无情…..</p>
 <br/>
 
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
+<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
+<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
+<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
+<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
+<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
+<br/>
+
+<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
+<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
+<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
+<br/>
+
+<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
+<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
+<br/>
+
+<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
+<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
+<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
+<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
+<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
+<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
+<p>了解事实与真相，铭记战争带来的悲痛。</p>
 ]]></content>
       <categories>
-        <category>生活</category>
+        <category>艺术</category>
       </categories>
       <tags>
-        <tag>扩展</tag>
+        <tag>审美</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>会议拍摄、相机档位、基础布光</title>
+    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
+<p>​        集体  [横向拍]</p>
+<p>​            （正面拍一张、左右侧面各拍一张）</p>
+<p>​        单人  [领导挨得近选择竖拍]</p>
+<p>​            （把专属牌子拍上，前面的水移开）</p>
+<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
+<p><strong>2.观众</strong></p>
+<p>​        集体</p>
+<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
+<p>​        单人</p>
+<p>​            （突出主题，特写个人表现）</p>
+<p><strong>3.主题</strong></p>
+<p>​        ①包括参会者在内的主题大场景</p>
+<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
+<br/>
+
+<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
+<p><strong>2.B门</strong>（慢门）</p>
+<p>​    拍摄星空、车灯轨迹、灯绘</p>
+<p><strong>3.AV档</strong>（光圈优先）</p>
+<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
+<p>​    大光圈虚化背景拍摄人像、静物</p>
+<p>​    F 数小——孔大——虚</p>
+<p>​    F 数大——孔小——实</p>
+<p>​    F8—F16区间中，前后虚实一致</p>
+<p><strong>4.TV档</strong>（快门优先）</p>
+<p>​    【拍摄动作幅度不是很大的场景】</p>
+<p>​        1/60 用于环境较亮的情况</p>
+<p>​        1/90 用于环境较暗的情况 </p>
+<p>​    【拍摄动作幅度很大的场景】</p>
+<p>​        1/2000 用于移动速度极快</p>
+<p><strong>5.M档</strong>（手动档）</p>
+<p>​    ①室外</p>
+<p>​        较暗  ISO设置到100 </p>
+<p>​        阴影天  ISO设置到 400</p>
+<p>​    ②室内 </p>
+<p>​        光线好 ISO设置到800</p>
+<p>​        光线差 ISO设置到1600</p>
+<p>​    佳能相机型号数字越小价格越高</p>
+<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
+<p>（依据相机品质ISO设置到3000——2000以下）</p>
+<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
+<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
+<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
+<br/>
+
+<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
+<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
+<p>黄灯提供（造型光）</p>
+<p>柔光箱提供（柔光）</p>
+<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
+<p><strong>1.一点布光：</strong></p>
+<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
+<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
+<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
+<p><strong>2.两点布光：</strong></p>
+<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
+<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
+<p><strong>3.三点布光：</strong></p>
+<p>​    轮廓光，在主光的斜对面</p>
+<p>​    勾勒人的暗部轮廓</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -822,75 +814,83 @@
       </tags>
   </entry>
   <entry>
-    <title>会议拍摄、相机档位、基础布光</title>
-    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
-<p>​        集体  [横向拍]</p>
-<p>​            （正面拍一张、左右侧面各拍一张）</p>
-<p>​        单人  [领导挨得近选择竖拍]</p>
-<p>​            （把专属牌子拍上，前面的水移开）</p>
-<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
-<p><strong>2.观众</strong></p>
-<p>​        集体</p>
-<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
-<p>​        单人</p>
-<p>​            （突出主题，特写个人表现）</p>
-<p><strong>3.主题</strong></p>
-<p>​        ①包括参会者在内的主题大场景</p>
-<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
 <br/>
 
-<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
-<p><strong>2.B门</strong>（慢门）</p>
-<p>​    拍摄星空、车灯轨迹、灯绘</p>
-<p><strong>3.AV档</strong>（光圈优先）</p>
-<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
-<p>​    大光圈虚化背景拍摄人像、静物</p>
-<p>​    F 数小——孔大——虚</p>
-<p>​    F 数大——孔小——实</p>
-<p>​    F8—F16区间中，前后虚实一致</p>
-<p><strong>4.TV档</strong>（快门优先）</p>
-<p>​    【拍摄动作幅度不是很大的场景】</p>
-<p>​        1/60 用于环境较亮的情况</p>
-<p>​        1/90 用于环境较暗的情况 </p>
-<p>​    【拍摄动作幅度很大的场景】</p>
-<p>​        1/2000 用于移动速度极快</p>
-<p><strong>5.M档</strong>（手动档）</p>
-<p>​    ①室外</p>
-<p>​        较暗  ISO设置到100 </p>
-<p>​        阴影天  ISO设置到 400</p>
-<p>​    ②室内 </p>
-<p>​        光线好 ISO设置到800</p>
-<p>​        光线差 ISO设置到1600</p>
-<p>​    佳能相机型号数字越小价格越高</p>
-<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
-<p>（依据相机品质ISO设置到3000——2000以下）</p>
-<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
-<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
-<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
 <br/>
 
-<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
-<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
-<p>黄灯提供（造型光）</p>
-<p>柔光箱提供（柔光）</p>
-<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
-<p><strong>1.一点布光：</strong></p>
-<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
-<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
-<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
-<p><strong>2.两点布光：</strong></p>
-<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
-<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
-<p><strong>3.三点布光：</strong></p>
-<p>​    轮廓光，在主光的斜对面</p>
-<p>​    勾勒人的暗部轮廓</p>
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
 ]]></content>
       <categories>
-        <category>艺术</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>摄影</tag>
+        <tag>扩展</tag>
       </tags>
   </entry>
   <entry>
@@ -1031,6 +1031,49 @@
       </categories>
       <tags>
         <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
       </tags>
   </entry>
   <entry>
@@ -1251,49 +1294,6 @@
 <li><p>人的记忆与回忆，也许唯有新与旧的区别，而难以用真正的远近来区分吧。</p>
 <br/></li>
 <li><p>还有平凡的婚姻吗？你骗人，每个婚姻都是非凡的。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
 </li>
 </ol>
 ]]></content>

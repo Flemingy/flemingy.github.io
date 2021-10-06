@@ -43,52 +43,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hexo静态个人博客网站搭建流程</title>
-    <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
-
-<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
-</code></pre>
-<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
-
-<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
-
-<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
-
-<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
-—&gt;git config --global user.name &quot;Github注册邮箱&quot;
-—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
-—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
-</code></pre>
-<br/>
-
-<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
-
-<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
-
-<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
-- respository: https://（仓库地址）
-- branch: master
-</code></pre>
-<br/>
-
-<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
-</code></pre>
-<br/>
-
-<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
-
-<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
-</code></pre>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -148,6 +102,52 @@
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo静态个人博客网站搭建流程</title>
+    <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
+
+<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
+
+<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
+
+<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
+
+<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
+—&gt;git config --global user.name &quot;Github注册邮箱&quot;
+—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
+—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
+</code></pre>
+<br/>
+
+<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
+
+<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
+
+<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
+- respository: https://（仓库地址）
+- branch: master
+</code></pre>
+<br/>
+
+<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
+</code></pre>
+<br/>
+
+<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
+
+<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -587,78 +587,6 @@
       </tags>
   </entry>
   <entry>
-    <title>会议拍摄、相机档位、基础布光</title>
-    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
-<p>​        集体  [横向拍]</p>
-<p>​            （正面拍一张、左右侧面各拍一张）</p>
-<p>​        单人  [领导挨得近选择竖拍]</p>
-<p>​            （把专属牌子拍上，前面的水移开）</p>
-<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
-<p><strong>2.观众</strong></p>
-<p>​        集体</p>
-<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
-<p>​        单人</p>
-<p>​            （突出主题，特写个人表现）</p>
-<p><strong>3.主题</strong></p>
-<p>​        ①包括参会者在内的主题大场景</p>
-<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
-<br/>
-
-<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
-<p><strong>2.B门</strong>（慢门）</p>
-<p>​    拍摄星空、车灯轨迹、灯绘</p>
-<p><strong>3.AV档</strong>（光圈优先）</p>
-<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
-<p>​    大光圈虚化背景拍摄人像、静物</p>
-<p>​    F 数小——孔大——虚</p>
-<p>​    F 数大——孔小——实</p>
-<p>​    F8—F16区间中，前后虚实一致</p>
-<p><strong>4.TV档</strong>（快门优先）</p>
-<p>​    【拍摄动作幅度不是很大的场景】</p>
-<p>​        1/60 用于环境较亮的情况</p>
-<p>​        1/90 用于环境较暗的情况 </p>
-<p>​    【拍摄动作幅度很大的场景】</p>
-<p>​        1/2000 用于移动速度极快</p>
-<p><strong>5.M档</strong>（手动档）</p>
-<p>​    ①室外</p>
-<p>​        较暗  ISO设置到100 </p>
-<p>​        阴影天  ISO设置到 400</p>
-<p>​    ②室内 </p>
-<p>​        光线好 ISO设置到800</p>
-<p>​        光线差 ISO设置到1600</p>
-<p>​    佳能相机型号数字越小价格越高</p>
-<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
-<p>（依据相机品质ISO设置到3000——2000以下）</p>
-<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
-<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
-<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
-<br/>
-
-<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
-<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
-<p>黄灯提供（造型光）</p>
-<p>柔光箱提供（柔光）</p>
-<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
-<p><strong>1.一点布光：</strong></p>
-<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
-<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
-<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
-<p><strong>2.两点布光：</strong></p>
-<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
-<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
-<p><strong>3.三点布光：</strong></p>
-<p>​    轮廓光，在主光的斜对面</p>
-<p>​    勾勒人的暗部轮廓</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Browser/Server网络架构模式</title>
     <url>/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-B-S架构与C-S架构"><a href="#1-B-S架构与C-S架构" class="headerlink" title="1. B/S架构与C/S架构"></a>1. B/S架构与C/S架构</h1><ul>
@@ -891,6 +819,78 @@
       </categories>
       <tags>
         <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>会议拍摄、相机档位、基础布光</title>
+    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
+<p>​        集体  [横向拍]</p>
+<p>​            （正面拍一张、左右侧面各拍一张）</p>
+<p>​        单人  [领导挨得近选择竖拍]</p>
+<p>​            （把专属牌子拍上，前面的水移开）</p>
+<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
+<p><strong>2.观众</strong></p>
+<p>​        集体</p>
+<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
+<p>​        单人</p>
+<p>​            （突出主题，特写个人表现）</p>
+<p><strong>3.主题</strong></p>
+<p>​        ①包括参会者在内的主题大场景</p>
+<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
+<br/>
+
+<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
+<p><strong>2.B门</strong>（慢门）</p>
+<p>​    拍摄星空、车灯轨迹、灯绘</p>
+<p><strong>3.AV档</strong>（光圈优先）</p>
+<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
+<p>​    大光圈虚化背景拍摄人像、静物</p>
+<p>​    F 数小——孔大——虚</p>
+<p>​    F 数大——孔小——实</p>
+<p>​    F8—F16区间中，前后虚实一致</p>
+<p><strong>4.TV档</strong>（快门优先）</p>
+<p>​    【拍摄动作幅度不是很大的场景】</p>
+<p>​        1/60 用于环境较亮的情况</p>
+<p>​        1/90 用于环境较暗的情况 </p>
+<p>​    【拍摄动作幅度很大的场景】</p>
+<p>​        1/2000 用于移动速度极快</p>
+<p><strong>5.M档</strong>（手动档）</p>
+<p>​    ①室外</p>
+<p>​        较暗  ISO设置到100 </p>
+<p>​        阴影天  ISO设置到 400</p>
+<p>​    ②室内 </p>
+<p>​        光线好 ISO设置到800</p>
+<p>​        光线差 ISO设置到1600</p>
+<p>​    佳能相机型号数字越小价格越高</p>
+<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
+<p>（依据相机品质ISO设置到3000——2000以下）</p>
+<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
+<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
+<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
+<br/>
+
+<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
+<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
+<p>黄灯提供（造型光）</p>
+<p>柔光箱提供（柔光）</p>
+<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
+<p><strong>1.一点布光：</strong></p>
+<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
+<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
+<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
+<p><strong>2.两点布光：</strong></p>
+<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
+<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
+<p><strong>3.三点布光：</strong></p>
+<p>​    轮廓光，在主光的斜对面</p>
+<p>​    勾勒人的暗部轮廓</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -1603,6 +1603,84 @@ Port 443
 <p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
 <p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
 <p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE</title>
+    <url>/2021/10/06/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%A4%9A%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8U%E7%9B%98%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
+<p>首先格式化U盘</p>
+<p>下载安装，利用DiskGenius</p>
+<p>给格式化后的U盘开分区，挂盘符</p>
+<p>目的是安装微PE时能够识别到U盘</p>
+<br/>
+
+<h1 id="二、PE盘制作："><a href="#二、PE盘制作：" class="headerlink" title="二、PE盘制作："></a>二、PE盘制作：</h1><p>下载并安装微PE</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/1.jpg" alt="001"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/2.jpg" alt="2"></p>
+<p>安装完成后删除其中的微PE工具箱</p>
+<p>备份EFI分区文件到本机（其中包含引导文件和WIM的压缩镜像，是用来启动PE系统的）</p>
+<p>有两种方式操作：</p>
+<ol>
+<li>备份</li>
+<li>复制（推荐）</li>
+</ol>
+<p>当所有盘符制作完毕后将其还原或粘贴恢复到一个新建的分区，以完成PE盘的制作</p>
+<br/>
+
+<h1 id="三、Mac盘制作："><a href="#三、Mac盘制作：" class="headerlink" title="三、Mac盘制作："></a>三、Mac盘制作：</h1><p>格式化U盘，转换分区表类型为GUID格式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/3.png" alt="3"></p>
+<p>在DiskGenius中新建分区，目的是让TransMac识别到U盘</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/4.png" alt="4"></p>
+<p>关闭DiskGenius</p>
+<p>打开TransMac软件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/5.png" alt="5"></p>
+<p>选择提前准备好的Mac镜像文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/6.png" alt="6"></p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="四、Linux盘制作："><a href="#四、Linux盘制作：" class="headerlink" title="四、Linux盘制作："></a>四、Linux盘制作：</h1><p>确认Linux镜像大小</p>
+<p>新建符合镜像大小的分区</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/7.png" alt="7"></p>
+<p>将镜像文件中的内容复制到新建的分区中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/8.png" alt="8"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/9.png" alt="9"></p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="五、Windows盘制作"><a href="#五、Windows盘制作" class="headerlink" title="五、Windows盘制作"></a>五、Windows盘制作</h1><p>Windows镜像中存在install.esd或install.wim文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/10.png" alt="10"></p>
+<p>这个文件大约占4-5G存储，为防止出现以下错误：</p>
+<p><a href="https://www.cnblogs.com/morgan363/p/13725110.html">解决FAT32格式U盘安装Windows 10时的报错（错误代码：0x8007000D）</a></p>
+<p>需要以管理员身份运行cmd，复制下面的命令到命令行</p>
+<p>修改盘符为实际情况下的盘符，然后执行</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">//命令中的第一个<span class="selector-tag">@</span>改为win10镜像虚拟光驱的盘符，第二个<span class="selector-tag">@</span>改为U盘盘符。</span><br><span class="line">//运行命令，等待大概<span class="number">10</span>来分钟即可（取决于U盘写入速度）。</span><br><span class="line"></span><br><span class="line">dism /<span class="built_in">Split-Image</span> /ImageFile:<span class="selector-tag">@</span>:\sources\install.wim /SWMFile:<span class="selector-tag">@</span>:\sources\install.swm /FileSize:<span class="number">3000</span></span><br></pre></td></tr></table></figure>
+
+<p>文件被拆分为类似下图的文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/11.png" alt="11"></p>
+<p>此时，可以进行Linux盘制作时的类似操作过程</p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="六、保留盘（U盘性质）"><a href="#六、保留盘（U盘性质）" class="headerlink" title="六、保留盘（U盘性质）"></a>六、保留盘（U盘性质）</h1><p>将剩余部分新建开分区，挂盘符</p>
+<p>文件系统类型设置为exFAT</p>
+<p>此分区可以用来正常存储数据</p>
+<br/>
+
+<p>为了整洁美观，可以删除安装系统盘的盘符</p>
+<p>仅显示存储数据用的盘符，将其作为正常U盘使用</p>
+<br/>
+
+<p>至此，多系统安装启动U盘制作完成</p>
+<p>本篇学习来源：</p>
+<p><a href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
 ]]></content>
       <categories>
         <category>资源</category>

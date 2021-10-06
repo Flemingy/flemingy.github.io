@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title>Fleming.</title>
+  <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE | Fleming.</title>
   <meta name="description" content="Fleming&#39;s blog 是一个秘密空间。" />
   <meta name="keywords" content="Fleming,Linux,Java,C,艺术" />
   
@@ -327,167 +327,181 @@
   </div>
 </header>
 
-      <div class="blank" style="padding-top: 0px;"></div>
+      <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN@0.6/css/sharejs.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/xbclub/staticCDN@0.6/css/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img">
+        <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/snow.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+      </div>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      多系统安装启动U盘制作——Mac\Linux\Windows\PE</h1>
+      <p class="entry-census">
+        <span>
+          <a href="">
+            <img src="/images/cover/headportrait.png">
+          </a>
+        </span>
+        <span>
+          <a href=""></a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2021-10-6
+        
+      
+        ·<span id="readcount"></span>次阅读
+      
+      </p>
+    </header>
+  </div>
+
 <div id="content" class="site-content">
-  
-  <div class="notice" style="margin-top:60px">
-    <i class="iconfont icon-notification">
-    </i>
-    <div class="notice-content">随便写点东西，欢迎你来看！</div>
-  </div>
-  
-  <div class="top-feature-row">
-  <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-  <i class="fa fa-anchor" aria-hidden="true">
-  </i>
-  Relation</h1>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://mp.weixin.qq.com/s/UH-O5In_1z8PqgUNzLY2EA" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@v1.0/img/sakura.jpg">
-        </div>
-        <div class="info">
-          <h3>戏言小铺</h3>
-          <p>我们的公众号</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="https://space.bilibili.com/10068726?from=search&amp;seid=6049707717754575679" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@v1.0/img/bilibili.jpg">
-        </div>
-        <div class="info">
-          <h3>Bilibili</h3>
-          <p>Fleming的b站主页</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-  <div class="top-feature-v2">
-    <div class="the-feature square from_left_and_right">
-      <a href="/" target="_blank">
-        <div class="img">
-          <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@v1.0/img/hexo.png">
-        </div>
-        <div class="info">
-          <h3>Fleming.的万事屋</h3>
-          <p>等待更新 ~</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  
-</div>
   <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
-      <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-envira" aria-hidden="true"></i>
-      Discovery</h1>
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"> <!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
+<p>首先格式化U盘</p>
+<p>下载安装，利用DiskGenius</p>
+<p>给格式化后的U盘开分区，挂盘符</p>
+<p>目的是安装微PE时能够识别到U盘</p>
+<br/>
+
+<h1 id="二、PE盘制作："><a href="#二、PE盘制作：" class="headerlink" title="二、PE盘制作："></a>二、PE盘制作：</h1><p>下载并安装微PE</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/1.jpg" alt="001"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/2.jpg" alt="2"></p>
+<p>安装完成后删除其中的微PE工具箱</p>
+<p>备份EFI分区文件到本机（其中包含引导文件和WIM的压缩镜像，是用来启动PE系统的）</p>
+<p>有两种方式操作：</p>
+<ol>
+<li>备份</li>
+<li>复制（推荐）</li>
+</ol>
+<p>当所有盘符制作完毕后将其还原或粘贴恢复到一个新建的分区，以完成PE盘的制作</p>
+<br/>
+
+<h1 id="三、Mac盘制作："><a href="#三、Mac盘制作：" class="headerlink" title="三、Mac盘制作："></a>三、Mac盘制作：</h1><p>格式化U盘，转换分区表类型为GUID格式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/3.png" alt="3"></p>
+<p>在DiskGenius中新建分区，目的是让TransMac识别到U盘</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/4.png" alt="4"></p>
+<p>关闭DiskGenius</p>
+<p>打开TransMac软件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/5.png" alt="5"></p>
+<p>选择提前准备好的Mac镜像文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/6.png" alt="6"></p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="四、Linux盘制作："><a href="#四、Linux盘制作：" class="headerlink" title="四、Linux盘制作："></a>四、Linux盘制作：</h1><p>确认Linux镜像大小</p>
+<p>新建符合镜像大小的分区</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/7.png" alt="7"></p>
+<p>将镜像文件中的内容复制到新建的分区中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/8.png" alt="8"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/9.png" alt="9"></p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="五、Windows盘制作"><a href="#五、Windows盘制作" class="headerlink" title="五、Windows盘制作"></a>五、Windows盘制作</h1><p>Windows镜像中存在install.esd或install.wim文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/10.png" alt="10"></p>
+<p>这个文件大约占4-5G存储，为防止出现以下错误：</p>
+<p><a target="_blank" rel="noopener" href="https://www.cnblogs.com/morgan363/p/13725110.html">解决FAT32格式U盘安装Windows 10时的报错（错误代码：0x8007000D）</a></p>
+<p>需要以管理员身份运行cmd，复制下面的命令到命令行</p>
+<p>修改盘符为实际情况下的盘符，然后执行</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">//命令中的第一个<span class="selector-tag">@</span>改为win10镜像虚拟光驱的盘符，第二个<span class="selector-tag">@</span>改为U盘盘符。</span><br><span class="line">//运行命令，等待大概<span class="number">10</span>来分钟即可（取决于U盘写入速度）。</span><br><span class="line"></span><br><span class="line">dism /<span class="built_in">Split-Image</span> /ImageFile:<span class="selector-tag">@</span>:\sources\install.wim /SWMFile:<span class="selector-tag">@</span>:\sources\install.swm /FileSize:<span class="number">3000</span></span><br></pre></td></tr></table></figure>
+
+<p>文件被拆分为类似下图的文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/11.png" alt="11"></p>
+<p>此时，可以进行Linux盘制作时的类似操作过程</p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="六、保留盘（U盘性质）"><a href="#六、保留盘（U盘性质）" class="headerlink" title="六、保留盘（U盘性质）"></a>六、保留盘（U盘性质）</h1><p>将剩余部分新建开分区，挂盘符</p>
+<p>文件系统类型设置为exFAT</p>
+<p>此分区可以用来正常存储数据</p>
+<br/>
+
+<p>为了整洁美观，可以删除安装系统盘的盘符</p>
+<p>仅显示存储数据用的盘符，将其作为正常U盘使用</p>
+<br/>
+
+<p>至此，多系统安装启动U盘制作完成</p>
+<p>本篇学习来源：</p>
+<p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
+
+        </div>
+        <!-- .entry-content -->
+        
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@masterimg/zhifubao.jpg"></li>
+                <li class="wechat-code"><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@masterimg/weixin.jpg"></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+          
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
+      <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2021/09/21/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%B9%B8%E7%A6%8F%E8%AE%BA/" rel="next">
+              <div class="background">
+                
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/sky.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" >
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                幸福论</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
       
-  <!-- 首页默认取最最新文章集 -->
-  
-    
-<article  class="post post-list-thumb post-list-thumb-left"  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/camera.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-7-19 19:07</div>
-      <a href="/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/" class="post-title">
-        <h3>会议拍摄、相机档位、基础布光</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/%E6%91%84%E5%BD%B1/">摄影<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E8%89%BA%E6%9C%AF/">艺术</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
+      <section class="author-profile">
+        <div class="info" itemprop="author" itemscope="" itemtype="https://schema.org/Person">
+          <a href="" class="profile gravatar"><img src="" itemprop="image" alt="" height="70" width="70"></a>
+          <div class="meta">
+            <span class="title">Author</span>
+            <h3 itemprop="name">
+            <a href="" itemprop="url" rel="author"></a>
+            </h3>
+          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-    
-<article  class="post post-list-thumb" itemscope="" itemtype="https://schema.org/BlogPosting">
-
-  <div class="post-thumb">
-    <a href="/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/">
-      <img class="lazyload" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/starrysky.jpg">
-    </a>
-  </div>
-  <div class="post-content-wrap">
-    <div class="post-content">
-      <div class="post-date">
-        <i class="iconfont icon-time">
-        </i>2021-7-18 16:07</div>
-      <a href="/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" class="post-title">
-        <h3>Browser/Server网络架构模式</h3>
-      </a>
-      <div class="post-meta">
-        <span><i class="fa fa-tags"></i>
-        
-            <a href="/tags/%E6%89%A9%E5%B1%95/">扩展<em>·</em></a>
-          
-        </span>
-        <span>
-          <i class="iconfont icon-file"></i>
-          
-            <a href="/categories/%E7%94%9F%E6%B4%BB/">生活</a>
-          
-        </span>
-      </div>
-      <div class="float-content">
-        <p></p>
-        <div class="post-bottom">
-          <a href="/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" class="button-normal">
-            <i class="iconfont icon-caidan"></i>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</article>
-  
-
-
-    </main>
-      <!-- 首页默认取最最新文章集 -->
-    <!-- 
-      <nav class="navigator">
-        
-        <a class="extend prev" rel="prev" href="/page/2/">Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span>
-      </nav>
-     -->
-  </div>
-  
+        <hr>
+        <p><i class="iconfont icon-write"></i></p>
+      </section>
+    </main><!-- #main -->
+  </div><!-- #primary -->
 </div>
+
 
     </div>    
     <div class="ins-search">

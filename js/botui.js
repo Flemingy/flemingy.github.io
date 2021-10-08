@@ -73,7 +73,7 @@ function bot_ui_ini() {
                 }).then(function () {
                         botui.message.add({
                             delay: 1500,
-                            content: "主攻方向是 Devops 和 数据库"
+                            content: "主攻方向是 Devops "
                         }).then(function () {
                                 botui.message.add({
                                     delay: 1800,

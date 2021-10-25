@@ -592,10 +592,10 @@
 
 <h1 id="四、修饰符"><a href="#四、修饰符" class="headerlink" title="四、修饰符"></a>四、修饰符</h1><p>标记也称为修饰符，正则表达式的标记用于指定额外的匹配策略。标记写在表达式之外。</p>
 <p>写法如下：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/pattern/flags</span><br></pre></td></tr></table></figure>
+<pre><code>/pattern/flags
 
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/表达式/修饰符</span><br></pre></td></tr></table></figure>
-
+/表达式/修饰符
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -749,8 +749,13 @@
 
 <h1 id="七、匹配规则"><a href="#七、匹配规则" class="headerlink" title="七、匹配规则"></a>七、匹配规则</h1><h4 id="基本模式"><a href="#基本模式" class="headerlink" title="基本模式"></a>基本模式</h4><p>模式，是正则表达式最基本的元素，它们是一组描述字符串特征的字符。</p>
 <h4 id="字符簇"><a href="#字符簇" class="headerlink" title="字符簇"></a>字符簇</h4><p>建立一个表示所有元音字符的字符簇，就把所有的元音字符放在一个方括号里：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">[a-z] // 匹配所有的小写字母 </span><br><span class="line">[A-Z] // 匹配所有的大写字母 </span><br><span class="line">[a-zA-Z] // 匹配所有的字母 </span><br><span class="line">[0-9] // 匹配所有的数字 </span><br><span class="line">[0-9\.\-] // 匹配所有的数字，句号和减号 </span><br><span class="line">[ \f\r\t\n] // 匹配所有的白字符</span><br></pre></td></tr></table></figure>
-
+<pre><code>[a-z] // 匹配所有的小写字母 
+[A-Z] // 匹配所有的大写字母 
+[a-zA-Z] // 匹配所有的字母 
+[0-9] // 匹配所有的数字 
+[0-9\.\-] // 匹配所有的数字，句号和减号 
+[ \f\r\t\n] // 匹配所有的白字符
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -803,9 +808,12 @@
 <td align="left">所有的两个字符</td>
 </tr>
 </tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">^[a-zA-Z0-9_]&#123;1,&#125;$      // 所有包含一个以上的字母、数字或下划线的字符串 </span><br><span class="line">^[1-9][0-9]&#123;0,&#125;$        // 所有的正整数 </span><br><span class="line">^\-&#123;0,1&#125;[0-9]&#123;1,&#125;$      // 所有的整数 </span><br><span class="line">^[-]?[0-9]+\.?[0-9]+$   // 所有的浮点数</span><br></pre></td></tr></table></figure>
-
-
+<pre><code>^[a-zA-Z0-9_]&#123;1,&#125;$      // 所有包含一个以上的字母、数字或下划线的字符串 
+^[1-9][0-9]&#123;0,&#125;$        // 所有的正整数 
+^\-&#123;0,1&#125;[0-9]&#123;1,&#125;$      // 所有的整数 
+^[-]?[0-9]+\.?[0-9]+$   // 所有的浮点数
+</code></pre>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>
         </div>
         <!-- .entry-content -->
         

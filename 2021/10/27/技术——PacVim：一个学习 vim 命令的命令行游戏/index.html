@@ -369,23 +369,25 @@
         <div class="entry-content">
           <h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
 <p>在 Linux 中安装 Ncurses 库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install libncurses5-dev libncursesw5-dev</span><br></pre></td></tr></table></figure>
-
+<pre><code>$ sudo apt-get install libncurses5-dev libncursesw5-dev
+</code></pre>
 <br/>
 
 <p>安装 Ncurses 和 gcc 后，运行命令来安装 PacVim。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/jmoon018/PacVim.git</span><br><span class="line">$ cd PacVim</span><br><span class="line">$ sudo make install</span><br></pre></td></tr></table></figure>
-
+<pre><code>$ git clone https://github.com/jmoon018/PacVim.git
+$ cd PacVim
+$ sudo make install
+</code></pre>
 <br/>
 
 <br/>
 
 <h2 id="启动-PacVim-游戏"><a href="#启动-PacVim-游戏" class="headerlink" title="启动 PacVim 游戏"></a><code>启动 PacVim 游戏</code></h2><p>要玩这个游戏，只需运行：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pacvim [LEVEL_NUMER] [MODE]</span><br></pre></td></tr></table></figure>
-
+<pre><code>$ pacvim [LEVEL_NUMER] [MODE]
+</code></pre>
 <p>例如，以下命令以普通模式启动游戏第 5 关。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pacvim 5 n</span><br></pre></td></tr></table></figure>
-
+<pre><code>$ pacvim 5 n
+</code></pre>
 <p>这里，<code>5</code> 表示等级，<code>n</code>表示模式。有两种模式：</p>
 <ul>
 <li><code>n</code> – 普通模式。</li>

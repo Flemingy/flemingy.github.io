@@ -822,6 +822,96 @@
       </tags>
   </entry>
   <entry>
+    <title>PacVim：一个学习 vim 命令的命令行游戏.md</title>
+    <url>/2021/10/27/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94PacVim%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%B9%A0%20vim%20%E5%91%BD%E4%BB%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
+<p>在 Linux 中安装 Ncurses 库</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo apt-get install libncurses5-dev libncursesw5-dev</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<p>安装 Ncurses 和 gcc 后，运行命令来安装 PacVim。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git <span class="built_in">clone</span> https://github.com/jmoon018/PacVim.git</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> PacVim</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> sudo make install</span></span><br></pre></td></tr></table></figure>
+
+<br/>
+
+<br/>
+
+<h2 id="启动-PacVim-游戏"><a href="#启动-PacVim-游戏" class="headerlink" title="启动 PacVim 游戏"></a><code>启动 PacVim 游戏</code></h2><p>要玩这个游戏，只需运行：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pacvim [LEVEL_NUMER] [MODE]</span></span><br></pre></td></tr></table></figure>
+
+<p>例如，以下命令以普通模式启动游戏第 5 关。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> pacvim 5 n</span></span><br></pre></td></tr></table></figure>
+
+<p>这里，<code>5</code> 表示等级，<code>n</code>表示模式。有两种模式：</p>
+<ul>
+<li><code>n</code> – 普通模式。</li>
+<li><code>h</code> – 困难模式。</li>
+</ul>
+<br/>
+
+<br/>
+
+<h2 id="如何玩-PacVim？"><a href="#如何玩-PacVim？" class="headerlink" title="如何玩 PacVim？"></a><code>如何玩 PacVim？</code></h2><p>按下回车开始游戏</p>
+<br/>
+
+<p>PacVim 的使用与 PacMan 非常相似。</p>
+<p>你必须跑过屏幕上所有的字符，同时避免鬼魂（红色字符）。</p>
+<p>PacVim有两个特殊的障碍：</p>
+<ol>
+<li>你不能移动到墙壁中（黄色）。你必须使用 vim 动作来跳过它们。</li>
+<li>如果你踩到波浪字符（青色的 <code>~</code>），你就输了！</li>
+</ol>
+<p>你有三条生命。每次打赢 0、3、6、9 关时你都会获得新生命。总共有 10 关，从 0 到 9，打赢第 9 关后，游戏重置为第 0 关，但是鬼魂速度变快。</p>
+<p><strong>获胜条件</strong></p>
+<p>使用 vim 命令将光标移动到字母上并高亮显示它们。所有字母都高亮显示后，你就会获胜并进入下一关。</p>
+<p><strong>失败条件</strong></p>
+<p>如果你碰到鬼魂（用<strong>红色 G</strong> 表示）或者<strong>波浪字符</strong>，你就会失去一条命。如果命小于 0 条，你将会输掉整个游戏。</p>
+<p>这是实现的命令列表：</p>
+<p>键作用q退出游戏h向左移动j向下移动k向上移动l向右移动w向前移动到下一个 word 开始W向前移动到下一个 WORD 开始e向前移动到下一个 word 结束E向前移动到下一个 WORD 结束b向后移动到下一个 word 开始B向后移动到下一个 WORD 开始$移动到行的末尾0移动到行的开始gg/1G移动到第一行的开始数字加 G移动到由数字给出的行的开始G移到最后一行的开头^移到当前行的第一个 word＆1337 cheatz（打赢当前关）</p>
+<br/>
+
+<br/>
+
+<p>本篇转载自<a href="https://zhuanlan.zhihu.com/p/37988604">PacVim：一个学习 vim 命令的命令行游戏</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>转载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu中设置阿里镜像源</title>
+    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br></pre></td></tr></table></figure>
+
+<br/>
+
+
+
+<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list </span><br></pre></td></tr></table></figure>
+
+<p>将以下内容放在该文件的头部</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
+
+<p>保存退出</p>
+<br/>
+
+
+
+<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>帧速率、刷新率、广播级视频标准</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
@@ -868,88 +958,6 @@
       </categories>
       <tags>
         <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>摄影构图——突出主体、中心思想、画面简洁</title>
-    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
-<p>​    （拉近距离，放大主体）</p>
-<p>​    （简化背景，突出主体）</p>
-<p>​    <strong>2.间接突出主题</strong></p>
-<p>​    （简洁背景，缩小主体）</p>
-<p>​    （六大对比）</p>
-<p>​        ①明暗对比</p>
-<p>​        ②虚实对比</p>
-<p>​        ③色彩对比</p>
-<p>​        ④动静对比</p>
-<p>​        ⑤大小对比 </p>
-<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
-<br/>
-
-<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
-<p>​    <strong>1.单一的主要概念</strong></p>
-<p>​    <strong>2.从属景物</strong></p>
-<p>​    <strong>3.背景作用</strong></p>
-<br/>
-
-<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
-<p>​    <strong>1.长焦镜头</strong></p>
-<p>​    <strong>2.学会取舍</strong></p>
-<p>​    <strong>3.使用黑白</strong></p>
-<p>​    <strong>4.二次构图</strong></p>
-<br/>
-
-<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
       </tags>
   </entry>
   <entry>
@@ -1025,6 +1033,45 @@
       </tags>
   </entry>
   <entry>
+    <title>摄影构图——突出主体、中心思想、画面简洁</title>
+    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
+<p>​    （拉近距离，放大主体）</p>
+<p>​    （简化背景，突出主体）</p>
+<p>​    <strong>2.间接突出主题</strong></p>
+<p>​    （简洁背景，缩小主体）</p>
+<p>​    （六大对比）</p>
+<p>​        ①明暗对比</p>
+<p>​        ②虚实对比</p>
+<p>​        ③色彩对比</p>
+<p>​        ④动静对比</p>
+<p>​        ⑤大小对比 </p>
+<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
+<br/>
+
+<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
+<p>​    <strong>1.单一的主要概念</strong></p>
+<p>​    <strong>2.从属景物</strong></p>
+<p>​    <strong>3.背景作用</strong></p>
+<br/>
+
+<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
+<p>​    <strong>1.长焦镜头</strong></p>
+<p>​    <strong>2.学会取舍</strong></p>
+<p>​    <strong>3.使用黑白</strong></p>
+<p>​    <strong>4.二次构图</strong></p>
+<br/>
+
+<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>视频后期剪辑与特效软件PR&amp;AE</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
@@ -1074,6 +1121,49 @@
       </categories>
       <tags>
         <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
       </tags>
   </entry>
   <entry>
@@ -1305,89 +1395,6 @@
       </tags>
   </entry>
   <entry>
-    <title>通过ssh协议连接github时遇到的问题</title>
-    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
-
-<p><strong>需要对ssh 进行重置</strong></p>
-<p>1、重置用户名和邮箱</p>
-<pre><code>git config --global user.name “yourname”
-
-git config --global user.email “your@email.com&quot;
-</code></pre>
-<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
-<br/>
-
-<p>2、删除.ssh文件夹下的known_hosts</p>
-<br/>
-
-<p>3、git输入命令</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
-</code></pre>
-<p>一路yes和回车</p>
-<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
-<p>用记事本打开id_rsa.pub </p>
-<p>将全部的内容复制</p>
-<br/>
-
-<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
-<p>进入ssh设置</p>
-<p>在key中将刚刚复制的粘贴进去</p>
-<p>点击add ssh key，</p>
-<p> ok！</p>
-<br/>
-
-<p>5、在git中输入命令：</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>之后会有询问提示</p>
-<p>输入命令：yes</p>
-<p>回车</p>
-<br/>
-
-<p>然后就会提示你成功了~</p>
-<br/>
-
-<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
-<br/>
-原因：
-
-<p>可能是端口被占用，切换为443端口；</p>
-<p><br/>解决办法：</p>
-<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
-<br/>
-
-<p>在config文件中复制下面代码：</p>
-<pre><code>Host github.com
-
-User git
-
-Hostname ssh.github.com
-
-PreferredAuthentications publickey
-
-IdentityFile ~/.ssh/id_rsa
-
-Port 443
-</code></pre>
-<br/>
-
-<p>然后在执行</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>查看是否可以连接</p>
-<br/>
-
-<p>成功！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -1514,6 +1521,89 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过ssh协议连接github时遇到的问题</title>
+    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
+
+<p><strong>需要对ssh 进行重置</strong></p>
+<p>1、重置用户名和邮箱</p>
+<pre><code>git config --global user.name “yourname”
+
+git config --global user.email “your@email.com&quot;
+</code></pre>
+<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
+<br/>
+
+<p>2、删除.ssh文件夹下的known_hosts</p>
+<br/>
+
+<p>3、git输入命令</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
+</code></pre>
+<p>一路yes和回车</p>
+<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
+<p>用记事本打开id_rsa.pub </p>
+<p>将全部的内容复制</p>
+<br/>
+
+<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
+<p>进入ssh设置</p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p>点击add ssh key，</p>
+<p> ok！</p>
+<br/>
+
+<p>5、在git中输入命令：</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>之后会有询问提示</p>
+<p>输入命令：yes</p>
+<p>回车</p>
+<br/>
+
+<p>然后就会提示你成功了~</p>
+<br/>
+
+<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
+<br/>
+原因：
+
+<p>可能是端口被占用，切换为443端口；</p>
+<p><br/>解决办法：</p>
+<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
+<br/>
+
+<p>在config文件中复制下面代码：</p>
+<pre><code>Host github.com
+
+User git
+
+Hostname ssh.github.com
+
+PreferredAuthentications publickey
+
+IdentityFile ~/.ssh/id_rsa
+
+Port 443
+</code></pre>
+<br/>
+
+<p>然后在执行</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>查看是否可以连接</p>
+<br/>
+
+<p>成功！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>解决方案</tag>
       </tags>
   </entry>
   <entry>

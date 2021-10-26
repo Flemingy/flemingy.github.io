@@ -1,6 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -60,48 +102,6 @@
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -885,24 +885,33 @@
   <entry>
     <title>Ubuntu中设置阿里镜像源</title>
     <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><h3 id=""><a href="#" class="headerlink" title=""></a></h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak</span><br></pre></td></tr></table></figure>
-
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+</code></pre>
 <br/>
 
 
 
-<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo vim /etc/apt/sources.list </span><br></pre></td></tr></table></figure>
-
+<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
+</code></pre>
 <p>将以下内容放在该文件的头部</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse</span><br><span class="line">deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse</span><br><span class="line">deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse</span><br></pre></td></tr></table></figure>
-
+<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+</code></pre>
 <p>保存退出</p>
 <br/>
 
 
 
-<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo apt-get update</span><br></pre></td></tr></table></figure>
-
+<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update
+</code></pre>
 ]]></content>
       <categories>
         <category>技术</category>
@@ -984,45 +993,6 @@
       </tags>
   </entry>
   <entry>
-    <title>摄影构图——突出主体、中心思想、画面简洁</title>
-    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
-<p>​    （拉近距离，放大主体）</p>
-<p>​    （简化背景，突出主体）</p>
-<p>​    <strong>2.间接突出主题</strong></p>
-<p>​    （简洁背景，缩小主体）</p>
-<p>​    （六大对比）</p>
-<p>​        ①明暗对比</p>
-<p>​        ②虚实对比</p>
-<p>​        ③色彩对比</p>
-<p>​        ④动静对比</p>
-<p>​        ⑤大小对比 </p>
-<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
-<br/>
-
-<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
-<p>​    <strong>1.单一的主要概念</strong></p>
-<p>​    <strong>2.从属景物</strong></p>
-<p>​    <strong>3.背景作用</strong></p>
-<br/>
-
-<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
-<p>​    <strong>1.长焦镜头</strong></p>
-<p>​    <strong>2.学会取舍</strong></p>
-<p>​    <strong>3.使用黑白</strong></p>
-<p>​    <strong>4.二次构图</strong></p>
-<br/>
-
-<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>帧速率、刷新率、广播级视频标准</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
@@ -1069,6 +1039,45 @@
       </categories>
       <tags>
         <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摄影构图——突出主体、中心思想、画面简洁</title>
+    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
+<p>​    （拉近距离，放大主体）</p>
+<p>​    （简化背景，突出主体）</p>
+<p>​    <strong>2.间接突出主题</strong></p>
+<p>​    （简洁背景，缩小主体）</p>
+<p>​    （六大对比）</p>
+<p>​        ①明暗对比</p>
+<p>​        ②虚实对比</p>
+<p>​        ③色彩对比</p>
+<p>​        ④动静对比</p>
+<p>​        ⑤大小对比 </p>
+<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
+<br/>
+
+<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
+<p>​    <strong>1.单一的主要概念</strong></p>
+<p>​    <strong>2.从属景物</strong></p>
+<p>​    <strong>3.背景作用</strong></p>
+<br/>
+
+<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
+<p>​    <strong>1.长焦镜头</strong></p>
+<p>​    <strong>2.学会取舍</strong></p>
+<p>​    <strong>3.使用黑白</strong></p>
+<p>​    <strong>4.二次构图</strong></p>
+<br/>
+
+<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -1395,89 +1404,6 @@
       </tags>
   </entry>
   <entry>
-    <title>通过ssh协议连接github时遇到的问题</title>
-    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
-
-<p><strong>需要对ssh 进行重置</strong></p>
-<p>1、重置用户名和邮箱</p>
-<pre><code>git config --global user.name “yourname”
-
-git config --global user.email “your@email.com&quot;
-</code></pre>
-<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
-<br/>
-
-<p>2、删除.ssh文件夹下的known_hosts</p>
-<br/>
-
-<p>3、git输入命令</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
-</code></pre>
-<p>一路yes和回车</p>
-<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
-<p>用记事本打开id_rsa.pub </p>
-<p>将全部的内容复制</p>
-<br/>
-
-<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
-<p>进入ssh设置</p>
-<p>在key中将刚刚复制的粘贴进去</p>
-<p>点击add ssh key，</p>
-<p> ok！</p>
-<br/>
-
-<p>5、在git中输入命令：</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>之后会有询问提示</p>
-<p>输入命令：yes</p>
-<p>回车</p>
-<br/>
-
-<p>然后就会提示你成功了~</p>
-<br/>
-
-<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
-<br/>
-原因：
-
-<p>可能是端口被占用，切换为443端口；</p>
-<p><br/>解决办法：</p>
-<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
-<br/>
-
-<p>在config文件中复制下面代码：</p>
-<pre><code>Host github.com
-
-User git
-
-Hostname ssh.github.com
-
-PreferredAuthentications publickey
-
-IdentityFile ~/.ssh/id_rsa
-
-Port 443
-</code></pre>
-<br/>
-
-<p>然后在执行</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>查看是否可以连接</p>
-<br/>
-
-<p>成功！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -1604,6 +1530,89 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过ssh协议连接github时遇到的问题</title>
+    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
+
+<p><strong>需要对ssh 进行重置</strong></p>
+<p>1、重置用户名和邮箱</p>
+<pre><code>git config --global user.name “yourname”
+
+git config --global user.email “your@email.com&quot;
+</code></pre>
+<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
+<br/>
+
+<p>2、删除.ssh文件夹下的known_hosts</p>
+<br/>
+
+<p>3、git输入命令</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
+</code></pre>
+<p>一路yes和回车</p>
+<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
+<p>用记事本打开id_rsa.pub </p>
+<p>将全部的内容复制</p>
+<br/>
+
+<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
+<p>进入ssh设置</p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p>点击add ssh key，</p>
+<p> ok！</p>
+<br/>
+
+<p>5、在git中输入命令：</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>之后会有询问提示</p>
+<p>输入命令：yes</p>
+<p>回车</p>
+<br/>
+
+<p>然后就会提示你成功了~</p>
+<br/>
+
+<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
+<br/>
+原因：
+
+<p>可能是端口被占用，切换为443端口；</p>
+<p><br/>解决办法：</p>
+<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
+<br/>
+
+<p>在config文件中复制下面代码：</p>
+<pre><code>Host github.com
+
+User git
+
+Hostname ssh.github.com
+
+PreferredAuthentications publickey
+
+IdentityFile ~/.ssh/id_rsa
+
+Port 443
+</code></pre>
+<br/>
+
+<p>然后在执行</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>查看是否可以连接</p>
+<br/>
+
+<p>成功！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>解决方案</tag>
       </tags>
   </entry>
   <entry>

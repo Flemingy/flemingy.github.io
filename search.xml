@@ -1,6 +1,225 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hexo静态个人博客网站搭建流程</title>
+    <url>/2021/09/02/Web%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
+
+<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
+</code></pre>
+<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
+
+<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
+
+<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
+
+<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
+—&gt;git config --global user.name &quot;Github注册邮箱&quot;
+—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
+—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
+</code></pre>
+<br/>
+
+<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
+
+<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
+
+<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
+- respository: https://（仓库地址）
+- branch: master
+</code></pre>
+<br/>
+
+<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
+</code></pre>
+<br/>
+
+<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
+
+<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>基于Raspberry Pi 3的WordPress网站搭建流程</title>
+    <url>/2021/11/19/Web%E2%80%94%E2%80%94%E6%A0%91%E8%8E%93%E6%B4%BE%203%20%E6%90%AD%E5%BB%BAWordPress%E7%BD%91%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、硬件准备"><a href="#一、硬件准备" class="headerlink" title="一、硬件准备"></a>一、硬件准备</h1><p>Raspderry Pi 3 Model B</p>
+<h1 id="二、环境配置"><a href="#二、环境配置" class="headerlink" title="二、环境配置"></a>二、环境配置</h1><h2 id="1-镜像准备"><a href="#1-镜像准备" class="headerlink" title="1.镜像准备"></a>1.镜像准备</h2><h3 id="下载网址"><a href="#下载网址" class="headerlink" title="下载网址"></a>下载网址</h3><p><a href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a></p>
+<h3 id="下载版本"><a href="#下载版本" class="headerlink" title="下载版本"></a>下载版本</h3><p>Raspbian Stretch with desktop 的 .img 镜像文件</p>
+<p>（Raspbian是基于Debian 9的树莓派操作系统）</p>
+<h2 id="2-烧录启动microSD卡"><a href="#2-烧录启动microSD卡" class="headerlink" title="2.烧录启动microSD卡"></a>2.烧录启动microSD卡</h2><h3 id="Windows下"><a href="#Windows下" class="headerlink" title="Windows下"></a>Windows下</h3><p>使用 diskpart 格式化SD卡</p>
+<p>使用 （Rufus 开源工具） / （Win Disk Imager） 烧制</p>
+<h3 id="MAC下"><a href="#MAC下" class="headerlink" title="MAC下"></a>MAC下</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo dd bs=1m if=/Users/SomSyd/Desktop/RaspberryPi3/2018-11-13-raspbeian-strect.img of=/dev/rdisk1 conv=sync</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="3-SSH远程连接"><a href="#3-SSH远程连接" class="headerlink" title="3.SSH远程连接"></a>3.SSH远程连接</h2><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>进入系统后记住内网IP地址</p>
+<p>进入时我们选择先不更新</p>
+<p>进入Preferences——&gt;Raspberry Pi Configuration——&gt;Interfaces——&gt;SSH: Enable（开启SSH连接）</p>
+<p>进入Preferences——&gt;Raspberry Pi Configuration——&gt;System——&gt;Boot: To CLI（不使用图形界面）</p>
+<p>此 pi 被用来作为服务器，所以可以更改名字为Server</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/hostname</span><br></pre></td></tr></table></figure>
+
+<p>重启系统：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
+
+<h3 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h3><ul>
+<li><p>windows中使用Putty</p>
+</li>
+<li><p>MacOS直接使用终端</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SSH -Y pi@192.168.1.105</span><br></pre></td></tr></table></figure>
+
+<p>输入密码，登录成功</p>
+</li>
+</ul>
+<h2 id="4-Python开发环境"><a href="#4-Python开发环境" class="headerlink" title="4.Python开发环境"></a>4.Python开发环境</h2><p>查看当前python版本</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">python</span><br><span class="line">python3</span><br></pre></td></tr></table></figure>
+
+<p>python和python3都已内制</p>
+<h3 id="虚拟环境创建"><a href="#虚拟环境创建" class="headerlink" title="虚拟环境创建"></a><a href="https://www.jianshu.com/p/e7dcdcdeaa73">虚拟环境创建</a></h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pip3 install virtualenv</span><br></pre></td></tr></table></figure>
+
+<h3 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install vim -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="源与软件更新"><a href="#源与软件更新" class="headerlink" title="源与软件更新"></a>源与软件更新</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y</span><br></pre></td></tr></table></figure>
+
+<h3 id="终端安装"><a href="#终端安装" class="headerlink" title="终端安装"></a>终端安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install terminator -y</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-JavaScript开发环境"><a href="#5-JavaScript开发环境" class="headerlink" title="5.JavaScript开发环境"></a>5.JavaScript开发环境</h2><h3 id="源加载至安装库"><a href="#源加载至安装库" class="headerlink" title="源加载至安装库"></a>源加载至安装库</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br></pre></td></tr></table></figure>
+
+<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install nodejs -y </span><br></pre></td></tr></table></figure>
+
+
+
+<h1 id="三、网站搭建"><a href="#三、网站搭建" class="headerlink" title="三、网站搭建"></a>三、网站搭建</h1><h2 id="1-Nginx安装及配置"><a href="#1-Nginx安装及配置" class="headerlink" title="1.Nginx安装及配置"></a>1.Nginx安装及配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install nginx -y</span><br></pre></td></tr></table></figure>
+
+<p>查看文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /var/www/html</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
+
+<p>新建的文件优先级必定高于原始文件</p>
+<h2 id="2-MySQL安装及配置"><a href="#2-MySQL安装及配置" class="headerlink" title="2.MySQL安装及配置"></a>2.MySQL安装及配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install mysql-server</span><br></pre></td></tr></table></figure>
+
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看server版本"><a href="#查看server版本" class="headerlink" title="查看server版本"></a>查看server版本</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mysqld --version</span><br></pre></td></tr></table></figure>
+
+<h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mysql -u root</span><br></pre></td></tr></table></figure>
+
+<h3 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>,authentication_string,plugin,host <span class="keyword">from</span> mysql.user;</span><br></pre></td></tr></table></figure>
+
+<h3 id="更新密码"><a href="#更新密码" class="headerlink" title="更新密码"></a>更新密码</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use mysql;</span><br><span class="line"></span><br><span class="line">update <span class="keyword">user</span> <span class="keyword">set</span> authentication_string<span class="operator">=</span>PASSWORD(&quot;123456&quot;) <span class="keyword">where</span> <span class="keyword">User</span><span class="operator">=</span>&quot;root&quot;;</span><br><span class="line"></span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
+
+<h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p>为WordPress创建一个数据库</p>
+<h2 id="3-PHP和FastCGI进程管理器"><a href="#3-PHP和FastCGI进程管理器" class="headerlink" title="3.PHP和FastCGI进程管理器"></a>3.PHP和FastCGI进程管理器</h2><p>PHP-FPM</p>
+<p>针对PHP的FastCGI实现，可以理解为管理进程池</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install php-fpm php-mysql</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="4-HOSTS设置"><a href="#4-HOSTS设置" class="headerlink" title="4.HOSTS设置"></a>4.HOSTS设置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/php</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/php.ini</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>更改cgi.fix_pathinfo=0</li>
+<li>防止用户上传图片时附加恶意代码</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/pool.d/www.conf</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>开启监听配置 listen=</li>
+</ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/nginx/sites-available/default</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>更改主配置</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	# 监听80端口</span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line">	</span><br><span class="line">	# 域名访问IP</span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line">	</span><br><span class="line">	# 内容放在main目录下</span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line">	</span><br><span class="line">	# WordPress标准404格式输出404界面</span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;``</span><br><span class="line">	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># pass the PHP scripts to FastCGI server listening on the php-fpm$</span><br><span class="line"># 添加的进程管理器</span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"> </span><br><span class="line"> # 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+<p>查看配置文件是否生效</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nginx -t</span><br></pre></td></tr></table></figure>
+
+<p>重新加载设置</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo systemctl reload nginx</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="5-WordPress网站搭建"><a href="#5-WordPress网站搭建" class="headerlink" title="5.WordPress网站搭建"></a>5.WordPress网站搭建</h2><p>查看常用网页放置目录</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /var/www/html</span><br></pre></td></tr></table></figure>
+
+<p>目录下内容权限设置为755（允许用户上传内容）</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chmod 755 -R /var/www</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chown -R pi /var/www/*</span><br></pre></td></tr></table></figure>
+
+<p>创建文件夹</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir main</span><br></pre></td></tr></table></figure>
+
+<p>从wordpress官方保存安装包</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo wget https://wordpress.org/latest.zip</span><br></pre></td></tr></table></figure>
+
+<p>解压下载包</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo unzip -q latest.zip</span><br></pre></td></tr></table></figure>
+
+<p>将wordpress中的所有文件拷贝到main文件夹下</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo cp -r wordpress/* /var/www/html/main</span><br></pre></td></tr></table></figure>
+
+<p> 删除wordpress文件夹和latest压缩包</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf wordpress</span><br><span class="line">sudo rm -rf latest.zip</span><br></pre></td></tr></table></figure>
+
+
+
+<p>进入域名或IP对应网址设置wordpress</p>
+<p>提示找不到wp-config.php文件</p>
+<p>新建此文件，将提示内容拷贝到文件中</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano wp-config.php</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/** The Database Collate type.Don&#x27;t change this if in doubt */ 下添加</span><br><span class="line">define(&#x27;FS_METHOD&#x27;,&#x27;direct&#x27;);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="6-常见问题解决方案"><a href="#6-常见问题解决方案" class="headerlink" title="6.常见问题解决方案"></a>6.常见问题解决方案</h2><ol>
+<li><p>问题：上传图片大小限制</p>
+<p>更改使上传不受权限影响</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chown -R www-data:www_data /var/www/html/main</span><br></pre></td></tr></table></figure>
+
+<p>更改图片上传大小</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/ngnix/ngnix.conf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">##</span><br><span class="line"># set client body size to 10M</span><br><span class="line">##</span><br><span class="line">client_max_body_size 10M;</span><br></pre></td></tr></table></figure>
+
+<p>重新加载</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo systemctl reload nginx.service</span><br></pre></td></tr></table></figure>
+
+<p>更改文件</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/php.ini</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_max_size = 200M</span><br><span class="line"></span><br><span class="line">upload_max_filesize = 200M</span><br></pre></td></tr></table></figure>
+
+<p>重启进程管理器与服务</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart php7.0-fpm.service</span><br><span class="line">sudo systemctl restart nginx.service</span><br></pre></td></tr></table></figure></li>
+<li><p>网站中setting——&gt;permalink——&gt;post name</p>
+</li>
+</ol>
+<h1 id="参考视频："><a href="#参考视频：" class="headerlink" title="参考视频："></a>参考视频：</h1><p>(<a href="https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2">https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2</a>)</p>
+<p>(<a href="https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A">https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A</a>)</p>
+<p>(<a href="https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A">https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A</a>)</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Web</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CSS参考手册&amp;样式优先级</title>
     <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
@@ -102,52 +321,6 @@
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hexo静态个人博客网站搭建流程</title>
-    <url>/2021/09/02/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94Hexo%E9%9D%99%E6%80%81%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-安装-node-js（npm是node中的包管理器）"><a href="#1-安装-node-js（npm是node中的包管理器）" class="headerlink" title="1.安装 node.js（npm是node中的包管理器）"></a>1.安装 node.js（npm是node中的包管理器）</h3><br/>
-
-<h3 id="2-安装git"><a href="#2-安装git" class="headerlink" title="2.安装git"></a>2.安装git</h3><pre><code>—&gt;npm config set registry https://registry.npm.taobao.org
-</code></pre>
-<h3 id="（更改淘宝镜像源）"><a href="#（更改淘宝镜像源）" class="headerlink" title="（更改淘宝镜像源）"></a>（更改淘宝镜像源）</h3><br/>
-
-<h3 id="3-通过Hexo官网提供的命令（官方文档）进行操作"><a href="#3-通过Hexo官网提供的命令（官方文档）进行操作" class="headerlink" title="3.通过Hexo官网提供的命令（官方文档）进行操作"></a>3.通过Hexo官网提供的命令（官方文档）进行操作</h3><br/>
-
-<h3 id="4-Github上new一个新库"><a href="#4-Github上new一个新库" class="headerlink" title="4.Github上new一个新库"></a>4.Github上new一个新库</h3><br/>
-
-<h3 id="5-Git命令行中"><a href="#5-Git命令行中" class="headerlink" title="5.Git命令行中"></a>5.Git命令行中</h3><pre><code>—&gt;git config --global user.name &quot;Github用户名&quot;
-—&gt;git config --global user.name &quot;Github注册邮箱&quot;
-—&gt;ssh-keygen -t rsa -C &quot;Github用户名&quot;    （生成ssh）
-—&gt;cat ~/.ssh/id_rsa.pub    （查看ssh）
-</code></pre>
-<br/>
-
-<h3 id="6-Github网站中setting中new一个SSH-key"><a href="#6-Github网站中setting中new一个SSH-key" class="headerlink" title="6.Github网站中setting中new一个SSH key"></a>6.Github网站中setting中new一个SSH key</h3><br/>
-
-<h3 id="7-将查看的key复制到new的SSH-key中"><a href="#7-将查看的key复制到new的SSH-key中" class="headerlink" title="7.将查看的key复制到new的SSH key中"></a>7.将查看的key复制到new的SSH key中</h3><br/>
-
-<h3 id="8-打开blog文件夹中的-config-yml文件"><a href="#8-打开blog文件夹中的-config-yml文件" class="headerlink" title="8.打开blog文件夹中的_config.yml文件"></a>8.打开blog文件夹中的_config.yml文件</h3><h3 id="在文件最后更改内容"><a href="#在文件最后更改内容" class="headerlink" title="在文件最后更改内容"></a>在文件最后更改内容</h3><pre><code>- type: &#39;git&#39;
-- respository: https://（仓库地址）
-- branch: master
-</code></pre>
-<br/>
-
-<h3 id="9-blog路径下安装扩展"><a href="#9-blog路径下安装扩展" class="headerlink" title="9.blog路径下安装扩展"></a>9.blog路径下安装扩展</h3><pre><code>—&gt;npm i hexo-deployer-git
-</code></pre>
-<br/>
-
-<h3 id="10-hexo-d（上传项目）"><a href="#10-hexo-d（上传项目）" class="headerlink" title="10.hexo d（上传项目）"></a>10.hexo d（上传项目）</h3><br/>
-
-<h3 id="11-运维"><a href="#11-运维" class="headerlink" title="11.运维"></a>11.运维</h3><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo deploy
-</code></pre>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Web</tag>
       </tags>
   </entry>
   <entry>
@@ -587,86 +760,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
-<br/>
-
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
-<br/>
-
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Browser/Server网络架构模式</title>
     <url>/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-B-S架构与C-S架构"><a href="#1-B-S架构与C-S架构" class="headerlink" title="1. B/S架构与C/S架构"></a>1. B/S架构与C/S架构</h1><ul>
@@ -813,6 +906,86 @@
 
 <h1 id="11-文末结语"><a href="#11-文末结语" class="headerlink" title="11. 文末结语"></a>11. 文末结语</h1><p>本篇仅作个人笔记，强推支持正版内容。</p>
 <p><a href="https://www.bilibili.com/video/BV1d7411p7RF">走向实战，学完C之后学什么？前端后端？Java？Python?网站开发？B/S开发预备课-Frank-FuckPPT</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
+<br/>
+
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<br/>
+
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -1080,6 +1253,49 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
       </tags>
   </entry>
   <entry>
@@ -1363,132 +1579,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>通过ssh协议连接github时遇到的问题</title>
-    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
-
-<p><strong>需要对ssh 进行重置</strong></p>
-<p>1、重置用户名和邮箱</p>
-<pre><code>git config --global user.name “yourname”
-
-git config --global user.email “your@email.com&quot;
-</code></pre>
-<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
-<br/>
-
-<p>2、删除.ssh文件夹下的known_hosts</p>
-<br/>
-
-<p>3、git输入命令</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
-</code></pre>
-<p>一路yes和回车</p>
-<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
-<p>用记事本打开id_rsa.pub </p>
-<p>将全部的内容复制</p>
-<br/>
-
-<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
-<p>进入ssh设置</p>
-<p>在key中将刚刚复制的粘贴进去</p>
-<p>点击add ssh key，</p>
-<p> ok！</p>
-<br/>
-
-<p>5、在git中输入命令：</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>之后会有询问提示</p>
-<p>输入命令：yes</p>
-<p>回车</p>
-<br/>
-
-<p>然后就会提示你成功了~</p>
-<br/>
-
-<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
-<br/>
-原因：
-
-<p>可能是端口被占用，切换为443端口；</p>
-<p><br/>解决办法：</p>
-<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
-<br/>
-
-<p>在config文件中复制下面代码：</p>
-<pre><code>Host github.com
-
-User git
-
-Hostname ssh.github.com
-
-PreferredAuthentications publickey
-
-IdentityFile ~/.ssh/id_rsa
-
-Port 443
-</code></pre>
-<br/>
-
-<p>然后在执行</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>查看是否可以连接</p>
-<br/>
-
-<p>成功！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>蜜友课</title>
     <url>/2021/10/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E2%80%94%E2%80%94%E8%9C%9C%E5%8F%8B%E8%AF%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、友谊阶段"><a href="#一、友谊阶段" class="headerlink" title="一、友谊阶段"></a>一、友谊阶段</h1><p>金字塔形（由下到上）</p>
@@ -1701,6 +1791,89 @@ Port 443
       </categories>
       <tags>
         <tag>社会学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>通过ssh协议连接github时遇到的问题</title>
+    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
+
+<p><strong>需要对ssh 进行重置</strong></p>
+<p>1、重置用户名和邮箱</p>
+<pre><code>git config --global user.name “yourname”
+
+git config --global user.email “your@email.com&quot;
+</code></pre>
+<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
+<br/>
+
+<p>2、删除.ssh文件夹下的known_hosts</p>
+<br/>
+
+<p>3、git输入命令</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
+</code></pre>
+<p>一路yes和回车</p>
+<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
+<p>用记事本打开id_rsa.pub </p>
+<p>将全部的内容复制</p>
+<br/>
+
+<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
+<p>进入ssh设置</p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p>点击add ssh key，</p>
+<p> ok！</p>
+<br/>
+
+<p>5、在git中输入命令：</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>之后会有询问提示</p>
+<p>输入命令：yes</p>
+<p>回车</p>
+<br/>
+
+<p>然后就会提示你成功了~</p>
+<br/>
+
+<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
+<br/>
+原因：
+
+<p>可能是端口被占用，切换为443端口；</p>
+<p><br/>解决办法：</p>
+<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
+<br/>
+
+<p>在config文件中复制下面代码：</p>
+<pre><code>Host github.com
+
+User git
+
+Hostname ssh.github.com
+
+PreferredAuthentications publickey
+
+IdentityFile ~/.ssh/id_rsa
+
+Port 443
+</code></pre>
+<br/>
+
+<p>然后在执行</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>查看是否可以连接</p>
+<br/>
+
+<p>成功！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>解决方案</tag>
       </tags>
   </entry>
   <entry>

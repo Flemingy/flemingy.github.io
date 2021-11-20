@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title>基于Raspberry Pi 3的WordPress网站搭建流程 | Fleming.</title>
+  <title>基于Raspberry Pi 3的WordPress站点搭建流程 | Fleming.</title>
   <meta name="description" content="Fleming&#39;s blog 是一个秘密空间。" />
   <meta name="keywords" content="Fleming,Linux,Java,C,艺术" />
   
@@ -338,7 +338,7 @@
       </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      基于Raspberry Pi 3的WordPress网站搭建流程</h1>
+      基于Raspberry Pi 3的WordPress站点搭建流程</h1>
       <p class="entry-census">
         <span>
           <a href="">
@@ -350,7 +350,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2021-11-19
+        2021-11-20
         
       
         ·<span id="readcount"></span>次阅读
@@ -368,137 +368,184 @@
         
         <div class="entry-content">
           <h1 id="一、硬件准备"><a href="#一、硬件准备" class="headerlink" title="一、硬件准备"></a>一、硬件准备</h1><p>Raspderry Pi 3 Model B</p>
+<p><br/><br/></p>
 <h1 id="二、环境配置"><a href="#二、环境配置" class="headerlink" title="二、环境配置"></a>二、环境配置</h1><h2 id="1-镜像准备"><a href="#1-镜像准备" class="headerlink" title="1.镜像准备"></a>1.镜像准备</h2><h3 id="下载网址"><a href="#下载网址" class="headerlink" title="下载网址"></a>下载网址</h3><p><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a></p>
 <h3 id="下载版本"><a href="#下载版本" class="headerlink" title="下载版本"></a>下载版本</h3><p>Raspbian Stretch with desktop 的 .img 镜像文件</p>
 <p>（Raspbian是基于Debian 9的树莓派操作系统）</p>
 <h2 id="2-烧录启动microSD卡"><a href="#2-烧录启动microSD卡" class="headerlink" title="2.烧录启动microSD卡"></a>2.烧录启动microSD卡</h2><h3 id="Windows下"><a href="#Windows下" class="headerlink" title="Windows下"></a>Windows下</h3><p>使用 diskpart 格式化SD卡</p>
 <p>使用 （Rufus 开源工具） / （Win Disk Imager） 烧制</p>
-<h3 id="MAC下"><a href="#MAC下" class="headerlink" title="MAC下"></a>MAC下</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo dd bs=1m if=/Users/SomSyd/Desktop/RaspberryPi3/2018-11-13-raspbeian-strect.img of=/dev/rdisk1 conv=sync</span><br></pre></td></tr></table></figure>
-
-
-
+<h3 id="MAC下"><a href="#MAC下" class="headerlink" title="MAC下"></a>MAC下</h3><p>（依据个人环境改动）</p>
+<pre><code>sudo dd bs=1m if=/Users/SomSyd/Desktop/RaspberryPi3/2018-11-13-raspbeian-strect.img of=/dev/rdisk1 conv=sync
+</code></pre>
 <h2 id="3-SSH远程连接"><a href="#3-SSH远程连接" class="headerlink" title="3.SSH远程连接"></a>3.SSH远程连接</h2><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>进入系统后记住内网IP地址</p>
 <p>进入时我们选择先不更新</p>
-<p>进入Preferences——&gt;Raspberry Pi Configuration——&gt;Interfaces——&gt;SSH: Enable（开启SSH连接）</p>
-<p>进入Preferences——&gt;Raspberry Pi Configuration——&gt;System——&gt;Boot: To CLI（不使用图形界面）</p>
+<ul>
+<li>进入Preferences——&gt;Raspberry Pi Configuration——&gt;Interfaces——&gt;SSH: Enable（开启SSH连接）</li>
+<li>进入Preferences——&gt;Raspberry Pi Configuration——&gt;System——&gt;Boot: To CLI（不使用图形界面）</li>
+</ul>
 <p>此 pi 被用来作为服务器，所以可以更改名字为Server</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/hostname</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano /etc/hostname
+</code></pre>
 <p>重启系统：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo reboot
+</code></pre>
 <h3 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h3><ul>
 <li><p>windows中使用Putty</p>
 </li>
 <li><p>MacOS直接使用终端</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SSH -Y pi@192.168.1.105</span><br></pre></td></tr></table></figure>
-
+<p>（依据个人环境改动）</p>
+<pre><code>SSH -Y pi@192.168.1.105
+</code></pre>
 <p>输入密码，登录成功</p>
 </li>
 </ul>
 <h2 id="4-Python开发环境"><a href="#4-Python开发环境" class="headerlink" title="4.Python开发环境"></a>4.Python开发环境</h2><p>查看当前python版本</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python</span><br><span class="line">python3</span><br></pre></td></tr></table></figure>
-
+<pre><code>python
+python3
+</code></pre>
 <p>python和python3都已内制</p>
-<h3 id="虚拟环境创建"><a href="#虚拟环境创建" class="headerlink" title="虚拟环境创建"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e7dcdcdeaa73">虚拟环境创建</a></h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo pip3 install virtualenv</span><br></pre></td></tr></table></figure>
-
-<h3 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install vim -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="源与软件更新"><a href="#源与软件更新" class="headerlink" title="源与软件更新"></a>源与软件更新</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="终端安装"><a href="#终端安装" class="headerlink" title="终端安装"></a>终端安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install terminator -y</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="5-JavaScript开发环境"><a href="#5-JavaScript开发环境" class="headerlink" title="5.JavaScript开发环境"></a>5.JavaScript开发环境</h2><h3 id="源加载至安装库"><a href="#源加载至安装库" class="headerlink" title="源加载至安装库"></a>源加载至安装库</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br></pre></td></tr></table></figure>
-
-<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nodejs -y </span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="三、网站搭建"><a href="#三、网站搭建" class="headerlink" title="三、网站搭建"></a>三、网站搭建</h1><h2 id="1-Nginx安装及配置"><a href="#1-Nginx安装及配置" class="headerlink" title="1.Nginx安装及配置"></a>1.Nginx安装及配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install nginx -y</span><br></pre></td></tr></table></figure>
-
+<h3 id="虚拟环境创建"><a href="#虚拟环境创建" class="headerlink" title="虚拟环境创建"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e7dcdcdeaa73">虚拟环境创建</a></h3><pre><code>sudo pip3 install virtualenv
+</code></pre>
+<h3 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h3><pre><code>sudo apt install vim -y
+</code></pre>
+<h3 id="源与软件更新"><a href="#源与软件更新" class="headerlink" title="源与软件更新"></a>源与软件更新</h3><pre><code>sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y
+</code></pre>
+<h3 id="终端安装"><a href="#终端安装" class="headerlink" title="终端安装"></a>终端安装</h3><pre><code>sudo apt install terminator -y
+</code></pre>
+<h2 id="5-JavaScript开发环境"><a href="#5-JavaScript开发环境" class="headerlink" title="5.JavaScript开发环境"></a>5.JavaScript开发环境</h2><h3 id="源加载至安装库"><a href="#源加载至安装库" class="headerlink" title="源加载至安装库"></a>源加载至安装库</h3><pre><code>curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+</code></pre>
+<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><pre><code>sudo apt install nodejs -y 
+</code></pre>
+<p><br/><br/></p>
+<h1 id="三、网站搭建"><a href="#三、网站搭建" class="headerlink" title="三、网站搭建"></a>三、网站搭建</h1><h2 id="1-Nginx安装及配置"><a href="#1-Nginx安装及配置" class="headerlink" title="1.Nginx安装及配置"></a>1.Nginx安装及配置</h2><pre><code>sudo apt install nginx -y
+</code></pre>
 <p>查看文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd /var/www/html</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
+<pre><code>cd /var/www/html
 
+ls
+</code></pre>
 <p>新建的文件优先级必定高于原始文件</p>
-<h2 id="2-MySQL安装及配置"><a href="#2-MySQL安装及配置" class="headerlink" title="2.MySQL安装及配置"></a>2.MySQL安装及配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install mysql-server</span><br></pre></td></tr></table></figure>
+<h2 id="2-MySQL安装及配置"><a href="#2-MySQL安装及配置" class="headerlink" title="2.MySQL安装及配置"></a>2.MySQL安装及配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code>sudo apt install mysql-server
+</code></pre>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><pre><code>sudo mysql_secure_installation
+</code></pre>
+<h3 id="查看server版本"><a href="#查看server版本" class="headerlink" title="查看server版本"></a>查看server版本</h3><pre><code>mysqld --version
+</code></pre>
+<h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><pre><code>sudo mysql -u root
+</code></pre>
+<h3 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h3><pre><code>select user,authentication_string,plugin,host from mysql.user;
+</code></pre>
+<h3 id="更新密码"><a href="#更新密码" class="headerlink" title="更新密码"></a>更新密码</h3><pre><code>use mysql;
 
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
+update user set authentication_string=PASSWORD(&quot;123456&quot;) where User=&quot;root&quot;;
 
-<h3 id="查看server版本"><a href="#查看server版本" class="headerlink" title="查看server版本"></a>查看server版本</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld --version</span><br></pre></td></tr></table></figure>
-
-<h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mysql -u root</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>,authentication_string,plugin,host <span class="keyword">from</span> mysql.user;</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新密码"><a href="#更新密码" class="headerlink" title="更新密码"></a>更新密码</h3><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">use mysql;</span><br><span class="line"></span><br><span class="line">update <span class="keyword">user</span> <span class="keyword">set</span> authentication_string<span class="operator">=</span>PASSWORD(&quot;123456&quot;) <span class="keyword">where</span> <span class="keyword">User</span><span class="operator">=</span>&quot;root&quot;;</span><br><span class="line"></span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
-
+flush privileges;
+</code></pre>
 <h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p>为WordPress创建一个数据库</p>
-<h2 id="3-PHP和FastCGI进程管理器"><a href="#3-PHP和FastCGI进程管理器" class="headerlink" title="3.PHP和FastCGI进程管理器"></a>3.PHP和FastCGI进程管理器</h2><p>PHP-FPM</p>
+<h2 id="3-PHP和FastCGI进程管理器"><a href="#3-PHP和FastCGI进程管理器" class="headerlink" title="3.PHP和FastCGI进程管理器"></a>3.PHP和FastCGI进程管理器</h2><p>【PHP-FPM】</p>
 <p>针对PHP的FastCGI实现，可以理解为管理进程池</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install php-fpm php-mysql</span><br></pre></td></tr></table></figure>
+<pre><code>sudo apt install php-fpm php-mysql
+</code></pre>
+<h2 id="4-HOSTS设置"><a href="#4-HOSTS设置" class="headerlink" title="4.HOSTS设置"></a>4.HOSTS设置</h2><pre><code>cd /etc/php
 
-
-
-<h2 id="4-HOSTS设置"><a href="#4-HOSTS设置" class="headerlink" title="4.HOSTS设置"></a>4.HOSTS设置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /etc/php</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/php.ini</span><br></pre></td></tr></table></figure>
-
+sudo nano /etc/php/7.0/fpm/php.ini
+</code></pre>
 <ul>
-<li>更改cgi.fix_pathinfo=0</li>
-<li>防止用户上传图片时附加恶意代码</li>
+<li><p>更改cgi.fix_pathinfo=0</p>
+</li>
+<li><p>防止用户上传图片时附加恶意代码</p>
+<p>  sudo nano /etc/php/7.0/fpm/pool.d/<a target="_blank" rel="noopener" href="http://www.conf/">www.conf</a></p>
+</li>
+<li><p>开启监听配置 listen</p>
+<p>  sudo nano /etc/nginx/sites-available/default</p>
+</li>
+<li><p>更改主配置</p>
+<p>  server{</p>
+<pre><code>  # 监听80端口
+  listen 80;
+  listen [::]:80;
+  
+  # 域名访问IP
+  server_name fleming.com www.fleming.com;
+  
+  # 内容放在main目录下
+  root /var/www/html/main;
+  index index.php index.html index.htm;
+  
+  # WordPress标准404格式输出404界面
+  location / &#123;
+      try_files $uri $uri/ /index.php?$args;
+  &#125;
+  
+  error_page 404 /404.html;``
+  
+  error_page 500  502 503 504 /50x.html;
+  location = /50x.html;
+</code></pre>
+<p>  }</p>
+<h1 id="pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm"><a href="#pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm" class="headerlink" title="pass the PHP scripts to FastCGI server listening on the php-fpm$"></a>pass the PHP scripts to FastCGI server listening on the php-fpm$</h1><h1 id="添加的进程管理器"><a href="#添加的进程管理器" class="headerlink" title="添加的进程管理器"></a>添加的进程管理器</h1><p>   location ~ .php${</p>
+<pre><code>   try_files $uri =404;
+   fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+   fastcgi_index index.php;
+   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;
+   include fastcgi_params;
+</code></pre>
+<p>   }</p>
+<p>   location = /favicon.ico {access_log off; log_not_found off;}</p>
+<h1 id="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"><a href="#在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击" class="headerlink" title="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"></a>在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</h1><p>   location /phpmyadmin {</p>
+<pre><code>   root /usr/share/;
+   index index.php index.html index.htm;
+   location ~ ^/phpmyadmin/(.+\.php)$&#123;
+       try_files $uri =404;
+       root /usr/share/;
+       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+       fastcgi_index index.php;
+       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;
+       include fastcgi_params;
+   &#125;
+   location
+   ~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;
+       root /usr.share/;
+   &#125;
+</code></pre>
+<p>   }</p>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/pool.d/www.conf</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>开启监听配置 listen=</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/nginx/sites-available/default</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>更改主配置</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	# 监听80端口</span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line">	</span><br><span class="line">	# 域名访问IP</span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line">	</span><br><span class="line">	# 内容放在main目录下</span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line">	</span><br><span class="line">	# WordPress标准404格式输出404界面</span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;``</span><br><span class="line">	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># pass the PHP scripts to FastCGI server listening on the php-fpm$</span><br><span class="line"># 添加的进程管理器</span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"> </span><br><span class="line"> # 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
 <p>查看配置文件是否生效</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nginx -t</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nginx -t
+</code></pre>
 <p>重新加载设置</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl reload nginx</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>sudo systemctl reload nginx
+</code></pre>
 <h2 id="5-WordPress网站搭建"><a href="#5-WordPress网站搭建" class="headerlink" title="5.WordPress网站搭建"></a>5.WordPress网站搭建</h2><p>查看常用网页放置目录</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /var/www/html</span><br></pre></td></tr></table></figure>
-
+<pre><code>cd /var/www/html
+</code></pre>
 <p>目录下内容权限设置为755（允许用户上传内容）</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chmod 755 -R /var/www</span><br></pre></td></tr></table></figure>
+<pre><code>sudo chmod 755 -R /var/www
 
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R pi /var/www/*</span><br></pre></td></tr></table></figure>
-
+sudo chown -R pi /var/www/*
+</code></pre>
 <p>创建文件夹</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo mkdir main</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo mkdir main
+</code></pre>
 <p>从wordpress官方保存安装包</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo wget https://wordpress.org/latest.zip</span><br></pre></td></tr></table></figure>
-
+<pre><code> sudo wget https://wordpress.org/latest.zip
+</code></pre>
 <p>解压下载包</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo unzip -q latest.zip</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo unzip -q latest.zip
+</code></pre>
 <p>将wordpress中的所有文件拷贝到main文件夹下</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo cp -r wordpress/* /var/www/html/main</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo cp -r wordpress/* /var/www/html/main
+</code></pre>
 <p> 删除wordpress文件夹和latest压缩包</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo rm -rf wordpress</span><br><span class="line">sudo rm -rf latest.zip</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>sudo rm -rf wordpress
+sudo rm -rf latest.zip
+</code></pre>
 <p>进入域名或IP对应网址设置wordpress</p>
 <p>提示找不到wp-config.php文件</p>
 <p>新建此文件，将提示内容拷贝到文件中</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano wp-config.php</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano wp-config.php
+</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/** The Database Collate type.Don&#x27;t change this if in doubt */ 下添加</span><br><span class="line">define(&#x27;FS_METHOD&#x27;,&#x27;direct&#x27;);</span><br></pre></td></tr></table></figure>
 
 
@@ -506,26 +553,30 @@
 <h2 id="6-常见问题解决方案"><a href="#6-常见问题解决方案" class="headerlink" title="6.常见问题解决方案"></a>6.常见问题解决方案</h2><ol>
 <li><p>问题：上传图片大小限制</p>
 <p>更改使上传不受权限影响</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R www-data:www_data /var/www/html/main</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo chown -R www-data:www_data /var/www/html/main
+</code></pre>
 <p>更改图片上传大小</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/ngnix/ngnix.conf</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano /etc/ngnix/ngnix.conf
+</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##</span><br><span class="line"># set client body size to 10M</span><br><span class="line">##</span><br><span class="line">client_max_body_size 10M;</span><br></pre></td></tr></table></figure>
 
 <p>重新加载</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl reload nginx.service</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo systemctl reload nginx.service
+</code></pre>
 <p>更改文件</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/php.ini</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano /etc/php/7.0/fpm/php.ini
+</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">post_max_size = 200M</span><br><span class="line"></span><br><span class="line">upload_max_filesize = 200M</span><br></pre></td></tr></table></figure>
 
 <p>重启进程管理器与服务</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl restart php7.0-fpm.service</span><br><span class="line">sudo systemctl restart nginx.service</span><br></pre></td></tr></table></figure></li>
+<pre><code>sudo systemctl restart php7.0-fpm.service
+sudo systemctl restart nginx.service
+</code></pre>
+</li>
 <li><p>网站中setting——&gt;permalink——&gt;post name</p>
 </li>
 </ol>
+<p><br/><br/></p>
 <h1 id="参考视频："><a href="#参考视频：" class="headerlink" title="参考视频："></a>参考视频：</h1><p>(<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2">https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2</a>)</p>
 <p>(<a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A">https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A</a>)</p>
 <p>(<a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A">https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A</a>)</p>

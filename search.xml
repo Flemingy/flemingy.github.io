@@ -47,140 +47,187 @@
       </tags>
   </entry>
   <entry>
-    <title>基于Raspberry Pi 3的WordPress网站搭建流程</title>
-    <url>/2021/11/19/Web%E2%80%94%E2%80%94%E6%A0%91%E8%8E%93%E6%B4%BE%203%20%E6%90%AD%E5%BB%BAWordPress%E7%BD%91%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/</url>
+    <title>基于Raspberry Pi 3的WordPress站点搭建流程</title>
+    <url>/2021/11/20/Web%E2%80%94%E2%80%94%E6%A0%91%E8%8E%93%E6%B4%BE%203%20%E6%90%AD%E5%BB%BAWordPress%E7%BD%91%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、硬件准备"><a href="#一、硬件准备" class="headerlink" title="一、硬件准备"></a>一、硬件准备</h1><p>Raspderry Pi 3 Model B</p>
+<p><br/><br/></p>
 <h1 id="二、环境配置"><a href="#二、环境配置" class="headerlink" title="二、环境配置"></a>二、环境配置</h1><h2 id="1-镜像准备"><a href="#1-镜像准备" class="headerlink" title="1.镜像准备"></a>1.镜像准备</h2><h3 id="下载网址"><a href="#下载网址" class="headerlink" title="下载网址"></a>下载网址</h3><p><a href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a></p>
 <h3 id="下载版本"><a href="#下载版本" class="headerlink" title="下载版本"></a>下载版本</h3><p>Raspbian Stretch with desktop 的 .img 镜像文件</p>
 <p>（Raspbian是基于Debian 9的树莓派操作系统）</p>
 <h2 id="2-烧录启动microSD卡"><a href="#2-烧录启动microSD卡" class="headerlink" title="2.烧录启动microSD卡"></a>2.烧录启动microSD卡</h2><h3 id="Windows下"><a href="#Windows下" class="headerlink" title="Windows下"></a>Windows下</h3><p>使用 diskpart 格式化SD卡</p>
 <p>使用 （Rufus 开源工具） / （Win Disk Imager） 烧制</p>
-<h3 id="MAC下"><a href="#MAC下" class="headerlink" title="MAC下"></a>MAC下</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">sudo dd bs=1m if=/Users/SomSyd/Desktop/RaspberryPi3/2018-11-13-raspbeian-strect.img of=/dev/rdisk1 conv=sync</span><br></pre></td></tr></table></figure>
-
-
-
+<h3 id="MAC下"><a href="#MAC下" class="headerlink" title="MAC下"></a>MAC下</h3><p>（依据个人环境改动）</p>
+<pre><code>sudo dd bs=1m if=/Users/SomSyd/Desktop/RaspberryPi3/2018-11-13-raspbeian-strect.img of=/dev/rdisk1 conv=sync
+</code></pre>
 <h2 id="3-SSH远程连接"><a href="#3-SSH远程连接" class="headerlink" title="3.SSH远程连接"></a>3.SSH远程连接</h2><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>进入系统后记住内网IP地址</p>
 <p>进入时我们选择先不更新</p>
-<p>进入Preferences——&gt;Raspberry Pi Configuration——&gt;Interfaces——&gt;SSH: Enable（开启SSH连接）</p>
-<p>进入Preferences——&gt;Raspberry Pi Configuration——&gt;System——&gt;Boot: To CLI（不使用图形界面）</p>
+<ul>
+<li>进入Preferences——&gt;Raspberry Pi Configuration——&gt;Interfaces——&gt;SSH: Enable（开启SSH连接）</li>
+<li>进入Preferences——&gt;Raspberry Pi Configuration——&gt;System——&gt;Boot: To CLI（不使用图形界面）</li>
+</ul>
 <p>此 pi 被用来作为服务器，所以可以更改名字为Server</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/hostname</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano /etc/hostname
+</code></pre>
 <p>重启系统：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo reboot</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo reboot
+</code></pre>
 <h3 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h3><ul>
 <li><p>windows中使用Putty</p>
 </li>
 <li><p>MacOS直接使用终端</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">SSH -Y pi@192.168.1.105</span><br></pre></td></tr></table></figure>
-
+<p>（依据个人环境改动）</p>
+<pre><code>SSH -Y pi@192.168.1.105
+</code></pre>
 <p>输入密码，登录成功</p>
 </li>
 </ul>
 <h2 id="4-Python开发环境"><a href="#4-Python开发环境" class="headerlink" title="4.Python开发环境"></a>4.Python开发环境</h2><p>查看当前python版本</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">python</span><br><span class="line">python3</span><br></pre></td></tr></table></figure>
-
+<pre><code>python
+python3
+</code></pre>
 <p>python和python3都已内制</p>
-<h3 id="虚拟环境创建"><a href="#虚拟环境创建" class="headerlink" title="虚拟环境创建"></a><a href="https://www.jianshu.com/p/e7dcdcdeaa73">虚拟环境创建</a></h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo pip3 install virtualenv</span><br></pre></td></tr></table></figure>
-
-<h3 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install vim -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="源与软件更新"><a href="#源与软件更新" class="headerlink" title="源与软件更新"></a>源与软件更新</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y</span><br></pre></td></tr></table></figure>
-
-<h3 id="终端安装"><a href="#终端安装" class="headerlink" title="终端安装"></a>终端安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install terminator -y</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="5-JavaScript开发环境"><a href="#5-JavaScript开发环境" class="headerlink" title="5.JavaScript开发环境"></a>5.JavaScript开发环境</h2><h3 id="源加载至安装库"><a href="#源加载至安装库" class="headerlink" title="源加载至安装库"></a>源加载至安装库</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -</span><br></pre></td></tr></table></figure>
-
-<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install nodejs -y </span><br></pre></td></tr></table></figure>
-
-
-
-<h1 id="三、网站搭建"><a href="#三、网站搭建" class="headerlink" title="三、网站搭建"></a>三、网站搭建</h1><h2 id="1-Nginx安装及配置"><a href="#1-Nginx安装及配置" class="headerlink" title="1.Nginx安装及配置"></a>1.Nginx安装及配置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install nginx -y</span><br></pre></td></tr></table></figure>
-
+<h3 id="虚拟环境创建"><a href="#虚拟环境创建" class="headerlink" title="虚拟环境创建"></a><a href="https://www.jianshu.com/p/e7dcdcdeaa73">虚拟环境创建</a></h3><pre><code>sudo pip3 install virtualenv
+</code></pre>
+<h3 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h3><pre><code>sudo apt install vim -y
+</code></pre>
+<h3 id="源与软件更新"><a href="#源与软件更新" class="headerlink" title="源与软件更新"></a>源与软件更新</h3><pre><code>sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y
+</code></pre>
+<h3 id="终端安装"><a href="#终端安装" class="headerlink" title="终端安装"></a>终端安装</h3><pre><code>sudo apt install terminator -y
+</code></pre>
+<h2 id="5-JavaScript开发环境"><a href="#5-JavaScript开发环境" class="headerlink" title="5.JavaScript开发环境"></a>5.JavaScript开发环境</h2><h3 id="源加载至安装库"><a href="#源加载至安装库" class="headerlink" title="源加载至安装库"></a>源加载至安装库</h3><pre><code>curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+</code></pre>
+<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><pre><code>sudo apt install nodejs -y 
+</code></pre>
+<p><br/><br/></p>
+<h1 id="三、网站搭建"><a href="#三、网站搭建" class="headerlink" title="三、网站搭建"></a>三、网站搭建</h1><h2 id="1-Nginx安装及配置"><a href="#1-Nginx安装及配置" class="headerlink" title="1.Nginx安装及配置"></a>1.Nginx安装及配置</h2><pre><code>sudo apt install nginx -y
+</code></pre>
 <p>查看文件</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /var/www/html</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
+<pre><code>cd /var/www/html
 
+ls
+</code></pre>
 <p>新建的文件优先级必定高于原始文件</p>
-<h2 id="2-MySQL安装及配置"><a href="#2-MySQL安装及配置" class="headerlink" title="2.MySQL安装及配置"></a>2.MySQL安装及配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install mysql-server</span><br></pre></td></tr></table></figure>
+<h2 id="2-MySQL安装及配置"><a href="#2-MySQL安装及配置" class="headerlink" title="2.MySQL安装及配置"></a>2.MySQL安装及配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code>sudo apt install mysql-server
+</code></pre>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><pre><code>sudo mysql_secure_installation
+</code></pre>
+<h3 id="查看server版本"><a href="#查看server版本" class="headerlink" title="查看server版本"></a>查看server版本</h3><pre><code>mysqld --version
+</code></pre>
+<h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><pre><code>sudo mysql -u root
+</code></pre>
+<h3 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h3><pre><code>select user,authentication_string,plugin,host from mysql.user;
+</code></pre>
+<h3 id="更新密码"><a href="#更新密码" class="headerlink" title="更新密码"></a>更新密码</h3><pre><code>use mysql;
 
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mysql_secure_installation</span><br></pre></td></tr></table></figure>
+update user set authentication_string=PASSWORD(&quot;123456&quot;) where User=&quot;root&quot;;
 
-<h3 id="查看server版本"><a href="#查看server版本" class="headerlink" title="查看server版本"></a>查看server版本</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">mysqld --version</span><br></pre></td></tr></table></figure>
-
-<h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mysql -u root</span><br></pre></td></tr></table></figure>
-
-<h3 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">select</span> <span class="keyword">user</span>,authentication_string,plugin,host <span class="keyword">from</span> mysql.user;</span><br></pre></td></tr></table></figure>
-
-<h3 id="更新密码"><a href="#更新密码" class="headerlink" title="更新密码"></a>更新密码</h3><figure class="highlight sql"><table><tr><td class="code"><pre><span class="line">use mysql;</span><br><span class="line"></span><br><span class="line">update <span class="keyword">user</span> <span class="keyword">set</span> authentication_string<span class="operator">=</span>PASSWORD(&quot;123456&quot;) <span class="keyword">where</span> <span class="keyword">User</span><span class="operator">=</span>&quot;root&quot;;</span><br><span class="line"></span><br><span class="line">flush privileges;</span><br></pre></td></tr></table></figure>
-
+flush privileges;
+</code></pre>
 <h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p>为WordPress创建一个数据库</p>
-<h2 id="3-PHP和FastCGI进程管理器"><a href="#3-PHP和FastCGI进程管理器" class="headerlink" title="3.PHP和FastCGI进程管理器"></a>3.PHP和FastCGI进程管理器</h2><p>PHP-FPM</p>
+<h2 id="3-PHP和FastCGI进程管理器"><a href="#3-PHP和FastCGI进程管理器" class="headerlink" title="3.PHP和FastCGI进程管理器"></a>3.PHP和FastCGI进程管理器</h2><p>【PHP-FPM】</p>
 <p>针对PHP的FastCGI实现，可以理解为管理进程池</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo apt install php-fpm php-mysql</span><br></pre></td></tr></table></figure>
+<pre><code>sudo apt install php-fpm php-mysql
+</code></pre>
+<h2 id="4-HOSTS设置"><a href="#4-HOSTS设置" class="headerlink" title="4.HOSTS设置"></a>4.HOSTS设置</h2><pre><code>cd /etc/php
 
-
-
-<h2 id="4-HOSTS设置"><a href="#4-HOSTS设置" class="headerlink" title="4.HOSTS设置"></a>4.HOSTS设置</h2><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/php</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/php.ini</span><br></pre></td></tr></table></figure>
-
+sudo nano /etc/php/7.0/fpm/php.ini
+</code></pre>
 <ul>
-<li>更改cgi.fix_pathinfo=0</li>
-<li>防止用户上传图片时附加恶意代码</li>
+<li><p>更改cgi.fix_pathinfo=0</p>
+</li>
+<li><p>防止用户上传图片时附加恶意代码</p>
+<p>  sudo nano /etc/php/7.0/fpm/pool.d/<a href="http://www.conf/">www.conf</a></p>
+</li>
+<li><p>开启监听配置 listen</p>
+<p>  sudo nano /etc/nginx/sites-available/default</p>
+</li>
+<li><p>更改主配置</p>
+<p>  server{</p>
+<pre><code>  # 监听80端口
+  listen 80;
+  listen [::]:80;
+  
+  # 域名访问IP
+  server_name fleming.com www.fleming.com;
+  
+  # 内容放在main目录下
+  root /var/www/html/main;
+  index index.php index.html index.htm;
+  
+  # WordPress标准404格式输出404界面
+  location / &#123;
+      try_files $uri $uri/ /index.php?$args;
+  &#125;
+  
+  error_page 404 /404.html;``
+  
+  error_page 500  502 503 504 /50x.html;
+  location = /50x.html;
+</code></pre>
+<p>  }</p>
+<h1 id="pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm"><a href="#pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm" class="headerlink" title="pass the PHP scripts to FastCGI server listening on the php-fpm$"></a>pass the PHP scripts to FastCGI server listening on the php-fpm$</h1><h1 id="添加的进程管理器"><a href="#添加的进程管理器" class="headerlink" title="添加的进程管理器"></a>添加的进程管理器</h1><p>   location ~ .php${</p>
+<pre><code>   try_files $uri =404;
+   fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+   fastcgi_index index.php;
+   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;
+   include fastcgi_params;
+</code></pre>
+<p>   }</p>
+<p>   location = /favicon.ico {access_log off; log_not_found off;}</p>
+<h1 id="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"><a href="#在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击" class="headerlink" title="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"></a>在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</h1><p>   location /phpmyadmin {</p>
+<pre><code>   root /usr/share/;
+   index index.php index.html index.htm;
+   location ~ ^/phpmyadmin/(.+\.php)$&#123;
+       try_files $uri =404;
+       root /usr/share/;
+       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+       fastcgi_index index.php;
+       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;
+       include fastcgi_params;
+   &#125;
+   location
+   ~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;
+       root /usr.share/;
+   &#125;
+</code></pre>
+<p>   }</p>
+</li>
 </ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/pool.d/www.conf</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>开启监听配置 listen=</li>
-</ul>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/nginx/sites-available/default</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>更改主配置</li>
-</ul>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	# 监听80端口</span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line">	</span><br><span class="line">	# 域名访问IP</span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line">	</span><br><span class="line">	# 内容放在main目录下</span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line">	</span><br><span class="line">	# WordPress标准404格式输出404界面</span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;``</span><br><span class="line">	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># pass the PHP scripts to FastCGI server listening on the php-fpm$</span><br><span class="line"># 添加的进程管理器</span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> </span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"> </span><br><span class="line"> # 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
 <p>查看配置文件是否生效</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nginx -t</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nginx -t
+</code></pre>
 <p>重新加载设置</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo systemctl reload nginx</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>sudo systemctl reload nginx
+</code></pre>
 <h2 id="5-WordPress网站搭建"><a href="#5-WordPress网站搭建" class="headerlink" title="5.WordPress网站搭建"></a>5.WordPress网站搭建</h2><p>查看常用网页放置目录</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /var/www/html</span><br></pre></td></tr></table></figure>
-
+<pre><code>cd /var/www/html
+</code></pre>
 <p>目录下内容权限设置为755（允许用户上传内容）</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chmod 755 -R /var/www</span><br></pre></td></tr></table></figure>
+<pre><code>sudo chmod 755 -R /var/www
 
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chown -R pi /var/www/*</span><br></pre></td></tr></table></figure>
-
+sudo chown -R pi /var/www/*
+</code></pre>
 <p>创建文件夹</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo mkdir main</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo mkdir main
+</code></pre>
 <p>从wordpress官方保存安装包</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo wget https://wordpress.org/latest.zip</span><br></pre></td></tr></table></figure>
-
+<pre><code> sudo wget https://wordpress.org/latest.zip
+</code></pre>
 <p>解压下载包</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo unzip -q latest.zip</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo unzip -q latest.zip
+</code></pre>
 <p>将wordpress中的所有文件拷贝到main文件夹下</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo cp -r wordpress/* /var/www/html/main</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo cp -r wordpress/* /var/www/html/main
+</code></pre>
 <p> 删除wordpress文件夹和latest压缩包</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo rm -rf wordpress</span><br><span class="line">sudo rm -rf latest.zip</span><br></pre></td></tr></table></figure>
-
-
-
+<pre><code>sudo rm -rf wordpress
+sudo rm -rf latest.zip
+</code></pre>
 <p>进入域名或IP对应网址设置wordpress</p>
 <p>提示找不到wp-config.php文件</p>
 <p>新建此文件，将提示内容拷贝到文件中</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano wp-config.php</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano wp-config.php
+</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">/** The Database Collate type.Don&#x27;t change this if in doubt */ 下添加</span><br><span class="line">define(&#x27;FS_METHOD&#x27;,&#x27;direct&#x27;);</span><br></pre></td></tr></table></figure>
 
 
@@ -188,26 +235,30 @@
 <h2 id="6-常见问题解决方案"><a href="#6-常见问题解决方案" class="headerlink" title="6.常见问题解决方案"></a>6.常见问题解决方案</h2><ol>
 <li><p>问题：上传图片大小限制</p>
 <p>更改使上传不受权限影响</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo chown -R www-data:www_data /var/www/html/main</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo chown -R www-data:www_data /var/www/html/main
+</code></pre>
 <p>更改图片上传大小</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/ngnix/ngnix.conf</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano /etc/ngnix/ngnix.conf
+</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">##</span><br><span class="line"># set client body size to 10M</span><br><span class="line">##</span><br><span class="line">client_max_body_size 10M;</span><br></pre></td></tr></table></figure>
 
 <p>重新加载</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo systemctl reload nginx.service</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo systemctl reload nginx.service
+</code></pre>
 <p>更改文件</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo nano /etc/php/7.0/fpm/php.ini</span><br></pre></td></tr></table></figure>
-
+<pre><code>sudo nano /etc/php/7.0/fpm/php.ini
+</code></pre>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">post_max_size = 200M</span><br><span class="line"></span><br><span class="line">upload_max_filesize = 200M</span><br></pre></td></tr></table></figure>
 
 <p>重启进程管理器与服务</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo systemctl restart php7.0-fpm.service</span><br><span class="line">sudo systemctl restart nginx.service</span><br></pre></td></tr></table></figure></li>
+<pre><code>sudo systemctl restart php7.0-fpm.service
+sudo systemctl restart nginx.service
+</code></pre>
+</li>
 <li><p>网站中setting——&gt;permalink——&gt;post name</p>
 </li>
 </ol>
+<p><br/><br/></p>
 <h1 id="参考视频："><a href="#参考视频：" class="headerlink" title="参考视频："></a>参考视频：</h1><p>(<a href="https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2">https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2</a>)</p>
 <p>(<a href="https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A">https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A</a>)</p>
 <p>(<a href="https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A">https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A</a>)</p>
@@ -760,6 +811,86 @@
       </tags>
   </entry>
   <entry>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
+<br/>
+
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<br/>
+
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Browser/Server网络架构模式</title>
     <url>/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-B-S架构与C-S架构"><a href="#1-B-S架构与C-S架构" class="headerlink" title="1. B/S架构与C/S架构"></a>1. B/S架构与C/S架构</h1><ul>
@@ -915,86 +1046,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
-<br/>
-
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
-<br/>
-
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>PacVim：一个学习 vim 命令的命令行游戏.md</title>
     <url>/2021/10/27/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94PacVim%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%B9%A0%20vim%20%E5%91%BD%E4%BB%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%B8%B8%E6%88%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
@@ -1055,44 +1106,6 @@ $ sudo make install
       </categories>
       <tags>
         <tag>转载</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Ubuntu中设置阿里镜像源</title>
-    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-</code></pre>
-<br/>
-
-
-
-<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
-</code></pre>
-<p>将以下内容放在该文件的头部</p>
-<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
-</code></pre>
-<p>保存退出</p>
-<br/>
-
-
-
-<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update
-</code></pre>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>运维</tag>
       </tags>
   </entry>
   <entry>
@@ -1165,6 +1178,44 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu中设置阿里镜像源</title>
+    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E8%AE%BE%E7%BD%AE%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+</code></pre>
+<br/>
+
+
+
+<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
+</code></pre>
+<p>将以下内容放在该文件的头部</p>
+<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+</code></pre>
+<p>保存退出</p>
+<br/>
+
+
+
+<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
       </tags>
   </entry>
   <entry>
@@ -1256,49 +1307,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>视频后期剪辑与特效软件PR&amp;AE</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
@@ -1348,6 +1356,264 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>蜜友课</title>
+    <url>/2021/10/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E2%80%94%E2%80%94%E8%9C%9C%E5%8F%8B%E8%AF%BE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、友谊阶段"><a href="#一、友谊阶段" class="headerlink" title="一、友谊阶段"></a>一、友谊阶段</h1><p>金字塔形（由下到上）</p>
+<ul>
+<li><p>（<strong>敌人阶段：</strong>凶神恶煞的潜在危险，潜意识始终处于对抗状态）</p>
+<p>​    ↑     [ 印象糟糕时 ]</p>
+</li>
+<li><p>（<strong>中立阶段：</strong>初次见面，大脑判断对方是潜在的朋友还是敌人）</p>
+<p>​    ↓    [ 印象良好时 ]</p>
+</li>
+<li><p><strong>陌生人：</strong>路上会打招呼但未曾交往过的人</p>
+</li>
+<li><p><strong>熟人：</strong>寒暄交流，但未曾相约出门的人</p>
+</li>
+<li><p><strong>朋友：</strong>有过多次交谈，相约聚会的人，在一起会感到舒服</p>
+</li>
+<li><p><strong>密友：</strong>通常有2-4人，一年以上经受了时间考验的友谊，在一起会感到非常舒服</p>
+</li>
+<li><p><strong>重要他人：</strong>除了家人通常有1人，一起度过的时光最长的生命中重要的人，谈话最为深入、信任的人，如女朋友或者配偶</p>
+</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="二、友谊公式"><a href="#二、友谊公式" class="headerlink" title="二、友谊公式"></a>二、友谊公式</h1><h3 id="（一）友谊-接近度-时长-频率-强度"><a href="#（一）友谊-接近度-时长-频率-强度" class="headerlink" title="（一）友谊=接近度+时长+频率+强度"></a>（一）<strong>友谊=接近度+时长+频率+强度</strong></h3><ol>
+<li><p><strong>接近度</strong></p>
+<p>1分：距离很远，几乎看不见</p>
+<p>3分：相当于在同一间健身房锻炼</p>
+<p>5分：等于在同一间教室上课</p>
+<p>7分：在同一张桌子吃午饭</p>
+<p>10分：两个亲密的人，与伴侣同睡一张床</p>
+</li>
+<li><p><strong>时长</strong></p>
+<p>1分：只有简短的打招呼</p>
+<p>3分：花费几分钟为一个旅客指路</p>
+<p>5分：交流30分钟到1个小时</p>
+<p>7分：2-4个小时的交流，在同一俱乐部</p>
+<p>10分：大多数时间都是跟某人在一起</p>
+</li>
+<li><p><strong>频率</strong></p>
+<p>1分：一场一次性的互动</p>
+<p>3分：一个月交流一次的人</p>
+<p>5分：一周见1-2次面的人</p>
+<p>7分：一周见3-4次面的人</p>
+<p>10分：几乎每天都会见到的人</p>
+</li>
+<li><p><strong>强度</strong></p>
+<p>1分：没有情绪变动的问答交流</p>
+<p>3分：正常交流，偶尔说个笑话</p>
+<p>5分：好友聚会，过程中经常微笑和发笑</p>
+<p>7分：聊天时候别人发自内心的赞赏你，触及心灵能使心情好转</p>
+<p>10分：互动时整段时间几乎都是感受强烈情绪，由衷赞赏大为感动，聊些私密话题</p>
+</li>
+</ol>
+<h3 id="（二）评分标准"><a href="#（二）评分标准" class="headerlink" title="（二）评分标准"></a>（二）评分标准</h3><ol>
+<li>陌生人——0分</li>
+<li>熟人——10分</li>
+<li>朋友——15分</li>
+<li>密友——25分</li>
+<li>重要他人——35分</li>
+</ol>
+<h3 id="（三）加深友谊"><a href="#（三）加深友谊" class="headerlink" title="（三）加深友谊"></a>（三）加深友谊</h3><ul>
+<li>一起吃饭——&gt;提高互动时长和接近度</li>
+<li>加入同一俱乐部——&gt;提高互动频率和时长</li>
+<li>参加派对——&gt;提高互动时长和强度</li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="三、交友黄金法则"><a href="#三、交友黄金法则" class="headerlink" title="三、交友黄金法则"></a>三、交友黄金法则</h1><p><em>（交友黄金法则是友谊公式前的正号/负号）</em></p>
+<br/>
+
+<h3 id="要想让人们喜欢你，你需要让人们感觉舒服"><a href="#要想让人们喜欢你，你需要让人们感觉舒服" class="headerlink" title="要想让人们喜欢你，你需要让人们感觉舒服"></a><strong>要想让人们喜欢你，你需要让人们感觉舒服</strong></h3><p>让人舒服，他们会想要亲近你</p>
+<p>让人难受，他们就会想避开你</p>
+<h3 id="交友三宗罪："><a href="#交友三宗罪：" class="headerlink" title="交友三宗罪："></a>交友三宗罪：</h3><ol>
+<li>肢体语言不良，表情眼神呆滞</li>
+<li>插话，凡事都以自己为中心</li>
+<li>讲述过去，抱怨，负面言论太多</li>
+</ol>
+<br/>
+
+<br/>
+
+<h1 id="四、价值概念"><a href="#四、价值概念" class="headerlink" title="四、价值概念"></a>四、价值概念</h1><p><em>（价值是友谊公式前的乘数）</em></p>
+<br/>
+
+<p>大脑会自动设定周围人的价值，区分群体中的权利尺度</p>
+<p>价值越高时，越容易取得他人的交往倾向</p>
+<p>因此我们需要思考：</p>
+<ol>
+<li>如何确定我们当前的价值</li>
+<li>怎样增加我们当前的价值</li>
+</ol>
+<br/>
+
+<h3 id="判断他人价值的三种依据："><a href="#判断他人价值的三种依据：" class="headerlink" title="判断他人价值的三种依据："></a><strong>判断他人价值的三种依据：</strong></h3><ol>
+<li><p><strong>外表</strong></p>
+<p>指人的外貌形态。外表不佳时，感知价值大打折扣。</p>
+<p>从两方面看外表吸引力：</p>
+<ul>
+<li><p><strong>健康指标：</strong></p>
+<p>糟糕的健康情况让感知价值下降</p>
+<p>因此我们需要多锻炼 饮食健康 睡好觉</p>
+</li>
+<li><p><strong>好基因：</strong></p>
+<p>人类文明存续的唯一方式</p>
+<p>脸型对称，男性追求身材高大 宽肩 下巴线，女性追求臀部比 胸部大小 年轻程度</p>
+<p>事实既定已经不可改变，但我们可以专注于增加个人价值的东西。</p>
+<p>比如去健身房练出宽肩 增加肌肉；利用时尚为自己加分，穿戴配饰衣物弥补身体特征的缺陷。</p>
+</li>
+</ul>
+</li>
+<li><p><strong>地位</strong></p>
+<ul>
+<li><p><strong>财富：</strong></p>
+<p>财富的表达很微妙，珠宝首饰在展示财富中起着重要的作用，慷慨大方也是财富的标志</p>
+<p>因此这需要我们保持良好的财务状况</p>
+</li>
+<li><p><strong>职业：</strong></p>
+<p>同一场景下，人们对不同的职业有不同的价值判断</p>
+</li>
+<li><p><strong>社交证据：</strong></p>
+<p>需要我们通过与他人交际来提高个人价值</p>
+</li>
+</ul>
+</li>
+<li><p><strong>行为举止</strong></p>
+<ul>
+<li><p><strong>肢体语言是开放还是封闭</strong></p>
+<p>良好的姿势 挺胸 不交叉双臂</p>
+<p>看起来越放松，感知价值就会越高</p>
+<p>因为往往顶层人士更放松</p>
+</li>
+<li><p><strong>声音和音调</strong></p>
+<p>音调高意味身体是紧张的</p>
+<p>看起来不放松，感知价值就会降低</p>
+</li>
+<li><p><strong>界限</strong></p>
+<p>是指你有多容易受到外界的影响程度</p>
+<p>别人戏弄你时，一笑而过，毫不在乎</p>
+<p>界限越强越不容易被外界因素所影响，表现对自己有信心，这会增加个人价值</p>
+</li>
+</ul>
+</li>
+</ol>
+<br/>
+
+<br/>
+
+<h1 id="五、肢体语言"><a href="#五、肢体语言" class="headerlink" title="五、肢体语言"></a>五、肢体语言</h1><p>重要性：</p>
+<ol>
+<li><h3 id="谈话的有效调节手段"><a href="#谈话的有效调节手段" class="headerlink" title="谈话的有效调节手段"></a><strong>谈话的有效调节手段</strong></h3><p>谈论对方喜欢的，避免对方介意的</p>
+<p>同时观察对方回答时的肢体语言</p>
+</li>
+<li><h3 id="增加你对所交谈对象的理解和共鸣"><a href="#增加你对所交谈对象的理解和共鸣" class="headerlink" title="增加你对所交谈对象的理解和共鸣"></a><strong>增加你对所交谈对象的理解和共鸣</strong></h3><p>向他们展示你对他们的真诚和关心</p>
+</li>
+<li><h3 id="引导对方如何看待你"><a href="#引导对方如何看待你" class="headerlink" title="引导对方如何看待你"></a><strong>引导对方如何看待你</strong></h3><p>站姿 坐姿 谈吐都决定了你的价值</p>
+<p>我们要表现出自信并且有价值</p>
+</li>
+</ol>
+<br/>
+
+<br/>
+
+<h1 id="六、三种好用的交际肢体语言"><a href="#六、三种好用的交际肢体语言" class="headerlink" title="六、三种好用的交际肢体语言"></a>六、三种好用的交际肢体语言</h1><ol>
+<li><h3 id="微笑"><a href="#微笑" class="headerlink" title="微笑"></a><strong>微笑</strong></h3><p>真诚微笑时，双方都会感到非常开心</p>
+<p>但要控制自己，避免假笑，真诚微笑</p>
+<p>真诚的笑时，眼睛下方会隆起，双颊也会鼓起，眼角会出现细微的鱼尾纹</p>
+<p>训练方法是留意下一次你真正开心发自内心的微笑或者大笑的时，注意自己面部的感觉，可以在镜子面前练习</p>
+</li>
+<li><h3 id="挑眉"><a href="#挑眉" class="headerlink" title="挑眉"></a><strong>挑眉</strong></h3><p>飞快地将眉毛扬起，放下</p>
+<p>对陌生人或者不太熟悉的人挑眉，会让你看起来更加友好</p>
+<p>最好在有段距离的时候挑眉，至少有几步远</p>
+</li>
+<li><h3 id="歪头"><a href="#歪头" class="headerlink" title="歪头"></a><strong>歪头</strong></h3><p>将放松和愉快的感觉传递给交谈的人身上</p>
+<p>保证倾斜头部，大约10-20度，</p>
+</li>
+</ol>
+<br/>
+
+<br/>
+
+<h1 id="七、如何让别人敞开心扉"><a href="#七、如何让别人敞开心扉" class="headerlink" title="七、如何让别人敞开心扉"></a>七、如何让别人敞开心扉</h1><ol>
+<li><p><strong>学着降低过滤标准</strong></p>
+<p>从一开始就表现，你不在对方是否尽善尽美。</p>
+<p>你并不斟词酌句，而且你愿意谈论那些不被社会认可或视为异端的话题，那么人们就会想要对你敞开心扉。</p>
+<p>告诉对方你并没有什么过滤标准，你只需要分享一些被认为有些奇怪的，有些不合常规的东西。</p>
+<p>当然这取决于你的价值感官，如果你的价值感官很低，人们会认为你是疯子，相反，价值感官越高时，降低你的过滤标准，人们越能接受你发出的一些奇怪言论。</p>
+</li>
+<li><p><strong>提出正确的问题</strong></p>
+<p>“假定问题”，需要我们基于观察，对某人做一种假定，并看看是否正确</p>
+<p>大多数假定正确情况下，人们都会打开心扉，释放压抑的内心</p>
+</li>
+</ol>
+<br/>
+
+<br/>
+
+<h1 id="八、健谈的秘诀"><a href="#八、健谈的秘诀" class="headerlink" title="八、健谈的秘诀"></a>八、健谈的秘诀</h1><p><strong>语言的本质：规则和模式</strong></p>
+<p>人类大脑，善于识别模式和规则</p>
+<br/>
+
+<p>要给大脑更多的机会去<strong>观察和学习</strong>语言特有的模式和规则</p>
+<p>多练习，大胆走出去和更多的人<strong>进行实际交流</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>社会学</tag>
       </tags>
   </entry>
   <entry>
@@ -1576,221 +1842,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蜜友课</title>
-    <url>/2021/10/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E2%80%94%E2%80%94%E8%9C%9C%E5%8F%8B%E8%AF%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、友谊阶段"><a href="#一、友谊阶段" class="headerlink" title="一、友谊阶段"></a>一、友谊阶段</h1><p>金字塔形（由下到上）</p>
-<ul>
-<li><p>（<strong>敌人阶段：</strong>凶神恶煞的潜在危险，潜意识始终处于对抗状态）</p>
-<p>​    ↑     [ 印象糟糕时 ]</p>
-</li>
-<li><p>（<strong>中立阶段：</strong>初次见面，大脑判断对方是潜在的朋友还是敌人）</p>
-<p>​    ↓    [ 印象良好时 ]</p>
-</li>
-<li><p><strong>陌生人：</strong>路上会打招呼但未曾交往过的人</p>
-</li>
-<li><p><strong>熟人：</strong>寒暄交流，但未曾相约出门的人</p>
-</li>
-<li><p><strong>朋友：</strong>有过多次交谈，相约聚会的人，在一起会感到舒服</p>
-</li>
-<li><p><strong>密友：</strong>通常有2-4人，一年以上经受了时间考验的友谊，在一起会感到非常舒服</p>
-</li>
-<li><p><strong>重要他人：</strong>除了家人通常有1人，一起度过的时光最长的生命中重要的人，谈话最为深入、信任的人，如女朋友或者配偶</p>
-</li>
-</ul>
-<br/>
-
-<br/>
-
-<h1 id="二、友谊公式"><a href="#二、友谊公式" class="headerlink" title="二、友谊公式"></a>二、友谊公式</h1><h3 id="（一）友谊-接近度-时长-频率-强度"><a href="#（一）友谊-接近度-时长-频率-强度" class="headerlink" title="（一）友谊=接近度+时长+频率+强度"></a>（一）<strong>友谊=接近度+时长+频率+强度</strong></h3><ol>
-<li><p><strong>接近度</strong></p>
-<p>1分：距离很远，几乎看不见</p>
-<p>3分：相当于在同一间健身房锻炼</p>
-<p>5分：等于在同一间教室上课</p>
-<p>7分：在同一张桌子吃午饭</p>
-<p>10分：两个亲密的人，与伴侣同睡一张床</p>
-</li>
-<li><p><strong>时长</strong></p>
-<p>1分：只有简短的打招呼</p>
-<p>3分：花费几分钟为一个旅客指路</p>
-<p>5分：交流30分钟到1个小时</p>
-<p>7分：2-4个小时的交流，在同一俱乐部</p>
-<p>10分：大多数时间都是跟某人在一起</p>
-</li>
-<li><p><strong>频率</strong></p>
-<p>1分：一场一次性的互动</p>
-<p>3分：一个月交流一次的人</p>
-<p>5分：一周见1-2次面的人</p>
-<p>7分：一周见3-4次面的人</p>
-<p>10分：几乎每天都会见到的人</p>
-</li>
-<li><p><strong>强度</strong></p>
-<p>1分：没有情绪变动的问答交流</p>
-<p>3分：正常交流，偶尔说个笑话</p>
-<p>5分：好友聚会，过程中经常微笑和发笑</p>
-<p>7分：聊天时候别人发自内心的赞赏你，触及心灵能使心情好转</p>
-<p>10分：互动时整段时间几乎都是感受强烈情绪，由衷赞赏大为感动，聊些私密话题</p>
-</li>
-</ol>
-<h3 id="（二）评分标准"><a href="#（二）评分标准" class="headerlink" title="（二）评分标准"></a>（二）评分标准</h3><ol>
-<li>陌生人——0分</li>
-<li>熟人——10分</li>
-<li>朋友——15分</li>
-<li>密友——25分</li>
-<li>重要他人——35分</li>
-</ol>
-<h3 id="（三）加深友谊"><a href="#（三）加深友谊" class="headerlink" title="（三）加深友谊"></a>（三）加深友谊</h3><ul>
-<li>一起吃饭——&gt;提高互动时长和接近度</li>
-<li>加入同一俱乐部——&gt;提高互动频率和时长</li>
-<li>参加派对——&gt;提高互动时长和强度</li>
-</ul>
-<br/>
-
-<br/>
-
-<h1 id="三、交友黄金法则"><a href="#三、交友黄金法则" class="headerlink" title="三、交友黄金法则"></a>三、交友黄金法则</h1><p><em>（交友黄金法则是友谊公式前的正号/负号）</em></p>
-<br/>
-
-<h3 id="要想让人们喜欢你，你需要让人们感觉舒服"><a href="#要想让人们喜欢你，你需要让人们感觉舒服" class="headerlink" title="要想让人们喜欢你，你需要让人们感觉舒服"></a><strong>要想让人们喜欢你，你需要让人们感觉舒服</strong></h3><p>让人舒服，他们会想要亲近你</p>
-<p>让人难受，他们就会想避开你</p>
-<h3 id="交友三宗罪："><a href="#交友三宗罪：" class="headerlink" title="交友三宗罪："></a>交友三宗罪：</h3><ol>
-<li>肢体语言不良，表情眼神呆滞</li>
-<li>插话，凡事都以自己为中心</li>
-<li>讲述过去，抱怨，负面言论太多</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="四、价值概念"><a href="#四、价值概念" class="headerlink" title="四、价值概念"></a>四、价值概念</h1><p><em>（价值是友谊公式前的乘数）</em></p>
-<br/>
-
-<p>大脑会自动设定周围人的价值，区分群体中的权利尺度</p>
-<p>价值越高时，越容易取得他人的交往倾向</p>
-<p>因此我们需要思考：</p>
-<ol>
-<li>如何确定我们当前的价值</li>
-<li>怎样增加我们当前的价值</li>
-</ol>
-<br/>
-
-<h3 id="判断他人价值的三种依据："><a href="#判断他人价值的三种依据：" class="headerlink" title="判断他人价值的三种依据："></a><strong>判断他人价值的三种依据：</strong></h3><ol>
-<li><p><strong>外表</strong></p>
-<p>指人的外貌形态。外表不佳时，感知价值大打折扣。</p>
-<p>从两方面看外表吸引力：</p>
-<ul>
-<li><p><strong>健康指标：</strong></p>
-<p>糟糕的健康情况让感知价值下降</p>
-<p>因此我们需要多锻炼 饮食健康 睡好觉</p>
-</li>
-<li><p><strong>好基因：</strong></p>
-<p>人类文明存续的唯一方式</p>
-<p>脸型对称，男性追求身材高大 宽肩 下巴线，女性追求臀部比 胸部大小 年轻程度</p>
-<p>事实既定已经不可改变，但我们可以专注于增加个人价值的东西。</p>
-<p>比如去健身房练出宽肩 增加肌肉；利用时尚为自己加分，穿戴配饰衣物弥补身体特征的缺陷。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>地位</strong></p>
-<ul>
-<li><p><strong>财富：</strong></p>
-<p>财富的表达很微妙，珠宝首饰在展示财富中起着重要的作用，慷慨大方也是财富的标志</p>
-<p>因此这需要我们保持良好的财务状况</p>
-</li>
-<li><p><strong>职业：</strong></p>
-<p>同一场景下，人们对不同的职业有不同的价值判断</p>
-</li>
-<li><p><strong>社交证据：</strong></p>
-<p>需要我们通过与他人交际来提高个人价值</p>
-</li>
-</ul>
-</li>
-<li><p><strong>行为举止</strong></p>
-<ul>
-<li><p><strong>肢体语言是开放还是封闭</strong></p>
-<p>良好的姿势 挺胸 不交叉双臂</p>
-<p>看起来越放松，感知价值就会越高</p>
-<p>因为往往顶层人士更放松</p>
-</li>
-<li><p><strong>声音和音调</strong></p>
-<p>音调高意味身体是紧张的</p>
-<p>看起来不放松，感知价值就会降低</p>
-</li>
-<li><p><strong>界限</strong></p>
-<p>是指你有多容易受到外界的影响程度</p>
-<p>别人戏弄你时，一笑而过，毫不在乎</p>
-<p>界限越强越不容易被外界因素所影响，表现对自己有信心，这会增加个人价值</p>
-</li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="五、肢体语言"><a href="#五、肢体语言" class="headerlink" title="五、肢体语言"></a>五、肢体语言</h1><p>重要性：</p>
-<ol>
-<li><h3 id="谈话的有效调节手段"><a href="#谈话的有效调节手段" class="headerlink" title="谈话的有效调节手段"></a><strong>谈话的有效调节手段</strong></h3><p>谈论对方喜欢的，避免对方介意的</p>
-<p>同时观察对方回答时的肢体语言</p>
-</li>
-<li><h3 id="增加你对所交谈对象的理解和共鸣"><a href="#增加你对所交谈对象的理解和共鸣" class="headerlink" title="增加你对所交谈对象的理解和共鸣"></a><strong>增加你对所交谈对象的理解和共鸣</strong></h3><p>向他们展示你对他们的真诚和关心</p>
-</li>
-<li><h3 id="引导对方如何看待你"><a href="#引导对方如何看待你" class="headerlink" title="引导对方如何看待你"></a><strong>引导对方如何看待你</strong></h3><p>站姿 坐姿 谈吐都决定了你的价值</p>
-<p>我们要表现出自信并且有价值</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="六、三种好用的交际肢体语言"><a href="#六、三种好用的交际肢体语言" class="headerlink" title="六、三种好用的交际肢体语言"></a>六、三种好用的交际肢体语言</h1><ol>
-<li><h3 id="微笑"><a href="#微笑" class="headerlink" title="微笑"></a><strong>微笑</strong></h3><p>真诚微笑时，双方都会感到非常开心</p>
-<p>但要控制自己，避免假笑，真诚微笑</p>
-<p>真诚的笑时，眼睛下方会隆起，双颊也会鼓起，眼角会出现细微的鱼尾纹</p>
-<p>训练方法是留意下一次你真正开心发自内心的微笑或者大笑的时，注意自己面部的感觉，可以在镜子面前练习</p>
-</li>
-<li><h3 id="挑眉"><a href="#挑眉" class="headerlink" title="挑眉"></a><strong>挑眉</strong></h3><p>飞快地将眉毛扬起，放下</p>
-<p>对陌生人或者不太熟悉的人挑眉，会让你看起来更加友好</p>
-<p>最好在有段距离的时候挑眉，至少有几步远</p>
-</li>
-<li><h3 id="歪头"><a href="#歪头" class="headerlink" title="歪头"></a><strong>歪头</strong></h3><p>将放松和愉快的感觉传递给交谈的人身上</p>
-<p>保证倾斜头部，大约10-20度，</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="七、如何让别人敞开心扉"><a href="#七、如何让别人敞开心扉" class="headerlink" title="七、如何让别人敞开心扉"></a>七、如何让别人敞开心扉</h1><ol>
-<li><p><strong>学着降低过滤标准</strong></p>
-<p>从一开始就表现，你不在对方是否尽善尽美。</p>
-<p>你并不斟词酌句，而且你愿意谈论那些不被社会认可或视为异端的话题，那么人们就会想要对你敞开心扉。</p>
-<p>告诉对方你并没有什么过滤标准，你只需要分享一些被认为有些奇怪的，有些不合常规的东西。</p>
-<p>当然这取决于你的价值感官，如果你的价值感官很低，人们会认为你是疯子，相反，价值感官越高时，降低你的过滤标准，人们越能接受你发出的一些奇怪言论。</p>
-</li>
-<li><p><strong>提出正确的问题</strong></p>
-<p>“假定问题”，需要我们基于观察，对某人做一种假定，并看看是否正确</p>
-<p>大多数假定正确情况下，人们都会打开心扉，释放压抑的内心</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="八、健谈的秘诀"><a href="#八、健谈的秘诀" class="headerlink" title="八、健谈的秘诀"></a>八、健谈的秘诀</h1><p><strong>语言的本质：规则和模式</strong></p>
-<p>人类大脑，善于识别模式和规则</p>
-<br/>
-
-<p>要给大脑更多的机会去<strong>观察和学习</strong>语言特有的模式和规则</p>
-<p>多练习，大胆走出去和更多的人<strong>进行实际交流</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>社会学</tag>
       </tags>
   </entry>
   <entry>
@@ -2103,51 +2154,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE</title>
     <url>/2021/10/06/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%A4%9A%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8U%E7%9B%98%E5%88%B6%E4%BD%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
@@ -2223,6 +2229,51 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>郑强教授谈《创新欲望与创新能力》随想</title>
+    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
+<br/>
+
+<p>现今中国的大学？ </p>
+<p><strong>缺少基础研究、知识创新。</strong></p>
+<p>没有原始创新欲望，被伤透了。</p>
+<br/>
+
+<p>日本为什么老能得诺奖？</p>
+<p>我们为什么被卡脖子？</p>
+<p><strong>浮躁，不专精于某个方向。</strong></p>
+<br/>
+
+<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
+<p>因为人生不是冲刺跑，是马拉松。</p>
+<br/>
+
+<p>尊重人的天性，不要抹杀天性。</p>
+<br/>
+
+<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
+<br/>
+
+<p>第一步是勇于付出，</p>
+<p>首先要<strong>坚定意志。</strong></p>
+<br/>
+
+<p>求道：是求得怎么去做······</p>
+<br/>
+
+<p><strong>先宽后专，知行合一。</strong></p>
+<br/>
+
+<p><strong>培养爱和价值观······</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
   <entry>

@@ -47,68 +47,6 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML参考手册&amp;代码规范</title>
-    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
-
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
-<ul>
-<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
-</ul>
-<ul>
-<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
-</ul>
-<ul>
-<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
-</ul>
-<ul>
-<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
-<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
-<br/>
-
-<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
-<ul>
-<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
-</ul>
-<ul>
-<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
-</ul>
-<ul>
-<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
-</ul>
-<ul>
-<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
-</ul>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
-<br/>
-
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
-<ul>
-<li>HTML5中包含更多JavaScript 的应用。</li>
-</ul>
-<ul>
-<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
-</ul>
-<ul>
-<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
-</ul>
-<ul>
-<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
-<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>基于Raspberry Pi 3的WordPress站点搭建流程</title>
     <url>/2021/11/20/Web%E2%80%94%E2%80%94%E6%A0%91%E8%8E%93%E6%B4%BE%203%20%E6%90%AD%E5%BB%BAWordPress%E7%BD%91%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、硬件准备"><a href="#一、硬件准备" class="headerlink" title="一、硬件准备"></a>一、硬件准备</h1><p>Raspderry Pi 3 Model B</p>
@@ -204,54 +142,12 @@ sudo nano /etc/php/7.0/fpm/php.ini
 <p>  sudo nano /etc/nginx/sites-available/default</p>
 </li>
 <li><p>更改主配置</p>
-<p>  server{</p>
-<pre><code>  # 监听80端口
-  listen 80;
-  listen [::]:80;
-  # 域名访问IP
-  server_name fleming.com www.fleming.com;
-  
-  # 内容放在main目录下
-  root /var/www/html/main;
-  index index.php index.html index.htm;
-  
-  # WordPress标准404格式输出404界面
-  location / &#123;
-      try_files $uri $uri/ /index.php?$args;
-  &#125;
-  
-  error_page 404 /404.html;    
-  error_page 500  502 503 504 /50x.html;
-  location = /50x.html;
-</code></pre>
-<p>  }</p>
-<h1 id="pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm"><a href="#pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm" class="headerlink" title="pass the PHP scripts to FastCGI server listening on the php-fpm$"></a>pass the PHP scripts to FastCGI server listening on the php-fpm$</h1><h1 id="添加的进程管理器"><a href="#添加的进程管理器" class="headerlink" title="添加的进程管理器"></a>添加的进程管理器</h1><p>   location ~ .php${</p>
-<pre><code>   try_files $uri =404;
-   fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-   fastcgi_index index.php;
-   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;
-   include fastcgi_params;
-</code></pre>
-<p>   }<br>   location = /favicon.ico {access_log off; log_not_found off;}</p>
-<h1 id="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"><a href="#在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击" class="headerlink" title="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"></a>在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</h1><p>   location /phpmyadmin {</p>
-<pre><code>   root /usr/share/;
-   index index.php index.html index.htm;
-   location ~ ^/phpmyadmin/(.+\.php)$&#123;
-       try_files $uri =404;
-       root /usr/share/;
-       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-       fastcgi_index index.php;
-       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;
-       include fastcgi_params;
-   &#125;
-   location
-   ~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;
-       root /usr.share/;
-   &#125;
-</code></pre>
-<p>   }</p>
 </li>
 </ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	# 监听80端口</span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line">	</span><br><span class="line">	# 域名访问IP</span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line">	</span><br><span class="line">	# 内容放在main目录下</span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line">	</span><br><span class="line">	# WordPress标准404格式输出404界面</span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># pass the PHP scripts to FastCGI server listening on the php-fpm$</span><br><span class="line"></span><br><span class="line"># 添加的进程管理器</span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"> </span><br><span class="line"> # 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+
+
+
 <p>查看配置文件是否生效</p>
 <pre><code>sudo nginx -t
 </code></pre>
@@ -369,6 +265,123 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML参考手册&amp;代码规范</title>
+    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
+
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
+<ul>
+<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
+</ul>
+<ul>
+<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
+</ul>
+<ul>
+<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
+</ul>
+<ul>
+<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
+<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
+<br/>
+
+<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
+<ul>
+<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
+</ul>
+<ul>
+<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
+</ul>
+<ul>
+<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
+</ul>
+<ul>
+<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
+</ul>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
+<br/>
+
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
+<ul>
+<li>HTML5中包含更多JavaScript 的应用。</li>
+</ul>
+<ul>
+<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
+</ul>
+<ul>
+<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
+</ul>
+<ul>
+<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
+<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
+    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
+<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
+<br/>
+
+<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
+<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
+<p>从生物学角度谈受精现象时认为：</p>
+<ul>
+<li>雄性提供新生命产生的机会</li>
+<li>雌性为新生命创造了一个稳定环境</li>
+</ul>
+<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
+<p>它们依据受精现象对雌雄进行了概念划定：</p>
+<ul>
+<li>雄性：工具</li>
+<li>雌性：容器</li>
+</ul>
+<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
+<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
+<br/>
+
+<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
+<ul>
+<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
+<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
+</ul>
+<p>以此为分界线女性进行了两种方式的反抗：</p>
+<ul>
+<li>男性化</li>
+<li>用女性武器向男性挑战</li>
+</ul>
+<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
+<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
+<p>精神分析学家的看法：</p>
+<ul>
+<li>男人：人</li>
+<li>女人：雌性</li>
+</ul>
+<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
+<br/>
+
+<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
+<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
+<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
       </tags>
   </entry>
   <entry>
@@ -494,61 +507,6 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>XML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
-    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
-<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
-<br/>
-
-<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
-<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
-<p>从生物学角度谈受精现象时认为：</p>
-<ul>
-<li>雄性提供新生命产生的机会</li>
-<li>雌性为新生命创造了一个稳定环境</li>
-</ul>
-<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
-<p>它们依据受精现象对雌雄进行了概念划定：</p>
-<ul>
-<li>雄性：工具</li>
-<li>雌性：容器</li>
-</ul>
-<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
-<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
-<br/>
-
-<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
-<ul>
-<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
-<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
-</ul>
-<p>以此为分界线女性进行了两种方式的反抗：</p>
-<ul>
-<li>男性化</li>
-<li>用女性武器向男性挑战</li>
-</ul>
-<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
-<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
-<p>精神分析学家的看法：</p>
-<ul>
-<li>男人：人</li>
-<li>女人：雌性</li>
-</ul>
-<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
-<br/>
-
-<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
-<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
-<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
       </tags>
   </entry>
   <entry>
@@ -1304,6 +1262,49 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
+    <title>他在阳光下站在道德制高点谈真相</title>
+    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
+<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
+<br/></li>
+<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
+<br/></li>
+<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
+<br/></li>
+<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
+<br/></li>
+<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
+<br/></li>
+<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
+<br/></li>
+<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
+<br/></li>
+<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
+<br/></li>
+<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
+<br/></li>
+<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
+<br/></li>
+<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
+<br/></li>
+<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
+<br/></li>
+<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
+<br/></li>
+<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
+<br/></li>
+<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>文学</category>
+      </categories>
+      <tags>
+        <tag>收录</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>视频后期剪辑与特效软件PR&amp;AE</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
@@ -1353,49 +1354,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
       </tags>
   </entry>
   <entry>
@@ -1842,89 +1800,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
-    <title>通过ssh协议连接github时遇到的问题</title>
-    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
-
-<p><strong>需要对ssh 进行重置</strong></p>
-<p>1、重置用户名和邮箱</p>
-<pre><code>git config --global user.name “yourname”
-
-git config --global user.email “your@email.com&quot;
-</code></pre>
-<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
-<br/>
-
-<p>2、删除.ssh文件夹下的known_hosts</p>
-<br/>
-
-<p>3、git输入命令</p>
-<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
-</code></pre>
-<p>一路yes和回车</p>
-<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
-<p>用记事本打开id_rsa.pub </p>
-<p>将全部的内容复制</p>
-<br/>
-
-<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
-<p>进入ssh设置</p>
-<p>在key中将刚刚复制的粘贴进去</p>
-<p>点击add ssh key，</p>
-<p> ok！</p>
-<br/>
-
-<p>5、在git中输入命令：</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>之后会有询问提示</p>
-<p>输入命令：yes</p>
-<p>回车</p>
-<br/>
-
-<p>然后就会提示你成功了~</p>
-<br/>
-
-<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
-<br/>
-原因：
-
-<p>可能是端口被占用，切换为443端口；</p>
-<p><br/>解决办法：</p>
-<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
-<br/>
-
-<p>在config文件中复制下面代码：</p>
-<pre><code>Host github.com
-
-User git
-
-Hostname ssh.github.com
-
-PreferredAuthentications publickey
-
-IdentityFile ~/.ssh/id_rsa
-
-Port 443
-</code></pre>
-<br/>
-
-<p>然后在执行</p>
-<pre><code>ssh -T git@github.com
-</code></pre>
-<p>查看是否可以连接</p>
-<br/>
-
-<p>成功！</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>解决方案</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -2054,6 +1929,89 @@ Port 443
       </tags>
   </entry>
   <entry>
+    <title>通过ssh协议连接github时遇到的问题</title>
+    <url>/2021/08/01/%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87ssh%E5%8D%8F%E8%AE%AE%E8%BF%9E%E6%8E%A5github%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists"><a href="#一、git出错：“Please-make-sure-you-have-the-correct-access-rights-and-the-repository-exists" class="headerlink" title="一、git出错：“Please make sure you have the correct access rights and the repository exists."></a>一、git出错：“Please make sure you have the correct access rights and the repository exists.</h3><br/>
+
+<p><strong>需要对ssh 进行重置</strong></p>
+<p>1、重置用户名和邮箱</p>
+<pre><code>git config --global user.name “yourname”
+
+git config --global user.email “your@email.com&quot;
+</code></pre>
+<p>注：yourname是github中你设置的名字，your@email是你设置的邮箱。</p>
+<br/>
+
+<p>2、删除.ssh文件夹下的known_hosts</p>
+<br/>
+
+<p>3、git输入命令</p>
+<pre><code>$ ssh-keygen -t rsa -C &quot;your@email.com&quot;（请填你设置的邮箱地址）
+</code></pre>
+<p>一路yes和回车</p>
+<p>然后系统会自动在.ssh文件夹下生成两个文件，id_rsa和id_rsa.pub，</p>
+<p>用记事本打开id_rsa.pub </p>
+<p>将全部的内容复制</p>
+<br/>
+
+<p> 4、打开<a href="https://github.com/%EF%BC%8C%E7%99%BB%E9%99%86%E4%BD%A0%E7%9A%84%E8%B4%A6%E6%88%B7%EF%BC%8C%E8%BF%9B%E5%85%A5%E8%AE%BE%E7%BD%AE">https://github.com/，登陆你的账户，进入设置</a> </p>
+<p>进入ssh设置</p>
+<p>在key中将刚刚复制的粘贴进去</p>
+<p>点击add ssh key，</p>
+<p> ok！</p>
+<br/>
+
+<p>5、在git中输入命令：</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>之后会有询问提示</p>
+<p>输入命令：yes</p>
+<p>回车</p>
+<br/>
+
+<p>然后就会提示你成功了~</p>
+<br/>
+
+<h3 id="二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out"><a href="#二、ssh出错-connect-to-host-ssh-github-com-port-22-Connection-timed-out" class="headerlink" title="二、ssh出错: connect to host ssh.github.com port 22: Connection timed out"></a>二、ssh出错: connect to host ssh.github.com port 22: Connection timed out</h3><p><strong>（ssh：连接到主机github.com端口22：连接超时）</strong></p>
+<br/>
+原因：
+
+<p>可能是端口被占用，切换为443端口；</p>
+<p><br/>解决办法：</p>
+<p>在./ssh 下找到congfig文件，如果没有就创建一个</p>
+<br/>
+
+<p>在config文件中复制下面代码：</p>
+<pre><code>Host github.com
+
+User git
+
+Hostname ssh.github.com
+
+PreferredAuthentications publickey
+
+IdentityFile ~/.ssh/id_rsa
+
+Port 443
+</code></pre>
+<br/>
+
+<p>然后在执行</p>
+<pre><code>ssh -T git@github.com
+</code></pre>
+<p>查看是否可以连接</p>
+<br/>
+
+<p>成功！</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>解决方案</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>中华无魔法科学冲浪方案研究</title>
     <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
@@ -2151,51 +2109,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE</title>
     <url>/2021/10/06/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%A4%9A%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8U%E7%9B%98%E5%88%B6%E4%BD%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
@@ -2271,6 +2184,51 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>郑强教授谈《创新欲望与创新能力》随想</title>
+    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
+<br/>
+
+<p>现今中国的大学？ </p>
+<p><strong>缺少基础研究、知识创新。</strong></p>
+<p>没有原始创新欲望，被伤透了。</p>
+<br/>
+
+<p>日本为什么老能得诺奖？</p>
+<p>我们为什么被卡脖子？</p>
+<p><strong>浮躁，不专精于某个方向。</strong></p>
+<br/>
+
+<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
+<p>因为人生不是冲刺跑，是马拉松。</p>
+<br/>
+
+<p>尊重人的天性，不要抹杀天性。</p>
+<br/>
+
+<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
+<br/>
+
+<p>第一步是勇于付出，</p>
+<p>首先要<strong>坚定意志。</strong></p>
+<br/>
+
+<p>求道：是求得怎么去做······</p>
+<br/>
+
+<p><strong>先宽后专，知行合一。</strong></p>
+<br/>
+
+<p><strong>培养爱和价值观······</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
   <entry>

@@ -464,7 +464,6 @@ sudo nano /etc/php/7.0/fpm/php.ini
 <pre><code>  # 监听80端口
   listen 80;
   listen [::]:80;
-  
   # 域名访问IP
   server_name fleming.com www.fleming.com;
   
@@ -477,8 +476,7 @@ sudo nano /etc/php/7.0/fpm/php.ini
       try_files $uri $uri/ /index.php?$args;
   &#125;
   
-  error_page 404 /404.html;``
-  
+  error_page 404 /404.html;    
   error_page 500  502 503 504 /50x.html;
   location = /50x.html;
 </code></pre>
@@ -490,8 +488,7 @@ sudo nano /etc/php/7.0/fpm/php.ini
    fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;
    include fastcgi_params;
 </code></pre>
-<p>   }</p>
-<p>   location = /favicon.ico {access_log off; log_not_found off;}</p>
+<p>   }<br>   location = /favicon.ico {access_log off; log_not_found off;}</p>
 <h1 id="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"><a href="#在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击" class="headerlink" title="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"></a>在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</h1><p>   location /phpmyadmin {</p>
 <pre><code>   root /usr/share/;
    index index.php index.html index.htm;

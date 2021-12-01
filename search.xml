@@ -268,6 +268,68 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
+    <title>HTML参考手册&amp;代码规范</title>
+    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
+
+<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
+<ul>
+<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
+</ul>
+<ul>
+<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
+</ul>
+<ul>
+<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
+</ul>
+<ul>
+<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
+<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
+<br/>
+
+<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
+<ul>
+<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
+</ul>
+<ul>
+<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
+</ul>
+<ul>
+<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
+</ul>
+<ul>
+<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
+</ul>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
+<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
+<br/>
+
+<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
+<ul>
+<li>HTML5中包含更多JavaScript 的应用。</li>
+</ul>
+<ul>
+<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
+</ul>
+<ul>
+<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
+</ul>
+<ul>
+<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
+<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>XML &amp; XSLT &amp; XQuery···</title>
     <url>/2021/08/12/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94XML%20&amp;%20XSLT%20&amp;%20XQuery%C2%B7%C2%B7%C2%B7/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合XML、XML-DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容"><a href="#本篇整合XML、XML-DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容" class="headerlink" title="本篇整合XML、XML DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容"></a>本篇整合XML、XML DOM、XSL、XQuery、XLink、XPointer、SVG部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅XML知识"><a href="#目的是方便个人在前端场景下能够快速查阅XML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅XML知识"></a>目的是方便个人在前端场景下能够快速查阅XML知识</h3><br/>
@@ -390,68 +452,6 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>XML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML参考手册&amp;代码规范</title>
-    <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
-
-<h2 id="HTML"><a href="#HTML" class="headerlink" title="HTML"></a>HTML</h2><p>HTML（<strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）超文本标记语言</p>
-<ul>
-<li>HTML 被设计用来<strong>显示数据</strong>，是一种用于创建网页的标准标记语言。</li>
-</ul>
-<ul>
-<li>HTML 允许你格式化文本，添加图片，创建链接、输入表单、框架和表格等，</li>
-</ul>
-<ul>
-<li>并可将之<strong>存为文本文件</strong>，浏览器即可读取和显示。</li>
-</ul>
-<ul>
-<li>HTML 的关键是<strong>标签</strong>，其作用是指示将出现的内容。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html-quicklist.html">HTML速查列表</a></strong> 你可以打印以备日常使用。</p>
-<p><strong><a href="https://www.runoob.com/tags/html-reference.html">HTML参考手册</a></strong> 你可以查看HTML标签与各属性的作用。</p>
-<br/>
-
-<h2 id="XHTML"><a href="#XHTML" class="headerlink" title="XHTML"></a>XHTML</h2><p>XHTML （E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext <strong>M</strong>arkup <strong>L</strong>anguage）可扩展超文本标签语言</p>
-<ul>
-<li>为了规范HTML，<a href="https://baike.baidu.com/item/%E4%B8%87%E7%BB%B4%E7%BD%91%E8%81%94%E7%9B%9F/1458269?fromtitle=w3c&fromid=216888&fr=aladdin"><strong>W3C</strong></a>结合着XML制定了XHTML1.0标准。</li>
-</ul>
-<ul>
-<li>可以把XHTML理解成<strong>HTML+XML</strong>，是用XML要求来规范HTML。</li>
-</ul>
-<ul>
-<li>XHTML 与 HTML 4.01 几乎是相同的，XHTML 的目标是取代 HTML。</li>
-</ul>
-<ul>
-<li>是作为一种 XML 应用被重新定义的 HTML，是更严格<strong>更纯净的 HTML 版本</strong>。</li>
-</ul>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/index.asp">XHTML教程</a></strong> 你可以了解并学习XHTML。</p>
-<p><strong><a href="https://www.w3school.com.cn/xhtml/xhtml_summary.asp">XHTML总结</a></strong> 你可以找到有关XHTML更加深入的知识链接。</p>
-<br/>
-
-<h2 id="HTML5"><a href="#HTML5" class="headerlink" title="HTML5"></a>HTML5</h2><p>HTML5 是下一代 HTML 标准。</p>
-<ul>
-<li>HTML5中包含更多JavaScript 的应用。</li>
-</ul>
-<ul>
-<li>为了更好地处理今天的互联网应用，HTML5添加了很多<strong>新元素及功能</strong>，</li>
-</ul>
-<ul>
-<li>如: 图形的绘制，多媒体内容，更好的页面结构，更好的形式处理，</li>
-</ul>
-<ul>
-<li>和api拖放元素，定位，网页应用程序缓存，存储，网络工作者等。</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/html/html5-new-element.html">HTML5中的新元素</a></strong> 你可以与HTML 4.01相对比，查看HTML5中的新元素。</p>
-<p><strong><a href="https://www.runoob.com/html/html5-syntax.html">HTML（5）代码规范</a></strong> 你可以了解HTML规范，将书写规范的代码作为习惯。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -620,6 +620,152 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
+    <title>Robert Capa——战地记者与《失焦》</title>
+    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
+<p><strong>——罗伯特·卡帕</strong></p>
+<br/>
+
+<p>相片是历史的定格，</p>
+<p>记录情绪，记录生与死，</p>
+<p>又记录下战争的残酷无情…..</p>
+<br/>
+
+<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
+<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
+<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
+<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
+<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
+<br/>
+
+<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
+<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
+<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
+<br/>
+
+<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
+<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
+<br/>
+
+<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
+<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
+<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
+<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
+<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
+<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
+<p>了解事实与真相，铭记战争带来的悲痛。</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>审美</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Alex Webb——复杂构图、鲜明色彩</title>
+    <url>/2021/07/23/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E8%A1%97%E5%A4%B4%E6%91%84%E5%BD%B1%E5%A4%A7%E5%B8%88Alex%20Webb/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在GNU看到一组照片，题名为“复杂构图|摄影大师Alex Webb”,</p>
+<p>Alex Webb的每一张照片都包含着些许生命的活力,</p>
+<p>我急于探求这种生命与情感的张力来源何处？</p>
+<br/>
+
+<p><strong>一、鲜明的色彩差异</strong></p>
+<p>高饱和、鲜明的色彩差异…</p>
+<p>这些方式无不体现着生命力。</p>
+<p>我们形容一个鲜活的物体，她是多彩的，</p>
+<p>Alex用鲜艳的色彩，诠释着生命的张力，</p>
+<p>细微之处在于，情绪体现在色彩之上，</p>
+<p>色彩丰富时能够看出喜悦的情绪，</p>
+<p>色彩平淡时又会给人些许压抑感。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/8.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/6.jpg"></p>
+<br/>
+
+<p><strong>二、多种元素带来的糖果般的喜悦感</strong></p>
+<p>Alex作品中通常包含着众多的元素，</p>
+<p>或许是同一环境中不同状态的人，</p>
+<p>又或许是背景与主体间偶然的关系，</p>
+<p>仔细观察其中的每一个细节，总能发现一些奇妙的元素。</p>
+<p>他总能在元素众多的条件下，</p>
+<p>构出巧妙舒适，不显繁杂的图，</p>
+<p>将视觉中心巧妙的转移来创造出新奇感。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/4.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/9.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/12.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/11.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/10.jpg"></p>
+<br/>
+
+<p><strong>三、单一元素的模糊动感</strong></p>
+<p>观察他的作品，大多数照片快门速度像是保持在1/60s-1/90s左右区间范围，</p>
+<p>以至于每张照片都有着动和静这样两种状态，</p>
+<p>作品中大部分是静景，而单一元素的动却为平面的照片创造了几分“立体感”，</p>
+<p>这种“立体感”为照片增添了不少的活力。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/1.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/5.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/7.jpg"></p>
+<br/>
+
+<p><strong>四、利用镜子添加元素</strong></p>
+<p>能够做到一张图片上众多元素的展现，</p>
+<p>镜子总有着不少的功劳，</p>
+<p>相机正对的方向是一个世界，</p>
+<p>镜子反射出来的同样是另外一个情绪世界。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/2.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/3.jpg"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/13.jpg"></p>
+<br/>
+
+<p><strong>之后我试图去了解Alex Webb以及他的成长史，</strong></p>
+<p><strong>从几篇文章中拼凑出他的前半个摄影人生：</strong></p>
+<p> Alex Webb，1952年5月5日出生于美国旧金山，著名美国摄影师，马格南摄图片社成员。他的作品展现他高超的纪实摄影技巧，卓越的色彩修养，他的作品以其复杂的构图而闻名，依旧沿袭了布列松“决定性瞬间”的摄影美学。他的作品在世界各地进行展出，包括在沃克艺术中心，摄影艺术博物馆，国际摄影中心，高艺术博物馆等等。</p>
+<p>1975年，21岁的摄影师Alex Webb来到美国和墨西哥的边境，开始了长达数十年的纪实摄影。他常常拍摄波士顿和纽约等地的美国社会景观，但也常常觉得这些地方没有灵魂，冷漠无情。1975年的他已经是大名鼎鼎的马格南图片社的成员，却不可抗拒地被“边境”这一特殊的环境吸引。</p>
+<p>尽管比邻而居，美国和墨西哥却有着根本性的不同，“西方社会的文化源于新教，资本主义，和个人主义”。Alex Webb前往海地、加勒比海国家等地，最后去到了墨西哥，并且迷上了墨西哥和美国之间巨大的文化差异。他说，“而墨西哥相信西班牙天主教、土著和集体文化，墨西哥的文化在拥抱神秘。”美墨间那条暧昧又复杂的国界线，成为Alex Webb探寻文化交融与冲突的宝地。</p>
+<p>1986年，Alex Webb访问了革命后的海地，触动很深，也成为他摄影生涯中最重要的转折点。Alex Webb说，“在海地旅行彻底改变了我——不仅作为一个摄影师，也作为一个普通人。我拍摄到了一个我从未经历过的世界，一个充满活力和激情的世界:原始的，脱节的，通常往往是悲剧的。”</p>
+<p>从那以后，他决定从拍摄黑白相片转为拍摄彩色相片。那时的摄影界黑白相片是主流，而彩色相片并不被人看好。但Alex Webb认为“世界是一个复杂的地方，如果你开始单纯地以非黑即白的方式看待一切，就会面临巨大的危险。”</p>
+<p>而色彩，也是刻在墨西哥的基因里的。看到Alex Webb的作品，首先吸引人眼球的就是大胆丰富的色彩。这些色彩是当地人的灵魂和精神，色彩本身就在讲故事。</p>
+<p>近半个世纪以来，Alex Webb的作品几乎见证了中美洲的变化。但他的作品并不直面社会变革的新闻现场，而是从细小入微的人文角度，描绘个体的生活与情感。他希望避免任何先入为主的观念，而是讲述一个包罗万象的故事。他相信，在街头巷尾，普通人的神色中，有着这个社会的未来最真实的秘密。</p>
+<br/>
+
+<p>观者可以欣赏<strong>Alex Webb</strong>最有名的画册<a href="https://www.sohu.com/a/315799198_120065912"><strong>《The Suffering of Light》</strong></a>，或者看看<a href="https://zhuanlan.zhihu.com/p/58186067">他人的解读</a>。</p>
+<p>在他的摄影集<strong>《La Calle》</strong>最后，他以一段墨西哥诗人奥克塔维奥帕斯的《街》作为结尾,</p>
+<p>我们也以此作为结尾，感受Alex Webb作品的魅力：</p>
+<p>一条沉寂的长街。</p>
+<p>我在黑暗中行走，跌倒</p>
+<p>又站起，我盲目而行，双脚</p>
+<p>踏上静默的石头和枯叶。</p>
+<p>有人在我身后也踏上石头、树叶：</p>
+<p>如果我减速，他也减速；</p>
+<p>如果我奔跑，他也奔跑。我转身：无人。</p>
+<p>一切都黑暗而无门。</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>审美</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Browser/Server网络架构模式</title>
     <url>/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-B-S架构与C-S架构"><a href="#1-B-S架构与C-S架构" class="headerlink" title="1. B/S架构与C/S架构"></a>1. B/S架构与C/S架构</h1><ul>
@@ -775,152 +921,6 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
-    <title>Alex Webb——复杂构图、鲜明色彩</title>
-    <url>/2021/07/23/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E8%A1%97%E5%A4%B4%E6%91%84%E5%BD%B1%E5%A4%A7%E5%B8%88Alex%20Webb/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在GNU看到一组照片，题名为“复杂构图|摄影大师Alex Webb”,</p>
-<p>Alex Webb的每一张照片都包含着些许生命的活力,</p>
-<p>我急于探求这种生命与情感的张力来源何处？</p>
-<br/>
-
-<p><strong>一、鲜明的色彩差异</strong></p>
-<p>高饱和、鲜明的色彩差异…</p>
-<p>这些方式无不体现着生命力。</p>
-<p>我们形容一个鲜活的物体，她是多彩的，</p>
-<p>Alex用鲜艳的色彩，诠释着生命的张力，</p>
-<p>细微之处在于，情绪体现在色彩之上，</p>
-<p>色彩丰富时能够看出喜悦的情绪，</p>
-<p>色彩平淡时又会给人些许压抑感。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/6.jpg"></p>
-<br/>
-
-<p><strong>二、多种元素带来的糖果般的喜悦感</strong></p>
-<p>Alex作品中通常包含着众多的元素，</p>
-<p>或许是同一环境中不同状态的人，</p>
-<p>又或许是背景与主体间偶然的关系，</p>
-<p>仔细观察其中的每一个细节，总能发现一些奇妙的元素。</p>
-<p>他总能在元素众多的条件下，</p>
-<p>构出巧妙舒适，不显繁杂的图，</p>
-<p>将视觉中心巧妙的转移来创造出新奇感。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/4.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/9.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/10.jpg"></p>
-<br/>
-
-<p><strong>三、单一元素的模糊动感</strong></p>
-<p>观察他的作品，大多数照片快门速度像是保持在1/60s-1/90s左右区间范围，</p>
-<p>以至于每张照片都有着动和静这样两种状态，</p>
-<p>作品中大部分是静景，而单一元素的动却为平面的照片创造了几分“立体感”，</p>
-<p>这种“立体感”为照片增添了不少的活力。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/7.jpg"></p>
-<br/>
-
-<p><strong>四、利用镜子添加元素</strong></p>
-<p>能够做到一张图片上众多元素的展现，</p>
-<p>镜子总有着不少的功劳，</p>
-<p>相机正对的方向是一个世界，</p>
-<p>镜子反射出来的同样是另外一个情绪世界。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/13.jpg"></p>
-<br/>
-
-<p><strong>之后我试图去了解Alex Webb以及他的成长史，</strong></p>
-<p><strong>从几篇文章中拼凑出他的前半个摄影人生：</strong></p>
-<p> Alex Webb，1952年5月5日出生于美国旧金山，著名美国摄影师，马格南摄图片社成员。他的作品展现他高超的纪实摄影技巧，卓越的色彩修养，他的作品以其复杂的构图而闻名，依旧沿袭了布列松“决定性瞬间”的摄影美学。他的作品在世界各地进行展出，包括在沃克艺术中心，摄影艺术博物馆，国际摄影中心，高艺术博物馆等等。</p>
-<p>1975年，21岁的摄影师Alex Webb来到美国和墨西哥的边境，开始了长达数十年的纪实摄影。他常常拍摄波士顿和纽约等地的美国社会景观，但也常常觉得这些地方没有灵魂，冷漠无情。1975年的他已经是大名鼎鼎的马格南图片社的成员，却不可抗拒地被“边境”这一特殊的环境吸引。</p>
-<p>尽管比邻而居，美国和墨西哥却有着根本性的不同，“西方社会的文化源于新教，资本主义，和个人主义”。Alex Webb前往海地、加勒比海国家等地，最后去到了墨西哥，并且迷上了墨西哥和美国之间巨大的文化差异。他说，“而墨西哥相信西班牙天主教、土著和集体文化，墨西哥的文化在拥抱神秘。”美墨间那条暧昧又复杂的国界线，成为Alex Webb探寻文化交融与冲突的宝地。</p>
-<p>1986年，Alex Webb访问了革命后的海地，触动很深，也成为他摄影生涯中最重要的转折点。Alex Webb说，“在海地旅行彻底改变了我——不仅作为一个摄影师，也作为一个普通人。我拍摄到了一个我从未经历过的世界，一个充满活力和激情的世界:原始的，脱节的，通常往往是悲剧的。”</p>
-<p>从那以后，他决定从拍摄黑白相片转为拍摄彩色相片。那时的摄影界黑白相片是主流，而彩色相片并不被人看好。但Alex Webb认为“世界是一个复杂的地方，如果你开始单纯地以非黑即白的方式看待一切，就会面临巨大的危险。”</p>
-<p>而色彩，也是刻在墨西哥的基因里的。看到Alex Webb的作品，首先吸引人眼球的就是大胆丰富的色彩。这些色彩是当地人的灵魂和精神，色彩本身就在讲故事。</p>
-<p>近半个世纪以来，Alex Webb的作品几乎见证了中美洲的变化。但他的作品并不直面社会变革的新闻现场，而是从细小入微的人文角度，描绘个体的生活与情感。他希望避免任何先入为主的观念，而是讲述一个包罗万象的故事。他相信，在街头巷尾，普通人的神色中，有着这个社会的未来最真实的秘密。</p>
-<br/>
-
-<p>观者可以欣赏<strong>Alex Webb</strong>最有名的画册<a href="https://www.sohu.com/a/315799198_120065912"><strong>《The Suffering of Light》</strong></a>，或者看看<a href="https://zhuanlan.zhihu.com/p/58186067">他人的解读</a>。</p>
-<p>在他的摄影集<strong>《La Calle》</strong>最后，他以一段墨西哥诗人奥克塔维奥帕斯的《街》作为结尾,</p>
-<p>我们也以此作为结尾，感受Alex Webb作品的魅力：</p>
-<p>一条沉寂的长街。</p>
-<p>我在黑暗中行走，跌倒</p>
-<p>又站起，我盲目而行，双脚</p>
-<p>踏上静默的石头和枯叶。</p>
-<p>有人在我身后也踏上石头、树叶：</p>
-<p>如果我减速，他也减速；</p>
-<p>如果我奔跑，他也奔跑。我转身：无人。</p>
-<p>一切都黑暗而无门。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Robert Capa——战地记者与《失焦》</title>
-    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
-<p><strong>——罗伯特·卡帕</strong></p>
-<br/>
-
-<p>相片是历史的定格，</p>
-<p>记录情绪，记录生与死，</p>
-<p>又记录下战争的残酷无情…..</p>
-<br/>
-
-<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
-<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
-<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
-<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
-<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
-<br/>
-
-<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
-<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
-<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
-<br/>
-
-<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
-<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
-<br/>
-
-<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
-<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
-<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
-<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
-<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
-<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
-<p>了解事实与真相，铭记战争带来的悲痛。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Software QA Engineer岗位解读</title>
     <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
@@ -1064,6 +1064,44 @@ $ sudo make install
       </tags>
   </entry>
   <entry>
+    <title>Ubuntu中阿里镜像源设置</title>
+    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+</code></pre>
+<br/>
+
+
+
+<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
+</code></pre>
+<p>将以下内容放在该文件的头部</p>
+<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+</code></pre>
+<p>保存退出</p>
+<br/>
+
+
+
+<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>会议拍摄、相机档位、基础布光</title>
     <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
@@ -1136,41 +1174,91 @@ $ sudo make install
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu中阿里镜像源设置</title>
-    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-</code></pre>
+    <title>摄影构图——突出主体、中心思想、画面简洁</title>
+    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
+<p>​    （拉近距离，放大主体）</p>
+<p>​    （简化背景，突出主体）</p>
+<p>​    <strong>2.间接突出主题</strong></p>
+<p>​    （简洁背景，缩小主体）</p>
+<p>​    （六大对比）</p>
+<p>​        ①明暗对比</p>
+<p>​        ②虚实对比</p>
+<p>​        ③色彩对比</p>
+<p>​        ④动静对比</p>
+<p>​        ⑤大小对比 </p>
+<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
 <br/>
 
-
-
-<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
-</code></pre>
-<p>将以下内容放在该文件的头部</p>
-<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
-</code></pre>
-<p>保存退出</p>
+<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
+<p>​    <strong>1.单一的主要概念</strong></p>
+<p>​    <strong>2.从属景物</strong></p>
+<p>​    <strong>3.背景作用</strong></p>
 <br/>
 
+<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
+<p>​    <strong>1.长焦镜头</strong></p>
+<p>​    <strong>2.学会取舍</strong></p>
+<p>​    <strong>3.使用黑白</strong></p>
+<p>​    <strong>4.二次构图</strong></p>
+<br/>
 
-
-<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update
-</code></pre>
+<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
 ]]></content>
       <categories>
-        <category>技术</category>
+        <category>艺术</category>
       </categories>
       <tags>
-        <tag>运维</tag>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>帧速率、刷新率、广播级视频标准</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
+<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
+<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
+<p>（帧数越多，画面越流畅，实际体验越好）</p>
+<br/>
+
+<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
+<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
+<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
+<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
+<br/>
+
+<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
+<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
+<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
+<br/>
+
+<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
+<p>NTSC 29.97帧/秒</p>
+<p>SECAM 25帧/秒</p>
+<p>Film 24帧/秒</p>
+<br/>
+
+<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
+<p>NTSC 720×480</p>
+<p>SECAM 720×576</p>
+<p><strong>现代视频分辨率</strong></p>
+<p>8K  7680×4320</p>
+<p>6K  6144×3160</p>
+<p>4K  4096×2160</p>
+<p>UHD  3840×2160</p>
+<p>2K  2048×1080</p>
+<p>FHD  1920×1080</p>
+<p>HD  1280 ×720</p>
+<br/>
+
+<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
+<p>1080p 逐行扫描技术</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>后期</tag>
       </tags>
   </entry>
   <entry>
@@ -1217,55 +1305,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
 <p>​    我们可以自己安装一些插件，也会在这个窗口中显示。</p>
 <p><strong>时间轴面板：</strong></p>
 <p>​    特效的制作基本都是在时间轴上完成的</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>帧速率、刷新率、广播级视频标准</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
-<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
-<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
-<p>（帧数越多，画面越流畅，实际体验越好）</p>
-<br/>
-
-<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
-<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
-<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
-<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
-<br/>
-
-<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
-<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
-<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
-<br/>
-
-<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
-<p>NTSC 29.97帧/秒</p>
-<p>SECAM 25帧/秒</p>
-<p>Film 24帧/秒</p>
-<br/>
-
-<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
-<p>NTSC 720×480</p>
-<p>SECAM 720×576</p>
-<p><strong>现代视频分辨率</strong></p>
-<p>8K  7680×4320</p>
-<p>6K  6144×3160</p>
-<p>4K  4096×2160</p>
-<p>UHD  3840×2160</p>
-<p>2K  2048×1080</p>
-<p>FHD  1920×1080</p>
-<p>HD  1280 ×720</p>
-<br/>
-
-<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
-<p>1080p 逐行扫描技术</p>
 ]]></content>
       <categories>
         <category>艺术</category>
@@ -1543,45 +1582,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>摄影构图——突出主体、中心思想、画面简洁</title>
-    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
-<p>​    （拉近距离，放大主体）</p>
-<p>​    （简化背景，突出主体）</p>
-<p>​    <strong>2.间接突出主题</strong></p>
-<p>​    （简洁背景，缩小主体）</p>
-<p>​    （六大对比）</p>
-<p>​        ①明暗对比</p>
-<p>​        ②虚实对比</p>
-<p>​        ③色彩对比</p>
-<p>​        ④动静对比</p>
-<p>​        ⑤大小对比 </p>
-<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
-<br/>
-
-<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
-<p>​    <strong>1.单一的主要概念</strong></p>
-<p>​    <strong>2.从属景物</strong></p>
-<p>​    <strong>3.背景作用</strong></p>
-<br/>
-
-<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
-<p>​    <strong>1.长焦镜头</strong></p>
-<p>​    <strong>2.学会取舍</strong></p>
-<p>​    <strong>3.使用黑白</strong></p>
-<p>​    <strong>4.二次构图</strong></p>
-<br/>
-
-<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -1883,6 +1883,47 @@ Port 443
       </tags>
   </entry>
   <entry>
+    <title>中华无魔法科学冲浪方案研究</title>
+    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
+<li>Chrome（谷歌浏览器）</li>
+<li>Firefox（火狐浏览器）</li>
+<li>Edge（Microsoft浏览器）</li>
+</ol>
+<p>没有魔法设置中改用百度的搜索引擎。</p>
+<br/>
+
+<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
+<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
+<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
+<br/>
+
+<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
+<li>AdBlock Plus - 免费的广告拦截器。</li>
+<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
+<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
+<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
+<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
+<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
+<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
+<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
+</ul>
+<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
+<ul>
+<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
+<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
+<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
+<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
+</ul>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -2012,89 +2053,59 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华无魔法科学冲浪方案研究</title>
-    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
-<li>Chrome（谷歌浏览器）</li>
-<li>Firefox（火狐浏览器）</li>
-<li>Edge（Microsoft浏览器）</li>
-</ol>
-<p>没有魔法设置中改用百度的搜索引擎。</p>
+    <title>中华有魔法科学冲浪方案研究</title>
+    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
+<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
+<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
 <br/>
 
-<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
-<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
-<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
+<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
+<p>若直接在GitHub上下载速度会较慢，</p>
+<p>选择通过右键复制下载链接后在迅雷中下载</p>
 <br/>
 
-<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
-<li>AdBlock Plus - 免费的广告拦截器。</li>
-<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
-<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
-<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
-<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
-<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
-<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
-<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
-</ul>
-<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
+<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
+<p>百度搜Clash节点转到Github可以找到免费的机场</p>
+<br/>
+
+<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
+<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
+<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
+<p>可以在Profiles处通过以下两个方法加载你的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
+<br/>
+
+<p>加载完成后，在Proxies处选择合适的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
+<br/>
+
+<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
+<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
+<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
+<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
+<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
+<br/>
+
+<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
 <ul>
-<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
-<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
-<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
-<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
+<li>Proxy SwitchyOmega</li>
+<li>Proxy SwitchySharp</li>
 </ul>
+<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
+<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
+<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
+<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
 ]]></content>
       <categories>
         <category>资源</category>
       </categories>
       <tags>
         <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
       </tags>
   </entry>
   <entry>
@@ -2176,59 +2187,48 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华有魔法科学冲浪方案研究</title>
-    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
-<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
-<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
+    <title>郑强教授谈《创新欲望与创新能力》随想</title>
+    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
 <br/>
 
-<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
-<p>若直接在GitHub上下载速度会较慢，</p>
-<p>选择通过右键复制下载链接后在迅雷中下载</p>
+<p>现今中国的大学？ </p>
+<p><strong>缺少基础研究、知识创新。</strong></p>
+<p>没有原始创新欲望，被伤透了。</p>
 <br/>
 
-<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
-<p>百度搜Clash节点转到Github可以找到免费的机场</p>
+<p>日本为什么老能得诺奖？</p>
+<p>我们为什么被卡脖子？</p>
+<p><strong>浮躁，不专精于某个方向。</strong></p>
 <br/>
 
-<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
-<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
-<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
-<p>可以在Profiles处通过以下两个方法加载你的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
+<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
+<p>因为人生不是冲刺跑，是马拉松。</p>
 <br/>
 
-<p>加载完成后，在Proxies处选择合适的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
+<p>尊重人的天性，不要抹杀天性。</p>
 <br/>
 
-<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
-<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
-<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
-<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
-<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
+<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
 <br/>
 
-<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
-<ul>
-<li>Proxy SwitchyOmega</li>
-<li>Proxy SwitchySharp</li>
-</ul>
-<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
-<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
-<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
-<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
+<p>第一步是勇于付出，</p>
+<p>首先要<strong>坚定意志。</strong></p>
+<br/>
+
+<p>求道：是求得怎么去做······</p>
+<br/>
+
+<p><strong>先宽后专，知行合一。</strong></p>
+<br/>
+
+<p><strong>培养爱和价值观······</strong></p>
 ]]></content>
       <categories>
-        <category>资源</category>
+        <category>随想</category>
       </categories>
       <tags>
-        <tag>工具</tag>
+        <tag>随想</tag>
       </tags>
   </entry>
   <entry>
@@ -3017,7 +3017,7 @@ Port 443
 <li><a href="#git">Git</a></li>
 <li><a href="#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E">免责声明</a></li>
 </ul>
-<h1 id="数据结构与s算法相关书籍"><a href="#数据结构与s算法相关书籍" class="headerlink" title="数据结构与s算法相关书籍"></a>数据结构与s算法相关书籍</h1><ul>
+<h1 id="数据结构与算法相关书籍"><a href="#数据结构与算法相关书籍" class="headerlink" title="数据结构与算法相关书籍"></a>数据结构与算法相关书籍</h1><ul>
 <li>挑战程序设计竞赛       <a href="https://pan.baidu.com/s/1diObrFpHKm4r-XyTp4cGAQ">百度云下载链接</a>  密码:mxn7</li>
 <li>Java数据结构和算法     <a href="https://pan.baidu.com/s/1vD9CQVwnWMfqSaEmn8Dudw">百度云下载链接</a> 密码:lpym</li>
 <li>算法图解   <a href="https://pan.baidu.com/s/1NFiwO-_Kzt-VxXxxteRCTA">百度云下载链接</a> 密码:7osf</li>

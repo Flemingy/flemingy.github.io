@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
   
-  <title>基于Raspberry Pi 3的WordPress站点搭建流程 | Fleming.</title>
+  <title>CS书籍汇总 | Fleming.</title>
   <meta name="description" content="Fleming&#39;s blog 是一个秘密空间。" />
   <meta name="keywords" content="Fleming,Linux,Java,C,艺术" />
   
@@ -334,11 +334,11 @@
   <div class="pattern-center single-center">
     <!-- 有配图默认渲染第一张 -->
     <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/simply.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        <img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/sea/DSC04075.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
       </div>
     <header class="pattern-header single-header">
       <h1 class="entry-title">
-      基于Raspberry Pi 3的WordPress站点搭建流程</h1>
+      CS书籍汇总</h1>
       <p class="entry-census">
         <span>
           <a href="">
@@ -350,7 +350,7 @@
         </span>
         <span class="bull">
         ·</span>
-        2021-11-20
+        2021-12-1
         
       
         ·<span id="readcount"></span>次阅读
@@ -367,174 +367,237 @@
         <!--<div class="toc-entry-content"> <!-- 套嵌目录使用（主要为了支援评论）-->
         
         <div class="entry-content">
-          <h1 id="一、硬件准备"><a href="#一、硬件准备" class="headerlink" title="一、硬件准备"></a>一、硬件准备</h1><p>Raspderry Pi 3 Model B</p>
-<p><br/><br/></p>
-<h1 id="二、环境配置"><a href="#二、环境配置" class="headerlink" title="二、环境配置"></a>二、环境配置</h1><h2 id="1-镜像准备"><a href="#1-镜像准备" class="headerlink" title="1.镜像准备"></a>1.镜像准备</h2><h3 id="下载网址"><a href="#下载网址" class="headerlink" title="下载网址"></a>下载网址</h3><p><a target="_blank" rel="noopener" href="https://www.raspberrypi.org/downloads/raspbian/">https://www.raspberrypi.org/downloads/raspbian/</a></p>
-<h3 id="下载版本"><a href="#下载版本" class="headerlink" title="下载版本"></a>下载版本</h3><p>Raspbian Stretch with desktop 的 .img 镜像文件</p>
-<p>（Raspbian是基于Debian 9的树莓派操作系统）</p>
-<h2 id="2-烧录启动microSD卡"><a href="#2-烧录启动microSD卡" class="headerlink" title="2.烧录启动microSD卡"></a>2.烧录启动microSD卡</h2><h3 id="Windows下"><a href="#Windows下" class="headerlink" title="Windows下"></a>Windows下</h3><p>使用 diskpart 格式化SD卡</p>
-<p>使用 （Rufus 开源工具） / （Win Disk Imager） 烧制</p>
-<h3 id="MAC下"><a href="#MAC下" class="headerlink" title="MAC下"></a>MAC下</h3><p>（依据个人环境改动）</p>
-<pre><code>sudo dd bs=1m if=/Users/SomSyd/Desktop/RaspberryPi3/2018-11-13-raspbeian-strect.img of=/dev/rdisk1 conv=sync
-</code></pre>
-<h2 id="3-SSH远程连接"><a href="#3-SSH远程连接" class="headerlink" title="3.SSH远程连接"></a>3.SSH远程连接</h2><h3 id="系统配置"><a href="#系统配置" class="headerlink" title="系统配置"></a>系统配置</h3><p>进入系统后记住内网IP地址</p>
-<p>进入时我们选择先不更新</p>
-<ul>
-<li>进入Preferences——&gt;Raspberry Pi Configuration——&gt;Interfaces——&gt;SSH: Enable（开启SSH连接）</li>
-<li>进入Preferences——&gt;Raspberry Pi Configuration——&gt;System——&gt;Boot: To CLI（不使用图形界面）</li>
+          <ul>
+<li><a href="#%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95%E7%9B%B8%E5%85%B3%E4%B9%A6%E7%B1%8D">数据结构与算法相关书籍</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%9F%BA%E7%A1%80">计算机基础</a><ul>
+<li><a href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a></li>
+<li><a href="#%E6%B1%87%E7%BC%96%E8%AF%AD%E8%A8%80">汇编语言</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C">计算机网络</a></li>
+<li><a href="#%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BB%84%E6%88%90%E5%8E%9F%E7%90%86">计算机组成原理</a></li>
 </ul>
-<p>此 pi 被用来作为服务器，所以可以更改名字为Server</p>
-<pre><code>sudo nano /etc/hostname
-</code></pre>
-<p>重启系统：</p>
-<pre><code>sudo reboot
-</code></pre>
-<h3 id="远程登录"><a href="#远程登录" class="headerlink" title="远程登录"></a>远程登录</h3><ul>
-<li><p>windows中使用Putty</p>
 </li>
-<li><p>MacOS直接使用终端</p>
-<p>（依据个人环境改动）</p>
-<pre><code>SSH -Y pi@192.168.1.105
-</code></pre>
-<p>输入密码，登录成功</p>
-</li>
+<li><a href="#python">Python</a><ul>
+<li><a href="#1python%E5%9F%BA%E7%A1%80">1、Python基础</a></li>
+<li><a href="#2%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90%E4%B8%8E%E7%88%AC%E8%99%AB">2、数据分析与爬虫</a></li>
 </ul>
-<h2 id="4-Python开发环境"><a href="#4-Python开发环境" class="headerlink" title="4.Python开发环境"></a>4.Python开发环境</h2><p>查看当前python版本</p>
-<pre><code>python
-python3
-</code></pre>
-<p>python和python3都已内制</p>
-<h3 id="虚拟环境创建"><a href="#虚拟环境创建" class="headerlink" title="虚拟环境创建"></a><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/e7dcdcdeaa73">虚拟环境创建</a></h3><pre><code>sudo pip3 install virtualenv
-</code></pre>
-<h3 id="vim安装"><a href="#vim安装" class="headerlink" title="vim安装"></a>vim安装</h3><pre><code>sudo apt install vim -y
-</code></pre>
-<h3 id="源与软件更新"><a href="#源与软件更新" class="headerlink" title="源与软件更新"></a>源与软件更新</h3><pre><code>sudo apt-get update -y &amp;&amp; sudo apt-get upgrade -y
-</code></pre>
-<h3 id="终端安装"><a href="#终端安装" class="headerlink" title="终端安装"></a>终端安装</h3><pre><code>sudo apt install terminator -y
-</code></pre>
-<h2 id="5-JavaScript开发环境"><a href="#5-JavaScript开发环境" class="headerlink" title="5.JavaScript开发环境"></a>5.JavaScript开发环境</h2><h3 id="源加载至安装库"><a href="#源加载至安装库" class="headerlink" title="源加载至安装库"></a>源加载至安装库</h3><pre><code>curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
-</code></pre>
-<h3 id="node-js安装"><a href="#node-js安装" class="headerlink" title="node.js安装"></a>node.js安装</h3><pre><code>sudo apt install nodejs -y 
-</code></pre>
-<p><br/><br/></p>
-<h1 id="三、网站搭建"><a href="#三、网站搭建" class="headerlink" title="三、网站搭建"></a>三、网站搭建</h1><h2 id="1-Nginx安装及配置"><a href="#1-Nginx安装及配置" class="headerlink" title="1.Nginx安装及配置"></a>1.Nginx安装及配置</h2><pre><code>sudo apt install nginx -y
-</code></pre>
-<p>查看文件</p>
-<pre><code>cd /var/www/html
-
-ls
-</code></pre>
-<p>新建的文件优先级必定高于原始文件</p>
-<h2 id="2-MySQL安装及配置"><a href="#2-MySQL安装及配置" class="headerlink" title="2.MySQL安装及配置"></a>2.MySQL安装及配置</h2><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><pre><code>sudo apt install mysql-server
-</code></pre>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><pre><code>sudo mysql_secure_installation
-</code></pre>
-<h3 id="查看server版本"><a href="#查看server版本" class="headerlink" title="查看server版本"></a>查看server版本</h3><pre><code>mysqld --version
-</code></pre>
-<h3 id="进入mysql"><a href="#进入mysql" class="headerlink" title="进入mysql"></a>进入mysql</h3><pre><code>sudo mysql -u root
-</code></pre>
-<h3 id="查看用户"><a href="#查看用户" class="headerlink" title="查看用户"></a>查看用户</h3><pre><code>select user,authentication_string,plugin,host from mysql.user;
-</code></pre>
-<h3 id="更新密码"><a href="#更新密码" class="headerlink" title="更新密码"></a>更新密码</h3><pre><code>use mysql;
-
-update user set authentication_string=PASSWORD(&quot;123456&quot;) where User=&quot;root&quot;;
-
-flush privileges;
-</code></pre>
-<h3 id="创建数据库"><a href="#创建数据库" class="headerlink" title="创建数据库"></a>创建数据库</h3><p>为WordPress创建一个数据库</p>
-<h2 id="3-PHP和FastCGI进程管理器"><a href="#3-PHP和FastCGI进程管理器" class="headerlink" title="3.PHP和FastCGI进程管理器"></a>3.PHP和FastCGI进程管理器</h2><p>【PHP-FPM】</p>
-<p>针对PHP的FastCGI实现，可以理解为管理进程池</p>
-<pre><code>sudo apt install php-fpm php-mysql
-</code></pre>
-<h2 id="4-HOSTS设置"><a href="#4-HOSTS设置" class="headerlink" title="4.HOSTS设置"></a>4.HOSTS设置</h2><pre><code>cd /etc/php
-
-sudo nano /etc/php/7.0/fpm/php.ini
-</code></pre>
-<ul>
-<li><p>更改cgi.fix_pathinfo=0</p>
 </li>
-<li><p>防止用户上传图片时附加恶意代码</p>
-<p>  sudo nano /etc/php/7.0/fpm/pool.d/<a target="_blank" rel="noopener" href="http://www.conf/">www.conf</a></p>
-</li>
-<li><p>开启监听配置 listen</p>
-<p>  sudo nano /etc/nginx/sites-available/default</p>
-</li>
-<li><p>更改主配置</p>
-</li>
+<li><a href="#linux">Linux</a></li>
+<li><a href="#c%E8%AF%AD%E8%A8%80">C语言</a></li>
+<li><a href="#c">C  </a></li>
+<li><a href="#%E5%89%8D%E7%AB%AF">前端</a></li>
+<li><a href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD">人工智能</a></li>
+<li><a href="#%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F">设计模式</a></li>
+<li><a href="#java">Java</a><ul>
+<li><a href="#java-%E5%9F%BA%E7%A1%80">Java 基础</a></li>
+<li><a href="#java%E8%BF%9B%E9%98%B6">Java进阶</a></li>
+<li><a href="#javaweb">JavaWeb</a></li>
 </ul>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line">	# 监听80端口</span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line">	</span><br><span class="line">	# 域名访问IP</span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line">	</span><br><span class="line">	# 内容放在main目录下</span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line">	</span><br><span class="line">	# WordPress标准404格式输出404界面</span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"># pass the PHP scripts to FastCGI server listening on the php-fpm$</span><br><span class="line"></span><br><span class="line"># 添加的进程管理器</span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"> </span><br><span class="line"> # 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<p>查看配置文件是否生效</p>
-<pre><code>sudo nginx -t
-</code></pre>
-<p>重新加载设置</p>
-<pre><code>sudo systemctl reload nginx
-</code></pre>
-<h2 id="5-WordPress网站搭建"><a href="#5-WordPress网站搭建" class="headerlink" title="5.WordPress网站搭建"></a>5.WordPress网站搭建</h2><p>查看常用网页放置目录</p>
-<pre><code>cd /var/www/html
-</code></pre>
-<p>目录下内容权限设置为755（允许用户上传内容）</p>
-<pre><code>sudo chmod 755 -R /var/www
-
-sudo chown -R pi /var/www/*
-</code></pre>
-<p>创建文件夹</p>
-<pre><code>sudo mkdir main
-</code></pre>
-<p>从wordpress官方保存安装包</p>
-<pre><code> sudo wget https://wordpress.org/latest.zip
-</code></pre>
-<p>解压下载包</p>
-<pre><code>sudo unzip -q latest.zip
-</code></pre>
-<p>将wordpress中的所有文件拷贝到main文件夹下</p>
-<pre><code>sudo cp -r wordpress/* /var/www/html/main
-</code></pre>
-<p> 删除wordpress文件夹和latest压缩包</p>
-<pre><code>sudo rm -rf wordpress
-sudo rm -rf latest.zip
-</code></pre>
-<p>进入域名或IP对应网址设置wordpress</p>
-<p>提示找不到wp-config.php文件</p>
-<p>新建此文件，将提示内容拷贝到文件中</p>
-<pre><code>sudo nano wp-config.php
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">/** The Database Collate type.Don&#x27;t change this if in doubt */ 下添加</span><br><span class="line">define(&#x27;FS_METHOD&#x27;,&#x27;direct&#x27;);</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="6-常见问题解决方案"><a href="#6-常见问题解决方案" class="headerlink" title="6.常见问题解决方案"></a>6.常见问题解决方案</h2><ol>
-<li><p>问题：上传图片大小限制</p>
-<p>更改使上传不受权限影响</p>
-<pre><code>sudo chown -R www-data:www_data /var/www/html/main
-</code></pre>
-<p>更改图片上传大小</p>
-<pre><code>sudo nano /etc/ngnix/ngnix.conf
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">##</span><br><span class="line"># set client body size to 10M</span><br><span class="line">##</span><br><span class="line">client_max_body_size 10M;</span><br></pre></td></tr></table></figure>
-
-<p>重新加载</p>
-<pre><code>sudo systemctl reload nginx.service
-</code></pre>
-<p>更改文件</p>
-<pre><code>sudo nano /etc/php/7.0/fpm/php.ini
-</code></pre>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">post_max_size = 200M</span><br><span class="line"></span><br><span class="line">upload_max_filesize = 200M</span><br></pre></td></tr></table></figure>
-
-<p>重启进程管理器与服务</p>
-<pre><code>sudo systemctl restart php7.0-fpm.service
-sudo systemctl restart nginx.service
-</code></pre>
 </li>
-<li><p>网站中setting——&gt;permalink——&gt;post name</p>
-</li>
-</ol>
-<p><br/><br/></p>
-<h1 id="参考视频："><a href="#参考视频：" class="headerlink" title="参考视频："></a>参考视频：</h1><p>(<a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2">https://www.youtube.com/watch?v=y5gBbHWJqjw&amp;list=PLdgI9Pl3hKw31hdPFBitr1yoFI19oC3Bo&amp;index=2</a>)</p>
-<p>(<a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A">https://v.youku.com/v_show/id_XNDExMDUxNjg2NA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!195~A</a>)</p>
-<p>(<a target="_blank" rel="noopener" href="https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A">https://v.youku.com/v_show/id_XNDExMzExMDAyOA==.html?spm=a2hcb.profile.app.5~5!2~5~5!3~5!2~5~5!194~A</a>)</p>
+<li><a href="#%E6%95%B0%E6%8D%AE%E5%BA%93">数据库</a></li>
+<li><a href="#go">Go</a></li>
+<li><a href="#%E4%B8%AD%E9%97%B4%E4%BB%B6">中间件</a></li>
+<li><a href="#%E9%9D%A2%E8%AF%95%E7%9B%B8%E5%85%B3">面试相关</a></li>
+<li><a href="#%E6%9C%AA%E5%88%86%E7%B1%BB%E4%B9%A6%E7%B1%8D">未分类书籍</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#%E5%85%8D%E8%B4%A3%E5%A3%B0%E6%98%8E">免责声明</a></li>
+</ul>
+<h1 id="数据结构与s算法相关书籍"><a href="#数据结构与s算法相关书籍" class="headerlink" title="数据结构与s算法相关书籍"></a>数据结构与s算法相关书籍</h1><ul>
+<li>挑战程序设计竞赛       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1diObrFpHKm4r-XyTp4cGAQ">百度云下载链接</a>  密码:mxn7</li>
+<li>Java数据结构和算法     <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1vD9CQVwnWMfqSaEmn8Dudw">百度云下载链接</a> 密码:lpym</li>
+<li>算法图解   <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NFiwO-_Kzt-VxXxxteRCTA">百度云下载链接</a> 密码:7osf</li>
+<li>算法导论     <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1WHmnchIdy0FvMWLImPoIhQ">百度云下载链接</a>  密码:p2tp</li>
+<li>算法第四版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1WEliUJ_hQhl-OzWPtXcFdQ">百度云下载链接</a> 密码:rixw</li>
+<li>数据结构与算法分析C语言描述版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1v4OsTTCd5SyC4WGarHZdcA">百度云下载链接</a>  密码:mn10  </li>
+<li>数据结构与算法分析Java语言描述版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1hZGhkErn9Bc17ZnN_ilgAw">百度云下载链接</a>  密码:917n</li>
+<li>数据结构与算法 Python语言描述_裘宗燕       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1VjlQugLPIiN91bmISkJ3xg">百度云下载链接</a>  密码:96gw </li>
+<li>剑指offer       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1lUs2fVqxNMK8OOUrVSBCmw">百度云下载链接</a>  密码:a4rt</li>
+<li>计算机程序设计艺术1-3卷       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1rxEqkKAogFpy1aNQnXUyBw">百度云下载链接</a>  密码:i3nh</li>
+<li>大话数据结构       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fTxelwIZa8pBmdnMW8PFYg">百度云下载链接</a>  密码:np2o</li>
+<li>程序员代码面试指南：IT 名企算法与数据结构题目最优解       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1DhjBLEiORLRTiffpJnJq_g">百度云下载链接</a>  密码:20oh</li>
+<li>编程珠玑       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ix17W5-CG4r5Wn8bF3erVQ">百度云下载链接</a>  密码:4oow</li>
+<li>编程之美       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1y8SWiLipsKEzCulyxdbgGQ">百度云下载链接</a>  密码:4zme</li>
+<li>啊哈算法       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1S6OTJlQtywaRvu4IA_ogCw">百度云下载链接</a>  密码:h4id</li>
+<li>程序员的算法趣题       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1iIHm0kRlfwck3IQn-BUZZA">百度云下载链接</a>  密码:kk84</li>
+</ul>
+<h1 id="计算机基础"><a href="#计算机基础" class="headerlink" title="计算机基础"></a>计算机基础</h1><h3 id="操作系统"><a href="#操作系统" class="headerlink" title="操作系统"></a>操作系统</h3><ul>
+<li>30天填自制操作系统       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1QSIUlat1HpllNFMWY9WBzw">百度云下载链接</a>  密码:pxxr</li>
+<li>操作系统之哲学原理       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1GEfALJhtJ2IJtjtKcLneKg">百度云下载链接</a>  密码:hua7</li>
+<li>程序是怎样跑起来的       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1i_xDxT8QgA_x4kRHXEmPqg">百度云下载链接</a>  密码:pbvh</li>
+<li>深入理解计算机操作系统       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1xrDC6wGAH7Yv3uuXzVUWxg">百度云下载链接</a>  密码:2toh</li>
+<li>现代操作系统       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1QA0VZ20pA8giW6ax7AHQBA">百度云下载链接</a>  密码:huk2</li>
+</ul>
+<h3 id="汇编语言"><a href="#汇编语言" class="headerlink" title="汇编语言"></a>汇编语言</h3><ul>
+<li>汇编语言（注：这边是王爽写的，我觉得写的很好，适合入门）       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1kZLH0dW6Y37S-WCLNV309A">百度云下载链接</a>  密码:qea3</li>
+</ul>
+<h3 id="计算机网络"><a href="#计算机网络" class="headerlink" title="计算机网络"></a>计算机网络</h3><ul>
+<li>计算机网络：自顶向下       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18X_L2RINmtLK9g0Ki2GiFw">百度云下载链接</a>  密码:l77d</li>
+<li>图解HTTP       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NEAK2PH_4JzPY454QvmmsQ">百度云下载链接</a>  密码:b42z</li>
+<li>图解TC/IP       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1FJru4ppyxBhx_J3pk8rpvA">百度云下载链接</a>  密码:5k3x</li>
+<li>网络是怎样连接的       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1HhE9MoC4rp5NSvyWOtk_hw">百度云下载链接</a>  密码:g983</li>
+<li>HTTP权威指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1b2fIsmdt9ANVMcqU97t6kw">百度云下载链接</a>  密码:tqj8</li>
+<li>UNIX网络编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1vXbj7OLsouVFH4DCIMqF3w">百度云下载链接</a>  密码:4buy</li>
+</ul>
+<h3 id="计算机组成原理"><a href="#计算机组成原理" class="headerlink" title="计算机组成原理"></a>计算机组成原理</h3><ul>
+<li>隐匿在计算机软硬件背后的语言       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1gJCnChBTCZD07mm3IqCRwQ">百度云下载链接</a>  密码:6jiq</li>
+<li>大话计算机       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1AakpZmD8hziokFnV0VSGFA">百度云下载链接</a>  密码:6j1o</li>
+<li>计算机是怎样跑起来的       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1JIq3U8kNYohz0C3xnCk6EA">百度云下载链接</a>  密码:er12</li>
+</ul>
+<h1 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h1><h3 id="1、Python基础"><a href="#1、Python基础" class="headerlink" title="1、Python基础"></a>1、Python基础</h3><ul>
+<li>编程小白的第一本Python入门书       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/128kxkHLrEAidlMt0E80SUg">百度云下载链接</a>  密码:s76b</li>
+<li>Python编程初学者指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ytNZt1VMlbyREyc1L7ShYA">百度云下载链接</a>  密码:g696</li>
+<li>Python高级编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1-ItrNDj2R9Z-S1ZuEMlf1Q">百度云下载链接</a>  密码:qnuf</li>
+<li>Python编程入门经典       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/14JCoE5xNw059BjmUv4v4TA">百度云下载链接</a>  密码:j7gp</li>
+<li>Python灰帽子       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/17hvNff7O5OsdRAB3_mBBcg">百度云下载链接</a>  密码:nfkt</li>
+<li>Python开发技术详解       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1cTVhr9BEmy79GbKq41qQ5A">百度云下载链接</a>  密码:z0av</li>
+<li>Python开发实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1AFgXTjEQyBf6SP2CCniA1A">百度云下载链接</a>  密码:ee5x</li>
+<li>Python网络编程基础       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1qBpXTD3Ll6p2KAv0RAkKHQ">百度云下载链接</a>  密码:m15q</li>
+<li>Python学习手册       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18DsRhIawELjVGGDSTRvhYA">百度云下载链接</a>  密码:0yqf</li>
+<li>精通Scrapy网络爬虫</li>
+</ul>
+<h3 id="2、数据分析与爬虫"><a href="#2、数据分析与爬虫" class="headerlink" title="2、数据分析与爬虫"></a>2、数据分析与爬虫</h3><ul>
+<li>数据科学入门       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1LBUGeGdjUNhCUUOZRpgbrg">百度云下载链接</a>  密码:1hz8</li>
+<li>用Python写网络爬虫       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ENi8Y4vAMqSQviPYNRBMUA">百度云下载链接</a>  密码:nlpa</li>
+<li>Python数据处理       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1UOOC1APb6fueaxDyyshMuQ">百度云下载链接</a>  密码:8eom</li>
+<li>Python数据分析实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13yQ4hvUf4EzgGAuKQUM4ag">百度云下载链接</a>  密码:idn1</li>
+<li>Python数据科学手册       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Y1KnyILg-0ZWJbIKNzNsmw">百度云下载链接</a>  密码:16u0</li>
+<li>Python数据可视化编程实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1BKIzCFI_5CzLXAQpRQCp8Q">百度云下载链接</a>  密码:i7hp</li>
+<li>精通Scrapy网络爬虫       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1FuAE8Kq3YItoO4yNba5ckA">百度云下载链接</a>  密码:jb6u</li>
+</ul>
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><ul>
+<li>精通正则表达式       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1tt-S2QEye0qZde_3SiG1Eg">百度云下载链接</a>  密码:vp94</li>
+<li>鸟哥的Linux私房菜基础篇和服务器篇       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ZvTMk23dKPbQG7siYXyrbg">百度云下载链接</a>  密码:ubg2</li>
+<li>深入Linux内核架构       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/15Vyl69xGDY_RkpQPk5qCCQ">百度云下载链接</a>  密码:fnh2</li>
+<li>Linux宝典       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1cQX4jgG0-7fYFuR5F9G2_g">百度云下载链接</a>  密码:nxhe</li>
+<li>Linux常用命令大全       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1WH7DFOzL25mOHsp5orrWmQ">百度云下载链接</a>  密码:e0n2</li>
+<li>Linux防火墙       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NTMCysm_btHNpek38rBMfg">百度云下载链接</a>  密码:sc4u</li>
+<li>Linux高级程序设计       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11y7OBER2c9mcbsCtjTRsrA">百度云下载链接</a>  密码:d4wq</li>
+<li>Linux环境编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1sl-6GF3onLPRXeJDVedwqA">百度云下载链接</a>  密码:xudv</li>
+<li>Linux命令详解词典       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1CSlkxcBRBPsHHRYOrQpfSw">百度云下载链接</a>  密码:yxuz</li>
+<li>汇编语言基于linux环境第3版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13gwNQvvG5fRYxo83zMb2VA">百度云下载链接</a>  密码:yq75</li>
+</ul>
+<h1 id="C语言"><a href="#C语言" class="headerlink" title="C语言"></a>C语言</h1><ul>
+<li>经典C程序100例       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fJnp014zqOCdO8O6gzcDUw">百度云下载链接</a>  密码:tls2</li>
+<li>C Primer Plus       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1SuVacfN0q-MGeKs6Z-O2LQ">百度云下载链接</a>  密码:5s85</li>
+<li>C程序设计语言（包括课后答案等）       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ICTaU2avonev25DfykAr-w">百度云下载链接</a>  密码:cfj4</li>
+<li>C和指针       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11zphu-XC2YS57BkkKjAtoQ">百度云下载链接</a>  密码:d8a0</li>
+<li>C语言编程精粹       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_GmhiP3jL0cQR36uAiZNNw">百度云下载链接</a>  密码:6mct</li>
+<li>C语言参考手册       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1hzINX8yDELZ4WF1ALwDsYg">百度云下载链接</a>  密码:4hnx</li>
+<li>C语言函数大全       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_kM7pd1J6K65X6oC38AviA">百度云下载链接</a>  密码:xywt</li>
+<li>C语言解析教程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Sm-CRO8DzhT7gCgxNJkKfw">百度云下载链接</a>  密码:6luf</li>
+<li>C语言深度剖析       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Dn4csGs7xEdZt9smdBcmbQ">百度云下载链接</a>  密码:yu63</li>
+<li>C专家编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1y_Uz1SWi1NikG0D0URqv0w">百度云下载链接</a>  密码:xlfm</li>
+</ul>
+<h1 id="C"><a href="#C" class="headerlink" title="C++"></a>C++</h1><ul>
+<li>C++ Primer       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1OvJd3JfxujySAs6Tqugl9g">百度云下载链接</a>  密码:js1a</li>
+<li>C++编程思想       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1p98_fU039F6Er3_CtnmIfQ">百度云下载链接</a>  密码:vi02</li>
+<li>C++对象模型       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1JVnJwxbTXe6HIMDFXlYnbQ">百度云下载链接</a>  密码:v90k</li>
+<li>深入探索C++对象模型       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NxvGvIBYpKNunjnu5ev_vw">百度云下载链接</a>  密码:3xuv</li>
+<li>C++ Templates       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bkQ-aPpFDc_osxqFC9I1Jw">百度云下载链接</a>  密码:4rvw</li>
+<li>C++编程规范-101条规则准则与最佳实践       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1PAfapM3g1YDNB2qpZlJnpg">百度云下载链接</a>  密码:t43e</li>
+<li>C++沉思录中文第2版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ckINRCEKKt3DJ9eg412EtA">百度云下载链接</a>  密码:6emr</li>
+<li>C++大学教程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1OS5iWmRib0QvFOFaRMSpMw">百度云下载链接</a>  密码:n6ph</li>
+<li>C++设计新思维-泛型编程与设计之应用       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1zKojQCCfs0NPH_9ORpiBvA">百度云下载链接</a>  密码:0el5</li>
+<li>Effective STL 中文版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1btF8iWfAXoEUo5A18SYaLw">百度云下载链接</a>  密码:u7s1</li>
+<li>More Effective C++中文版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1I3uRE2s8n5OZRm_76a1Lag">百度云下载链接</a>  密码:xbxv</li>
+<li>STL源码剖析       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1DbnRAJgeAtmXo5tpuhc-rg">百度云下载链接</a>  密码:mxsh</li>
+</ul>
+<h1 id="前端"><a href="#前端" class="headerlink" title="前端"></a>前端</h1><ul>
+<li>疯狂aJax讲义       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1C1NdOCrYD6LULgbGtRp_Vw">百度云下载链接</a>  密码:pce0</li>
+<li>Bootstrap实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ty1U6-XUDFqnjVS57IrZSA">百度云下载链接</a>  密码:rzhm</li>
+<li>HTML5揭秘       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/138vuPiKZFIU0Zza80eui_g">百度云下载链接</a>  密码:vaam</li>
+<li>HTML5与CSS3基础教程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ddq73aQviPIM9ci6xhAt_g">百度云下载链接</a>  密码:2wxm</li>
+<li>HTML与CSS入门经典       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fJaT9zqQOWxIB8Mkn_vQqQ">百度云下载链接</a>  密码:tsgm</li>
+<li>JavaScript DOM编程艺术       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Dx3z3D9DYbWyebr3V86cLA">百度云下载链接</a>  密码:gsbt</li>
+<li>JavaScript高级程序设计       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NYkMExeBSG1SBVfT7nUkWQ">百度云下载链接</a>  密码:wbw0</li>
+<li>JavaScript高效图形编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1jLPlJ1tpnF6LOkhhUgcF6w">百度云下载链接</a>  密码:tab1</li>
+<li>jQuery高级编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1XSvgFixfnm_9YxytuuSvLA">百度云下载链接</a>  密码:qwtr</li>
+<li>jQuery技术内幕       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11sUqBmGJWlHOB29WtZjf2A">百度云下载链接</a>  密码:pglf</li>
+<li>jQuery权威指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/14Iu2h8BQ4oHXsyuKG9k-Qw">百度云下载链接</a>  密码:4vrw</li>
+<li>Node.js开发指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1cSoqtNHTrmoovTNy7VonqA">百度云下载链接</a>  密码:voze</li>
+</ul>
+<h1 id="人工智能"><a href="#人工智能" class="headerlink" title="人工智能"></a>人工智能</h1><ul>
+<li>贝叶斯思维统计建模的Python学习法       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1GX6Uqzh8-AzMv0UjO2Ed2A">百度云下载链接</a>  密码:ztbe</li>
+<li>机器学习实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ZDcgp1ht4XZPYH5Wy3I1KQ">百度云下载链接</a>  密码:cfqc</li>
+<li>Python机器学习及实践       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1IIUCLptUPsQvLRbUEqJaTA">百度云下载链接</a>  密码:qq3q</li>
+<li>Tensorflow实战Google深度学习框架       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1CJIJmNvZHx2rtkUDH-zrIg">百度云下载链接</a>  密码:12kj</li>
+<li>TensorFlow实践与智能系统       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1EYFAmV8z9hvTX06Hwf1MsA">百度云下载链接</a>  密码:e668</li>
+<li>深度学习_中文版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1FH9vlBBBb-yvB26eFmKjQw">百度云下载链接</a>  密码:01xp</li>
+</ul>
+<h1 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h1><ul>
+<li>图解设计模式       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/16Lss7o-zu0_HNio6od4c0Q">百度云下载链接</a>  密码:g50a</li>
+<li>研磨设计模式       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1a5EPImWzDfPGg1DQ4F7EkA">百度云下载链接</a>  密码:h5fb</li>
+<li>Head First设计模式       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1-rMyG6AuRHrzFF-dOiaBDw">百度云下载链接</a>  密码:pxpq</li>
+</ul>
+<h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><h3 id="Java-基础"><a href="#Java-基础" class="headerlink" title="Java 基础"></a>Java 基础</h3><ul>
+<li>阿里巴巴Java开发手册       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1SoqPq0-x9aZPEaCiggVtUA">百度云下载链接</a>  密码:g6lv</li>
+<li>码出高效       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ejmKaxyd2ACKbV3lj9Vyvg">百度云下载链接</a>  密码:mbt9</li>
+<li>Head First Java       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1AhFSveV6DE3nWMpBUhFcMw">百度云下载链接</a>  密码:d5ll</li>
+<li>Java8实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ni-dF2XqmMFwI5pBPo3P2A">百度云下载链接</a>  密码:lvmb</li>
+<li>Java编程思想       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1cqF8lcDdMoV3g2OLxQCUKg">百度云下载链接</a>  密码:0add</li>
+<li>Java并发编程的艺术       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1nl69k3y1wu7wxbVNdzV18A">百度云下载链接</a>    密码:92jj</li>
+<li>Java并发编程实践       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Bk47A0tLXUv1wVQjJlxd6Q">百度云下载链接</a>  密码:i6w9</li>
+<li>Java从小白到大牛       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1qDLSzWrkSVu91KcrBN5fKQ">百度云下载链接</a>  密码:9auc</li>
+<li>Java核心技术1-2卷       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1t9YFSagCpVC7N4pK6aNuGQ">百度云下载链接</a>  密码:tr3s</li>
+<li>深入理解Java虚拟机       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1qyRd-YANK1Czs51k1tWYWQ">百度云下载链接</a>  密码:b6op</li>
+</ul>
+<h3 id="Java进阶"><a href="#Java进阶" class="headerlink" title="Java进阶"></a>Java进阶</h3><ul>
+<li>代码大全       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ehGZsgt-Rl47pVnNGUKWWw">百度云下载链接</a>  密码:juhq</li>
+<li>代码整洁之道       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fQf91LpvIWeJ-HH2QWKVog">百度云下载链接</a>  密码:hzn2</li>
+<li>敏捷软件开发       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1HveePOP4fOynad9yrHKS_A">百度云下载链接</a>  密码:mmi4</li>
+<li>Effective Java(中文)       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1jvaEtd4H-ELdjY-I2uV76A">百度云下载链接</a>  密码:4dcx</li>
+<li>Effective Java（英文）    <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1FOVL661If9yaJSjTpMw22g">百度云下载链接</a>  密码:bhu4</li>
+<li>Java性能优化权威指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1XCOWv6W5_rsCUM6Q4YIU9Q">百度云下载链接</a>  密码:054x</li>
+</ul>
+<h3 id="JavaWeb"><a href="#JavaWeb" class="headerlink" title="JavaWeb"></a>JavaWeb</h3><ul>
+<li>轻量级JavaEE企业应用实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1EjBGj1z6sJ4kDokUZRG2IA">百度云下载链接</a>  密码:8j3c</li>
+<li>深入分析JavaWeb技术内幕       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/15Q_ZJZyOtm5gYhhp_D0OFA">百度云下载链接</a>  密码:31uu</li>
+<li>深入剖析Tomcat       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1YQXpaveUeRXxid1BdU-nUw">百度云下载链接</a>  密码:y1yt</li>
+<li>Head First Servlet and JSP       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1036AnuSKhckNC_vqa5qjPw">百度云下载链接</a>  密码:v8b8</li>
+<li>Maven实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/15DddRDQpR_KAOzg-HuuDvw">百度云下载链接</a>  密码:s0q9</li>
+<li>Spring实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1Y9J20oR38qVyQ4Z7Kh9KQw">百度云下载链接</a>  密码:40fb</li>
+<li>Camel in Action       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1300e_-sgpqAzl_2H1EPlJA">百度云下载链接</a>  密码:plyn</li>
+<li>Spring 5 Recipes, 4th Edition     <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1QoFXYQeJbWtC4v39-F-fIQ">百度云盘下载链接</a>  密码:slt0</li>
+</ul>
+<h3 id="Java工具"><a href="#Java工具" class="headerlink" title="Java工具"></a>Java工具</h3><ul>
+<li>Java se 11中文 api <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/11Qy-31eI1rDX5xicF4t5RA">百度云下载链接</a> 密码：nkjm</li>
+</ul>
+<h1 id="数据库"><a href="#数据库" class="headerlink" title="数据库"></a>数据库</h1><ul>
+<li>高性能MySQL       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_vXaan9KbIWAHEnyQnQFlg">百度云下载链接</a>  密码:gh5t</li>
+<li>深入浅出MySQL       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1gWJcwszv3CnjIRMzy--_rw">百度云下载链接</a>  密码:ju0h</li>
+<li>MongoDB权威指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1LO1ACpRDi7n0i9Q7nLooqg">百度云下载链接</a>  密码:llvx</li>
+<li>MySQL必知必会       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1IWeqx7IQGc0sY5bJ9WtyMA">百度云下载链接</a>  密码:f1v9</li>
+<li>MySQL技术内幕InnoDB存储引擎        <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1fLL3GXn_Hp6DdEnHXcBFJQ">百度云下载链接</a>  密码:6g04）</li>
+<li>SQL查询的艺术       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1PfE3oLfmQN8Xtdj-08L--A">百度云下载链接</a>  密码:ndcv</li>
+<li>SQLite 权威指南       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1BqFp4W_I0Wwn87fKrCpB8A">百度云下载链接</a>  密码:ex3h</li>
+</ul>
+<h1 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h1><ul>
+<li>学习Go语言       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1tNJJ-UNBk7nsZuxILFAy7w">百度云下载链接</a>  密码:5tri</li>
+<li>Go语言实战       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1BIGNOG3AfFAVrBnHeemPlQ">百度云下载链接</a>  密码:q0x3</li>
+<li>Go web编程       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1UQU7uWFSZb3ILob6b64ZeA">百度云下载链接</a>  密码:pyw3</li>
+<li>C 程序设计语言第2版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/14NmKpWeBQ-vg6XzyvXTaeg">百度云下载链接</a>  密码:3yza</li>
+</ul>
+<h1 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h1><ul>
+<li>redis实战          <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/13Y-Uk2HmV1Y5TLec4J20aQ">百度云下载链接</a>  密码:ro48</li>
+</ul>
+<h1 id="面试相关"><a href="#面试相关" class="headerlink" title="面试相关"></a>面试相关</h1><ul>
+<li>阿里巴巴Java面试问题大全       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1tbd8N88ae-O0xsm6RTJIag">百度云下载链接</a>  密码:8xzm</li>
+<li>程序员面试宝典       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1LilCd-QIcVgZ1uQyFWMaWw">百度云下载链接</a>  密码:ko62</li>
+<li>大厂面试真题       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1631WVa3Fhf2wOpdZX_ou2g">百度云下载链接</a>  密码:gu92</li>
+<li>Java面试突击       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1bAZS8KiUNF0lOt-R0UBOyg">百度云下载链接</a>  密码:h44t</li>
+</ul>
+<h1 id="未分类书籍"><a href="#未分类书籍" class="headerlink" title="未分类书籍"></a>未分类书籍</h1><ul>
+<li>黑客与画家       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1lEyXNK8W4a0vStIPHOihiA">百度云下载链接</a>  密码:uux2</li>
+<li>浪潮之巅       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1NIeoGRy6s1lYB3WdlhA8lQ">百度云下载链接</a>  密码:xr66</li>
+<li>奔跑吧，程序员：从零开始打造产品、技术和团队 <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1O0QkDLuJMasimr9XZsNSmA">百度云下载链接</a>  密码:jxvj</li>
+</ul>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><ul>
+<li>快速入门Git       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1ka8s2-1h24LLX5ebeeU6WA">百度云下载链接</a>  密码:ofdd</li>
+<li>专业git中文       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1pvgoGleexrvdMhnTgd0VYw">百度云下载链接</a>  密码:b3kx</li>
+<li>Git参考手册       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1DC8S-wnLrpanW2HRROizMQ">百度云下载链接</a>  密码:axou</li>
+<li>《Pro Git》中文版       <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1TLHL03vKY5gLs1tOjN5KeA">百度云下载链接</a>  密码:l05a</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://badges.toozhao.com/badges/01EMGX8NNAHHYKVNQAYHSE2G3K/green.svg">https://badges.toozhao.com/badges/01EMGX8NNAHHYKVNQAYHSE2G3K/green.svg</a> “Get your own page views count badge on badges.toozhao.com”)</p>
+<h1 id="免责声明"><a href="#免责声明" class="headerlink" title="免责声明"></a>免责声明</h1><p>本篇为转载整理内容，侵权即删。</p>
 
         </div>
         <!-- .entry-content -->
@@ -565,39 +628,20 @@ sudo systemctl restart nginx.service
       <div class="toc" style="background: none;"></div>
       <section class="post-squares nextprev">
         
-          
-            <div class="post-nepre half previous">
-          
-            <a href="/2021/12/01/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94CS%E7%94%B5%E5%AD%90%E4%B9%A6%E7%B1%8D%E6%B1%87%E6%80%BB/" rel="prev">
-              <div class="background">
-<!--                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/sea/DSC04075.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/sea/DSC04075.jpg">-->
-                
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/sea/DSC04075.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" >
-              </div>
-              <span class="label">
-              Previous Post</span>
-              <div class="info">
-                <h3>
-                CS书籍汇总</h3>
-                <hr>
-              </div>
-            </a>
-          </div>
-        
         
           
-            <div class="post-nepre half next">
+            <div class="post-nepre full next">
           
-            <a href="/2021/10/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E2%80%94%E2%80%94%E8%9C%9C%E5%8F%8B%E8%AF%BE/" rel="next">
+            <a href="/2021/11/20/Web%E2%80%94%E2%80%94%E6%A0%91%E8%8E%93%E6%B4%BE%203%20%E6%90%AD%E5%BB%BAWordPress%E7%BD%91%E7%AB%99%E5%85%A8%E6%B5%81%E7%A8%8B/" rel="next">
               <div class="background">
                 
-                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/sky1.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" >
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/img/loading.gif" data-src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/day/simply.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" >
               </div>
               <span class="label">
               Next Post</span>
               <div class="info">
                 <h3>
-                蜜友课</h3>
+                基于Raspberry Pi 3的WordPress站点搭建流程</h3>
                 <hr>
               </div>
             </a>

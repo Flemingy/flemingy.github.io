@@ -226,48 +226,6 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -327,6 +285,48 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -766,6 +766,86 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
+<br/>
+
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<br/>
+
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Browser/Server网络架构模式</title>
     <url>/2021/07/18/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Browser-Server%E7%BD%91%E7%BB%9C%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-B-S架构与C-S架构"><a href="#1-B-S架构与C-S架构" class="headerlink" title="1. B/S架构与C/S架构"></a>1. B/S架构与C/S架构</h1><ul>
@@ -912,86 +992,6 @@ sudo systemctl restart nginx.service
 
 <h1 id="11-文末结语"><a href="#11-文末结语" class="headerlink" title="11. 文末结语"></a>11. 文末结语</h1><p>本篇仅作个人笔记，强推支持正版内容。</p>
 <p><a href="https://www.bilibili.com/video/BV1d7411p7RF">走向实战，学完C之后学什么？前端后端？Java？Python?网站开发？B/S开发预备课-Frank-FuckPPT</a></p>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
-<br/>
-
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
-<br/>
-
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
 ]]></content>
       <categories>
         <category>生活</category>
@@ -1174,45 +1174,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
-    <title>摄影构图——突出主体、中心思想、画面简洁</title>
-    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
-<p>​    （拉近距离，放大主体）</p>
-<p>​    （简化背景，突出主体）</p>
-<p>​    <strong>2.间接突出主题</strong></p>
-<p>​    （简洁背景，缩小主体）</p>
-<p>​    （六大对比）</p>
-<p>​        ①明暗对比</p>
-<p>​        ②虚实对比</p>
-<p>​        ③色彩对比</p>
-<p>​        ④动静对比</p>
-<p>​        ⑤大小对比 </p>
-<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
-<br/>
-
-<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
-<p>​    <strong>1.单一的主要概念</strong></p>
-<p>​    <strong>2.从属景物</strong></p>
-<p>​    <strong>3.背景作用</strong></p>
-<br/>
-
-<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
-<p>​    <strong>1.长焦镜头</strong></p>
-<p>​    <strong>2.学会取舍</strong></p>
-<p>​    <strong>3.使用黑白</strong></p>
-<p>​    <strong>4.二次构图</strong></p>
-<br/>
-
-<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>帧速率、刷新率、广播级视频标准</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
@@ -1259,6 +1220,45 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </categories>
       <tags>
         <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>摄影构图——突出主体、中心思想、画面简洁</title>
+    <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="突出主体"><a href="#突出主体" class="headerlink" title="突出主体"></a><strong>突出主体</strong></h3><p>​    <strong>1.直接突出主题</strong></p>
+<p>​    （拉近距离，放大主体）</p>
+<p>​    （简化背景，突出主体）</p>
+<p>​    <strong>2.间接突出主题</strong></p>
+<p>​    （简洁背景，缩小主体）</p>
+<p>​    （六大对比）</p>
+<p>​        ①明暗对比</p>
+<p>​        ②虚实对比</p>
+<p>​        ③色彩对比</p>
+<p>​        ④动静对比</p>
+<p>​        ⑤大小对比 </p>
+<p>​        ⑥其他对比【生于死、热闹与孤独、朝和夕】</p>
+<br/>
+
+<h3 id="中心思想"><a href="#中心思想" class="headerlink" title="中心思想"></a><strong>中心思想</strong></h3><p>中心思想是拍摄者要表现和传达给观者的一种事物、感觉、思想、行为。</p>
+<p>​    <strong>1.单一的主要概念</strong></p>
+<p>​    <strong>2.从属景物</strong></p>
+<p>​    <strong>3.背景作用</strong></p>
+<br/>
+
+<h3 id="画面简洁"><a href="#画面简洁" class="headerlink" title="画面简洁"></a><strong>画面简洁</strong></h3><p>人潜意识是喜欢简洁干净，排除杂乱的画面。</p>
+<p>​    <strong>1.长焦镜头</strong></p>
+<p>​    <strong>2.学会取舍</strong></p>
+<p>​    <strong>3.使用黑白</strong></p>
+<p>​    <strong>4.二次构图</strong></p>
+<br/>
+
+<p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
       </tags>
   </entry>
   <entry>
@@ -1883,47 +1883,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华无魔法科学冲浪方案研究</title>
-    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
-<li>Chrome（谷歌浏览器）</li>
-<li>Firefox（火狐浏览器）</li>
-<li>Edge（Microsoft浏览器）</li>
-</ol>
-<p>没有魔法设置中改用百度的搜索引擎。</p>
-<br/>
-
-<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
-<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
-<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
-<br/>
-
-<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
-<li>AdBlock Plus - 免费的广告拦截器。</li>
-<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
-<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
-<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
-<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
-<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
-<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
-<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
-</ul>
-<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
-<ul>
-<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
-<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
-<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
-<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
-</ul>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -2043,6 +2002,47 @@ Port 443
 </ul>
 <h2 id="性能监控"><a href="#性能监控" class="headerlink" title="性能监控"></a>性能监控</h2><ul>
 <li><h4 id="MSI-Afterburner"><a href="#MSI-Afterburner" class="headerlink" title="MSI Afterburner"></a>MSI Afterburner</h4></li>
+</ul>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中华无魔法科学冲浪方案研究</title>
+    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
+<li>Chrome（谷歌浏览器）</li>
+<li>Firefox（火狐浏览器）</li>
+<li>Edge（Microsoft浏览器）</li>
+</ol>
+<p>没有魔法设置中改用百度的搜索引擎。</p>
+<br/>
+
+<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
+<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
+<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
+<br/>
+
+<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
+<li>AdBlock Plus - 免费的广告拦截器。</li>
+<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
+<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
+<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
+<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
+<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
+<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
+<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
+</ul>
+<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
+<ul>
+<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
+<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
+<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
+<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
 </ul>
 ]]></content>
       <categories>
@@ -2179,6 +2179,69 @@ Port 443
 <p>本篇学习来源：</p>
 <p><a href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
 ]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>常用浏览器搜索指令</title>
+    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
+<li><p>关键词化整为零搜索</p>
+<p>——将口语拆分成关键词</p>
+<ul>
+<li>如何将PDF转换为Word文档？（PDF转word）</li>
+<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
+<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
+</ul>
+<br/></li>
+<li><p>INTITLE命令</p>
+<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
+<ul>
+<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
+</ul>
+<br/></li>
+<li><p>FILETYPE命令</p>
+<p>——指定搜索目标的文件类型</p>
+<ul>
+<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
+</ul>
+<br/></li>
+<li><p>完全匹配搜索””</p>
+<p>——完全根据” “内的内容进行搜索</p>
+<br/></li>
+<li><p>SITE命令</p>
+<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
+<ul>
+<li>论文排版 site:jianshu.com</li>
+<li>北京昌平合租 site:douban.com</li>
+<li>PDFElement site:52pojie.com</li>
+</ul>
+<br/></li>
+<li><p>内容筛选-和+</p>
+<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
+<ul>
+<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
+</ul>
+<p>—— +号：增加搜索某个关键词</p>
+<ul>
+<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
+</ul>
+<br/></li>
+<li><p>限定来源网站类型</p>
+<p>——定向筛选特定网站类型的信息</p>
+<ul>
+<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
+<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
+</ul>
+</li>
+</ol>
+<br/>
+
+<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
       <categories>
         <category>资源</category>
       </categories>

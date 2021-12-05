@@ -226,6 +226,48 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -285,48 +327,6 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -455,61 +455,6 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
-    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
-    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
-<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
-<br/>
-
-<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
-<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
-<p>从生物学角度谈受精现象时认为：</p>
-<ul>
-<li>雄性提供新生命产生的机会</li>
-<li>雌性为新生命创造了一个稳定环境</li>
-</ul>
-<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
-<p>它们依据受精现象对雌雄进行了概念划定：</p>
-<ul>
-<li>雄性：工具</li>
-<li>雌性：容器</li>
-</ul>
-<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
-<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
-<br/>
-
-<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
-<ul>
-<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
-<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
-</ul>
-<p>以此为分界线女性进行了两种方式的反抗：</p>
-<ul>
-<li>男性化</li>
-<li>用女性武器向男性挑战</li>
-</ul>
-<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
-<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
-<p>精神分析学家的看法：</p>
-<ul>
-<li>男人：人</li>
-<li>女人：雌性</li>
-</ul>
-<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
-<br/>
-
-<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
-<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
-<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>幸福论</title>
     <url>/2021/09/21/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%B9%B8%E7%A6%8F%E8%AE%BA/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、维基百科定义"><a href="#一、维基百科定义" class="headerlink" title="一、维基百科定义"></a>一、维基百科定义</h1><p><strong>幸福</strong>（<a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%B8%8C%E8%87%98%E8%AA%9E">古希腊语</a>：εὐδαιμονία、<a href="https://zh.wikipedia.org/wiki/%E6%8B%89%E4%B8%81%E8%AA%9E">拉丁语</a>：felicitas、英语：happiness）<strong>是一种持续时间较长的心灵的满足</strong>[<a href="https://zh.wikipedia.org/wiki/%E5%B9%B8%E7%A6%8F#cite_note-1">1]</a>。<a href="https://zh.wikipedia.org/wiki/%E5%80%8B%E4%BA%BA">人类</a>自古以来就对追求幸福的途径有着浓厚的兴趣。</p>
@@ -611,6 +556,61 @@ sudo systemctl restart nginx.service
 <p>时间有限，你真正的对手是时间。</p>
 <p>所以我们在有限的时间内，唯一能做到的事情：</p>
 <p><strong>最大限度地利用我们具有的个人优秀品质、技能、资源，并且朝遵循一定的自身性格的方向去发展，避免其他不符合自身的情形，选择最合适我们个性的人生位置、职业和生活方式。</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>哲学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
+    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
+<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
+<br/>
+
+<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
+<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
+<p>从生物学角度谈受精现象时认为：</p>
+<ul>
+<li>雄性提供新生命产生的机会</li>
+<li>雌性为新生命创造了一个稳定环境</li>
+</ul>
+<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
+<p>它们依据受精现象对雌雄进行了概念划定：</p>
+<ul>
+<li>雄性：工具</li>
+<li>雌性：容器</li>
+</ul>
+<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
+<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
+<br/>
+
+<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
+<ul>
+<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
+<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
+</ul>
+<p>以此为分界线女性进行了两种方式的反抗：</p>
+<ul>
+<li>男性化</li>
+<li>用女性武器向男性挑战</li>
+</ul>
+<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
+<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
+<p>精神分析学家的看法：</p>
+<ul>
+<li>男人：人</li>
+<li>女人：雌性</li>
+</ul>
+<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
+<br/>
+
+<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
+<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
+<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
 ]]></content>
       <categories>
         <category>随想</category>
@@ -763,149 +763,6 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
-<br/>
-
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
-<br/>
-
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PacVim：一个学习 vim 命令的命令行游戏</title>
-    <url>/2021/10/27/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94PacVim%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%B9%A0%20vim%20%E5%91%BD%E4%BB%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%B8%B8%E6%88%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
-<p>在 Linux 中安装 Ncurses 库</p>
-<pre><code>$ sudo apt-get install libncurses5-dev libncursesw5-dev
-</code></pre>
-<br/>
-
-<p>安装 Ncurses 和 gcc 后，运行命令来安装 PacVim。</p>
-<pre><code>$ git clone https://github.com/jmoon018/PacVim.git
-$ cd PacVim
-$ sudo make install
-</code></pre>
-<br/>
-
-<br/>
-
-<h2 id="启动-PacVim-游戏"><a href="#启动-PacVim-游戏" class="headerlink" title="启动 PacVim 游戏"></a><code>启动 PacVim 游戏</code></h2><p>要玩这个游戏，只需运行：</p>
-<pre><code>$ pacvim [LEVEL_NUMER] [MODE]
-</code></pre>
-<p>例如，以下命令以普通模式启动游戏第 5 关。</p>
-<pre><code>$ pacvim 5 n
-</code></pre>
-<p>这里，<code>5</code> 表示等级，<code>n</code>表示模式。有两种模式：</p>
-<ul>
-<li><code>n</code> – 普通模式。</li>
-<li><code>h</code> – 困难模式。</li>
-</ul>
-<br/>
-
-<br/>
-
-<h2 id="如何玩-PacVim？"><a href="#如何玩-PacVim？" class="headerlink" title="如何玩 PacVim？"></a><code>如何玩 PacVim？</code></h2><p>按下回车开始游戏</p>
-<br/>
-
-<p>PacVim 的使用与 PacMan 非常相似。</p>
-<p>你必须跑过屏幕上所有的字符，同时避免鬼魂（红色字符）。</p>
-<p>PacVim有两个特殊的障碍：</p>
-<ol>
-<li>你不能移动到墙壁中（黄色）。你必须使用 vim 动作来跳过它们。</li>
-<li>如果你踩到波浪字符（青色的 <code>~</code>），你就输了！</li>
-</ol>
-<p>你有三条生命。每次打赢 0、3、6、9 关时你都会获得新生命。总共有 10 关，从 0 到 9，打赢第 9 关后，游戏重置为第 0 关，但是鬼魂速度变快。</p>
-<p><strong>获胜条件</strong></p>
-<p>使用 vim 命令将光标移动到字母上并高亮显示它们。所有字母都高亮显示后，你就会获胜并进入下一关。</p>
-<p><strong>失败条件</strong></p>
-<p>如果你碰到鬼魂（用<strong>红色 G</strong> 表示）或者<strong>波浪字符</strong>，你就会失去一条命。如果命小于 0 条，你将会输掉整个游戏。</p>
-<p>这是实现的命令列表：</p>
-<p>键作用q退出游戏h向左移动j向下移动k向上移动l向右移动w向前移动到下一个 word 开始W向前移动到下一个 WORD 开始e向前移动到下一个 word 结束E向前移动到下一个 WORD 结束b向后移动到下一个 word 开始B向后移动到下一个 WORD 开始$移动到行的末尾0移动到行的开始gg/1G移动到第一行的开始数字加 G移动到由数字给出的行的开始G移到最后一行的开头^移到当前行的第一个 word＆1337 cheatz（打赢当前关）</p>
-<br/>
-
-<br/>
-
-<p>本篇转载自<a href="https://zhuanlan.zhihu.com/p/37988604">PacVim：一个学习 vim 命令的命令行游戏</a></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>转载</tag>
       </tags>
   </entry>
   <entry>
@@ -1064,6 +921,86 @@ $ sudo make install
       </tags>
   </entry>
   <entry>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
+<br/>
+
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
+<br/>
+
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
+]]></content>
+      <categories>
+        <category>生活</category>
+      </categories>
+      <tags>
+        <tag>扩展</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Ubuntu中阿里镜像源设置</title>
     <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
@@ -1174,6 +1111,121 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
+    <title>PacVim：一个学习 vim 命令的命令行游戏</title>
+    <url>/2021/10/27/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94PacVim%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%B9%A0%20vim%20%E5%91%BD%E4%BB%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
+<p>在 Linux 中安装 Ncurses 库</p>
+<pre><code>$ sudo apt-get install libncurses5-dev libncursesw5-dev
+</code></pre>
+<br/>
+
+<p>安装 Ncurses 和 gcc 后，运行命令来安装 PacVim。</p>
+<pre><code>$ git clone https://github.com/jmoon018/PacVim.git
+$ cd PacVim
+$ sudo make install
+</code></pre>
+<br/>
+
+<br/>
+
+<h2 id="启动-PacVim-游戏"><a href="#启动-PacVim-游戏" class="headerlink" title="启动 PacVim 游戏"></a><code>启动 PacVim 游戏</code></h2><p>要玩这个游戏，只需运行：</p>
+<pre><code>$ pacvim [LEVEL_NUMER] [MODE]
+</code></pre>
+<p>例如，以下命令以普通模式启动游戏第 5 关。</p>
+<pre><code>$ pacvim 5 n
+</code></pre>
+<p>这里，<code>5</code> 表示等级，<code>n</code>表示模式。有两种模式：</p>
+<ul>
+<li><code>n</code> – 普通模式。</li>
+<li><code>h</code> – 困难模式。</li>
+</ul>
+<br/>
+
+<br/>
+
+<h2 id="如何玩-PacVim？"><a href="#如何玩-PacVim？" class="headerlink" title="如何玩 PacVim？"></a><code>如何玩 PacVim？</code></h2><p>按下回车开始游戏</p>
+<br/>
+
+<p>PacVim 的使用与 PacMan 非常相似。</p>
+<p>你必须跑过屏幕上所有的字符，同时避免鬼魂（红色字符）。</p>
+<p>PacVim有两个特殊的障碍：</p>
+<ol>
+<li>你不能移动到墙壁中（黄色）。你必须使用 vim 动作来跳过它们。</li>
+<li>如果你踩到波浪字符（青色的 <code>~</code>），你就输了！</li>
+</ol>
+<p>你有三条生命。每次打赢 0、3、6、9 关时你都会获得新生命。总共有 10 关，从 0 到 9，打赢第 9 关后，游戏重置为第 0 关，但是鬼魂速度变快。</p>
+<p><strong>获胜条件</strong></p>
+<p>使用 vim 命令将光标移动到字母上并高亮显示它们。所有字母都高亮显示后，你就会获胜并进入下一关。</p>
+<p><strong>失败条件</strong></p>
+<p>如果你碰到鬼魂（用<strong>红色 G</strong> 表示）或者<strong>波浪字符</strong>，你就会失去一条命。如果命小于 0 条，你将会输掉整个游戏。</p>
+<p>这是实现的命令列表：</p>
+<p>键作用q退出游戏h向左移动j向下移动k向上移动l向右移动w向前移动到下一个 word 开始W向前移动到下一个 WORD 开始e向前移动到下一个 word 结束E向前移动到下一个 WORD 结束b向后移动到下一个 word 开始B向后移动到下一个 WORD 开始$移动到行的末尾0移动到行的开始gg/1G移动到第一行的开始数字加 G移动到由数字给出的行的开始G移到最后一行的开头^移到当前行的第一个 word＆1337 cheatz（打赢当前关）</p>
+<br/>
+
+<br/>
+
+<p>本篇转载自<a href="https://zhuanlan.zhihu.com/p/37988604">PacVim：一个学习 vim 命令的命令行游戏</a></p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>转载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>视频后期剪辑与特效软件PR&amp;AE</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
+<p>Adobe Premiere有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作</p>
+<p>Premiere提供了采集、剪辑、调色、美化音频、字幕添加、输出、DVD刻录的一整套流程</p>
+<p>目前这款软件广泛应用于广告制作和电视节目制作中</p>
+<p>（小知识）</p>
+<p>① 像素是组成位图的最小单位</p>
+<p>② 电视台NTSC像素为长方形像素</p>
+<p>③ 抖音官方格式为 HDV 1080p30</p>
+<p><strong>【基本剪辑】</strong></p>
+<p><strong>项目：</strong></p>
+<p>​    ×××—&gt;放素材</p>
+<p><strong>要素：</strong></p>
+<p>​    【视频】录制的视频</p>
+<p>​    【音频】BGM、环境、人声</p>
+<p>​    【图片】只支持RGB</p>
+<p><strong>效果：</strong></p>
+<p>​    两个视频进行转场时的转场效果</p>
+<p><strong>序列：</strong></p>
+<p>​    时间轴，放置素材</p>
+<br/>
+
+<br/>
+
+<h3 id="AE"><a href="#AE" class="headerlink" title="AE"></a>AE</h3><p>Adobe After Effects简称“AE”是Adobe公司推出的一款图形视频处理软件，属于层类型后期软件</p>
+<p>适用于从事设计和视频特技的机构，包括电视台、动画制作公司、个人后期制作工作室以及多媒体工作室</p>
+<p>（小知识）</p>
+<p>由于AE本身性质，很可能出现软件不稳定的情况</p>
+<p>可以打开编辑—&gt;首选项—&gt;自动保存，根据需要设置自动保存时间</p>
+<p><strong>【软件窗口】</strong></p>
+<p><strong>菜单栏：</strong></p>
+<p>​    包括新建，存储等的各项功能都可以在菜单栏中找到。</p>
+<p><strong>项目窗口：</strong></p>
+<p>​    库，可以将所有视频中需要使用到的图片，视频，音频都投入到这个窗口当中。</p>
+<p><strong>视图窗口：</strong></p>
+<p>​    用于观察我们制作的效果。</p>
+<p><strong>信息面板：</strong></p>
+<p>​    音频面板和效果预设面板。</p>
+<p>​    效果预设面板，这个面板中有AE自带的动画效果。</p>
+<p>​    我们可以自己安装一些插件，也会在这个窗口中显示。</p>
+<p><strong>时间轴面板：</strong></p>
+<p>​    特效的制作基本都是在时间轴上完成的</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>后期</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>帧速率、刷新率、广播级视频标准</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
@@ -1271,7 +1323,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
 <li>人生就像是一条溪流，从丛林中流出，途经崇山叠石。最后流到平坦的地方。但不同的是，小溪是顺山势而流。人可以主动的选着未来的方向与道路。虽然道路也许是崎岖难行的，但走过之后，会有一份充实的成就感。—————钱学森</li>
 <li>搞科学的人同样需要有灵感，而我的灵感，许多就是从艺术中悟出来的。—————钱学森</li>
 <li>出人才的产生离不开宽松的学术氛围，经典台词办大学要有一种很宽松的学术氛围啊。—————钱学森</li>
-<li>他不是陈述了一个事实，而并非提问，回答他是在浪费我的时间，同样，他也不必浪费时间，也不应该坐在这里浪费他父母的钱。—————钱学森</li>
 <li>不要服我，要服科学。—————钱学森</li>
 <li>高等学校的学习，是打基础的时期，应该强调学好基础课程。—————钱学森</li>
 <li>事情不容易，请不要性急，还要做点实实在在的工作。—————钱学森</li>
@@ -1590,58 +1641,6 @@ deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted unive
       </tags>
   </entry>
   <entry>
-    <title>视频后期剪辑与特效软件PR&amp;AE</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
-<p>Adobe Premiere有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作</p>
-<p>Premiere提供了采集、剪辑、调色、美化音频、字幕添加、输出、DVD刻录的一整套流程</p>
-<p>目前这款软件广泛应用于广告制作和电视节目制作中</p>
-<p>（小知识）</p>
-<p>① 像素是组成位图的最小单位</p>
-<p>② 电视台NTSC像素为长方形像素</p>
-<p>③ 抖音官方格式为 HDV 1080p30</p>
-<p><strong>【基本剪辑】</strong></p>
-<p><strong>项目：</strong></p>
-<p>​    ×××—&gt;放素材</p>
-<p><strong>要素：</strong></p>
-<p>​    【视频】录制的视频</p>
-<p>​    【音频】BGM、环境、人声</p>
-<p>​    【图片】只支持RGB</p>
-<p><strong>效果：</strong></p>
-<p>​    两个视频进行转场时的转场效果</p>
-<p><strong>序列：</strong></p>
-<p>​    时间轴，放置素材</p>
-<br/>
-
-<br/>
-
-<h3 id="AE"><a href="#AE" class="headerlink" title="AE"></a>AE</h3><p>Adobe After Effects简称“AE”是Adobe公司推出的一款图形视频处理软件，属于层类型后期软件</p>
-<p>适用于从事设计和视频特技的机构，包括电视台、动画制作公司、个人后期制作工作室以及多媒体工作室</p>
-<p>（小知识）</p>
-<p>由于AE本身性质，很可能出现软件不稳定的情况</p>
-<p>可以打开编辑—&gt;首选项—&gt;自动保存，根据需要设置自动保存时间</p>
-<p><strong>【软件窗口】</strong></p>
-<p><strong>菜单栏：</strong></p>
-<p>​    包括新建，存储等的各项功能都可以在菜单栏中找到。</p>
-<p><strong>项目窗口：</strong></p>
-<p>​    库，可以将所有视频中需要使用到的图片，视频，音频都投入到这个窗口当中。</p>
-<p><strong>视图窗口：</strong></p>
-<p>​    用于观察我们制作的效果。</p>
-<p><strong>信息面板：</strong></p>
-<p>​    音频面板和效果预设面板。</p>
-<p>​    效果预设面板，这个面板中有AE自带的动画效果。</p>
-<p>​    我们可以自己安装一些插件，也会在这个窗口中显示。</p>
-<p><strong>时间轴面板：</strong></p>
-<p>​    特效的制作基本都是在时间轴上完成的</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>蜜友课</title>
     <url>/2021/10/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E2%80%94%E2%80%94%E8%9C%9C%E5%8F%8B%E8%AF%BE/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、友谊阶段"><a href="#一、友谊阶段" class="headerlink" title="一、友谊阶段"></a>一、友谊阶段</h1><p>金字塔形（由下到上）</p>
@@ -1940,6 +1939,103 @@ Port 443
       </tags>
   </entry>
   <entry>
+    <title>中华无魔法科学冲浪方案研究</title>
+    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
+<li>Chrome（谷歌浏览器）</li>
+<li>Firefox（火狐浏览器）</li>
+<li>Edge（Microsoft浏览器）</li>
+</ol>
+<p>没有魔法设置中改用百度的搜索引擎。</p>
+<br/>
+
+<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
+<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
+<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
+<br/>
+
+<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
+<li>AdBlock Plus - 免费的广告拦截器。</li>
+<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
+<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
+<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
+<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
+<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
+<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
+<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
+</ul>
+<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
+<ul>
+<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
+<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
+<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
+<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
+</ul>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中华有魔法科学冲浪方案研究</title>
+    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
+<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
+<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
+<br/>
+
+<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
+<p>若直接在GitHub上下载速度会较慢，</p>
+<p>选择通过右键复制下载链接后在迅雷中下载</p>
+<br/>
+
+<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
+<p>百度搜Clash节点转到Github可以找到免费的机场</p>
+<br/>
+
+<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
+<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
+<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
+<p>可以在Profiles处通过以下两个方法加载你的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
+<br/>
+
+<p>加载完成后，在Proxies处选择合适的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
+<br/>
+
+<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
+<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
+<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
+<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
+<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
+<br/>
+
+<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
+<ul>
+<li>Proxy SwitchyOmega</li>
+<li>Proxy SwitchySharp</li>
+</ul>
+<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
+<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
+<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
+<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -2069,95 +2165,61 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华无魔法科学冲浪方案研究</title>
-    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
-<li>Chrome（谷歌浏览器）</li>
-<li>Firefox（火狐浏览器）</li>
-<li>Edge（Microsoft浏览器）</li>
+    <title>常用浏览器搜索指令</title>
+    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
+<li><p>关键词化整为零搜索</p>
+<p>——将口语拆分成关键词</p>
+<ul>
+<li>如何将PDF转换为Word文档？（PDF转word）</li>
+<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
+<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
+</ul>
+<br/></li>
+<li><p>INTITLE命令</p>
+<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
+<ul>
+<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
+</ul>
+<br/></li>
+<li><p>FILETYPE命令</p>
+<p>——指定搜索目标的文件类型</p>
+<ul>
+<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
+</ul>
+<br/></li>
+<li><p>完全匹配搜索””</p>
+<p>——完全根据” “内的内容进行搜索</p>
+<br/></li>
+<li><p>SITE命令</p>
+<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
+<ul>
+<li>论文排版 site:jianshu.com</li>
+<li>北京昌平合租 site:douban.com</li>
+<li>PDFElement site:52pojie.com</li>
+</ul>
+<br/></li>
+<li><p>内容筛选-和+</p>
+<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
+<ul>
+<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
+</ul>
+<p>—— +号：增加搜索某个关键词</p>
+<ul>
+<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
+</ul>
+<br/></li>
+<li><p>限定来源网站类型</p>
+<p>——定向筛选特定网站类型的信息</p>
+<ul>
+<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
+<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
+</ul>
+</li>
 </ol>
-<p>没有魔法设置中改用百度的搜索引擎。</p>
 <br/>
 
-<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
-<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
-<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
-<br/>
-
-<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
-<li>AdBlock Plus - 免费的广告拦截器。</li>
-<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
-<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
-<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
-<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
-<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
-<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
-<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
-</ul>
-<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
-<ul>
-<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
-<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
-<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
-<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
-</ul>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>中华有魔法科学冲浪方案研究</title>
-    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
-<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
-<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
-<br/>
-
-<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
-<p>若直接在GitHub上下载速度会较慢，</p>
-<p>选择通过右键复制下载链接后在迅雷中下载</p>
-<br/>
-
-<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
-<p>百度搜Clash节点转到Github可以找到免费的机场</p>
-<br/>
-
-<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
-<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
-<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
-<p>可以在Profiles处通过以下两个方法加载你的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
-<br/>
-
-<p>加载完成后，在Proxies处选择合适的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
-<br/>
-
-<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
-<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
-<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
-<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
-<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
-<br/>
-
-<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
-<ul>
-<li>Proxy SwitchyOmega</li>
-<li>Proxy SwitchySharp</li>
-</ul>
-<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
-<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
-<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
-<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
-]]></content>
+<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
       <categories>
         <category>资源</category>
       </categories>
@@ -2236,69 +2298,6 @@ Port 443
 <p>本篇学习来源：</p>
 <p><a href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
 ]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用浏览器搜索指令</title>
-    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
-<li><p>关键词化整为零搜索</p>
-<p>——将口语拆分成关键词</p>
-<ul>
-<li>如何将PDF转换为Word文档？（PDF转word）</li>
-<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
-<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
-</ul>
-<br/></li>
-<li><p>INTITLE命令</p>
-<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
-<ul>
-<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
-</ul>
-<br/></li>
-<li><p>FILETYPE命令</p>
-<p>——指定搜索目标的文件类型</p>
-<ul>
-<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
-</ul>
-<br/></li>
-<li><p>完全匹配搜索””</p>
-<p>——完全根据” “内的内容进行搜索</p>
-<br/></li>
-<li><p>SITE命令</p>
-<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
-<ul>
-<li>论文排版 site:jianshu.com</li>
-<li>北京昌平合租 site:douban.com</li>
-<li>PDFElement site:52pojie.com</li>
-</ul>
-<br/></li>
-<li><p>内容筛选-和+</p>
-<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
-<ul>
-<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
-</ul>
-<p>—— +号：增加搜索某个关键词</p>
-<ul>
-<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
-</ul>
-<br/></li>
-<li><p>限定来源网站类型</p>
-<p>——定向筛选特定网站类型的信息</p>
-<ul>
-<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
-<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
       <categories>
         <category>资源</category>
       </categories>

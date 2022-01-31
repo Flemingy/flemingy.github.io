@@ -1108,113 +1108,6 @@ $ sudo make install
       </tags>
   </entry>
   <entry>
-    <title>Ubuntu中阿里镜像源设置及yum安装时更改163镜像源</title>
-    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
-</code></pre>
-<br/>
-
-
-
-<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
-</code></pre>
-<p>将以下内容放在该文件的头部</p>
-<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
-</code></pre>
-<p>保存退出</p>
-<br/>
-
-
-
-<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
-</code></pre>
-<br/>
-
-<h3 id="4-其他镜像源"><a href="#4-其他镜像源" class="headerlink" title="4.其他镜像源"></a>4.其他镜像源</h3><pre><code>#中科大源
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-
-#阿里云源（bionic）
-deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
-
-#清华源
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
-deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
-</code></pre>
-<p><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学TUNA镜像源：https://mirrors.tuna.tsinghua.edu.cn/</a></p>
-<p><br/><br/><br/></p>
-<h3 id="5-2021-12-19遇到yum安装问题的解决办法"><a href="#5-2021-12-19遇到yum安装问题的解决办法" class="headerlink" title="5.2021.12.19遇到yum安装问题的解决办法"></a>5.2021.12.19遇到yum安装问题的解决办法</h3><p>在使用命令安装yum时</p>
-<pre><code>sudo apt-get install yum
-</code></pre>
-<p>可能会出现安装失败的情况</p>
-<p>失败原因提示为<strong>缺少python2.7等多个依赖</strong></p>
-<p>依据提示安装各依赖，依旧不能解决问题</p>
-<p>选择将阿里镜像源更改为163镜像源</p>
-<p>ubuntu上可以成功安装yum</p>
-<br/>
-
-<p><em>具体步骤如下：</em></p>
-<pre><code>sudo vim /etc/apt/sources.list 
-</code></pre>
-<p>将阿里镜像源删去替换为163镜像源</p>
-<pre><code>#163源
-deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
-deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
-</code></pre>
-<p>保存退出并更新</p>
-<pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
-</code></pre>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>运维</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>会议拍摄、相机档位、基础布光</title>
     <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
@@ -1534,6 +1427,113 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </categories>
       <tags>
         <tag>收录</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Ubuntu中阿里镜像源设置及yum安装时更改163镜像源</title>
+    <url>/2021/10/26/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94Ubuntu%E4%B8%AD%E9%98%BF%E9%87%8C%E9%95%9C%E5%83%8F%E6%BA%90%E8%AE%BE%E7%BD%AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="1-备份"><a href="#1-备份" class="headerlink" title="1.备份"></a>1.备份</h3><pre><code>sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+</code></pre>
+<br/>
+
+
+
+<h3 id="2-编辑"><a href="#2-编辑" class="headerlink" title="2.编辑"></a>2.编辑</h3><pre><code>sudo vim /etc/apt/sources.list 
+</code></pre>
+<p>将以下内容放在该文件的头部</p>
+<pre><code>deb http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ trusty-backports main restricted universe multiverse
+</code></pre>
+<p>保存退出</p>
+<br/>
+
+
+
+<h3 id="3-更新"><a href="#3-更新" class="headerlink" title="3.更新"></a>3.更新</h3><pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
+</code></pre>
+<br/>
+
+<h3 id="4-其他镜像源"><a href="#4-其他镜像源" class="headerlink" title="4.其他镜像源"></a>4.其他镜像源</h3><pre><code>#中科大源
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.ustc.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+
+#阿里云源（bionic）
+deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
+
+#清华源
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-security main restricted universe multiverse
+deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ bionic-proposed main restricted universe multiverse
+</code></pre>
+<p><a href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学TUNA镜像源：https://mirrors.tuna.tsinghua.edu.cn/</a></p>
+<p><br/><br/><br/></p>
+<h3 id="5-2021-12-19遇到yum安装问题的解决办法"><a href="#5-2021-12-19遇到yum安装问题的解决办法" class="headerlink" title="5.2021.12.19遇到yum安装问题的解决办法"></a>5.2021.12.19遇到yum安装问题的解决办法</h3><p>在使用命令安装yum时</p>
+<pre><code>sudo apt-get install yum
+</code></pre>
+<p>可能会出现安装失败的情况</p>
+<p>失败原因提示为<strong>缺少python2.7等多个依赖</strong></p>
+<p>依据提示安装各依赖，依旧不能解决问题</p>
+<p>选择将阿里镜像源更改为163镜像源</p>
+<p>ubuntu上可以成功安装yum</p>
+<br/>
+
+<p><em>具体步骤如下：</em></p>
+<pre><code>sudo vim /etc/apt/sources.list 
+</code></pre>
+<p>将阿里镜像源删去替换为163镜像源</p>
+<pre><code>#163源
+deb http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-security main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-updates main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-proposed main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe multiverse
+</code></pre>
+<p>保存退出并更新</p>
+<pre><code>sudo apt-get update &amp;&amp; sudo apt-get upgrade
+</code></pre>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>运维</tag>
       </tags>
   </entry>
   <entry>
@@ -2367,51 +2367,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>常用浏览器搜索指令</title>
     <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
@@ -2472,6 +2427,162 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电脑选购指南&amp;硬件基础</title>
+    <url>/2022/01/31/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E7%94%B5%E8%84%91%E9%80%89%E8%B4%AD%E6%8C%87%E5%8D%97&amp;%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-主板"><a href="#1-主板" class="headerlink" title="1.主板"></a>1.主板</h1><p>规格区分：</p>
+<ul>
+<li><h2 id="ATX（Standard-ATX）-305×244mm"><a href="#ATX（Standard-ATX）-305×244mm" class="headerlink" title="ATX（Standard-ATX） 305×244mm"></a>ATX（Standard-ATX） 305×244mm</h2></li>
+<li><h2 id="M-ATX（Micro-ATX）-244×244mm"><a href="#M-ATX（Micro-ATX）-244×244mm" class="headerlink" title="M-ATX（Micro-ATX） 244×244mm"></a>M-ATX（Micro-ATX） 244×244mm</h2></li>
+<li><h2 id="ITX（Mini-ITX）-170×170mm"><a href="#ITX（Mini-ITX）-170×170mm" class="headerlink" title="ITX（Mini-ITX） 170×170mm"></a>ITX（Mini-ITX） 170×170mm</h2></li>
+</ul>
+<p>主板一块复杂的电路板，负责将所有硬件结合起来</p>
+<p>规格中M-ATX 功能完整且性价比高</p>
+<p>主板追求供电稳定、散热良好</p>
+<p>其接口丰富程度能够决定可扩展性</p>
+<h1 id="2-芯片组"><a href="#2-芯片组" class="headerlink" title="2.芯片组"></a>2.芯片组</h1><p>现在通常特指南桥芯片</p>
+<p>北桥在2009年渐渐被取消，原有功能被内置在CPU中</p>
+<p>芯片组直接或间接决定主板能支持哪种规格的处理器</p>
+<p><img src="https://raw.githubusercontent.com/Flemingy/cdn/main/typora/%E8%8A%AF%E7%89%87%E7%BB%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F1.png" alt="芯片组命名方式1"></p>
+<p><img src="https://raw.githubusercontent.com/Flemingy/cdn/main/typora/%E8%8A%AF%E7%89%87%E7%BB%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F2.png" alt="芯片组命名方式2"></p>
+<h1 id="3-CPU"><a href="#3-CPU" class="headerlink" title="3.CPU"></a>3.CPU</h1><p>厂家区分：</p>
+<ul>
+<li><h2 id="Intel"><a href="#Intel" class="headerlink" title="Intel"></a>Intel</h2></li>
+<li><h2 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h2></li>
+</ul>
+<p>是计算机系统的运算和控制核心，部分CPU还集成了显卡功能</p>
+<p>关注频率、核心数与线程数、缓存、制作工艺</p>
+<p>CPU中散片性价比高，但是没有保修</p>
+<p>其后缀一般与超频、核显、功耗三个特性相关</p>
+<h3 id="（1）Intel-CPU后缀："><a href="#（1）Intel-CPU后缀：" class="headerlink" title="（1）Intel CPU后缀："></a>（1）Intel CPU后缀：</h3><ol>
+<li><h4 id="桌面端："><a href="#桌面端：" class="headerlink" title="桌面端："></a>桌面端：</h4><ul>
+<li><h4 id="没有后缀——不可超频，具有核显"><a href="#没有后缀——不可超频，具有核显" class="headerlink" title="没有后缀——不可超频，具有核显"></a>没有后缀——不可超频，具有核显</h4></li>
+<li><h4 id="K——不锁倍频，增加超频能力"><a href="#K——不锁倍频，增加超频能力" class="headerlink" title="K——不锁倍频，增加超频能力"></a>K——不锁倍频，增加超频能力</h4></li>
+<li><h4 id="F——减去核显或弱化核显，价格便宜"><a href="#F——减去核显或弱化核显，价格便宜" class="headerlink" title="F——减去核显或弱化核显，价格便宜"></a>F——减去核显或弱化核显，价格便宜</h4></li>
+<li><h4 id="X——酷睿最高级别的系列"><a href="#X——酷睿最高级别的系列" class="headerlink" title="X——酷睿最高级别的系列"></a>X——酷睿最高级别的系列</h4></li>
+<li><h4 id="XE——X系列中的顶级"><a href="#XE——X系列中的顶级" class="headerlink" title="XE——X系列中的顶级"></a>XE——X系列中的顶级</h4></li>
+<li><h4 id="S——特别版本，精挑细选"><a href="#S——特别版本，精挑细选" class="headerlink" title="S——特别版本，精挑细选"></a>S——特别版本，精挑细选</h4></li>
+<li><h4 id="T——超低功耗CPU"><a href="#T——超低功耗CPU" class="headerlink" title="T——超低功耗CPU"></a>T——超低功耗CPU</h4></li>
+<li><h4 id="C——联合版本"><a href="#C——联合版本" class="headerlink" title="C——联合版本"></a>C——联合版本</h4></li>
+<li><h4 id="R——封装在主板上的型片"><a href="#R——封装在主板上的型片" class="headerlink" title="R——封装在主板上的型片"></a>R——封装在主板上的型片</h4></li>
+</ul>
+</li>
+<li><h4 id="笔记本（基本采用BGA封装，不可拆卸）："><a href="#笔记本（基本采用BGA封装，不可拆卸）：" class="headerlink" title="笔记本（基本采用BGA封装，不可拆卸）："></a>笔记本（基本采用BGA封装，不可拆卸）：</h4><ul>
+<li><h4 id="Y"><a href="#Y" class="headerlink" title="Y"></a>Y</h4></li>
+<li><h4 id="U——低电压"><a href="#U——低电压" class="headerlink" title="U——低电压"></a>U——低电压</h4></li>
+<li><h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4></li>
+<li><h4 id="H——标准"><a href="#H——标准" class="headerlink" title="H——标准"></a>H——标准</h4></li>
+<li><h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4></li>
+<li><h4 id="X"><a href="#X" class="headerlink" title="X"></a>X</h4></li>
+<li><h4 id="Q——四核处理器"><a href="#Q——四核处理器" class="headerlink" title="Q——四核处理器"></a>Q——四核处理器</h4></li>
+<li><h4 id="G——集成了高性能的核心显卡"><a href="#G——集成了高性能的核心显卡" class="headerlink" title="G——集成了高性能的核心显卡"></a>G——集成了高性能的核心显卡</h4></li>
+</ul>
+</li>
+</ol>
+<h3 id="（2）AMD-CPU后缀"><a href="#（2）AMD-CPU后缀" class="headerlink" title="（2）AMD CPU后缀"></a>（2）AMD CPU后缀</h3><ol>
+<li><h4 id="桌面端：-1"><a href="#桌面端：-1" class="headerlink" title="桌面端："></a>桌面端：</h4><ul>
+<li><h4 id="无后缀——无核显，理论上可超频"><a href="#无后缀——无核显，理论上可超频" class="headerlink" title="无后缀——无核显，理论上可超频"></a>无后缀——无核显，理论上可超频</h4></li>
+<li><h4 id="X——完整支持AMD官方超频的技术（自动超频）"><a href="#X——完整支持AMD官方超频的技术（自动超频）" class="headerlink" title="X——完整支持AMD官方超频的技术（自动超频）"></a>X——完整支持AMD官方超频的技术（自动超频）</h4></li>
+<li><h4 id="workstation——线程撕裂者"><a href="#workstation——线程撕裂者" class="headerlink" title="workstation——线程撕裂者"></a>workstation——线程撕裂者</h4></li>
+<li><h4 id="G——内含自家Vega核显"><a href="#G——内含自家Vega核显" class="headerlink" title="G——内含自家Vega核显"></a>G——内含自家Vega核显</h4></li>
+<li><h4 id="E——低功耗处理器"><a href="#E——低功耗处理器" class="headerlink" title="E——低功耗处理器"></a>E——低功耗处理器</h4></li>
+</ul>
+</li>
+<li><h4 id="移动端："><a href="#移动端：" class="headerlink" title="移动端："></a>移动端：</h4><ul>
+<li><h4 id="H——标准电压，不可拆卸"><a href="#H——标准电压，不可拆卸" class="headerlink" title="H——标准电压，不可拆卸"></a>H——标准电压，不可拆卸</h4></li>
+<li><h4 id="U——轻薄笔记本"><a href="#U——轻薄笔记本" class="headerlink" title="U——轻薄笔记本"></a>U——轻薄笔记本</h4></li>
+</ul>
+</li>
+</ol>
+<p>CPU封装方式:</p>
+<p><img src="https://raw.githubusercontent.com/Flemingy/cdn/main/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.12.31.png" alt="截屏2022-01-31 16.12.31"></p>
+<h1 id="4-显卡"><a href="#4-显卡" class="headerlink" title="4.显卡"></a>4.显卡</h1><p>厂家区分：</p>
+<ul>
+<li><h2 id="AMD-1"><a href="#AMD-1" class="headerlink" title="AMD"></a>AMD</h2></li>
+<li><h2 id="NVIDIA"><a href="#NVIDIA" class="headerlink" title="NVIDIA"></a>NVIDIA</h2></li>
+</ul>
+<p>显卡是图像处理的硬件设备</p>
+<p>选择时可以参考显卡天梯图</p>
+<p>游戏选N卡，性价比选A卡</p>
+<h1 id="5-内存"><a href="#5-内存" class="headerlink" title="5.内存"></a>5.内存</h1><p>内存是与CPU直接交换数据的内部存储器</p>
+<p>普遍使用DDR4内存条，8G以上体验良好</p>
+<p>高频较好，要结合主板支持频率</p>
+<h2 id="双通道："><a href="#双通道：" class="headerlink" title="双通道："></a>双通道：</h2><p><strong>内存带宽=（核心频率×总线位宽）</strong>×倍增系数%8</p>
+<p>单通道时，主板上内存是以串联的方式连接</p>
+<p>双通道时，利用并联的方式，位宽变为原来的2倍</p>
+<p>理论上开启双通道，带宽变为2倍，但通常参数与性能是非线性的</p>
+<h1 id="6-硬盘"><a href="#6-硬盘" class="headerlink" title="6.硬盘"></a>6.硬盘</h1><p>关注速度与容量，250G容量起步</p>
+<p>M.2接口和NVMe协议的硬盘</p>
+<p>可以考虑SSD+HDD</p>
+<ul>
+<li><h2 id="固态硬盘SSD"><a href="#固态硬盘SSD" class="headerlink" title="固态硬盘SSD"></a>固态硬盘SSD</h2></li>
+<li><h2 id="机械硬盘HDD"><a href="#机械硬盘HDD" class="headerlink" title="机械硬盘HDD"></a>机械硬盘HDD</h2></li>
+</ul>
+<h1 id="7-电源"><a href="#7-电源" class="headerlink" title="7.电源"></a>7.电源</h1><p>关系供电，是电脑各部件运行的基础</p>
+<p>将交流电变为直流电，选择过程中考虑稳定和可靠 </p>
+<p>选择额定功率略大的，80PLUS认证等级是转换效率的体现</p>
+<p>电源转换效率越高，电源越节能</p>
+<ul>
+<li><h2 id="非模组"><a href="#非模组" class="headerlink" title="非模组"></a>非模组</h2></li>
+<li><h2 id="半模组"><a href="#半模组" class="headerlink" title="半模组"></a>半模组</h2></li>
+<li><h2 id="全模组"><a href="#全模组" class="headerlink" title="全模组"></a>全模组</h2></li>
+</ul>
+<h1 id="8-PCIe扩展槽"><a href="#8-PCIe扩展槽" class="headerlink" title="8.PCIe扩展槽"></a>8.PCIe扩展槽</h1><p>M.2和雷电接口是其衍生物</p>
+<p>通道数越多，版本越高，带宽越大</p>
+<h1 id="9-M-2插槽"><a href="#9-M-2插槽" class="headerlink" title="9.M.2插槽"></a>9.M.2插槽</h1><p><img src="https://raw.githubusercontent.com/Flemingy/cdn/main/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.20.34.png" alt="截屏2022-01-31 16.20.34"></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>郑强教授谈《创新欲望与创新能力》随想</title>
+    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
+<br/>
+
+<p>现今中国的大学？ </p>
+<p><strong>缺少基础研究、知识创新。</strong></p>
+<p>没有原始创新欲望，被伤透了。</p>
+<br/>
+
+<p>日本为什么老能得诺奖？</p>
+<p>我们为什么被卡脖子？</p>
+<p><strong>浮躁，不专精于某个方向。</strong></p>
+<br/>
+
+<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
+<p>因为人生不是冲刺跑，是马拉松。</p>
+<br/>
+
+<p>尊重人的天性，不要抹杀天性。</p>
+<br/>
+
+<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
+<br/>
+
+<p>第一步是勇于付出，</p>
+<p>首先要<strong>坚定意志。</strong></p>
+<br/>
+
+<p>求道：是求得怎么去做······</p>
+<br/>
+
+<p><strong>先宽后专，知行合一。</strong></p>
+<br/>
+
+<p><strong>培养爱和价值观······</strong></p>
+]]></content>
+      <categories>
+        <category>随想</category>
+      </categories>
+      <tags>
+        <tag>随想</tag>
       </tags>
   </entry>
   <entry>

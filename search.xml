@@ -456,358 +456,146 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
-    <title>古代西方女性哲学总论——生物学&amp;精神分析学&amp;历史唯物主义解构</title>
-    <url>/2021/08/19/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%8F%A4%E4%BB%A3%E8%A5%BF%E6%96%B9%E5%A5%B3%E6%80%A7%E5%93%B2%E5%AD%A6%E6%80%BB%E8%AE%BA%E2%80%94%E2%80%94%E7%94%9F%E7%89%A9%E5%AD%A6&amp;%E7%B2%BE%E7%A5%9E%E5%88%86%E6%9E%90%E5%AD%A6&amp;%E5%8E%86%E5%8F%B2%E5%94%AF%E7%89%A9%E4%B8%BB%E4%B9%89%E8%A7%A3%E6%9E%84/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><strong>做一个女人对于我意味着什么？我以为我很快能把这个问题打发掉。我从来没感到低人一等；对自己的女性性别也不感到烦腻。我跟萨特说：“对我而言，你几乎可以说，这个无足轻重。”萨特说：“即便如此，你教养还是与假如你是一个男孩所能得到的很不同，你应该再往深处看看。”我看了，结果是一种醒悟：世界原来是一个男性世界，我的童年被男性编造的神话所滋养。</strong></p>
-<p><strong>女人不是天生就是女人，而是后天所造就的，女人是相对于男人的第二性，是“他者”。——波伏娃</strong></p>
+    <title>Software QA Engineer岗位解读</title>
+    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
+<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
+<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
+<p>测试细分为白盒测试与黑盒测试。</p>
 <br/>
 
-<h1 id="动物交配——生物学"><a href="#动物交配——生物学" class="headerlink" title="动物交配——生物学"></a>动物交配——生物学</h1><p><a href="https://www.bilibili.com/video/BV1h44y1C7kZ?p=1&share_medium=android&share_plat=android&share_session_id=f6a919cc-026e-4069-9519-aaa57456fd92&share_source=QQ&share_tag=s_i&timestamp=1629343216&unique_k=ne4lBr">卵子的诱惑</a></p>
-<p>孟德尔定律表明父母在物种延续过程中起着同样重要的作用。事实上，胚胎使父母的因子均得以延续。而在新生命体中，它们丧失自我，实现了超我。</p>
-<p>从生物学角度谈受精现象时认为：</p>
-<ul>
-<li>雄性提供新生命产生的机会</li>
-<li>雌性为新生命创造了一个稳定环境</li>
-</ul>
-<p>因此有“男性为了维持而创造，女性为了创造而维持”的说法。然而多数复杂理论的建筑，处在概念模糊了的自然哲学和遗传学科学界限中，至始至终存在着“中世纪的幽灵”。</p>
-<p>它们依据受精现象对雌雄进行了概念划定：</p>
-<ul>
-<li>雄性：工具</li>
-<li>雌性：容器</li>
-</ul>
-<p>现实表明生物形态越高级，两性个体化的明显差距越大。由此可知在生物界中，女人异化程度最深，这也是为什么她的个体性成为了外部力量的牺牲品。对生物学事实进行论证，是认识女人的关键点。</p>
-<p>但是，生物学并不能解释“第二性”，不能解释女人为何会沦为“他者”。</p>
+<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
+<p>以用户的角度看问题，以技术角度分析问题。</p>
+<p><strong>1.了解项目的流程：</strong></p>
+<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
+<p><strong>2.制定测试计划</strong></p>
+<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
+<p>​            版本　 日期　 AMD　 修订者　　说明</p>
+<p>​    ②.测试计划简介</p>
+<p>​    1）编写此测试计划的目的</p>
+<p>​    2）待测项目的背景</p>
+<p>​    3）本次测试待测项目的范围</p>
+<p>​    ③.测试相关文档</p>
+<p>​    1）测试过程中参考的文档</p>
+<p>​    2）测试完成后要输出的文档</p>
+<p>​    ④.测试详细进度</p>
+<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
+<p>​    ⑤.测试资源安排</p>
+<p>​    1）人力资源</p>
+<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
+<p>​    2）环境资源</p>
+<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
+<p>​    3）测试工具</p>
+<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
+<p>​    ⑥.测试的风险和优先级</p>
+<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
+<p><strong>3.制定测试策略</strong></p>
+<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
+<p><strong>4.设计测试用例</strong></p>
+<p>​    写case</p>
+<p>​    标题:测什么</p>
+<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
+<p>​    操作步骤：</p>
+<p>​    预期结果：</p>
+<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
+<p><strong>5.执行测试</strong></p>
+<p>​    表层 -&gt; API接口 -&gt; 底层</p>
+<p>①、确定测试用例的优先级</p>
+<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
+<p>​    根据测试计划创建测试套件（场景）</p>
+<p>​    确定已经正确搭建测试环境</p>
+<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
+<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
+<p>③、明确预期结果</p>
+<p>④、测试实际结果与预期结果对比，</p>
+<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
+<p>​    修正缺陷后，重新测试</p>
+<p><strong>6.提交与维护软件缺陷</strong></p>
+<p>​    缺陷管理（提交BUG）</p>
+<p>​    标题：问题</p>
+<p>​    BUG等级：P0、P1</p>
+<p>​    定位问题，提交：</p>
+<p>​    指定开发：</p>
+<p>​    如何定位问题：</p>
+<p>​    研发根据case复现：</p>
+<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
+<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
 <br/>
 
-<h1 id="性中心说——精神分析学"><a href="#性中心说——精神分析学" class="headerlink" title="性中心说——精神分析学"></a>性中心说——精神分析学</h1><p>将男女性冲动进行划分：</p>
-<ul>
-<li>男性：阴茎发育。其成长伴随着自体性满足倾向到异体性满足倾向过渡（经历自恋阶段）</li>
-<li>女性：童年期发育阴蒂，青春期发育阴道。其对比产生（导致自卑情结）</li>
-</ul>
-<p>以此为分界线女性进行了两种方式的反抗：</p>
-<ul>
-<li>男性化</li>
-<li>用女性武器向男性挑战</li>
-</ul>
-<p>然而当女性成为母亲时，她又不得不接受女人这个角色，承认自己的“劣等性”。</p>
-<p>弗洛伊德在论述女人问题时始终站在男性立场上，精神分析学以权威取代价值，以动力取代选择，为道德提供了一种人为替代物，这就是所谓的“正常”。</p>
-<p>精神分析学家的看法：</p>
-<ul>
-<li>男人：人</li>
-<li>女人：雌性</li>
-</ul>
-<p>这种观点显然很武断，完全是以男性为主体而得出的结论，而且也不能解释为什么女人是“他者”。</p>
-<br/>
-
-<h1 id="经济中心说——历史唯物主义"><a href="#经济中心说——历史唯物主义" class="headerlink" title="经济中心说——历史唯物主义"></a>经济中心说——历史唯物主义</h1><p>历史唯物主义认为，人并非动物，人类社会是历史的存在，某种意义上人与自然是对立的，人类社会是超越自然的客体。基于此种理论，就劳动而论，技术发展，使得女人和男人能够在同一起跑线上。</p>
-<p>分析历史，劳动工具使旧的劳动分工瓦解，母权被父权取代，男人开始使用其他男人的劳动，也成为了女人的主人。正如倍倍尔所言：“女人和无产者都在遭受蹂躏”。当技术与女人能力相适应时女人获得权力，技术与女人能力不相适应时女人丧失权力。</p>
-<p>但是由于不可能把性本能以制度加以规范，我们可以看到理性的唯物主义对性这一问题故意不予理睬。所以同样需要跳出仅仅以经济角度看待两性的历史唯物主义的限制。</p>
+<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
+<li>业务认识能力</li>
+<li>coding硬实力</li>
+<li>沟通软实力</li>
+</ol>
 ]]></content>
       <categories>
-        <category>随想</category>
+        <category>生活</category>
       </categories>
       <tags>
-        <tag>哲学</tag>
+        <tag>扩展</tag>
       </tags>
   </entry>
   <entry>
-    <title>幸福论</title>
-    <url>/2021/09/21/%E5%93%B2%E5%AD%A6%E2%80%94%E2%80%94%E5%B9%B8%E7%A6%8F%E8%AE%BA/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、维基百科定义"><a href="#一、维基百科定义" class="headerlink" title="一、维基百科定义"></a>一、维基百科定义</h1><p><strong>幸福</strong>（<a href="https://zh.wikipedia.org/wiki/%E5%8F%A4%E5%B8%8C%E8%87%98%E8%AA%9E">古希腊语</a>：εὐδαιμονία、<a href="https://zh.wikipedia.org/wiki/%E6%8B%89%E4%B8%81%E8%AA%9E">拉丁语</a>：felicitas、英语：happiness）<strong>是一种持续时间较长的心灵的满足</strong>[<a href="https://zh.wikipedia.org/wiki/%E5%B9%B8%E7%A6%8F#cite_note-1">1]</a>。<a href="https://zh.wikipedia.org/wiki/%E5%80%8B%E4%BA%BA">人类</a>自古以来就对追求幸福的途径有着浓厚的兴趣。</p>
-<p>研究幸福本身，及研究何种人生态度会带来幸福等等的学问，被称为“<a href="https://zh.wikipedia.org/w/index.php?title=%E5%B9%B8%E7%A6%8F%E5%AD%A6&action=edit&redlink=1">幸福学</a>”（<em>eudaemonics</em>）。将幸福视为道德上的最高追求，并以能否带来幸福作为判断行为臧否之标准的思想，则被称为“<a href="https://zh.wikipedia.org/w/index.php?title=%E5%B9%B8%E7%A6%8F%E4%B8%BB%E4%B9%89&action=edit&redlink=1">幸福主义</a>”。古典幸福主义的代表是<a href="https://zh.wikipedia.org/wiki/%E4%BA%9A%E9%87%8C%E5%A3%AB%E5%A4%9A%E5%BE%B7">亚里士多德</a>，而<a href="https://zh.wikipedia.org/wiki/%E6%95%88%E7%9B%8A%E4%B8%BB%E7%BE%A9">功利主义</a>则是近代哲学中追求幸福的典型。</p>
+    <title>PacVim：一个学习 vim 命令的命令行游戏</title>
+    <url>/2021/10/27/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94PacVim%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%B9%A0%20vim%20%E5%91%BD%E4%BB%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%B8%B8%E6%88%8F/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
+<p>在 Linux 中安装 Ncurses 库</p>
+<pre><code>$ sudo apt-get install libncurses5-dev libncursesw5-dev
+</code></pre>
 <br/>
 
-<h1 id="二、幸福论的前导"><a href="#二、幸福论的前导" class="headerlink" title="二、幸福论的前导"></a>二、幸福论的前导</h1><p>论幸福的前提是明晰：</p>
-<p>（1）自身和他人是不同的个体</p>
-<p>（2）每个人都会用自己的方式来塑造和阐述世界</p>
-<p>这种阐述世界的结果被称为三观——<strong>世界观、价值观、人生观</strong></p>
-<p>每个人有属于自己的三观，个体间只能称之为相似，而非一致</p>
+<p>安装 Ncurses 和 gcc 后，运行命令来安装 PacVim。</p>
+<pre><code>$ git clone https://github.com/jmoon018/PacVim.git
+$ cd PacVim
+$ sudo make install
+</code></pre>
 <br/>
 
-<h1 id="三、幸福论的三个层次"><a href="#三、幸福论的三个层次" class="headerlink" title="三、幸福论的三个层次"></a>三、幸福论的三个层次</h1><ol>
-<li><p><strong>人是什么？——个性决定命运</strong></p>
-</li>
-<li><p><strong>人有什么？——外在的事物和财富</strong></p>
-</li>
-<li><p><strong>人在他人眼里是怎么样的？——声望、名誉、社会地位</strong></p>
-</li>
-</ol>
 <br/>
 
-<h1 id="四、痛苦"><a href="#四、痛苦" class="headerlink" title="四、痛苦"></a>四、痛苦</h1><p><strong>痛苦面前，人人平等。</strong></p>
-<p>引用罗翔老师的经典语录：</p>
-<p>“古希腊哲学家爱比克泰德曾经说过他说我们登上并非我们所选择的舞台，演出并非我们所选择的剧本，各位同学有谁是自愿来到这个世界。有谁来到这个世界上，父母征求过你的意见。我们登上并非我们所选择的舞台，各位同学，有谁的人生剧本是你选择的，大家是不是很羡慕别人的剧本，老实说我有的时候也很羡慕别人的剧本。但是没有办法，你的剧本不是你选择的，你只有努力把你的剧本演好。虽然很痛苦但是只要努力的演好你的剧本，在痛苦中，也有精彩。每个人的人生剧本都是独特的，而每个人的人生剧本都是精彩的，不要去羡慕别人。”</p>
+<h2 id="启动-PacVim-游戏"><a href="#启动-PacVim-游戏" class="headerlink" title="启动 PacVim 游戏"></a><code>启动 PacVim 游戏</code></h2><p>要玩这个游戏，只需运行：</p>
+<pre><code>$ pacvim [LEVEL_NUMER] [MODE]
+</code></pre>
+<p>例如，以下命令以普通模式启动游戏第 5 关。</p>
+<pre><code>$ pacvim 5 n
+</code></pre>
+<p>这里，<code>5</code> 表示等级，<code>n</code>表示模式。有两种模式：</p>
+<ul>
+<li><code>n</code> – 普通模式。</li>
+<li><code>h</code> – 困难模式。</li>
+</ul>
 <br/>
 
-<p>人和人可能在身份上有所差异，但事实情况是：</p>
-<p>我们终究是一个可怜的演员，不论是什么职位，什么身份，</p>
-<p>都对自己的生活充满焦虑。</p>
-<p>身份地位越高，焦虑越多······</p>
 <br/>
 
-<h1 id="五、财富"><a href="#五、财富" class="headerlink" title="五、财富"></a>五、财富</h1><p>不要误认为，我们不需要钱</p>
-<p>吃饭——生活的必需品</p>
-<p>财富——非重要，而必须</p>
+<h2 id="如何玩-PacVim？"><a href="#如何玩-PacVim？" class="headerlink" title="如何玩 PacVim？"></a><code>如何玩 PacVim？</code></h2><p>按下回车开始游戏</p>
 <br/>
 
-<p>然而必须有所意识：财富真的能够带来幸福吗？</p>
-<p><strong>财富能够带来一定的幸福，但终究会打扰到幸福。</strong></p>
-<br/>
-
-<p>财富两字的定义是：</p>
-<p>财富——“过剩”，它对我们提升幸福感，意义并不大。</p>
-<p>蝼蚁——许多人和蚂蚁一样勤劳，每天从早到晚为了赚钱而奔波，费尽心思钻研，如何升官发财，每天996 007，除此之外对生活和幸福，对人生都一无所知，头脑空空，浑浑噩噩。</p>
-<br/>
-
-<p>倘若此类人，最终很幸运，通过自己的努力赚到了钱，然后留给了后人继承：</p>
+<p>PacVim 的使用与 PacMan 非常相似。</p>
+<p>你必须跑过屏幕上所有的字符，同时避免鬼魂（红色字符）。</p>
+<p>PacVim有两个特殊的障碍：</p>
 <ol>
-<li>要么家产被发扬光大，财富越来愈多。</li>
-<li>要么被继承人奢侈浪费一空，家底全部败光，一块不剩，家族崩裂。</li>
+<li>你不能移动到墙壁中（黄色）。你必须使用 vim 动作来跳过它们。</li>
+<li>如果你踩到波浪字符（青色的 <code>~</code>），你就输了！</li>
 </ol>
-<p>像这样的人生，尽管算的上是轰轰烈烈、认真务实、艰苦创业，但是和那些浑浑噩噩的人有什么区别呢？</p>
-<p>最终，不过是追求一个浮夸可笑的结局。</p>
+<p>你有三条生命。每次打赢 0、3、6、9 关时你都会获得新生命。总共有 10 关，从 0 到 9，打赢第 9 关后，游戏重置为第 0 关，但是鬼魂速度变快。</p>
+<p><strong>获胜条件</strong></p>
+<p>使用 vim 命令将光标移动到字母上并高亮显示它们。所有字母都高亮显示后，你就会获胜并进入下一关。</p>
+<p><strong>失败条件</strong></p>
+<p>如果你碰到鬼魂（用<strong>红色 G</strong> 表示）或者<strong>波浪字符</strong>，你就会失去一条命。如果命小于 0 条，你将会输掉整个游戏。</p>
+<p>这是实现的命令列表：</p>
+<p>键作用q退出游戏h向左移动j向下移动k向上移动l向右移动w向前移动到下一个 word 开始W向前移动到下一个 WORD 开始e向前移动到下一个 word 结束E向前移动到下一个 WORD 结束b向后移动到下一个 word 开始B向后移动到下一个 WORD 开始$移动到行的末尾0移动到行的开始gg/1G移动到第一行的开始数字加 G移动到由数字给出的行的开始G移到最后一行的开头^移到当前行的第一个 word＆1337 cheatz（打赢当前关）</p>
 <br/>
 
-<h1 id="六、名誉"><a href="#六、名誉" class="headerlink" title="六、名誉"></a>六、名誉</h1><p>佩特罗尼乌斯：<strong>“一个人所拥有的财产，决定这个人在他人眼中的价值。”</strong></p>
-<p>如此看来，即使名誉能够带来些许认同，但其也不过是财富的附属品。</p>
 <br/>
 
-<h1 id="七、健康"><a href="#七、健康" class="headerlink" title="七、健康"></a>七、健康</h1><p>健康、力量、外貌、气质、道德品质、教养</p>
-<p>健康比任何事物都重要，他比财富、名誉都重要。</p>
-<br/>
-
-<p><strong>你的性格乐观，你的身体健康，你是年轻人，充满活力，朝气蓬勃，拥有文化素质，有良知、善良的心，也能够洞察世界的本质。</strong></p>
-<p>试问，这样的一个个体，是财富能够换来到吗？</p>
-<br/>
-
-<h1 id="八、精神"><a href="#八、精神" class="headerlink" title="八、精神"></a>八、精神</h1><p>一个人<strong>内在拥有的东西才是决定他幸福的关键</strong>，外在的一切不是那么重要。</p>
-<p>很多人头脑空洞，想象力贫瘠，精神空虚，物以类聚，人以群分。</p>
-<p>——追求消遣娱乐，纵情感官享受，最终以荒唐结束。</p>
-<br/>
-
-<p>同样有很多人试图用外在的财富，去弥补内在的不足，常常徒劳无功。</p>
-<p>内在缺乏的人他不仅仅缺乏内在，最后连那可怜的外在财富也会失去。</p>
-<br/>
-
-<h1 id="九、性格"><a href="#九、性格" class="headerlink" title="九、性格"></a>九、性格</h1><p>性格——在社会定义下，个人对待周围世界的态度，由行为反映出。 性格随个体差异，但后天形成的社会性对其认知有重大影响，也因此体现了阶级与道德。</p>
-<p>性格结构包括四个方面：</p>
-<ul>
-<li>对现实的态度特征</li>
-<li>意志特征</li>
-<li>情绪特征</li>
-<li>理智特征</li>
-</ul>
-<p><strong>不卑不亢，有着面对生活英雄主义般的勇气。</strong></p>
-<br/>
-
-<h1 id="十、生命"><a href="#十、生命" class="headerlink" title="十、生命"></a>十、生命</h1><p>世界上只有一种真正的英雄主义，就是认清了生活的真相后还依然热爱它。</p>
-<p>认清生活的真相，依旧有勇气活下去，有追求幸福的勇气。</p>
-<p><strong>面对悲观，战胜它。因为活着永远比死去好。</strong></p>
-<p>人是为活着本身而活着，而不是为了活着之外的任何事物所活着。——余华《活着》</p>
-<p>我们需要明白：即使生活中大部分花里胡哨的东西都被剥夺了，人们也能照样活的很好。</p>
-<br/>
-
-<h1 id="十一、时间"><a href="#十一、时间" class="headerlink" title="十一、时间"></a>十一、时间</h1><p>人生应该量力而行论，</p>
-<p>选择自己擅长的事情去发展。</p>
-<p>时间有限，你真正的对手是时间。</p>
-<p>所以我们在有限的时间内，唯一能做到的事情：</p>
-<p><strong>最大限度地利用我们具有的个人优秀品质、技能、资源，并且朝遵循一定的自身性格的方向去发展，避免其他不符合自身的情形，选择最合适我们个性的人生位置、职业和生活方式。</strong></p>
+<p>本篇转载自<a href="https://zhuanlan.zhihu.com/p/37988604">PacVim：一个学习 vim 命令的命令行游戏</a></p>
 ]]></content>
       <categories>
-        <category>随想</category>
+        <category>技术</category>
       </categories>
       <tags>
-        <tag>哲学</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Robert Capa——战地记者与《失焦》</title>
-    <url>/2021/07/28/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E6%88%98%E5%9C%B0%E8%AE%B0%E8%80%85%E7%BD%97%E4%BC%AF%E7%89%B9%C2%B7%E5%8D%A1%E5%B8%95/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="历史真相"><a href="#历史真相" class="headerlink" title="历史真相"></a>历史真相</h3><p><strong>“如果你的照片不够好，那是因为你离的不够近”</strong><br><strong>“光有才华是不够的，你还得是个匈牙利人。”</strong><br><strong>“真相是最好的照片，最好的宣传。”</strong><br><strong>“这场战争（指二战）就像个正在变老的女演员，越来越不上相了，也越来越危险。”</strong></p>
-<p><strong>——罗伯特·卡帕</strong></p>
-<br/>
-
-<p>相片是历史的定格，</p>
-<p>记录情绪，记录生与死，</p>
-<p>又记录下战争的残酷无情…..</p>
-<br/>
-
-<h3 id="人生经历"><a href="#人生经历" class="headerlink" title="人生经历"></a>人生经历</h3><p>罗伯特·卡帕（Robert Capa,1913年10月22日－1954年5月25日）是匈牙利裔美籍摄影记者，二十世纪最著名的战地摄影记者之一。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/18.jpg"></p>
-<p>他出生于奥匈帝国时期的布达佩斯的一个犹太家庭，原名安德鲁·弗里德曼(André Friedmann)，移居法国期间为了便于别人记忆，开始采用罗伯特·卡帕的名字。</p>
-<p>卡帕17岁时就立志要当摄影家。在柏林大学求学后,先在柏林一家通讯社做暗房工作，后到巴黎当记者。由于他的摄影作品受到一家摄影杂志社的重视，他便被委派到战地进行采访。参与报道过五场二十世纪的主要战争：<strong>西班牙内战，中国抗日战争，二战欧洲战场, 第一次中东战争以及第一次印支战争</strong>。二战期间，卡帕跟随美军报道了北非，意大利的军事行动，诺曼第登陆中的奥马哈海滩战役以及巴黎的解放。</p>
-<p>卡帕被认为是“决定性瞬间”的集大成者之一，他的作品通过凝结瞬间再现了战争的残酷和暴戾，突出表现在他的几幅名作中。</p>
-<p>1936年西班牙内战，卡帕在西班牙战场拍摄了一个战士中弹将要倒下，这幅使人有身临其境之感的作品以《西班牙战士》、《战场的殉难者》、<strong>《阵亡的一瞬间》</strong>等标题发表，立刻震动了当时的摄影界,成为战争摄影的不朽之作，也成为卡帕的传世之作。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/10.jpg"></p>
-<br/>
-
-<p>当时和卡帕一起到西班牙采访的还有他的年青女友，德藉女摄影家<a href="http://blog.sina.com.cn/s/blog_9c6beb890102xcbb.html">Gerda Taro</a>。他们共同奋不顾身地出没于硝烟弥漫的战场,达娜不幸死于坦克履带下。悲伤的卡帕，从此永远凝视关注着战场。他一生的摄影创作多取材于战争，他把照相机作为揭露战争的武器，卡帕说:<strong>“照相机本身并不能阻止战争，但照相机拍出的照片可以揭露战争，阻止战争的发展”。</strong></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/19.jpg"></p>
-<p>1937年,日本军国主义发动了对中国的侵略，第二年卡帕与《西行漫记》的作者斯诺一同约定赴延安采访，但是到了西安，受到国民党的阻挠，卡帕未能成行，当时他是<strong>抗日战争中唯一能在中国战区采访的盟军战地记者</strong>，<a href="https://www.douban.com/note/682204317/">他用镜头记录下些许抗战中国</a>。他在上海等地，拍摄了许多揭露日本侵略军的罪行的新闻照片，公诸于世，后又去英国、北非、意大利进行摄影采访。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/14.jpg"></p>
-<p>1944年，他随联合国部队开辟第二战场，参加了在<strong>法国北部诺曼底登陆战</strong>，拍摄了极为精彩的报道照片。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/7.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/6.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/4.jpg"></p>
-<br/>
-
-<p>1947年，他和“<a href="https://baike.baidu.com/item/%E5%86%B3%E5%AE%9A%E6%80%A7%E7%9E%AC%E9%97%B4/1139760">决定性瞬间</a>”的倡导者<a href="https://baike.baidu.com/item/%E5%B8%83%E5%88%97%E6%9D%BE/1198802">布列松</a>一同创立了著名的<a href="https://baike.baidu.com/item/%E7%8E%9B%E6%A0%BC%E5%8D%97%E5%9B%BE%E7%89%87%E7%A4%BE/3253377">玛格南图片社</a>，成为了全球第一家自由摄影师的合作组织。后来陆续加入一些其它著名摄影家，如美国的罗嘉，瑞士的比索夫等。在”马格南”成立后的三十年中西方世界任何一个角落发生大事，都有他们的摄影记者在场。他们以忘我的热情，甚至不惜以鲜血和生命深入到第一线去拍摄，为新闻摄影的形式和内容树立了新的典范。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/20.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/13.jpg"></p>
-<p>1954年5月25日，卡帕在越南采访第一次印支战争时，误入雷区踩中地雷被炸身亡。</p>
-<br/>
-
-<h3 id="伟大战士"><a href="#伟大战士" class="headerlink" title="伟大战士"></a>伟大战士</h3><p>罗伯特·卡帕拥有所有作为一个优秀记者必备的重要品质：为得到满意的镜头他坚持不懈，敢作敢为，足智多谋又善于交际力助他成为伟大的艺术家——高度敏感、对主题的认知与选择的天赋及创作技巧。他勇敢地穿梭于20世纪中期各大战场，他也一直挣扎于所有记者和摄影师都经历的两难抉择，当拍摄取景时他不在乎自己会不会如无情的豺狼一般，置那些逃命或受伤的人于不顾。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/15.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/RobertCapa/16.jpg"></p>
-<p>他全身心投入到他的事业中，而这个职业却总带给他道德上的冲突，同时也迫使他去展示他认为重要的那些东西。他以一种从未有人尝试的方式展现他的作品，因为从未有人离现场像他那样近。</p>
-<p>他说：<strong>“如果你的照片不够好，那时因为你离的不够近。”</strong>那位西班牙民兵牺牲时他就在旁边，诺曼底登陆时他也一起泡在海岸的血水中，当然，当他踏上那个夺命地雷时，他就身临印度支那的战场前线。</p>
-<p>他的生活如此充实又有激情，冒险不断，甚于一场生命的赌博——他所选择的生活不允许他有儿有女，不允许他有丝毫社会性，不允许他有个家，而是提前设定了他的死亡模式。也许这是他经历这么多能活下来的唯一方式，并且能够向大众展示他所处的那种环境。</p>
-<p>卡帕几乎没有为摄影艺术发表过什么创作观，文采甚高的他，在战壕里仍保持写札记的习惯，不过都是一些当时的记事，和自己对人生、命运、战争、友谊、感情等的文字。他的照片让人不觉得技巧的重要性，而是显露出一段用生命才能换取的勇气，这种大勇的精神使他的照片被任何派别的人都奉为经典，没有人会批评他表现得够不够精致、传达得够不够有力、裁切得够不够紧凑、快门机会够不够恰到好处、调子够不够丰富。焦距、光圈、快门在他的照片里都是无用的名词，他是<strong>用生命拍照</strong>，而不是用机器，因此卡帕是被一般人称作“伟人”的唯一摄影家。</p>
-<p>文末，观者可以欣赏<a href="http://www.360doc.com/content/19/0804/20/36235679_852987124.shtml">罗伯特·卡帕的作品集</a>。</p>
-<p>了解事实与真相，铭记战争带来的悲痛。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Alex Webb——复杂构图、鲜明色彩</title>
-    <url>/2021/07/23/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E8%A1%97%E5%A4%B4%E6%91%84%E5%BD%B1%E5%A4%A7%E5%B8%88Alex%20Webb/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>在GNU看到一组照片，题名为“复杂构图|摄影大师Alex Webb”,</p>
-<p>Alex Webb的每一张照片都包含着些许生命的活力,</p>
-<p>我急于探求这种生命与情感的张力来源何处？</p>
-<br/>
-
-<p><strong>一、鲜明的色彩差异</strong></p>
-<p>高饱和、鲜明的色彩差异…</p>
-<p>这些方式无不体现着生命力。</p>
-<p>我们形容一个鲜活的物体，她是多彩的，</p>
-<p>Alex用鲜艳的色彩，诠释着生命的张力，</p>
-<p>细微之处在于，情绪体现在色彩之上，</p>
-<p>色彩丰富时能够看出喜悦的情绪，</p>
-<p>色彩平淡时又会给人些许压抑感。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/8.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/6.jpg"></p>
-<br/>
-
-<p><strong>二、多种元素带来的糖果般的喜悦感</strong></p>
-<p>Alex作品中通常包含着众多的元素，</p>
-<p>或许是同一环境中不同状态的人，</p>
-<p>又或许是背景与主体间偶然的关系，</p>
-<p>仔细观察其中的每一个细节，总能发现一些奇妙的元素。</p>
-<p>他总能在元素众多的条件下，</p>
-<p>构出巧妙舒适，不显繁杂的图，</p>
-<p>将视觉中心巧妙的转移来创造出新奇感。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/4.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/9.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/12.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/11.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/10.jpg"></p>
-<br/>
-
-<p><strong>三、单一元素的模糊动感</strong></p>
-<p>观察他的作品，大多数照片快门速度像是保持在1/60s-1/90s左右区间范围，</p>
-<p>以至于每张照片都有着动和静这样两种状态，</p>
-<p>作品中大部分是静景，而单一元素的动却为平面的照片创造了几分“立体感”，</p>
-<p>这种“立体感”为照片增添了不少的活力。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/1.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/5.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/7.jpg"></p>
-<br/>
-
-<p><strong>四、利用镜子添加元素</strong></p>
-<p>能够做到一张图片上众多元素的展现，</p>
-<p>镜子总有着不少的功劳，</p>
-<p>相机正对的方向是一个世界，</p>
-<p>镜子反射出来的同样是另外一个情绪世界。</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/2.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/3.jpg"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/taste/AlexWebb/13.jpg"></p>
-<br/>
-
-<p><strong>之后我试图去了解Alex Webb以及他的成长史，</strong></p>
-<p><strong>从几篇文章中拼凑出他的前半个摄影人生：</strong></p>
-<p> Alex Webb，1952年5月5日出生于美国旧金山，著名美国摄影师，马格南摄图片社成员。他的作品展现他高超的纪实摄影技巧，卓越的色彩修养，他的作品以其复杂的构图而闻名，依旧沿袭了布列松“决定性瞬间”的摄影美学。他的作品在世界各地进行展出，包括在沃克艺术中心，摄影艺术博物馆，国际摄影中心，高艺术博物馆等等。</p>
-<p>1975年，21岁的摄影师Alex Webb来到美国和墨西哥的边境，开始了长达数十年的纪实摄影。他常常拍摄波士顿和纽约等地的美国社会景观，但也常常觉得这些地方没有灵魂，冷漠无情。1975年的他已经是大名鼎鼎的马格南图片社的成员，却不可抗拒地被“边境”这一特殊的环境吸引。</p>
-<p>尽管比邻而居，美国和墨西哥却有着根本性的不同，“西方社会的文化源于新教，资本主义，和个人主义”。Alex Webb前往海地、加勒比海国家等地，最后去到了墨西哥，并且迷上了墨西哥和美国之间巨大的文化差异。他说，“而墨西哥相信西班牙天主教、土著和集体文化，墨西哥的文化在拥抱神秘。”美墨间那条暧昧又复杂的国界线，成为Alex Webb探寻文化交融与冲突的宝地。</p>
-<p>1986年，Alex Webb访问了革命后的海地，触动很深，也成为他摄影生涯中最重要的转折点。Alex Webb说，“在海地旅行彻底改变了我——不仅作为一个摄影师，也作为一个普通人。我拍摄到了一个我从未经历过的世界，一个充满活力和激情的世界:原始的，脱节的，通常往往是悲剧的。”</p>
-<p>从那以后，他决定从拍摄黑白相片转为拍摄彩色相片。那时的摄影界黑白相片是主流，而彩色相片并不被人看好。但Alex Webb认为“世界是一个复杂的地方，如果你开始单纯地以非黑即白的方式看待一切，就会面临巨大的危险。”</p>
-<p>而色彩，也是刻在墨西哥的基因里的。看到Alex Webb的作品，首先吸引人眼球的就是大胆丰富的色彩。这些色彩是当地人的灵魂和精神，色彩本身就在讲故事。</p>
-<p>近半个世纪以来，Alex Webb的作品几乎见证了中美洲的变化。但他的作品并不直面社会变革的新闻现场，而是从细小入微的人文角度，描绘个体的生活与情感。他希望避免任何先入为主的观念，而是讲述一个包罗万象的故事。他相信，在街头巷尾，普通人的神色中，有着这个社会的未来最真实的秘密。</p>
-<br/>
-
-<p>观者可以欣赏<strong>Alex Webb</strong>最有名的画册<a href="https://www.sohu.com/a/315799198_120065912"><strong>《The Suffering of Light》</strong></a>，或者看看<a href="https://zhuanlan.zhihu.com/p/58186067">他人的解读</a>。</p>
-<p>在他的摄影集<strong>《La Calle》</strong>最后，他以一段墨西哥诗人奥克塔维奥帕斯的《街》作为结尾,</p>
-<p>我们也以此作为结尾，感受Alex Webb作品的魅力：</p>
-<p>一条沉寂的长街。</p>
-<p>我在黑暗中行走，跌倒</p>
-<p>又站起，我盲目而行，双脚</p>
-<p>踏上静默的石头和枯叶。</p>
-<p>有人在我身后也踏上石头、树叶：</p>
-<p>如果我减速，他也减速；</p>
-<p>如果我奔跑，他也奔跑。我转身：无人。</p>
-<p>一切都黑暗而无门。</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>交响乐赏析笔记</title>
-    <url>/2021/12/11/%E5%AE%A1%E7%BE%8E%E2%80%94%E2%80%94%E4%BA%A4%E5%93%8D%E4%B9%90%E8%B5%8F%E6%9E%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="《动物狂欢节》"><a href="#《动物狂欢节》" class="headerlink" title="《动物狂欢节》"></a>《动物狂欢节》</h1><p><strong>法国作曲家卡米尔·圣桑</strong></p>
-<p><em>曲目：</em></p>
-<p>狮王进行曲<br>公鸡<br>马<br>乌龟<br>大象<br>袋鼠<br>水族馆<br>驴<br>林中杜鹃<br>百鸟笼<br>钢琴家<br>动物化石<br>天鹅<br>狂欢节</p>
-<br/>
-
-<h1 id="《邀舞》"><a href="#《邀舞》" class="headerlink" title="《邀舞》"></a>《邀舞》</h1><p><strong>德国作曲家韦伯</strong> </p>
-<p><em>故事线</em></p>
-<p>邀请<br>拒绝<br>再邀请<br>接受<br>交谈<br>舞会开始<br>一同跳舞 [情绪变化]<br>边跳边交谈<br>一曲舞结束时深情不舍</p>
-<br/>
-
-<h1 id="《惊愕》"><a href="#《惊愕》" class="headerlink" title="《惊愕》"></a>《惊愕》</h1><p><strong>海顿</strong></p>
-<br/>
-
-<h1 id="《梁祝》"><a href="#《梁祝》" class="headerlink" title="《梁祝》"></a>《梁祝》</h1><p><strong>作曲家何占豪、陈钢</strong></p>
-<p>【奏鸣曲式】<br>（引子）<br>春光，人间真情 [暖]</p>
-<p><em>（主部）</em><br>爱情主题<br>懵懂纯真<br>草桥结拜<br>主题再现<br>连接部自由华彩</p>
-<p><em>（副部）</em><br>三载同窗<br>共读共戏</p>
-<p><em>（结束部）</em><br>十八相送<br>长亭惜别</p>
-<p><em>（展开部）</em>[不协和] [哭腔]<br>抗婚<br>高潮<br>楼台会 [紧拉慢唱]<br>踉跄<br>哭灵控诉<br>最高潮<br>投坟</p>
-<p><em>（再现部）</em><br>化蝶<br>仙境 [竖琴声 距离由远拉近]<br>人们对人间美好爱情的追求 [距离拉远]</p>
-<br/>
-
-<h1 id="《猫》"><a href="#《猫》" class="headerlink" title="《猫》"></a>《猫》</h1><p><strong>韦伯 舞台剧</strong><br>主题：love</p>
-<br/>
-
-<p>交响音画</p>
-<p>卡拉扬纪录片</p>
-<br/>
-
-<h1 id="《命运交响曲》"><a href="#《命运交响曲》" class="headerlink" title="《命运交响曲》"></a>《命运交响曲》</h1><p>——《第五交响曲》</p>
-<p><strong>作曲家贝多芬</strong></p>
-<p>如何战胜困难<br>走向新生与明天</p>
-<p>命运，压迫<br>英雄，坚定<br>（第一乐章）<br>（第二乐章）<br>疑问，不安，忧郁<br>（第三乐章）<br>两股力量决战时的最后准备<br>（第四乐章）<br>第一主题，升级<br>第二主题，豪迈，勇往直前<br>第四主题，舞蹈性质<br>第五主题，英雄情怀翻涌</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>审美</tag>
+        <tag>转载</tag>
       </tags>
   </entry>
   <entry>
@@ -963,149 +751,6 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Software QA Engineer岗位解读</title>
-    <url>/2021/08/04/%E6%89%A9%E5%B1%95%E2%80%94%E2%80%94Software%20QA%20Engineer%E5%B2%97%E4%BD%8D%E8%A7%A3%E8%AF%BB/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="测试岗位？"><a href="#测试岗位？" class="headerlink" title="测试岗位？"></a>测试岗位？</h3><p>在整个产品项目上线提供给用户的过程中，测试是关键一环，</p>
-<p>主要工作是通过不同的测试手段对产品进行测试以保证业务质量与正常上线。</p>
-<p>测试这个岗位，是比开发懂产品，比产品更懂开发的。</p>
-<p>测试细分为白盒测试与黑盒测试。</p>
-<br/>
-
-<h3 id="测试方法？"><a href="#测试方法？" class="headerlink" title="测试方法？"></a>测试方法？</h3><p>​    <em>（测试需求）</em></p>
-<p>以用户的角度看问题，以技术角度分析问题。</p>
-<p><strong>1.了解项目的流程：</strong></p>
-<p>产品经理提出需求评审，开发详设评审，同步进行测试设计评审，各种方式进行测试，项目验收，提交测试报告。</p>
-<p><strong>2.制定测试计划</strong></p>
-<p>​    ①.修订历史记录（A-添加，M-修改，D-删除）</p>
-<p>​            版本　 日期　 AMD　 修订者　　说明</p>
-<p>​    ②.测试计划简介</p>
-<p>​    1）编写此测试计划的目的</p>
-<p>​    2）待测项目的背景</p>
-<p>​    3）本次测试待测项目的范围</p>
-<p>​    ③.测试相关文档</p>
-<p>​    1）测试过程中参考的文档</p>
-<p>​    2）测试完成后要输出的文档</p>
-<p>​    ④.测试详细进度</p>
-<p>​    测试每个模块 计划开始日期  实际开始日期   结束日期</p>
-<p>​    ⑤.测试资源安排</p>
-<p>​    1）人力资源</p>
-<p>​         每个测试人员参与的模块具体负责的事项和预估的时间</p>
-<p>​    2）环境资源</p>
-<p>​         测试环境的软件环境和硬件环境的准备和搭建</p>
-<p>​    3）测试工具</p>
-<p>​         测试过程需要用的工具或者组件、插件的名称和版本</p>
-<p>​    ⑥.测试的风险和优先级</p>
-<p>​        主要预估后续测试中可能存在的风险以及应对方法和处理的优先级</p>
-<p><strong>3.制定测试策略</strong></p>
-<p>​    不同的测试对象制定不同的测试方法，比如功能测试、接口测试、兼容性测试、性能测试、安全测试等。</p>
-<p><strong>4.设计测试用例</strong></p>
-<p>​    写case</p>
-<p>​    标题:测什么</p>
-<p>​    预置（前置）条件：<u>登入，发现，操作，进入</u></p>
-<p>​    操作步骤：</p>
-<p>​    预期结果：</p>
-<p>​    设计测试用例中的验证点，测试依据，这里包括功能性测试需求，也包括非功能性能测试需求。从需求规格说明书中挖掘需要测试的验证点，进行用例设计。</p>
-<p><strong>5.执行测试</strong></p>
-<p>​    表层 -&gt; API接口 -&gt; 底层</p>
-<p>①、确定测试用例的优先级</p>
-<p>​    创建测试数据，准备测试工具和设计自动化测试脚本</p>
-<p>​    根据测试计划创建测试套件（场景）</p>
-<p>​    确定已经正确搭建测试环境</p>
-<p>②、功能根据优先级，手工或使用测试工具来执行测试</p>
-<p>​    记录测试执行的结果，以及被测软件、测试工具和测试件的标识与版本</p>
-<p>③、明确预期结果</p>
-<p>④、测试实际结果与预期结果对比，</p>
-<p>​    出现差异时分析引起差异的原因，确定是否作为缺陷上报</p>
-<p>​    修正缺陷后，重新测试</p>
-<p><strong>6.提交与维护软件缺陷</strong></p>
-<p>​    缺陷管理（提交BUG）</p>
-<p>​    标题：问题</p>
-<p>​    BUG等级：P0、P1</p>
-<p>​    定位问题，提交：</p>
-<p>​    指定开发：</p>
-<p>​    如何定位问题：</p>
-<p>​    研发根据case复现：</p>
-<p><strong>7.准备测试报告并提交批准以及测试总结</strong></p>
-<p><strong>8.分析与制定疑难测试问题解决方案以及测试方法的创新与开发</strong></p>
-<br/>
-
-<h3 id="能力需求？"><a href="#能力需求？" class="headerlink" title="能力需求？"></a>能力需求？</h3><ol>
-<li>业务认识能力</li>
-<li>coding硬实力</li>
-<li>沟通软实力</li>
-</ol>
-]]></content>
-      <categories>
-        <category>生活</category>
-      </categories>
-      <tags>
-        <tag>扩展</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PacVim：一个学习 vim 命令的命令行游戏</title>
-    <url>/2021/10/27/%E6%8A%80%E6%9C%AF%E2%80%94%E2%80%94PacVim%EF%BC%9A%E4%B8%80%E4%B8%AA%E5%AD%A6%E4%B9%A0%20vim%20%E5%91%BD%E4%BB%A4%E7%9A%84%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%B8%B8%E6%88%8F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装-PacVim"><a href="#安装-PacVim" class="headerlink" title="安装 PacVim"></a><strong>安装 PacVim</strong></h2><p>首先安装 <strong>Ncurses</strong> 库和<strong>开发工具</strong>。</p>
-<p>在 Linux 中安装 Ncurses 库</p>
-<pre><code>$ sudo apt-get install libncurses5-dev libncursesw5-dev
-</code></pre>
-<br/>
-
-<p>安装 Ncurses 和 gcc 后，运行命令来安装 PacVim。</p>
-<pre><code>$ git clone https://github.com/jmoon018/PacVim.git
-$ cd PacVim
-$ sudo make install
-</code></pre>
-<br/>
-
-<br/>
-
-<h2 id="启动-PacVim-游戏"><a href="#启动-PacVim-游戏" class="headerlink" title="启动 PacVim 游戏"></a><code>启动 PacVim 游戏</code></h2><p>要玩这个游戏，只需运行：</p>
-<pre><code>$ pacvim [LEVEL_NUMER] [MODE]
-</code></pre>
-<p>例如，以下命令以普通模式启动游戏第 5 关。</p>
-<pre><code>$ pacvim 5 n
-</code></pre>
-<p>这里，<code>5</code> 表示等级，<code>n</code>表示模式。有两种模式：</p>
-<ul>
-<li><code>n</code> – 普通模式。</li>
-<li><code>h</code> – 困难模式。</li>
-</ul>
-<br/>
-
-<br/>
-
-<h2 id="如何玩-PacVim？"><a href="#如何玩-PacVim？" class="headerlink" title="如何玩 PacVim？"></a><code>如何玩 PacVim？</code></h2><p>按下回车开始游戏</p>
-<br/>
-
-<p>PacVim 的使用与 PacMan 非常相似。</p>
-<p>你必须跑过屏幕上所有的字符，同时避免鬼魂（红色字符）。</p>
-<p>PacVim有两个特殊的障碍：</p>
-<ol>
-<li>你不能移动到墙壁中（黄色）。你必须使用 vim 动作来跳过它们。</li>
-<li>如果你踩到波浪字符（青色的 <code>~</code>），你就输了！</li>
-</ol>
-<p>你有三条生命。每次打赢 0、3、6、9 关时你都会获得新生命。总共有 10 关，从 0 到 9，打赢第 9 关后，游戏重置为第 0 关，但是鬼魂速度变快。</p>
-<p><strong>获胜条件</strong></p>
-<p>使用 vim 命令将光标移动到字母上并高亮显示它们。所有字母都高亮显示后，你就会获胜并进入下一关。</p>
-<p><strong>失败条件</strong></p>
-<p>如果你碰到鬼魂（用<strong>红色 G</strong> 表示）或者<strong>波浪字符</strong>，你就会失去一条命。如果命小于 0 条，你将会输掉整个游戏。</p>
-<p>这是实现的命令列表：</p>
-<p>键作用q退出游戏h向左移动j向下移动k向上移动l向右移动w向前移动到下一个 word 开始W向前移动到下一个 WORD 开始e向前移动到下一个 word 结束E向前移动到下一个 WORD 结束b向后移动到下一个 word 开始B向后移动到下一个 WORD 开始$移动到行的末尾0移动到行的开始gg/1G移动到第一行的开始数字加 G移动到由数字给出的行的开始G移到最后一行的开头^移到当前行的第一个 word＆1337 cheatz（打赢当前关）</p>
-<br/>
-
-<br/>
-
-<p>本篇转载自<a href="https://zhuanlan.zhihu.com/p/37988604">PacVim：一个学习 vim 命令的命令行游戏</a></p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>转载</tag>
       </tags>
   </entry>
   <entry>
@@ -1288,55 +933,6 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </tags>
   </entry>
   <entry>
-    <title>帧速率、刷新率、广播级视频标准</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
-<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
-<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
-<p>（帧数越多，画面越流畅，实际体验越好）</p>
-<br/>
-
-<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
-<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
-<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
-<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
-<br/>
-
-<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
-<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
-<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
-<br/>
-
-<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
-<p>NTSC 29.97帧/秒</p>
-<p>SECAM 25帧/秒</p>
-<p>Film 24帧/秒</p>
-<br/>
-
-<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
-<p>NTSC 720×480</p>
-<p>SECAM 720×576</p>
-<p><strong>现代视频分辨率</strong></p>
-<p>8K  7680×4320</p>
-<p>6K  6144×3160</p>
-<p>4K  4096×2160</p>
-<p>UHD  3840×2160</p>
-<p>2K  2048×1080</p>
-<p>FHD  1920×1080</p>
-<p>HD  1280 ×720</p>
-<br/>
-
-<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
-<p>1080p 逐行扫描技术</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>摄影构图——构图方法与思想</title>
     <url>/2021/08/31/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E6%91%84%E5%BD%B1%E6%9E%84%E5%9B%BE%EF%BC%88%E7%AA%81%E5%87%BA%E4%B8%BB%E4%BD%93%E3%80%81%E4%B8%AD%E5%BF%83%E6%80%9D%E6%83%B3%E3%80%81%E7%94%BB%E9%9D%A2%E7%AE%80%E6%B4%81%EF%BC%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="构图方法"><a href="#构图方法" class="headerlink" title="构图方法"></a>构图方法</h1><h2 id="点构图"><a href="#点构图" class="headerlink" title="点构图"></a>点构图</h2><h3 id="中心点构图"><a href="#中心点构图" class="headerlink" title="中心点构图"></a>中心点构图</h3><p>——直接把被摄主体放置于画面中央</p>
@@ -1387,59 +983,52 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </tags>
   </entry>
   <entry>
-    <title>人，不但要有科学、技术，而且还要文化、艺术跟音乐</title>
-    <url>/2021/12/05/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BA%BA%EF%BC%8C%E4%B8%8D%E4%BD%86%E8%A6%81%E6%9C%89%E7%A7%91%E5%AD%A6%E3%80%81%E6%8A%80%E6%9C%AF%EF%BC%8C%E8%80%8C%E4%B8%94%E8%BF%98%E8%A6%81%E6%96%87%E5%8C%96%E3%80%81%E8%89%BA%E6%9C%AF%E8%B7%9F%E9%9F%B3%E4%B9%90/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="钱老"><a href="#钱老" class="headerlink" title="钱老"></a>钱老</h1><ol>
-<li>我认为，人，不但要有科学、技术，而且还要文化、艺术跟音乐。—————钱学森</li>
-<li>人是要首先认识客观世界才能改造世界，而认识客观世界是知识，经济是改造客观世界。—————钱学森</li>
-<li>我认为今天科学技术不仅仅是自然科学与工程技术，而是人认识客观世界、改造客观世界的整个的知识体系，而这个体系的最高概括是Marx主义哲学。—————钱学森</li>
-<li>人生就像是一条溪流，从丛林中流出，途经崇山叠石。最后流到平坦的地方。但不同的是，小溪是顺山势而流。人可以主动的选着未来的方向与道路。虽然道路也许是崎岖难行的，但走过之后，会有一份充实的成就感。—————钱学森</li>
-<li>搞科学的人同样需要有灵感，而我的灵感，许多就是从艺术中悟出来的。—————钱学森</li>
-<li>出人才的产生离不开宽松的学术氛围，经典台词办大学要有一种很宽松的学术氛围啊。—————钱学森</li>
-<li>不要服我，要服科学。—————钱学森</li>
-<li>高等学校的学习，是打基础的时期，应该强调学好基础课程。—————钱学森</li>
-<li>事情不容易，请不要性急，还要做点实实在在的工作。—————钱学森</li>
-<li>没有钱，和有钱不用，是两码事。—————钱学森</li>
-<li>你们是否富日子过惯了？动不动就开口建实验装置！望深思之！我们国家还很穷嘛。—————钱学森</li>
-<li>外国人能干的，中国人为什么不能干？难道中国人比外国人矮一截？—————钱学森</li>
-<li>我一直相信，我一定能够回到祖国的，今天，我终于回来了！—————钱学森</li>
-<li>难道搞科学的人只需要数据和公式吗？—————钱学森</li>
-<li>在我们创造奇迹的事业上，虽然没有那么一大批名牌大学毕业的科学家，但是我们真的有着一批信仰坚定、愿意为共和国国防事业付出终身的理想主义者。—————钱学森</li>
-<li>不就是天上掉下个东二吗？今天掉下来，明天把它射上去，但今天这个事情也教会我一点，一定要把一切错误，消灭在地面上，导弹绝不能带着任何的疑点上天。这个原则，坚决不可以动摇。—————钱学森</li>
-<li>我曾经发誓，要用我的学识改变中国人的命运。我一定要中国人拥有自己的原子弹和导弹，哪怕它的存在带来质疑和争论，但是我认为，这是对抗侵略性的准备。手上没有剑和有剑不用，不是一回事。—————钱学森</li>
-<li>据我所知，你是中国人，在对另一个中国人提问时，你应该说中文，而不是英语，我不想回答你。—————钱学森</li>
-<li>在我的祖国，我做什么都行，如果我想，我可以去种苹果。—————钱学森</li>
-<li>来美国之前，我就抱定了信念，学成必归，报效祖国，谁也不能阻挡我。—————钱学森</li>
-<li>我要回去，我一定要回去。—————钱学森</li>
-<li>我想要的是信任，不是怀疑。—————钱学森</li>
-<li>学成归国，报效民族，不正是你我梦寐以求的事情吗？—————钱学森</li>
-<li>你以为，科学领域里有你以为这样的概念吗？你是在搞科研还是在玩游戏？—————钱学森</li>
-</ol>
+    <title>帧速率、刷新率、广播级视频标准</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
+<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
+<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
+<p>（帧数越多，画面越流畅，实际体验越好）</p>
 <br/>
 
-<h1 id="对话"><a href="#对话" class="headerlink" title="对话"></a>对话</h1><ol>
-<li>打了几十年的仗，能从死人堆里爬出来的，那都是人尖子啊。—————聂荣臻</li>
-<li>罗友来：不，我不会去参加的，我绝不会去制造这么巨大的毁绝性的武器。学森，现在全世界有良心的科学家都在禁止它，你知道的。钱学森：如果有一天，原子弹投到中国人的头上，我会后悔的。</li>
-<li>学森同志啊，目前我们国家还是很穷，朝鲜战争把我们的家底打光了，但是，我们会竭尽全力，满足你的要求，你晓不晓得为啥子？因为你在为国家，铸造一把锋利的宝剑，这把宝剑在手，国家才会有尊严，人民才会有和平。—————聂荣臻</li>
-<li>陈赓：钱先生，我还是要问你一句，我们到底，能不能造出导弹？钱学森：陈赓将军，美国人能造出来，我们中国人不比他们少个脑子，当然能造出来。</li>
-<li>蒋英：我们都是中国人，你难道看不出来么？</li>
-</ol>
+<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
+<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
+<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
+<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
 <br/>
 
-<h1 id="电影"><a href="#电影" class="headerlink" title="电影"></a>电影</h1><ol>
-<li>《钱学森》是陈坤第一次出演传记人物影片。</li>
-<li>在拍摄一段场景时，导演张建亚挑选位于总装备部大院里钱学森的家。拍摄当天现场有很多与钱学森共事过的导弹专家和学生围观。</li>
-<li>电影《钱学森》在外形方面，剧组为求能在造型上最大程度接近老年钱学森的本来面貌，邀请到香港演员、特效化妆师连凯亲自为陈坤制作面部倒模。</li>
-<li>影片中除了实拍，也穿插了不少真实的史料，其中穿插了机械内部的细节镜头。影片还模拟了导弹爆炸时的声效。</li>
-<li>影片《钱学森》在最初筹拍的时候，经过有关部门特许，编剧查阅了大量的档案。剧中呈现的监狱、接待室、审讯室、钱学森办公室以及FBI办公室改成的加州理工学院实验室与档案图片相同。</li>
-<li>影片首次启用了大量国家机密档案，将历史上鲜为人知的谍情暗战搬上银幕。</li>
-</ol>
+<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
+<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
+<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
+<br/>
+
+<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
+<p>NTSC 29.97帧/秒</p>
+<p>SECAM 25帧/秒</p>
+<p>Film 24帧/秒</p>
+<br/>
+
+<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
+<p>NTSC 720×480</p>
+<p>SECAM 720×576</p>
+<p><strong>现代视频分辨率</strong></p>
+<p>8K  7680×4320</p>
+<p>6K  6144×3160</p>
+<p>4K  4096×2160</p>
+<p>UHD  3840×2160</p>
+<p>2K  2048×1080</p>
+<p>FHD  1920×1080</p>
+<p>HD  1280 ×720</p>
+<br/>
+
+<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
+<p>1080p 逐行扫描技术</p>
 ]]></content>
       <categories>
-        <category>文学</category>
+        <category>艺术</category>
       </categories>
       <tags>
-        <tag>收录</tag>
+        <tag>后期</tag>
       </tags>
   </entry>
   <entry>
@@ -1492,492 +1081,6 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </categories>
       <tags>
         <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>他在阳光下站在道德制高点谈真相</title>
-    <url>/2021/08/19/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E4%BB%96%E5%9C%A8%E9%98%B3%E5%85%89%E4%B8%8B%E7%AB%99%E5%9C%A8%E9%81%93%E5%BE%B7%E5%88%B6%E9%AB%98%E7%82%B9%E8%B0%88%E7%9C%9F%E7%9B%B8/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><ol>
-<li><p>人们从未渴求过真理，他们对不合胃口的证据视而不见，谁向他们提供幻觉，谁就可以轻易地成为他们的主人 。——《乌合之众》</p>
-<br/></li>
-<li><p>有一种天生的、难以遏制的欲望，那就是在理解之前就评判 。——《小说的艺术》</p>
-<br/></li>
-<li><p>舆论倒向哪，人们跟到哪，舆论指向谁，人们就打谁 。——黄三《酸梅》</p>
-<br/></li>
-<li><p>舆论经常是私刑，而私刑又经常是娱乐，就像是用报纸上的报道来代替手枪一样 。——芥川龙之介《罗生门》</p>
-<br/></li>
-<li><p>大家都愿意盲从，好像世界上最安全的事就是让自己消失在“多数”之中 。——李娟《冬牧场》</p>
-<br/></li>
-<li><p>每个人都睁着眼睛，但不等于每个人都在看世界。许多人几乎不用自己的眼睛看，他们只听别人说，他们看到的世界永远是别人说的样子 。——周国平《人生哲思录》</p>
-<br/></li>
-<li><p>奇怪的动物会被保护起来，奇怪的人却遭受排挤 。——伊坂幸太郎《阳光劫匪》 </p>
-<br/></li>
-<li><p>没有必要把你懂的所有东西都说出来，人们不喜欢他们身边有人比他们懂得更多，那会让他们很恼火。你说的再正确，也改变不了这些人。除非他们自己想学，否则一点办法也没有。你要么闭上嘴巴，要么就使用他们的语言 。——哈珀·李《杀死一只知更鸟》 </p>
-<br/></li>
-<li><p>人世间的罪恶几乎总是由愚昧无知造成，如果缺乏理解，好心能造成和恶意同样大的危害。——加缪《鼠疫》</p>
-<br/></li>
-<li><p>人们可以曲解任何一件事，以便与他们的固有观点相符。——库布里克</p>
-<br/></li>
-<li><p>“怎样算欺凌？”“十人欺负一人算欺凌。一百个人欺负一人也是。”“”那么1万个人呢？”“是正义啊。”——寺山修司《世界命题 》</p>
-<br/></li>
-<li><p>“枪响了”“你看到是谁开的枪吗”“我看不清，他站在道德制高点，他在阳光下 ”——电影《狩猎》</p>
-<br/></li>
-<li><p>一旦我们认定一件事的时候，我们的想法就会变得很片面。——电影《动物世界 》</p>
-<br/></li>
-<li><p>近看之下，没有人是正常的 。——卡耶塔诺·费洛索</p>
-<br/></li>
-<li><p>我翻开历史一查，这历史没有年代，歪歪斜斜的每页上都写着“仁义道德”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字“吃人”。——鲁迅《狂人日记》</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>希望、祝福、爱情、风与晚霞</title>
-    <url>/2021/08/10/%E6%96%87%E5%AD%A6%E2%80%94%E2%80%94%E5%B8%8C%E6%9C%9B%E3%80%81%E7%A5%9D%E7%A6%8F%E3%80%81%E7%88%B1%E6%83%85%E3%80%81%E9%A3%8E%E4%B8%8E%E6%99%9A%E9%9C%9E/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="希望"><a href="#希望" class="headerlink" title="希望"></a>希望</h1><ol>
-<li><p>愿希望和你同行，向着光，所向披靡。</p>
-</li>
-<li><p>少年与爱永不老去，即便披荆斩，丢失怒马鲜衣。</p>
-<p>——莫峻</p>
-</li>
-<li><p>你才二十几岁，你可以成为任何你想成为的人。</p>
-<p>——是枝裕和《步履不停》</p>
-</li>
-<li><p>没有谁的生活会一直完美，但无论什么时候都要眼看前方，满怀希望就会所向披靡。</p>
-<p>——巫哲《撒野》</p>
-</li>
-<li><p>你一定要走，走到灯火通明。</p>
-<p>——卢思浩《你要去相信，没有到不了的明天》</p>
-</li>
-<li><p>你必须只有内心丰富，才能拜托这些生活表面的相似。</p>
-<p>——王明《致女儿书》</p>
-</li>
-<li><p>该忘记的早就忘记，该留下的永远留下 答应我，忍住你的痛苦，不发一言，穿过这整座城市。</p>
-<p>——海子《太阳和野花》</p>
-</li>
-<li><p>看清楚这个世界，并不能让这个世界变得更美好。但可能让你走看清楚这个世界是个怎样的世界后，把自己变得更好。</p>
-<p>——朱德庸</p>
-</li>
-<li><p>心里的火永远不要灭，哪怕别人只能看见烟。</p>
-<p>——梁秋实</p>
-</li>
-<li><p>我相信，那一切都是种子。只有经历过埋葬，才有生机。</p>
-<p>——顾城城《给我的恩师安徒生》</p>
-</li>
-<li><p>日出之美便在于它脱胎于最深的黑暗。</p>
-<p>——辛夷坞《山月不知心底事》</p>
-</li>
-<li><p>无论何人何时，人们总要在乌云周围寻索着浪漫的微光活下去。</p>
-<p>——村上春树《无比荒杂的心绪》</p>
-</li>
-<li><p>没有不可治愈的伤痛，没有不能结束的沉沦，所有失去的，会以另一种方式归来。</p>
-<p>——约翰肖尔思《许愿树》</p>
-</li>
-<li><p>人活一生，值得爱的东西很多，不要因为一个不满意，就灰心。</p>
-<p>——陆瑶《人生》</p>
-</li>
-<li><p>秋虽然来，冬虽然来，而此后接着还是春。</p>
-<p>——鲁迅《秋夜》</p>
-</li>
-<li><p>所有的改变都是一种深思熟虑过后的奇迹每瞬间奇迹都在发生。</p>
-<p>——梭罗《瓦尔登湖》</p>
-</li>
-<li><p>雪融化后，会变成什么呢？是春天吧。</p>
-<p>——高屋奈月</p>
-</li>
-<li><p>明年有明年的雪，明年的雾色，明年的永无休止的阳光，还有明年数不尽的生机。</p>
-<p>——林清玄</p>
-</li>
-<li><p>论这个世界对你怎样，都请你一如既往的努力、勇敢、充满希望。</p>
-<p>——毕淑敏《愿你与这世界温暖相拥》</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-
-
-<h1 id="祝福"><a href="#祝福" class="headerlink" title="祝福"></a>祝福</h1><ol>
-<li><p>宇宙很大，生活更大，也许以后还有缘相见。<br>——刘慈欣《三体》</p>
-<br/></li>
-<li><p>如果再也见不到你，那就祝你早安，午安，晚安。<br>——电影《楚门的世界》</p>
-<br/></li>
-<li><p>愿你有一个灿烂的前程，愿你有情人终成眷属，愿你在尘世获得幸福。<br>——海子《面朝大海，春暖花开》</p>
-<br/></li>
-<li><p>照十一世纪中国哲学家邵雍计算，世界上的事物，在一二万九千六百年后完全重现重演，现在我与你们约定，一二万九千年后，我们会在这间屋子里会面罢。<br>——萧公权教授1968年在华盛顿大学的告别演讲</p>
-<br/></li>
-<li><p>纵有千古，横有八荒；前途似海，来日方长。<br>——梁启超《少年中国说》</p>
-<br/></li>
-<li><p>书上说，天下没有不散的宴席。不要怕，书上还说，人生何处不相逢。<br>——烽火戏诸侯《雪中悍刀行》</p>
-<br/></li>
-<li><p>渡口旁找不到一朵可以相送的花，就把祝福别在襟上吧，而明日，明日又隔天涯。<br>——席慕容《渡口》</p>
-<br/></li>
-<li><p>拜拜，朋友，希望春天以后，我能成为那个你，我能成为那个我。<br>——旅行团乐队《于是我不再唱歌》</p>
-<br/></li>
-<li><p>世事不能说死，有些事情总值得尝试。永不言放弃，前方总有希望在等待。<br>——电影《放牛班的春天》</p>
-<br/></li>
-<li><p>其实真正的送别，没有长亭古道，没有劝君更尽一杯酒，就是在一个和平时一样的清晨，有的人留在昨天了。<br>——《克斯维尔的明天》</p>
-<br/></li>
-<li><p>愿你自己有充分的忍耐去担当，有充分单纯的心去信仰。<br>——里尔克《给青年诗人的信》</p>
-<br/></li>
-<li><p>愿你在迷茫时，坚信你的珍贵，爱你所爱，行你所行，听从你心，无问西东。<br>——电影《无问西东》</p>
-<br/></li>
-<li><p>不管遇到多大困难，告诉你的心”All is well”<br>——电影《三傻大闹宝莱坞》</p>
-<br/></li>
-<li><p>愿少年乘风破浪，他日勿忘化雨功。<br>——汪曾祺《徒》</p>
-<br/></li>
-<li><p>希望你们也找到自己的路，找到自己的步伐、步调，任何方向，任何东西都行，不管是自负也好，愚蠢也罢，什么都行。<br>——电影《死亡诗社》</p>
-<br/></li>
-<li><p>毕业是千百万个夏天的故事，千百万个人，千百万个不同的夏天，相同的只是告别。<br>——里则林</p>
-<br/></li>
-<li><p>我们首先应该善良，其次要诚实，再次是以后永远不要相互遗忘。<br>——陀思妥耶夫斯基《卡拉马佐夫兄弟》</p>
-<br/></li>
-<li><p>我希望，你能活出最精彩的自己，见识到令你惊奇的事物，体验从未有过的情感，遇见一些想法不同的人，为你自己的人生感到骄傲，如果你还没有做到，我希望，你有勇气，重头再来。<br>——电影《本杰明巴顿奇事》</p>
-<br/></li>
-<li><p>跃入人海，各有风雨灿烂。<br>——《入海》</p>
-<br/>
-
-<br/></li>
-</ol>
-<h1 id="爱情"><a href="#爱情" class="headerlink" title="爱情"></a>爱情</h1><ol>
-<li><p>好的爱情是双方以自由为最高赠礼的洒脱，以及决不滥用这一份自由的珍惜。</p>
-<br/></li>
-<li><p>真正的爱慕，往往是从对方身上感触到自己人生理想的准则开始的。</p>
-<br/></li>
-<li><p>你是我温暖的手套，冰冷的啤酒，带着阳光味道的衬衫，日复一日的梦想。</p>
-<br/></li>
-<li><p>朱先生恰在那一刻瞧见她的模样，转身就离开涝池上了官道，对媒人说：“就是这个，八字不合也是这个”。</p>
-<br/></li>
-<li><p>一旦喜欢上谁就别无所求，只要能每天见到他就已经觉得很庆幸，一辈子很短，如白驹过隙，转瞬即逝。可这种心情很长，如高山大川，延绵不绝。</p>
-<br/></li>
-<li><p>我最爱的就是她，可以肯定，就像自己必死一样肯定。昔日的如花妖女，现在只剩下枯叶回乡，苍白，混俗，臃肿，腹中的骨肉是别人的，但我爱她，她可以褪色，可以萎谢，怎样都可以，但我只看她一眼，万般柔情，涌上心头。</p>
-<br/></li>
-<li><p>有一种东西，它会在某一个夏天的夜晚，像风一样袭来。让你措不及防，无法安宁，与你形影相随，挥之不去，我不知道那是什么，只能称它为爱情。</p>
-<br/></li>
-<li><p>我甚至相信你拥有整个宇宙，我要从山上带给你快乐的花朵，带给你钟形花，黑榛实，以及一篮篮野生的吻。我要，像春天对待樱花树般地对待你。</p>
-<br/></li>
-<li><p>爱的真谛：毫无企图心的尊重。</p>
-<br/></li>
-<li><p>喜欢，是看某物好甚至极好，随之而来的念头是【占有欲】。爱，则多是看某物不好或还不够好，其实是期盼它好以至非常好，随之而得的激励是【愿付出】</p>
-<br/>
-
-<br/></li>
-</ol>
-<h1 id="风与晚霞"><a href="#风与晚霞" class="headerlink" title="风与晚霞"></a>风与晚霞</h1><ol>
-<li><p>最是那一低头的温柔，像一朵水莲花不胜凉风的娇羞 。</p>
-<p>——徐志摩《沙扬娜拉赠日本女郎》</p>
-<br/></li>
-<li><p>原你的生命中有够多的云翳，来造成一个美丽的黄昏。</p>
-<p>——冰心《谈生命》</p>
-<br/></li>
-<li><p>我沉闷地走着，没有回过头看你。在这个令人恍惚的世界，每一片雪，都蓄着经年的泪水。</p>
-<p>——李松山《雪》</p>
-<br/></li>
-<li><p>望着窗外，只要想起一生中后悔的事，梅花便落满了南山。</p>
-<p>——张枣《镜中》</p>
-<br/></li>
-<li><p>从童年起，我便独自一人，照顾着，历代的星辰。</p>
-<p>——白鹤林《孤独》</p>
-<br/></li>
-<li><p>我想变成天边那朵白云，用尽整日晴天，只从左边，移到右边。</p>
-<p>——夏南《不急》</p>
-<br/></li>
-<li><p>我是春天里出生的绿皮野兽，在秋夜里悄悄吞下十瓣月亮。</p>
-<p>——高鹤鸣《桔子》</p>
-<br/></li>
-<li><p>春天的酒如果没来得及喝掉，就该洒在泥土里，不能灌醉你，灌醉一朵小花也好哇。</p>
-<p>——林蜻蜓《浮一大白》</p>
-<br/></li>
-<li><p>你一会儿看云，一会儿看我。我觉得，你看我时很远，你看云时很近。</p>
-<p>——顾城《远和近》</p>
-<br/></li>
-<li><p>青青的野葡萄，淡黄的小月亮，妈妈发愁了，怎么做果酱。我说：别加糖，在早晨的篱笆上，有一枚甜甜的，红太阳。</p>
-<p>——顾城《安慰》</p>
-<br/></li>
-<li><p>多少年只写了一行，弯弯曲曲寄向海洋。</p>
-<p>——王竞成《小溪的请诗》</p>
-<br/></li>
-<li><p>大风吹着我和山岗，我面前有一万座村庄，我身后有一万座村庄，千灯万盏，我只有一轮月亮。</p>
-<p>——王艺彭《流浪》</p>
-<br/></li>
-<li><p>那晚没有月亮，星星也是那么的暗淡。人置身在那样的黑夜里，也就成了黑夜。</p>
-<p>——迟子建《额尔古纳河右岸》</p>
-<br/></li>
-<li><p>借我一个暮年，借我碎片，借我瞻前与顾后，借我执如少年。</p>
-<p>——樊小纯《借我》</p>
-<br/></li>
-<li><p>所有的改变都是一种深思熟虑过后的奇迹 每瞬间奇迹都在发生。</p>
-<p>——梭罗《瓦尔登湖》</p>
-<br/></li>
-<li><p>走六小时寂寞的长途，到你头边放一束红山茶。我等待着，长夜漫漫。你却卧听海涛闲话。</p>
-<p>——戴望舒《萧红墓前口占》</p>
-<br/></li>
-<li><p>这些诗，只为你灵魂的黑夜而作，一经被人窥破，便要苍白失色。</p>
-<p>——苏利·普吕多姆《献词》</p>
-<br/>
-
-<br/></li>
-</ol>
-<ol>
-<li><p>晚霞能令人回忆起童年的往事，不是吗？ </p>
-<br/></li>
-<li><p>雷声荒猛，仿佛夏天踉跄着要去自杀。</p>
-<br/></li>
-<li><p>如果一朵花很美，那么有时我会不由自主地想到要“活下去”。</p>
-<br/></li>
-<li><p>我和你来自不同的世界，我将终生向往你，回忆你，感谢你。</p>
-<br/></li>
-<li><p>与人相见时应尽量热情，也许什么时候会分离，也许再也无法再见。</p>
-<br/></li>
-<li><p>花给空气着彩，就连着身体也好像染上了颜色。</p>
-<br/></li>
-<li><p>苦恼一旦过去，就不会留下痕迹吗？一旦过去，有时还会令人怀念呢。</p>
-<br/></li>
-<li><p>当我失去你，即便面对鸟语花香我也索然无味，一切显得落寞、虚空。</p>
-<br/></li>
-<li><p>她的眼睛同灯光重叠的那一瞬间，就像在夕阳的余晖里飞舞的妖艳而美丽的夜光虫。</p>
-<br/></li>
-<li><p>感情这种东西，已经不可依赖，如今世道变成这个样子，越是有才能的人，感情就越脆弱。</p>
-<br/></li>
-<li><p>初识爱情在这样年轻的年纪，在这样如梦似幻的山里，就注定这是一场足以铭记但是却不可能结果的感情。</p>
-<br/></li>
-<li><p>花是活的，它的生命虽然短暂，但活得绚丽夺目，来年再含苞，开花，就像大自然一样充满生机。</p>
-<br/></li>
-<li><p>爱情来临的时候，你永远不知道等待你的是甜蜜还是痛楚。</p>
-<br/></li>
-<li><p>人的记忆与回忆，也许唯有新与旧的区别，而难以用真正的远近来区分吧。</p>
-<br/></li>
-<li><p>还有平凡的婚姻吗？你骗人，每个婚姻都是非凡的。</p>
-</li>
-</ol>
-]]></content>
-      <categories>
-        <category>文学</category>
-      </categories>
-      <tags>
-        <tag>收录</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>蜜友课</title>
-    <url>/2021/10/28/%E7%A4%BE%E4%BC%9A%E5%AD%A6%E2%80%94%E2%80%94%E8%9C%9C%E5%8F%8B%E8%AF%BE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、友谊阶段"><a href="#一、友谊阶段" class="headerlink" title="一、友谊阶段"></a>一、友谊阶段</h1><p>金字塔形（由下到上）</p>
-<ul>
-<li><p>（<strong>敌人阶段：</strong>凶神恶煞的潜在危险，潜意识始终处于对抗状态）</p>
-<p>​    ↑     [ 印象糟糕时 ]</p>
-</li>
-<li><p>（<strong>中立阶段：</strong>初次见面，大脑判断对方是潜在的朋友还是敌人）</p>
-<p>​    ↓    [ 印象良好时 ]</p>
-</li>
-<li><p><strong>陌生人：</strong>路上会打招呼但未曾交往过的人</p>
-</li>
-<li><p><strong>熟人：</strong>寒暄交流，但未曾相约出门的人</p>
-</li>
-<li><p><strong>朋友：</strong>有过多次交谈，相约聚会的人，在一起会感到舒服</p>
-</li>
-<li><p><strong>密友：</strong>通常有2-4人，一年以上经受了时间考验的友谊，在一起会感到非常舒服</p>
-</li>
-<li><p><strong>重要他人：</strong>除了家人通常有1人，一起度过的时光最长的生命中重要的人，谈话最为深入、信任的人，如女朋友或者配偶</p>
-</li>
-</ul>
-<br/>
-
-<br/>
-
-<h1 id="二、友谊公式"><a href="#二、友谊公式" class="headerlink" title="二、友谊公式"></a>二、友谊公式</h1><h3 id="（一）友谊-接近度-时长-频率-强度"><a href="#（一）友谊-接近度-时长-频率-强度" class="headerlink" title="（一）友谊=接近度+时长+频率+强度"></a>（一）<strong>友谊=接近度+时长+频率+强度</strong></h3><ol>
-<li><p><strong>接近度</strong></p>
-<p>1分：距离很远，几乎看不见</p>
-<p>3分：相当于在同一间健身房锻炼</p>
-<p>5分：等于在同一间教室上课</p>
-<p>7分：在同一张桌子吃午饭</p>
-<p>10分：两个亲密的人，与伴侣同睡一张床</p>
-</li>
-<li><p><strong>时长</strong></p>
-<p>1分：只有简短的打招呼</p>
-<p>3分：花费几分钟为一个旅客指路</p>
-<p>5分：交流30分钟到1个小时</p>
-<p>7分：2-4个小时的交流，在同一俱乐部</p>
-<p>10分：大多数时间都是跟某人在一起</p>
-</li>
-<li><p><strong>频率</strong></p>
-<p>1分：一场一次性的互动</p>
-<p>3分：一个月交流一次的人</p>
-<p>5分：一周见1-2次面的人</p>
-<p>7分：一周见3-4次面的人</p>
-<p>10分：几乎每天都会见到的人</p>
-</li>
-<li><p><strong>强度</strong></p>
-<p>1分：没有情绪变动的问答交流</p>
-<p>3分：正常交流，偶尔说个笑话</p>
-<p>5分：好友聚会，过程中经常微笑和发笑</p>
-<p>7分：聊天时候别人发自内心的赞赏你，触及心灵能使心情好转</p>
-<p>10分：互动时整段时间几乎都是感受强烈情绪，由衷赞赏大为感动，聊些私密话题</p>
-</li>
-</ol>
-<h3 id="（二）评分标准"><a href="#（二）评分标准" class="headerlink" title="（二）评分标准"></a>（二）评分标准</h3><ol>
-<li>陌生人——0分</li>
-<li>熟人——10分</li>
-<li>朋友——15分</li>
-<li>密友——25分</li>
-<li>重要他人——35分</li>
-</ol>
-<h3 id="（三）加深友谊"><a href="#（三）加深友谊" class="headerlink" title="（三）加深友谊"></a>（三）加深友谊</h3><ul>
-<li>一起吃饭——&gt;提高互动时长和接近度</li>
-<li>加入同一俱乐部——&gt;提高互动频率和时长</li>
-<li>参加派对——&gt;提高互动时长和强度</li>
-</ul>
-<br/>
-
-<br/>
-
-<h1 id="三、交友黄金法则"><a href="#三、交友黄金法则" class="headerlink" title="三、交友黄金法则"></a>三、交友黄金法则</h1><p><em>（交友黄金法则是友谊公式前的正号/负号）</em></p>
-<br/>
-
-<h3 id="要想让人们喜欢你，你需要让人们感觉舒服"><a href="#要想让人们喜欢你，你需要让人们感觉舒服" class="headerlink" title="要想让人们喜欢你，你需要让人们感觉舒服"></a><strong>要想让人们喜欢你，你需要让人们感觉舒服</strong></h3><p>让人舒服，他们会想要亲近你</p>
-<p>让人难受，他们就会想避开你</p>
-<h3 id="交友三宗罪："><a href="#交友三宗罪：" class="headerlink" title="交友三宗罪："></a>交友三宗罪：</h3><ol>
-<li>肢体语言不良，表情眼神呆滞</li>
-<li>插话，凡事都以自己为中心</li>
-<li>讲述过去，抱怨，负面言论太多</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="四、价值概念"><a href="#四、价值概念" class="headerlink" title="四、价值概念"></a>四、价值概念</h1><p><em>（价值是友谊公式前的乘数）</em></p>
-<br/>
-
-<p>大脑会自动设定周围人的价值，区分群体中的权利尺度</p>
-<p>价值越高时，越容易取得他人的交往倾向</p>
-<p>因此我们需要思考：</p>
-<ol>
-<li>如何确定我们当前的价值</li>
-<li>怎样增加我们当前的价值</li>
-</ol>
-<br/>
-
-<h3 id="判断他人价值的三种依据："><a href="#判断他人价值的三种依据：" class="headerlink" title="判断他人价值的三种依据："></a><strong>判断他人价值的三种依据：</strong></h3><ol>
-<li><p><strong>外表</strong></p>
-<p>指人的外貌形态。外表不佳时，感知价值大打折扣。</p>
-<p>从两方面看外表吸引力：</p>
-<ul>
-<li><p><strong>健康指标：</strong></p>
-<p>糟糕的健康情况让感知价值下降</p>
-<p>因此我们需要多锻炼 饮食健康 睡好觉</p>
-</li>
-<li><p><strong>好基因：</strong></p>
-<p>人类文明存续的唯一方式</p>
-<p>脸型对称，男性追求身材高大 宽肩 下巴线，女性追求臀部比 胸部大小 年轻程度</p>
-<p>事实既定已经不可改变，但我们可以专注于增加个人价值的东西。</p>
-<p>比如去健身房练出宽肩 增加肌肉；利用时尚为自己加分，穿戴配饰衣物弥补身体特征的缺陷。</p>
-</li>
-</ul>
-</li>
-<li><p><strong>地位</strong></p>
-<ul>
-<li><p><strong>财富：</strong></p>
-<p>财富的表达很微妙，珠宝首饰在展示财富中起着重要的作用，慷慨大方也是财富的标志</p>
-<p>因此这需要我们保持良好的财务状况</p>
-</li>
-<li><p><strong>职业：</strong></p>
-<p>同一场景下，人们对不同的职业有不同的价值判断</p>
-</li>
-<li><p><strong>社交证据：</strong></p>
-<p>需要我们通过与他人交际来提高个人价值</p>
-</li>
-</ul>
-</li>
-<li><p><strong>行为举止</strong></p>
-<ul>
-<li><p><strong>肢体语言是开放还是封闭</strong></p>
-<p>良好的姿势 挺胸 不交叉双臂</p>
-<p>看起来越放松，感知价值就会越高</p>
-<p>因为往往顶层人士更放松</p>
-</li>
-<li><p><strong>声音和音调</strong></p>
-<p>音调高意味身体是紧张的</p>
-<p>看起来不放松，感知价值就会降低</p>
-</li>
-<li><p><strong>界限</strong></p>
-<p>是指你有多容易受到外界的影响程度</p>
-<p>别人戏弄你时，一笑而过，毫不在乎</p>
-<p>界限越强越不容易被外界因素所影响，表现对自己有信心，这会增加个人价值</p>
-</li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="五、肢体语言"><a href="#五、肢体语言" class="headerlink" title="五、肢体语言"></a>五、肢体语言</h1><p>重要性：</p>
-<ol>
-<li><h3 id="谈话的有效调节手段"><a href="#谈话的有效调节手段" class="headerlink" title="谈话的有效调节手段"></a><strong>谈话的有效调节手段</strong></h3><p>谈论对方喜欢的，避免对方介意的</p>
-<p>同时观察对方回答时的肢体语言</p>
-</li>
-<li><h3 id="增加你对所交谈对象的理解和共鸣"><a href="#增加你对所交谈对象的理解和共鸣" class="headerlink" title="增加你对所交谈对象的理解和共鸣"></a><strong>增加你对所交谈对象的理解和共鸣</strong></h3><p>向他们展示你对他们的真诚和关心</p>
-</li>
-<li><h3 id="引导对方如何看待你"><a href="#引导对方如何看待你" class="headerlink" title="引导对方如何看待你"></a><strong>引导对方如何看待你</strong></h3><p>站姿 坐姿 谈吐都决定了你的价值</p>
-<p>我们要表现出自信并且有价值</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="六、三种好用的交际肢体语言"><a href="#六、三种好用的交际肢体语言" class="headerlink" title="六、三种好用的交际肢体语言"></a>六、三种好用的交际肢体语言</h1><ol>
-<li><h3 id="微笑"><a href="#微笑" class="headerlink" title="微笑"></a><strong>微笑</strong></h3><p>真诚微笑时，双方都会感到非常开心</p>
-<p>但要控制自己，避免假笑，真诚微笑</p>
-<p>真诚的笑时，眼睛下方会隆起，双颊也会鼓起，眼角会出现细微的鱼尾纹</p>
-<p>训练方法是留意下一次你真正开心发自内心的微笑或者大笑的时，注意自己面部的感觉，可以在镜子面前练习</p>
-</li>
-<li><h3 id="挑眉"><a href="#挑眉" class="headerlink" title="挑眉"></a><strong>挑眉</strong></h3><p>飞快地将眉毛扬起，放下</p>
-<p>对陌生人或者不太熟悉的人挑眉，会让你看起来更加友好</p>
-<p>最好在有段距离的时候挑眉，至少有几步远</p>
-</li>
-<li><h3 id="歪头"><a href="#歪头" class="headerlink" title="歪头"></a><strong>歪头</strong></h3><p>将放松和愉快的感觉传递给交谈的人身上</p>
-<p>保证倾斜头部，大约10-20度，</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="七、如何让别人敞开心扉"><a href="#七、如何让别人敞开心扉" class="headerlink" title="七、如何让别人敞开心扉"></a>七、如何让别人敞开心扉</h1><ol>
-<li><p><strong>学着降低过滤标准</strong></p>
-<p>从一开始就表现，你不在对方是否尽善尽美。</p>
-<p>你并不斟词酌句，而且你愿意谈论那些不被社会认可或视为异端的话题，那么人们就会想要对你敞开心扉。</p>
-<p>告诉对方你并没有什么过滤标准，你只需要分享一些被认为有些奇怪的，有些不合常规的东西。</p>
-<p>当然这取决于你的价值感官，如果你的价值感官很低，人们会认为你是疯子，相反，价值感官越高时，降低你的过滤标准，人们越能接受你发出的一些奇怪言论。</p>
-</li>
-<li><p><strong>提出正确的问题</strong></p>
-<p>“假定问题”，需要我们基于观察，对某人做一种假定，并看看是否正确</p>
-<p>大多数假定正确情况下，人们都会打开心扉，释放压抑的内心</p>
-</li>
-</ol>
-<br/>
-
-<br/>
-
-<h1 id="八、健谈的秘诀"><a href="#八、健谈的秘诀" class="headerlink" title="八、健谈的秘诀"></a>八、健谈的秘诀</h1><p><strong>语言的本质：规则和模式</strong></p>
-<p>人类大脑，善于识别模式和规则</p>
-<br/>
-
-<p>要给大脑更多的机会去<strong>观察和学习</strong>语言特有的模式和规则</p>
-<p>多练习，大胆走出去和更多的人<strong>进行实际交流</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>社会学</tag>
       </tags>
   </entry>
   <entry>
@@ -2234,6 +1337,62 @@ Port 443
       </tags>
   </entry>
   <entry>
+    <title>中华有魔法科学冲浪方案研究</title>
+    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
+<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
+<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
+<br/>
+
+<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
+<p>若直接在GitHub上下载速度会较慢，</p>
+<p>选择通过右键复制下载链接后在迅雷中下载</p>
+<br/>
+
+<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
+<p>百度搜Clash节点转到Github可以找到免费的机场</p>
+<br/>
+
+<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
+<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
+<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
+<p>可以在Profiles处通过以下两个方法加载你的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
+<br/>
+
+<p>加载完成后，在Proxies处选择合适的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
+<br/>
+
+<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
+<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
+<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
+<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
+<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
+<br/>
+
+<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
+<ul>
+<li>Proxy SwitchyOmega</li>
+<li>Proxy SwitchySharp</li>
+</ul>
+<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
+<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
+<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
+<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE</title>
     <url>/2021/10/06/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%A4%9A%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8U%E7%9B%98%E5%88%B6%E4%BD%9C/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
@@ -2312,54 +1471,61 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华有魔法科学冲浪方案研究</title>
-    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
-<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
-<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
-<br/>
-
-<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
-<p>若直接在GitHub上下载速度会较慢，</p>
-<p>选择通过右键复制下载链接后在迅雷中下载</p>
-<br/>
-
-<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
-<p>百度搜Clash节点转到Github可以找到免费的机场</p>
-<br/>
-
-<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
-<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
-<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
-<p>可以在Profiles处通过以下两个方法加载你的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
-<br/>
-
-<p>加载完成后，在Proxies处选择合适的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
-<br/>
-
-<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
-<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
-<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
-<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
-<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
-<br/>
-
-<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
+    <title>常用浏览器搜索指令</title>
+    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
+<li><p>关键词化整为零搜索</p>
+<p>——将口语拆分成关键词</p>
 <ul>
-<li>Proxy SwitchyOmega</li>
-<li>Proxy SwitchySharp</li>
+<li>如何将PDF转换为Word文档？（PDF转word）</li>
+<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
+<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
 </ul>
-<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
-<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
-<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
-<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
-]]></content>
+<br/></li>
+<li><p>INTITLE命令</p>
+<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
+<ul>
+<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
+</ul>
+<br/></li>
+<li><p>FILETYPE命令</p>
+<p>——指定搜索目标的文件类型</p>
+<ul>
+<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
+</ul>
+<br/></li>
+<li><p>完全匹配搜索””</p>
+<p>——完全根据” “内的内容进行搜索</p>
+<br/></li>
+<li><p>SITE命令</p>
+<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
+<ul>
+<li>论文排版 site:jianshu.com</li>
+<li>北京昌平合租 site:douban.com</li>
+<li>PDFElement site:52pojie.com</li>
+</ul>
+<br/></li>
+<li><p>内容筛选-和+</p>
+<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
+<ul>
+<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
+</ul>
+<p>—— +号：增加搜索某个关键词</p>
+<ul>
+<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
+</ul>
+<br/></li>
+<li><p>限定来源网站类型</p>
+<p>——定向筛选特定网站类型的信息</p>
+<ul>
+<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
+<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
+</ul>
+</li>
+</ol>
+<br/>
+
+<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
       <categories>
         <category>资源</category>
       </categories>
@@ -2512,114 +1678,6 @@ Port 443
       </categories>
       <tags>
         <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>常用浏览器搜索指令</title>
-    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
-<li><p>关键词化整为零搜索</p>
-<p>——将口语拆分成关键词</p>
-<ul>
-<li>如何将PDF转换为Word文档？（PDF转word）</li>
-<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
-<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
-</ul>
-<br/></li>
-<li><p>INTITLE命令</p>
-<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
-<ul>
-<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
-</ul>
-<br/></li>
-<li><p>FILETYPE命令</p>
-<p>——指定搜索目标的文件类型</p>
-<ul>
-<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
-</ul>
-<br/></li>
-<li><p>完全匹配搜索””</p>
-<p>——完全根据” “内的内容进行搜索</p>
-<br/></li>
-<li><p>SITE命令</p>
-<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
-<ul>
-<li>论文排版 site:jianshu.com</li>
-<li>北京昌平合租 site:douban.com</li>
-<li>PDFElement site:52pojie.com</li>
-</ul>
-<br/></li>
-<li><p>内容筛选-和+</p>
-<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
-<ul>
-<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
-</ul>
-<p>—— +号：增加搜索某个关键词</p>
-<ul>
-<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
-</ul>
-<br/></li>
-<li><p>限定来源网站类型</p>
-<p>——定向筛选特定网站类型的信息</p>
-<ul>
-<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
-<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>郑强教授谈《创新欲望与创新能力》随想</title>
-    <url>/2021/07/31/%E9%9A%8F%E6%83%B3%E2%80%94%E2%80%94%E9%83%91%E5%BC%BA%E6%95%99%E6%8E%88%E6%BC%94%E8%AE%B2%E6%84%9F%E6%82%9F/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="目前的问题"><a href="#目前的问题" class="headerlink" title="目前的问题"></a>目前的问题</h3><p>国家意志做科学是不得了的事！</p>
-<br/>
-
-<p>现今中国的大学？ </p>
-<p><strong>缺少基础研究、知识创新。</strong></p>
-<p>没有原始创新欲望，被伤透了。</p>
-<br/>
-
-<p>日本为什么老能得诺奖？</p>
-<p>我们为什么被卡脖子？</p>
-<p><strong>浮躁，不专精于某个方向。</strong></p>
-<br/>
-
-<h3 id="应该怎么做"><a href="#应该怎么做" class="headerlink" title="应该怎么做"></a>应该怎么做</h3><p>培养<strong>坚韧不拔、吃苦耐劳</strong>的精神，</p>
-<p>因为人生不是冲刺跑，是马拉松。</p>
-<br/>
-
-<p>尊重人的天性，不要抹杀天性。</p>
-<br/>
-
-<p>看风景的民族是贪婪的，<strong>看文化</strong>的民族才是根本！</p>
-<br/>
-
-<p>第一步是勇于付出，</p>
-<p>首先要<strong>坚定意志。</strong></p>
-<br/>
-
-<p>求道：是求得怎么去做······</p>
-<br/>
-
-<p><strong>先宽后专，知行合一。</strong></p>
-<br/>
-
-<p><strong>培养爱和价值观······</strong></p>
-]]></content>
-      <categories>
-        <category>随想</category>
-      </categories>
-      <tags>
-        <tag>随想</tag>
       </tags>
   </entry>
   <entry>

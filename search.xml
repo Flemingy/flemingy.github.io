@@ -227,6 +227,48 @@ sudo systemctl restart nginx.service
       </tags>
   </entry>
   <entry>
+    <title>CSS参考手册&amp;样式优先级</title>
+    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
+
+<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
+<ul>
+<li>样式定义<strong>如何显示HTML</strong> 元素</li>
+<li>样式通常存储在<strong>样式表</strong>中</li>
+<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
+<li><strong>外部样式表</strong>可以极大提高工作效率</li>
+<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
+<li>多个样式定义可<strong>层叠</strong>为一个</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
+<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
+<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
+<br/>
+
+<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
+<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
+<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
+<p>一些最重要 CSS3 模块如下：</p>
+<ul>
+<li>选择器</li>
+<li>盒模型</li>
+<li>背景和边框</li>
+<li>文字特效</li>
+<li>2D/3D转换</li>
+<li>动画</li>
+<li>多列布局</li>
+<li>用户界面</li>
+</ul>
+<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML参考手册&amp;代码规范</title>
     <url>/2021/08/05/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94HTML%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E4%BB%A3%E7%A0%81%E8%A7%84%E8%8C%83/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合HTML、XHTML、HTML5部分速查内容"><a href="#本篇整合HTML、XHTML、HTML5部分速查内容" class="headerlink" title="本篇整合HTML、XHTML、HTML5部分速查内容"></a>本篇整合HTML、XHTML、HTML5部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅HTML知识"><a href="#目的是方便个人在前端场景下能够快速查阅HTML知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅HTML知识"></a>目的是方便个人在前端场景下能够快速查阅HTML知识</h3><br/>
@@ -286,48 +328,6 @@ sudo systemctl restart nginx.service
       </categories>
       <tags>
         <tag>HTML</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CSS参考手册&amp;样式优先级</title>
-    <url>/2021/08/11/%E5%89%8D%E7%AB%AF%E2%80%94%E2%80%94CSS%E5%8F%82%E8%80%83%E6%89%8B%E5%86%8C&amp;%E6%A0%B7%E5%BC%8F%E4%BC%98%E5%85%88%E7%BA%A7/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="本篇整合CSS、CSS3部分速查内容"><a href="#本篇整合CSS、CSS3部分速查内容" class="headerlink" title="本篇整合CSS、CSS3部分速查内容"></a>本篇整合CSS、CSS3部分速查内容</h3><h3 id="目的是方便个人在前端场景下能够快速查阅CSS知识"><a href="#目的是方便个人在前端场景下能够快速查阅CSS知识" class="headerlink" title="目的是方便个人在前端场景下能够快速查阅CSS知识"></a>目的是方便个人在前端场景下能够快速查阅CSS知识</h3><br/>
-
-<h2 id="CSS"><a href="#CSS" class="headerlink" title="CSS"></a>CSS</h2><p>CSS (<strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets) 层叠样式表</p>
-<ul>
-<li>样式定义<strong>如何显示HTML</strong> 元素</li>
-<li>样式通常存储在<strong>样式表</strong>中</li>
-<li>把样式添加到 HTML 4.0 中，是为了<strong>解决内容与表现分离的问题</strong></li>
-<li><strong>外部样式表</strong>可以极大提高工作效率</li>
-<li>外部样式表通常存储在 <strong>CSS 文件</strong>中</li>
-<li>多个样式定义可<strong>层叠</strong>为一个</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/w3cnote/html-import-css-method.html">HTML中引入CSS的方式</a></strong> 你可以了解HTML中引入CSS的方式。</p>
-<p><strong><a href="https://www.runoob.com/w3cnote/css-style-priority.html">CSS样式优先级</a></strong> 你可以了解CSS的继承性以及选择器的优先级。</p>
-<p><strong><a href="https://www.runoob.com/cssref/css-reference.html">CSS参考手册</a></strong> 你可以查看CSS模型与各属性的作用。</p>
-<br/>
-
-<h2 id="CSS3"><a href="#CSS3" class="headerlink" title="CSS3"></a>CSS3</h2><p>CSS3 是<strong>最新的 CSS 标准</strong>。</p>
-<p>CSS3 完全<strong>向后兼容</strong>，你不必改变现有的设计。</p>
-<p>CSS3 <strong>被拆分</strong>为”模块”，旧规范已拆分成小块，还增加了新的。</p>
-<p>一些最重要 CSS3 模块如下：</p>
-<ul>
-<li>选择器</li>
-<li>盒模型</li>
-<li>背景和边框</li>
-<li>文字特效</li>
-<li>2D/3D转换</li>
-<li>动画</li>
-<li>多列布局</li>
-<li>用户界面</li>
-</ul>
-<p><strong><a href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程</a></strong> 你可以了解并学习CSS3。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CSS</tag>
       </tags>
   </entry>
   <entry>
@@ -861,55 +861,6 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </tags>
   </entry>
   <entry>
-    <title>帧速率、刷新率、广播级视频标准</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
-<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
-<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
-<p>（帧数越多，画面越流畅，实际体验越好）</p>
-<br/>
-
-<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
-<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
-<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
-<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
-<br/>
-
-<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
-<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
-<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
-<br/>
-
-<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
-<p>NTSC 29.97帧/秒</p>
-<p>SECAM 25帧/秒</p>
-<p>Film 24帧/秒</p>
-<br/>
-
-<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
-<p>NTSC 720×480</p>
-<p>SECAM 720×576</p>
-<p><strong>现代视频分辨率</strong></p>
-<p>8K  7680×4320</p>
-<p>6K  6144×3160</p>
-<p>4K  4096×2160</p>
-<p>UHD  3840×2160</p>
-<p>2K  2048×1080</p>
-<p>FHD  1920×1080</p>
-<p>HD  1280 ×720</p>
-<br/>
-
-<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
-<p>1080p 逐行扫描技术</p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>后期</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>会议拍摄、相机档位、基础布光</title>
     <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
@@ -982,49 +933,46 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </tags>
   </entry>
   <entry>
-    <title>视频后期剪辑与特效软件PR&amp;AE</title>
-    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
-<p>Adobe Premiere有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作</p>
-<p>Premiere提供了采集、剪辑、调色、美化音频、字幕添加、输出、DVD刻录的一整套流程</p>
-<p>目前这款软件广泛应用于广告制作和电视节目制作中</p>
-<p>（小知识）</p>
-<p>① 像素是组成位图的最小单位</p>
-<p>② 电视台NTSC像素为长方形像素</p>
-<p>③ 抖音官方格式为 HDV 1080p30</p>
-<p><strong>【基本剪辑】</strong></p>
-<p><strong>项目：</strong></p>
-<p>​    ×××—&gt;放素材</p>
-<p><strong>要素：</strong></p>
-<p>​    【视频】录制的视频</p>
-<p>​    【音频】BGM、环境、人声</p>
-<p>​    【图片】只支持RGB</p>
-<p><strong>效果：</strong></p>
-<p>​    两个视频进行转场时的转场效果</p>
-<p><strong>序列：</strong></p>
-<p>​    时间轴，放置素材</p>
+    <title>帧速率、刷新率、广播级视频标准</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
+<p>人眼看到低于24帧的画面时会有明显的卡顿感</p>
+<p>人眼最高大约可以分辨75-80帧的高速度物体</p>
+<p>（帧数越多，画面越流畅，实际体验越好）</p>
 <br/>
 
+<h3 id="刷新率"><a href="#刷新率" class="headerlink" title="刷新率"></a>刷新率</h3><p>一般都是出现在显示器／屏幕上</p>
+<p>比如高刷新率显示器144Hz的，就是显示器的物理刷新速度上限时1秒钟144张。</p>
+<p>投影仪刷新率为30HZ ，日光灯刷新率为60HZ </p>
+<p>拍摄屏幕时，可以通过调光圈或者调快门，抵消屏幕刷新率</p>
 <br/>
 
-<h3 id="AE"><a href="#AE" class="headerlink" title="AE"></a>AE</h3><p>Adobe After Effects简称“AE”是Adobe公司推出的一款图形视频处理软件，属于层类型后期软件</p>
-<p>适用于从事设计和视频特技的机构，包括电视台、动画制作公司、个人后期制作工作室以及多媒体工作室</p>
-<p>（小知识）</p>
-<p>由于AE本身性质，很可能出现软件不稳定的情况</p>
-<p>可以打开编辑—&gt;首选项—&gt;自动保存，根据需要设置自动保存时间</p>
-<p><strong>【软件窗口】</strong></p>
-<p><strong>菜单栏：</strong></p>
-<p>​    包括新建，存储等的各项功能都可以在菜单栏中找到。</p>
-<p><strong>项目窗口：</strong></p>
-<p>​    库，可以将所有视频中需要使用到的图片，视频，音频都投入到这个窗口当中。</p>
-<p><strong>视图窗口：</strong></p>
-<p>​    用于观察我们制作的效果。</p>
-<p><strong>信息面板：</strong></p>
-<p>​    音频面板和效果预设面板。</p>
-<p>​    效果预设面板，这个面板中有AE自带的动画效果。</p>
-<p>​    我们可以自己安装一些插件，也会在这个窗口中显示。</p>
-<p><strong>时间轴面板：</strong></p>
-<p>​    特效的制作基本都是在时间轴上完成的</p>
+<h3 id="广播级视频标准——制式SD"><a href="#广播级视频标准——制式SD" class="headerlink" title="广播级视频标准——制式SD"></a>广播级视频标准——制式SD</h3><p>PAL （Phase Aleration Line 逐行倒相）</p>
+<p>NTSC （National Television Standards Committee 美国国家电视标准委员会）</p>
+<p>SECAM （Sequentiel Couleur A Memorire 按顺序传送彩色与存储）</p>
+<br/>
+
+<h3 id="广播级视频标注——帧速率-fps"><a href="#广播级视频标注——帧速率-fps" class="headerlink" title="广播级视频标注——帧速率=fps"></a>广播级视频标注——帧速率=fps</h3><p>PAL 25帧/秒</p>
+<p>NTSC 29.97帧/秒</p>
+<p>SECAM 25帧/秒</p>
+<p>Film 24帧/秒</p>
+<br/>
+
+<h3 id="广播级视频标注——分辨率"><a href="#广播级视频标注——分辨率" class="headerlink" title="广播级视频标注——分辨率"></a>广播级视频标注——分辨率</h3><p>PAL 720×576</p>
+<p>NTSC 720×480</p>
+<p>SECAM 720×576</p>
+<p><strong>现代视频分辨率</strong></p>
+<p>8K  7680×4320</p>
+<p>6K  6144×3160</p>
+<p>4K  4096×2160</p>
+<p>UHD  3840×2160</p>
+<p>2K  2048×1080</p>
+<p>FHD  1920×1080</p>
+<p>HD  1280 ×720</p>
+<br/>
+
+<h3 id="广播级视频标注——场"><a href="#广播级视频标注——场" class="headerlink" title="广播级视频标注——场"></a>广播级视频标注——场</h3><p>1080i  隔行扫描技术</p>
+<p>1080p 逐行扫描技术</p>
 ]]></content>
       <categories>
         <category>艺术</category>
@@ -1081,6 +1029,58 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </categories>
       <tags>
         <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>视频后期剪辑与特效软件PR&amp;AE</title>
+    <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E8%A7%86%E9%A2%91%E5%90%8E%E6%9C%9F%E5%89%AA%E8%BE%91%E4%B8%8E%E7%89%B9%E6%95%88%E8%BD%AF%E4%BB%B6PR&amp;AE/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="PR"><a href="#PR" class="headerlink" title="PR"></a>PR</h3><p>Adobe Premiere Pro，简称Pr，是由<a href="https://baike.baidu.com/item/Adobe">Adobe</a>公司开发的一款视频编辑软件</p>
+<p>Adobe Premiere有较好的兼容性，且可以与Adobe公司推出的其他软件相互协作</p>
+<p>Premiere提供了采集、剪辑、调色、美化音频、字幕添加、输出、DVD刻录的一整套流程</p>
+<p>目前这款软件广泛应用于广告制作和电视节目制作中</p>
+<p>（小知识）</p>
+<p>① 像素是组成位图的最小单位</p>
+<p>② 电视台NTSC像素为长方形像素</p>
+<p>③ 抖音官方格式为 HDV 1080p30</p>
+<p><strong>【基本剪辑】</strong></p>
+<p><strong>项目：</strong></p>
+<p>​    ×××—&gt;放素材</p>
+<p><strong>要素：</strong></p>
+<p>​    【视频】录制的视频</p>
+<p>​    【音频】BGM、环境、人声</p>
+<p>​    【图片】只支持RGB</p>
+<p><strong>效果：</strong></p>
+<p>​    两个视频进行转场时的转场效果</p>
+<p><strong>序列：</strong></p>
+<p>​    时间轴，放置素材</p>
+<br/>
+
+<br/>
+
+<h3 id="AE"><a href="#AE" class="headerlink" title="AE"></a>AE</h3><p>Adobe After Effects简称“AE”是Adobe公司推出的一款图形视频处理软件，属于层类型后期软件</p>
+<p>适用于从事设计和视频特技的机构，包括电视台、动画制作公司、个人后期制作工作室以及多媒体工作室</p>
+<p>（小知识）</p>
+<p>由于AE本身性质，很可能出现软件不稳定的情况</p>
+<p>可以打开编辑—&gt;首选项—&gt;自动保存，根据需要设置自动保存时间</p>
+<p><strong>【软件窗口】</strong></p>
+<p><strong>菜单栏：</strong></p>
+<p>​    包括新建，存储等的各项功能都可以在菜单栏中找到。</p>
+<p><strong>项目窗口：</strong></p>
+<p>​    库，可以将所有视频中需要使用到的图片，视频，音频都投入到这个窗口当中。</p>
+<p><strong>视图窗口：</strong></p>
+<p>​    用于观察我们制作的效果。</p>
+<p><strong>信息面板：</strong></p>
+<p>​    音频面板和效果预设面板。</p>
+<p>​    效果预设面板，这个面板中有AE自带的动画效果。</p>
+<p>​    我们可以自己安装一些插件，也会在这个窗口中显示。</p>
+<p><strong>时间轴面板：</strong></p>
+<p>​    特效的制作基本都是在时间轴上完成的</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>后期</tag>
       </tags>
   </entry>
   <entry>

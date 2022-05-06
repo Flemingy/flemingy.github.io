@@ -460,55 +460,10 @@ sudo nano /etc/php/7.0/fpm/php.ini
 <p>  sudo nano /etc/nginx/sites-available/default</p>
 </li>
 <li><p>更改主配置</p>
-<p>  server{</p>
-<pre><code>  # 监听80端口
-  listen 80;
-  listen [::]:80;
-  
-  # 域名访问IP
-  server_name fleming.com www.fleming.com;
-  
-  # 内容放在main目录下
-  root /var/www/html/main;
-  index index.php index.html index.htm;
-  
-  # WordPress标准404格式输出404界面
-  location / &#123;
-      try_files $uri $uri/ /index.php?$args;
-  &#125;
-  
-  error_page 404 /404.html;    
-  error_page 500  502 503 504 /50x.html;
-  location = /50x.html;
-</code></pre>
-<p>  }</p>
-<h1 id="pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm"><a href="#pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm" class="headerlink" title="pass the PHP scripts to FastCGI server listening on the php-fpm$"></a>pass the PHP scripts to FastCGI server listening on the php-fpm$</h1><h1 id="添加的进程管理器"><a href="#添加的进程管理器" class="headerlink" title="添加的进程管理器"></a>添加的进程管理器</h1><p>   location ~ .php${</p>
-<pre><code>   try_files $uri =404;
-   fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-   fastcgi_index index.php;
-   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;
-   include fastcgi_params;
-</code></pre>
-<p>   }<br>   location = /favicon.ico {access_log off; log_not_found off;}</p>
-<h1 id="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"><a href="#在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击" class="headerlink" title="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"></a>在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</h1><p>   location /phpmyadmin {</p>
-<pre><code>   root /usr/share/;
-   index index.php index.html index.htm;
-   location ~ ^/phpmyadmin/(.+\.php)$&#123;
-       try_files $uri =404;
-       root /usr/share/;
-       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-       fastcgi_index index.php;
-       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;
-       include fastcgi_params;
-   &#125;
-   location
-   ~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;
-       root /usr.share/;
-   &#125;
-</code></pre>
-<p>   }</p>
 </li>
 </ul>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">server&#123;</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 监听80端口</span></span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash"> 域名访问IP</span></span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash"> 内容放在main目录下</span></span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash"> WordPress标准404格式输出404界面</span></span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> pass the PHP scripts to FastCGI server listening on the php-fpm$</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加的进程管理器</span></span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta"> #</span><span class="bash"> 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span></span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br></pre></td></tr></table></figure>
+
 <p>查看配置文件是否生效</p>
 <pre><code>sudo nginx -t
 </code></pre>

@@ -143,55 +143,10 @@ sudo nano /etc/php/7.0/fpm/php.ini
 <p>  sudo nano /etc/nginx/sites-available/default</p>
 </li>
 <li><p>更改主配置</p>
-<p>  server{</p>
-<pre><code>  # 监听80端口
-  listen 80;
-  listen [::]:80;
-  
-  # 域名访问IP
-  server_name fleming.com www.fleming.com;
-  
-  # 内容放在main目录下
-  root /var/www/html/main;
-  index index.php index.html index.htm;
-  
-  # WordPress标准404格式输出404界面
-  location / &#123;
-      try_files $uri $uri/ /index.php?$args;
-  &#125;
-  
-  error_page 404 /404.html;    
-  error_page 500  502 503 504 /50x.html;
-  location = /50x.html;
-</code></pre>
-<p>  }</p>
-<h1 id="pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm"><a href="#pass-the-PHP-scripts-to-FastCGI-server-listening-on-the-php-fpm" class="headerlink" title="pass the PHP scripts to FastCGI server listening on the php-fpm$"></a>pass the PHP scripts to FastCGI server listening on the php-fpm$</h1><h1 id="添加的进程管理器"><a href="#添加的进程管理器" class="headerlink" title="添加的进程管理器"></a>添加的进程管理器</h1><p>   location ~ .php${</p>
-<pre><code>   try_files $uri =404;
-   fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-   fastcgi_index index.php;
-   fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;
-   include fastcgi_params;
-</code></pre>
-<p>   }<br>   location = /favicon.ico {access_log off; log_not_found off;}</p>
-<h1 id="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"><a href="#在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击" class="headerlink" title="在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击"></a>在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</h1><p>   location /phpmyadmin {</p>
-<pre><code>   root /usr/share/;
-   index index.php index.html index.htm;
-   location ~ ^/phpmyadmin/(.+\.php)$&#123;
-       try_files $uri =404;
-       root /usr/share/;
-       fastcgi_pass unix:/run/php/php7.0-fpm.sock;
-       fastcgi_index index.php;
-       fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;
-       include fastcgi_params;
-   &#125;
-   location
-   ~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;
-       root /usr.share/;
-   &#125;
-</code></pre>
-<p>   }</p>
 </li>
 </ul>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">server&#123;</span><br><span class="line"><span class="meta">	#</span><span class="bash"> 监听80端口</span></span><br><span class="line">	listen 80;</span><br><span class="line">	listen [::]:80;</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash"> 域名访问IP</span></span><br><span class="line">	server_name fleming.com www.fleming.com;</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash"> 内容放在main目录下</span></span><br><span class="line">	root /var/www/html/main;</span><br><span class="line">	index index.php index.html index.htm;</span><br><span class="line"><span class="meta">	</span></span><br><span class="line"><span class="meta">	#</span><span class="bash"> WordPress标准404格式输出404界面</span></span><br><span class="line">	location / &#123;</span><br><span class="line">		try_files $uri $uri/ /index.php?$args;</span><br><span class="line">	&#125;</span><br><span class="line">	</span><br><span class="line">	error_page 404 /404.html;	</span><br><span class="line">	error_page 500  502 503 504 /50x.html;</span><br><span class="line">	location = /50x.html;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> pass the PHP scripts to FastCGI server listening on the php-fpm$</span></span><br><span class="line"><span class="meta"></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 添加的进程管理器</span></span><br><span class="line"> location ~ \.php$&#123;</span><br><span class="line"> 	try_files $uri =404;</span><br><span class="line"> 	fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 	fastcgi_index index.php;</span><br><span class="line"> 	fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script$;</span><br><span class="line"> 	include fastcgi_params;</span><br><span class="line"> &#125;</span><br><span class="line"> location = /favicon.ico &#123;access_log off; log_not_found off;&#125;</span><br><span class="line"><span class="meta"> </span></span><br><span class="line"><span class="meta"> #</span><span class="bash"> 在外部界面管理数据库，尽量不安装，不提供端口给外界，以防黑客攻击</span></span><br><span class="line"> location /phpmyadmin &#123;</span><br><span class="line"> 	root /usr/share/;</span><br><span class="line"> 	index index.php index.html index.htm;</span><br><span class="line"> 	location ~ ^/phpmyadmin/(.+\.php)$&#123;</span><br><span class="line"> 		try_files $uri =404;</span><br><span class="line"> 		root /usr/share/;</span><br><span class="line"> 		fastcgi_pass unix:/run/php/php7.0-fpm.sock;</span><br><span class="line"> 		fastcgi_index index.php;</span><br><span class="line"> 		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_scr$;</span><br><span class="line"> 		include fastcgi_params;</span><br><span class="line"> 	&#125;</span><br><span class="line"> 	location</span><br><span class="line"> 	~*^/phpmyadmin/(.+\.(jpg|jpeg|gif|css|png|js|ico|html|xml|txt))$&#123;</span><br><span class="line"> 		root /usr.share/;</span><br><span class="line"> 	&#125;</span><br></pre></td></tr></table></figure>
+
 <p>查看配置文件是否生效</p>
 <pre><code>sudo nginx -t
 </code></pre>
@@ -905,6 +860,78 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
       </tags>
   </entry>
   <entry>
+    <title>会议拍摄、相机档位、基础布光</title>
+    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
+<p>​        集体  [横向拍]</p>
+<p>​            （正面拍一张、左右侧面各拍一张）</p>
+<p>​        单人  [领导挨得近选择竖拍]</p>
+<p>​            （把专属牌子拍上，前面的水移开）</p>
+<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
+<p><strong>2.观众</strong></p>
+<p>​        集体</p>
+<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
+<p>​        单人</p>
+<p>​            （突出主题，特写个人表现）</p>
+<p><strong>3.主题</strong></p>
+<p>​        ①包括参会者在内的主题大场景</p>
+<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
+<br/>
+
+<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
+<p><strong>2.B门</strong>（慢门）</p>
+<p>​    拍摄星空、车灯轨迹、灯绘</p>
+<p><strong>3.AV档</strong>（光圈优先）</p>
+<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
+<p>​    大光圈虚化背景拍摄人像、静物</p>
+<p>​    F 数小——孔大——虚</p>
+<p>​    F 数大——孔小——实</p>
+<p>​    F8—F16区间中，前后虚实一致</p>
+<p><strong>4.TV档</strong>（快门优先）</p>
+<p>​    【拍摄动作幅度不是很大的场景】</p>
+<p>​        1/60 用于环境较亮的情况</p>
+<p>​        1/90 用于环境较暗的情况 </p>
+<p>​    【拍摄动作幅度很大的场景】</p>
+<p>​        1/2000 用于移动速度极快</p>
+<p><strong>5.M档</strong>（手动档）</p>
+<p>​    ①室外</p>
+<p>​        较暗  ISO设置到100 </p>
+<p>​        阴影天  ISO设置到 400</p>
+<p>​    ②室内 </p>
+<p>​        光线好 ISO设置到800</p>
+<p>​        光线差 ISO设置到1600</p>
+<p>​    佳能相机型号数字越小价格越高</p>
+<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
+<p>（依据相机品质ISO设置到3000——2000以下）</p>
+<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
+<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
+<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
+<br/>
+
+<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
+<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
+<p>黄灯提供（造型光）</p>
+<p>柔光箱提供（柔光）</p>
+<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
+<p><strong>1.一点布光：</strong></p>
+<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
+<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
+<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
+<p><strong>2.两点布光：</strong></p>
+<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
+<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
+<p><strong>3.三点布光：</strong></p>
+<p>​    轮廓光，在主光的斜对面</p>
+<p>​    勾勒人的暗部轮廓</p>
+]]></content>
+      <categories>
+        <category>艺术</category>
+      </categories>
+      <tags>
+        <tag>摄影</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>帧速率、刷新率、广播级视频标准</title>
     <url>/2021/07/20/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E5%B8%A7%E9%80%9F%E7%8E%87%E3%80%81%E5%B9%BF%E6%92%AD%E7%BA%A7%E8%A7%86%E9%A2%91%E6%A0%87%E5%87%86/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="帧速率"><a href="#帧速率" class="headerlink" title="帧速率"></a>帧速率</h3><p>帧=画面/图片</p>
@@ -995,78 +1022,6 @@ deb-src http://mirrors.163.com/ubuntu/ bionic-backports main restricted universe
 <h3 id="1-长焦镜头"><a href="#1-长焦镜头" class="headerlink" title="1.长焦镜头"></a><strong>1.长焦镜头</strong></h3><h3 id="2-学会取舍"><a href="#2-学会取舍" class="headerlink" title="2.学会取舍"></a><strong>2.学会取舍</strong></h3><h3 id="3-使用黑白"><a href="#3-使用黑白" class="headerlink" title="3.使用黑白"></a><strong>3.使用黑白</strong></h3><h3 id="4-二次构图"><a href="#4-二次构图" class="headerlink" title="4.二次构图"></a><strong>4.二次构图</strong></h3><br/>
 
 <p><a href="https://zhongce.sina.com.cn/article/view/13754/">15种摄影构图技巧，让你的照片更吸引人!</a></p>
-]]></content>
-      <categories>
-        <category>艺术</category>
-      </categories>
-      <tags>
-        <tag>摄影</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>会议拍摄、相机档位、基础布光</title>
-    <url>/2021/07/19/%E6%91%84%E5%BD%B1%E5%9F%BA%E7%A1%80%E2%80%94%E2%80%94%E4%BC%9A%E8%AE%AE%E6%8B%8D%E6%91%84%E3%80%81%E7%9B%B8%E6%9C%BA%E6%A1%A3%E4%BD%8D%E3%80%81%E5%9F%BA%E7%A1%80%E5%B8%83%E5%85%89/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="【会议拍摄】"><a href="#【会议拍摄】" class="headerlink" title="【会议拍摄】"></a>【会议拍摄】</h3><p><strong>1.重要人物</strong></p>
-<p>​        集体  [横向拍]</p>
-<p>​            （正面拍一张、左右侧面各拍一张）</p>
-<p>​        单人  [领导挨得近选择竖拍]</p>
-<p>​            （把专属牌子拍上，前面的水移开）</p>
-<p>​            （相机与被拍者脖子平齐，近大远小的原理）</p>
-<p><strong>2.观众</strong></p>
-<p>​        集体</p>
-<p>​            （拍观众整体反应，三分之二观众，三分之一领导）</p>
-<p>​        单人</p>
-<p>​            （突出主题，特写个人表现）</p>
-<p><strong>3.主题</strong></p>
-<p>​        ①包括参会者在内的主题大场景</p>
-<p>​        ②包括演讲者所处桌子及横幅在内的大场景</p>
-<br/>
-
-<h3 id="【相机档位】"><a href="#【相机档位】" class="headerlink" title="【相机档位】"></a>【相机档位】</h3><p><strong>1.P档</strong>（傻瓜档）</p>
-<p><strong>2.B门</strong>（慢门）</p>
-<p>​    拍摄星空、车灯轨迹、灯绘</p>
-<p><strong>3.AV档</strong>（光圈优先）</p>
-<p>​    光圈决定虚实，判断主体与背景之间的关系</p>
-<p>​    大光圈虚化背景拍摄人像、静物</p>
-<p>​    F 数小——孔大——虚</p>
-<p>​    F 数大——孔小——实</p>
-<p>​    F8—F16区间中，前后虚实一致</p>
-<p><strong>4.TV档</strong>（快门优先）</p>
-<p>​    【拍摄动作幅度不是很大的场景】</p>
-<p>​        1/60 用于环境较亮的情况</p>
-<p>​        1/90 用于环境较暗的情况 </p>
-<p>​    【拍摄动作幅度很大的场景】</p>
-<p>​        1/2000 用于移动速度极快</p>
-<p><strong>5.M档</strong>（手动档）</p>
-<p>​    ①室外</p>
-<p>​        较暗  ISO设置到100 </p>
-<p>​        阴影天  ISO设置到 400</p>
-<p>​    ②室内 </p>
-<p>​        光线好 ISO设置到800</p>
-<p>​        光线差 ISO设置到1600</p>
-<p>​    佳能相机型号数字越小价格越高</p>
-<p>​    1D&gt;5D&gt;7D&gt;80D&gt;800D&gt;1200D</p>
-<p>（依据相机品质ISO设置到3000——2000以下）</p>
-<p>​    佳能相机，ISO尽量控制在 2000 以下</p>
-<p>​    电影摄影机，ISO只能开到 400，选择打光</p>
-<p>​    索尼ISO最高为409600，佳能ISO最高为12800</p>
-<br/>
-
-<h3 id="【灯光布置】"><a href="#【灯光布置】" class="headerlink" title="【灯光布置】"></a>【灯光布置】</h3><p><strong>影棚拍摄</strong>，ISO设置为100，快门速度1/200S</p>
-<p>调节光圈来控制亮暗，要求照片是黑的以屏蔽环境光</p>
-<p>黄灯提供（造型光）</p>
-<p>柔光箱提供（柔光）</p>
-<p>光轴位置和被拍摄者脸部平齐，光源位置与被拍摄者距离实现亮暗调节</p>
-<p><strong>1.一点布光：</strong></p>
-<p>​    侧平光，正侧光（光线从侧面打出，不穿过鼻梁）</p>
-<p>​    45°打光，艺术照（更加柔和，光通过鼻梁，照亮鼻梁另一侧脸颊）</p>
-<p>​    45°斜上方打光，顶侧光（#斜向光，模拟自然光）</p>
-<p><strong>2.两点布光：</strong></p>
-<p>​    布置辅光，辅光要比主光暗（调节闪光时间旋钮，调灯光远近）</p>
-<p>​    辅光平一点，打亮另一半脸及下额，照亮暗的部分</p>
-<p><strong>3.三点布光：</strong></p>
-<p>​    轮廓光，在主光的斜对面</p>
-<p>​    勾勒人的暗部轮廓</p>
 ]]></content>
       <categories>
         <category>艺术</category>
@@ -1211,47 +1166,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华无魔法科学冲浪方案研究</title>
-    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
-<li>Chrome（谷歌浏览器）</li>
-<li>Firefox（火狐浏览器）</li>
-<li>Edge（Microsoft浏览器）</li>
-</ol>
-<p>没有魔法设置中改用百度的搜索引擎。</p>
-<br/>
-
-<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
-<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
-<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
-<br/>
-
-<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
-<li>AdBlock Plus - 免费的广告拦截器。</li>
-<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
-<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
-<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
-<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
-<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
-<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
-<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
-</ul>
-<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
-<ul>
-<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
-<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
-<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
-<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
-</ul>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>windows实用软件工具记载</title>
     <url>/2021/08/15/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94windows%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7%E8%BD%AF%E4%BB%B6%E8%AE%B0%E8%BD%BD/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>首先，具备版权意识是极其重要的，</p>
@@ -1371,6 +1285,47 @@ Port 443
 </ul>
 <h2 id="性能监控"><a href="#性能监控" class="headerlink" title="性能监控"></a>性能监控</h2><ul>
 <li><h4 id="MSI-Afterburner"><a href="#MSI-Afterburner" class="headerlink" title="MSI Afterburner"></a>MSI Afterburner</h4></li>
+</ul>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中华无魔法科学冲浪方案研究</title>
+    <url>/2021/08/07/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%97%A0%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="1-浏览器"><a href="#1-浏览器" class="headerlink" title="1.浏览器"></a>1.浏览器</h2><ol>
+<li>Chrome（谷歌浏览器）</li>
+<li>Firefox（火狐浏览器）</li>
+<li>Edge（Microsoft浏览器）</li>
+</ol>
+<p>没有魔法设置中改用百度的搜索引擎。</p>
+<br/>
+
+<h2 id="2-Crx搜搜"><a href="#2-Crx搜搜" class="headerlink" title="2.Crx搜搜"></a>2.<a href="https://www.crxsoso.com/">Crx搜搜</a></h2><p>不用魔法即可下载最新的 Chrome 扩展，同时支持 Edge，Firefox</p>
+<p>通过此网站下载扩展的方案适合不会使用魔法的场景</p>
+<p>能够使用魔法当然可以选择<a href="https://chrome.google.com/webstore?utm_source=chrome-ntp-icon">谷歌应用商店</a></p>
+<br/>
+
+<h2 id="3-扩展程序"><a href="#3-扩展程序" class="headerlink" title="3.扩展程序"></a>3.扩展程序</h2><ul>
+<li>AdBlock Plus - 免费的广告拦截器。</li>
+<li>uBlock Origin - 听说比AdBlock Plus更好？</li>
+<li>Infinity 新标签页 - 自由添加网站图标，云端高清壁纸，快速访问书签、天气、笔记、待办事项、扩展管理与历史记录。</li>
+<li>Tampermonkey - 大名鼎鼎的油猴插件。</li>
+<li>沙拉查词 - Saladict 沙拉查词是一款专业划词翻译扩展，为交叉阅读而生。大量权威词典涵盖中英日韩法德西语，支持复杂的划词操作、网页翻译。用谷歌翻译没有魔力加载可以选择沙拉查词。</li>
+<li>IDM - 多线程下载工具，下载速度很快。需要Find绿色版IDM安装包···</li>
+<li>Octotree - GitHub code tree。可以将Github上的项目文件按照树的模式列出来，看别人项目的时候更方便。</li>
+<li>Chrome™书签同步，微信扫一扫，就可以同步自己的书签数据。书签数据可以相互同步。在新电脑上安装“Chrome书签同步”扩展程序之后，微信扫一扫，书签数据就同步回来了，与 Chrome 原生的书签同步功能完全一样。</li>
+</ul>
+<h2 id="4-油小猴"><a href="#4-油小猴" class="headerlink" title="4.油小猴"></a>4.<a href="https://www.baiduyun.wiki/">油小猴</a></h2><p>一个汇聚了各种黑科技的小站，提供一些油猴上的小工具，都是开源项目。</p>
+<ul>
+<li>网盘直链下载助手 - 一个免费开源的网盘下载助手，根据 PCSAPI 获取文件下载地址，结合IDM用，某度网盘不限速下载。</li>
+<li>网页加速器 - 加速打开你的网页，打开网页速度加快 60%，来自 Google 的黑科技！</li>
+<li>Mactype助手 - 配合 XHei 字体，让 Chrome，QQ，Firefox 等浏览器浏览网页时文字更加清晰，保护眼睛。</li>
+<li>超级书签 - 添加几个书签，解决网页上的复制/右键限制，让你为所欲为！</li>
 </ul>
 ]]></content>
       <categories>
@@ -1507,6 +1462,216 @@ Port 443
 <p>本篇学习来源：</p>
 <p><a href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
 ]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>电脑选购指南&amp;硬件基础</title>
+    <url>/2022/01/31/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E7%94%B5%E8%84%91%E9%80%89%E8%B4%AD%E6%8C%87%E5%8D%97&amp;%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-主板"><a href="#1-主板" class="headerlink" title="1.主板"></a>1.主板</h1><p>规格区分：</p>
+<ul>
+<li><h2 id="ATX（Standard-ATX）-305×244mm"><a href="#ATX（Standard-ATX）-305×244mm" class="headerlink" title="ATX（Standard-ATX） 305×244mm"></a>ATX（Standard-ATX） 305×244mm</h2></li>
+<li><h2 id="M-ATX（Micro-ATX）-244×244mm"><a href="#M-ATX（Micro-ATX）-244×244mm" class="headerlink" title="M-ATX（Micro-ATX） 244×244mm"></a>M-ATX（Micro-ATX） 244×244mm</h2></li>
+<li><h2 id="ITX（Mini-ITX）-170×170mm"><a href="#ITX（Mini-ITX）-170×170mm" class="headerlink" title="ITX（Mini-ITX） 170×170mm"></a>ITX（Mini-ITX） 170×170mm</h2></li>
+</ul>
+<p>主板一块复杂的电路板，负责将所有硬件结合起来</p>
+<p>规格中M-ATX 功能完整且性价比高</p>
+<p>主板追求供电稳定、散热良好</p>
+<p>其接口丰富程度能够决定可扩展性</p>
+<br/>
+
+<br/>
+
+<h1 id="2-芯片组"><a href="#2-芯片组" class="headerlink" title="2.芯片组"></a>2.芯片组</h1><p>现在通常特指南桥芯片</p>
+<p>北桥在2009年渐渐被取消，原有功能被内置在CPU中</p>
+<p>芯片组直接或间接决定主板能支持哪种规格的处理器</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E8%8A%AF%E7%89%87%E7%BB%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F1.png" alt="芯片组命名方式1"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E8%8A%AF%E7%89%87%E7%BB%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F2.png" alt="芯片组命名方式2"></p>
+<br/>
+
+<br/>
+
+<h1 id="3-CPU"><a href="#3-CPU" class="headerlink" title="3.CPU"></a>3.CPU</h1><p>厂家区分：</p>
+<ul>
+<li><h2 id="Intel"><a href="#Intel" class="headerlink" title="Intel"></a>Intel</h2></li>
+<li><h2 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h2></li>
+</ul>
+<p>是计算机系统的运算和控制核心，部分CPU还集成了显卡功能</p>
+<p>关注频率、核心数与线程数、缓存、制作工艺</p>
+<p>CPU中散片性价比高，但是没有保修</p>
+<p>其后缀一般与超频、核显、功耗三个特性相关</p>
+<h3 id="（1）Intel-CPU后缀："><a href="#（1）Intel-CPU后缀：" class="headerlink" title="（1）Intel CPU后缀："></a>（1）Intel CPU后缀：</h3><ol>
+<li><h4 id="桌面端："><a href="#桌面端：" class="headerlink" title="桌面端："></a>桌面端：</h4><ul>
+<li><h4 id="没有后缀——不可超频，具有核显"><a href="#没有后缀——不可超频，具有核显" class="headerlink" title="没有后缀——不可超频，具有核显"></a>没有后缀——不可超频，具有核显</h4></li>
+<li><h4 id="K——不锁倍频，增加超频能力"><a href="#K——不锁倍频，增加超频能力" class="headerlink" title="K——不锁倍频，增加超频能力"></a>K——不锁倍频，增加超频能力</h4></li>
+<li><h4 id="F——减去核显或弱化核显，价格便宜"><a href="#F——减去核显或弱化核显，价格便宜" class="headerlink" title="F——减去核显或弱化核显，价格便宜"></a>F——减去核显或弱化核显，价格便宜</h4></li>
+<li><h4 id="X——酷睿最高级别的系列"><a href="#X——酷睿最高级别的系列" class="headerlink" title="X——酷睿最高级别的系列"></a>X——酷睿最高级别的系列</h4></li>
+<li><h4 id="XE——X系列中的顶级"><a href="#XE——X系列中的顶级" class="headerlink" title="XE——X系列中的顶级"></a>XE——X系列中的顶级</h4></li>
+<li><h4 id="S——特别版本，精挑细选"><a href="#S——特别版本，精挑细选" class="headerlink" title="S——特别版本，精挑细选"></a>S——特别版本，精挑细选</h4></li>
+<li><h4 id="T——超低功耗CPU"><a href="#T——超低功耗CPU" class="headerlink" title="T——超低功耗CPU"></a>T——超低功耗CPU</h4></li>
+<li><h4 id="C——联合版本"><a href="#C——联合版本" class="headerlink" title="C——联合版本"></a>C——联合版本</h4></li>
+<li><h4 id="R——封装在主板上的型片"><a href="#R——封装在主板上的型片" class="headerlink" title="R——封装在主板上的型片"></a>R——封装在主板上的型片</h4></li>
+</ul>
+</li>
+<li><h4 id="笔记本（基本采用BGA封装，不可拆卸）："><a href="#笔记本（基本采用BGA封装，不可拆卸）：" class="headerlink" title="笔记本（基本采用BGA封装，不可拆卸）："></a>笔记本（基本采用BGA封装，不可拆卸）：</h4><ul>
+<li><h4 id="Y"><a href="#Y" class="headerlink" title="Y"></a>Y</h4></li>
+<li><h4 id="U——低电压"><a href="#U——低电压" class="headerlink" title="U——低电压"></a>U——低电压</h4></li>
+<li><h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4></li>
+<li><h4 id="H——标准"><a href="#H——标准" class="headerlink" title="H——标准"></a>H——标准</h4></li>
+<li><h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4></li>
+<li><h4 id="X"><a href="#X" class="headerlink" title="X"></a>X</h4></li>
+<li><h4 id="Q——四核处理器"><a href="#Q——四核处理器" class="headerlink" title="Q——四核处理器"></a>Q——四核处理器</h4></li>
+<li><h4 id="G——集成了高性能的核心显卡"><a href="#G——集成了高性能的核心显卡" class="headerlink" title="G——集成了高性能的核心显卡"></a>G——集成了高性能的核心显卡</h4></li>
+</ul>
+</li>
+</ol>
+<br/>
+
+<h3 id="（2）AMD-CPU后缀"><a href="#（2）AMD-CPU后缀" class="headerlink" title="（2）AMD CPU后缀"></a>（2）AMD CPU后缀</h3><ol>
+<li><h4 id="桌面端：-1"><a href="#桌面端：-1" class="headerlink" title="桌面端："></a>桌面端：</h4><ul>
+<li><h4 id="无后缀——无核显，理论上可超频"><a href="#无后缀——无核显，理论上可超频" class="headerlink" title="无后缀——无核显，理论上可超频"></a>无后缀——无核显，理论上可超频</h4></li>
+<li><h4 id="X——完整支持AMD官方超频的技术（自动超频）"><a href="#X——完整支持AMD官方超频的技术（自动超频）" class="headerlink" title="X——完整支持AMD官方超频的技术（自动超频）"></a>X——完整支持AMD官方超频的技术（自动超频）</h4></li>
+<li><h4 id="workstation——线程撕裂者"><a href="#workstation——线程撕裂者" class="headerlink" title="workstation——线程撕裂者"></a>workstation——线程撕裂者</h4></li>
+<li><h4 id="G——内含自家Vega核显"><a href="#G——内含自家Vega核显" class="headerlink" title="G——内含自家Vega核显"></a>G——内含自家Vega核显</h4></li>
+<li><h4 id="E——低功耗处理器"><a href="#E——低功耗处理器" class="headerlink" title="E——低功耗处理器"></a>E——低功耗处理器</h4></li>
+</ul>
+</li>
+<li><h4 id="移动端："><a href="#移动端：" class="headerlink" title="移动端："></a>移动端：</h4><ul>
+<li><h4 id="H——标准电压，不可拆卸"><a href="#H——标准电压，不可拆卸" class="headerlink" title="H——标准电压，不可拆卸"></a>H——标准电压，不可拆卸</h4></li>
+<li><h4 id="U——轻薄笔记本"><a href="#U——轻薄笔记本" class="headerlink" title="U——轻薄笔记本"></a>U——轻薄笔记本</h4></li>
+</ul>
+</li>
+</ol>
+<br/>
+
+<p>CPU封装方式:</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.12.31.png" alt="截屏2022-01-31 16.12.31"></p>
+<br/>
+
+<br/>
+
+<h1 id="4-显卡"><a href="#4-显卡" class="headerlink" title="4.显卡"></a>4.显卡</h1><p>厂家区分：</p>
+<ul>
+<li><h2 id="AMD-1"><a href="#AMD-1" class="headerlink" title="AMD"></a>AMD</h2></li>
+<li><h2 id="NVIDIA"><a href="#NVIDIA" class="headerlink" title="NVIDIA"></a>NVIDIA</h2></li>
+</ul>
+<p>显卡是图像处理的硬件设备</p>
+<p>选择时可以参考显卡天梯图</p>
+<p>游戏选N卡，性价比选A卡</p>
+<br/>
+
+<br/>
+
+<h1 id="5-内存"><a href="#5-内存" class="headerlink" title="5.内存"></a>5.内存</h1><p>内存是与CPU直接交换数据的内部存储器</p>
+<p>普遍使用DDR4内存条，8G以上体验良好</p>
+<p>高频较好，要结合主板支持频率</p>
+<h2 id="双通道："><a href="#双通道：" class="headerlink" title="双通道："></a>双通道：</h2><p><strong>内存带宽=（核心频率×总线位宽）</strong>×倍增系数%8</p>
+<p>单通道时，主板上内存是以串联的方式连接</p>
+<p>双通道时，利用并联的方式，位宽变为原来的2倍</p>
+<p>理论上开启双通道，带宽变为2倍，但通常参数与性能是非线性的</p>
+<br/>
+
+<br/>
+
+<h1 id="6-硬盘"><a href="#6-硬盘" class="headerlink" title="6.硬盘"></a>6.硬盘</h1><p>关注速度与容量，250G容量起步</p>
+<p>M.2接口和NVMe协议的硬盘</p>
+<p>可以考虑SSD+HDD</p>
+<ul>
+<li><h2 id="固态硬盘SSD"><a href="#固态硬盘SSD" class="headerlink" title="固态硬盘SSD"></a>固态硬盘SSD</h2></li>
+<li><h2 id="机械硬盘HDD"><a href="#机械硬盘HDD" class="headerlink" title="机械硬盘HDD"></a>机械硬盘HDD</h2></li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="7-电源"><a href="#7-电源" class="headerlink" title="7.电源"></a>7.电源</h1><p>关系供电，是电脑各部件运行的基础</p>
+<p>将交流电变为直流电，选择过程中考虑稳定和可靠 </p>
+<p>选择额定功率略大的，80PLUS认证等级是转换效率的体现</p>
+<p>电源转换效率越高，电源越节能</p>
+<ul>
+<li><h2 id="非模组"><a href="#非模组" class="headerlink" title="非模组"></a>非模组</h2></li>
+<li><h2 id="半模组"><a href="#半模组" class="headerlink" title="半模组"></a>半模组</h2></li>
+<li><h2 id="全模组"><a href="#全模组" class="headerlink" title="全模组"></a>全模组</h2></li>
+</ul>
+<br/>
+
+<br/>
+
+<h1 id="8-PCIe扩展槽"><a href="#8-PCIe扩展槽" class="headerlink" title="8.PCIe扩展槽"></a>8.PCIe扩展槽</h1><p>M.2和雷电接口是其衍生物</p>
+<p>通道数越多，版本越高，带宽越大</p>
+<br/>
+
+<br/>
+
+<h1 id="9-M-2插槽"><a href="#9-M-2插槽" class="headerlink" title="9.M.2插槽"></a>9.M.2插槽</h1><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.20.34.png" alt="截屏2022-01-31 16.20.34"></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>精确搜索浏览器常用指令</title>
+    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
+<li><p>关键词化整为零搜索</p>
+<p>——将口语拆分成关键词</p>
+<ul>
+<li>如何将PDF转换为Word文档？（PDF转word）</li>
+<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
+<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
+</ul>
+<br/></li>
+<li><p>INTITLE命令</p>
+<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
+<ul>
+<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
+</ul>
+<br/></li>
+<li><p>FILETYPE命令</p>
+<p>——指定搜索目标的文件类型</p>
+<ul>
+<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
+</ul>
+<br/></li>
+<li><p>完全匹配搜索””</p>
+<p>——完全根据” “内的内容进行搜索</p>
+<br/></li>
+<li><p>SITE命令</p>
+<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
+<ul>
+<li>论文排版 site:jianshu.com</li>
+<li>北京昌平合租 site:douban.com</li>
+<li>PDFElement site:52pojie.com</li>
+</ul>
+<br/></li>
+<li><p>内容筛选-和+</p>
+<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
+<ul>
+<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
+</ul>
+<p>—— +号：增加搜索某个关键词</p>
+<ul>
+<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
+</ul>
+<br/></li>
+<li><p>限定来源网站类型</p>
+<p>——定向筛选特定网站类型的信息</p>
+<ul>
+<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
+<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
+</ul>
+</li>
+</ol>
+<br/>
+
+<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
       <categories>
         <category>资源</category>
       </categories>
@@ -2261,216 +2426,6 @@ Port 443
       </categories>
       <tags>
         <tag>后端</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>精确搜索浏览器常用指令</title>
-    <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
-<li><p>关键词化整为零搜索</p>
-<p>——将口语拆分成关键词</p>
-<ul>
-<li>如何将PDF转换为Word文档？（PDF转word）</li>
-<li>有没有好用的录音转文字软件或工具？（intitle:录音转文字）</li>
-<li>有没有好用的视频压缩文件？（intitle:视频压缩 site:zhihu.com）</li>
-</ul>
-<br/></li>
-<li><p>INTITLE命令</p>
-<p>——返回网页标题中包含有指定关键词的页面，即过滤出网页标题中包含指定关键词的网页，格式为abc intitle:def （在包含def的标题中搜索）</p>
-<ul>
-<li>搜索金庸写的武侠小说（武侠小说 intitle:金庸）</li>
-</ul>
-<br/></li>
-<li><p>FILETYPE命令</p>
-<p>——指定搜索目标的文件类型</p>
-<ul>
-<li>搜索pdf文件（阿里巴巴财报 filetype:pdf）</li>
-</ul>
-<br/></li>
-<li><p>完全匹配搜索””</p>
-<p>——完全根据” “内的内容进行搜索</p>
-<br/></li>
-<li><p>SITE命令</p>
-<p>——指定你想要搜索的站点，适用于一些站内搜索结果不符合预期的网站</p>
-<ul>
-<li>论文排版 site:jianshu.com</li>
-<li>北京昌平合租 site:douban.com</li>
-<li>PDFElement site:52pojie.com</li>
-</ul>
-<br/></li>
-<li><p>内容筛选-和+</p>
-<p>—— -号：避免搜索某个词语，排除不想要的结果</p>
-<ul>
-<li>搜索李晨相关信息，而不出现范冰冰（李晨 -范冰冰）</li>
-</ul>
-<p>—— +号：增加搜索某个关键词</p>
-<ul>
-<li>搜索李晨与张馨予之间的感情历史（李晨 +张馨予）</li>
-</ul>
-<br/></li>
-<li><p>限定来源网站类型</p>
-<p>——定向筛选特定网站类型的信息</p>
-<ul>
-<li>搜索政府发布的房贷官方信息（北京房贷 gov）</li>
-<li>搜索学校网站发布的软件演化信息（”软件演化” edu filetype:pdf）</li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>电脑选购指南&amp;硬件基础</title>
-    <url>/2022/01/31/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E7%94%B5%E8%84%91%E9%80%89%E8%B4%AD%E6%8C%87%E5%8D%97&amp;%E7%A1%AC%E4%BB%B6%E5%9F%BA%E7%A1%80/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="1-主板"><a href="#1-主板" class="headerlink" title="1.主板"></a>1.主板</h1><p>规格区分：</p>
-<ul>
-<li><h2 id="ATX（Standard-ATX）-305×244mm"><a href="#ATX（Standard-ATX）-305×244mm" class="headerlink" title="ATX（Standard-ATX） 305×244mm"></a>ATX（Standard-ATX） 305×244mm</h2></li>
-<li><h2 id="M-ATX（Micro-ATX）-244×244mm"><a href="#M-ATX（Micro-ATX）-244×244mm" class="headerlink" title="M-ATX（Micro-ATX） 244×244mm"></a>M-ATX（Micro-ATX） 244×244mm</h2></li>
-<li><h2 id="ITX（Mini-ITX）-170×170mm"><a href="#ITX（Mini-ITX）-170×170mm" class="headerlink" title="ITX（Mini-ITX） 170×170mm"></a>ITX（Mini-ITX） 170×170mm</h2></li>
-</ul>
-<p>主板一块复杂的电路板，负责将所有硬件结合起来</p>
-<p>规格中M-ATX 功能完整且性价比高</p>
-<p>主板追求供电稳定、散热良好</p>
-<p>其接口丰富程度能够决定可扩展性</p>
-<br/>
-
-<br/>
-
-<h1 id="2-芯片组"><a href="#2-芯片组" class="headerlink" title="2.芯片组"></a>2.芯片组</h1><p>现在通常特指南桥芯片</p>
-<p>北桥在2009年渐渐被取消，原有功能被内置在CPU中</p>
-<p>芯片组直接或间接决定主板能支持哪种规格的处理器</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E8%8A%AF%E7%89%87%E7%BB%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F1.png" alt="芯片组命名方式1"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E8%8A%AF%E7%89%87%E7%BB%84%E5%91%BD%E5%90%8D%E6%96%B9%E5%BC%8F2.png" alt="芯片组命名方式2"></p>
-<br/>
-
-<br/>
-
-<h1 id="3-CPU"><a href="#3-CPU" class="headerlink" title="3.CPU"></a>3.CPU</h1><p>厂家区分：</p>
-<ul>
-<li><h2 id="Intel"><a href="#Intel" class="headerlink" title="Intel"></a>Intel</h2></li>
-<li><h2 id="AMD"><a href="#AMD" class="headerlink" title="AMD"></a>AMD</h2></li>
-</ul>
-<p>是计算机系统的运算和控制核心，部分CPU还集成了显卡功能</p>
-<p>关注频率、核心数与线程数、缓存、制作工艺</p>
-<p>CPU中散片性价比高，但是没有保修</p>
-<p>其后缀一般与超频、核显、功耗三个特性相关</p>
-<h3 id="（1）Intel-CPU后缀："><a href="#（1）Intel-CPU后缀：" class="headerlink" title="（1）Intel CPU后缀："></a>（1）Intel CPU后缀：</h3><ol>
-<li><h4 id="桌面端："><a href="#桌面端：" class="headerlink" title="桌面端："></a>桌面端：</h4><ul>
-<li><h4 id="没有后缀——不可超频，具有核显"><a href="#没有后缀——不可超频，具有核显" class="headerlink" title="没有后缀——不可超频，具有核显"></a>没有后缀——不可超频，具有核显</h4></li>
-<li><h4 id="K——不锁倍频，增加超频能力"><a href="#K——不锁倍频，增加超频能力" class="headerlink" title="K——不锁倍频，增加超频能力"></a>K——不锁倍频，增加超频能力</h4></li>
-<li><h4 id="F——减去核显或弱化核显，价格便宜"><a href="#F——减去核显或弱化核显，价格便宜" class="headerlink" title="F——减去核显或弱化核显，价格便宜"></a>F——减去核显或弱化核显，价格便宜</h4></li>
-<li><h4 id="X——酷睿最高级别的系列"><a href="#X——酷睿最高级别的系列" class="headerlink" title="X——酷睿最高级别的系列"></a>X——酷睿最高级别的系列</h4></li>
-<li><h4 id="XE——X系列中的顶级"><a href="#XE——X系列中的顶级" class="headerlink" title="XE——X系列中的顶级"></a>XE——X系列中的顶级</h4></li>
-<li><h4 id="S——特别版本，精挑细选"><a href="#S——特别版本，精挑细选" class="headerlink" title="S——特别版本，精挑细选"></a>S——特别版本，精挑细选</h4></li>
-<li><h4 id="T——超低功耗CPU"><a href="#T——超低功耗CPU" class="headerlink" title="T——超低功耗CPU"></a>T——超低功耗CPU</h4></li>
-<li><h4 id="C——联合版本"><a href="#C——联合版本" class="headerlink" title="C——联合版本"></a>C——联合版本</h4></li>
-<li><h4 id="R——封装在主板上的型片"><a href="#R——封装在主板上的型片" class="headerlink" title="R——封装在主板上的型片"></a>R——封装在主板上的型片</h4></li>
-</ul>
-</li>
-<li><h4 id="笔记本（基本采用BGA封装，不可拆卸）："><a href="#笔记本（基本采用BGA封装，不可拆卸）：" class="headerlink" title="笔记本（基本采用BGA封装，不可拆卸）："></a>笔记本（基本采用BGA封装，不可拆卸）：</h4><ul>
-<li><h4 id="Y"><a href="#Y" class="headerlink" title="Y"></a>Y</h4></li>
-<li><h4 id="U——低电压"><a href="#U——低电压" class="headerlink" title="U——低电压"></a>U——低电压</h4></li>
-<li><h4 id="M"><a href="#M" class="headerlink" title="M"></a>M</h4></li>
-<li><h4 id="H——标准"><a href="#H——标准" class="headerlink" title="H——标准"></a>H——标准</h4></li>
-<li><h4 id="K"><a href="#K" class="headerlink" title="K"></a>K</h4></li>
-<li><h4 id="X"><a href="#X" class="headerlink" title="X"></a>X</h4></li>
-<li><h4 id="Q——四核处理器"><a href="#Q——四核处理器" class="headerlink" title="Q——四核处理器"></a>Q——四核处理器</h4></li>
-<li><h4 id="G——集成了高性能的核心显卡"><a href="#G——集成了高性能的核心显卡" class="headerlink" title="G——集成了高性能的核心显卡"></a>G——集成了高性能的核心显卡</h4></li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<h3 id="（2）AMD-CPU后缀"><a href="#（2）AMD-CPU后缀" class="headerlink" title="（2）AMD CPU后缀"></a>（2）AMD CPU后缀</h3><ol>
-<li><h4 id="桌面端：-1"><a href="#桌面端：-1" class="headerlink" title="桌面端："></a>桌面端：</h4><ul>
-<li><h4 id="无后缀——无核显，理论上可超频"><a href="#无后缀——无核显，理论上可超频" class="headerlink" title="无后缀——无核显，理论上可超频"></a>无后缀——无核显，理论上可超频</h4></li>
-<li><h4 id="X——完整支持AMD官方超频的技术（自动超频）"><a href="#X——完整支持AMD官方超频的技术（自动超频）" class="headerlink" title="X——完整支持AMD官方超频的技术（自动超频）"></a>X——完整支持AMD官方超频的技术（自动超频）</h4></li>
-<li><h4 id="workstation——线程撕裂者"><a href="#workstation——线程撕裂者" class="headerlink" title="workstation——线程撕裂者"></a>workstation——线程撕裂者</h4></li>
-<li><h4 id="G——内含自家Vega核显"><a href="#G——内含自家Vega核显" class="headerlink" title="G——内含自家Vega核显"></a>G——内含自家Vega核显</h4></li>
-<li><h4 id="E——低功耗处理器"><a href="#E——低功耗处理器" class="headerlink" title="E——低功耗处理器"></a>E——低功耗处理器</h4></li>
-</ul>
-</li>
-<li><h4 id="移动端："><a href="#移动端：" class="headerlink" title="移动端："></a>移动端：</h4><ul>
-<li><h4 id="H——标准电压，不可拆卸"><a href="#H——标准电压，不可拆卸" class="headerlink" title="H——标准电压，不可拆卸"></a>H——标准电压，不可拆卸</h4></li>
-<li><h4 id="U——轻薄笔记本"><a href="#U——轻薄笔记本" class="headerlink" title="U——轻薄笔记本"></a>U——轻薄笔记本</h4></li>
-</ul>
-</li>
-</ol>
-<br/>
-
-<p>CPU封装方式:</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.12.31.png" alt="截屏2022-01-31 16.12.31"></p>
-<br/>
-
-<br/>
-
-<h1 id="4-显卡"><a href="#4-显卡" class="headerlink" title="4.显卡"></a>4.显卡</h1><p>厂家区分：</p>
-<ul>
-<li><h2 id="AMD-1"><a href="#AMD-1" class="headerlink" title="AMD"></a>AMD</h2></li>
-<li><h2 id="NVIDIA"><a href="#NVIDIA" class="headerlink" title="NVIDIA"></a>NVIDIA</h2></li>
-</ul>
-<p>显卡是图像处理的硬件设备</p>
-<p>选择时可以参考显卡天梯图</p>
-<p>游戏选N卡，性价比选A卡</p>
-<br/>
-
-<br/>
-
-<h1 id="5-内存"><a href="#5-内存" class="headerlink" title="5.内存"></a>5.内存</h1><p>内存是与CPU直接交换数据的内部存储器</p>
-<p>普遍使用DDR4内存条，8G以上体验良好</p>
-<p>高频较好，要结合主板支持频率</p>
-<h2 id="双通道："><a href="#双通道：" class="headerlink" title="双通道："></a>双通道：</h2><p><strong>内存带宽=（核心频率×总线位宽）</strong>×倍增系数%8</p>
-<p>单通道时，主板上内存是以串联的方式连接</p>
-<p>双通道时，利用并联的方式，位宽变为原来的2倍</p>
-<p>理论上开启双通道，带宽变为2倍，但通常参数与性能是非线性的</p>
-<br/>
-
-<br/>
-
-<h1 id="6-硬盘"><a href="#6-硬盘" class="headerlink" title="6.硬盘"></a>6.硬盘</h1><p>关注速度与容量，250G容量起步</p>
-<p>M.2接口和NVMe协议的硬盘</p>
-<p>可以考虑SSD+HDD</p>
-<ul>
-<li><h2 id="固态硬盘SSD"><a href="#固态硬盘SSD" class="headerlink" title="固态硬盘SSD"></a>固态硬盘SSD</h2></li>
-<li><h2 id="机械硬盘HDD"><a href="#机械硬盘HDD" class="headerlink" title="机械硬盘HDD"></a>机械硬盘HDD</h2></li>
-</ul>
-<br/>
-
-<br/>
-
-<h1 id="7-电源"><a href="#7-电源" class="headerlink" title="7.电源"></a>7.电源</h1><p>关系供电，是电脑各部件运行的基础</p>
-<p>将交流电变为直流电，选择过程中考虑稳定和可靠 </p>
-<p>选择额定功率略大的，80PLUS认证等级是转换效率的体现</p>
-<p>电源转换效率越高，电源越节能</p>
-<ul>
-<li><h2 id="非模组"><a href="#非模组" class="headerlink" title="非模组"></a>非模组</h2></li>
-<li><h2 id="半模组"><a href="#半模组" class="headerlink" title="半模组"></a>半模组</h2></li>
-<li><h2 id="全模组"><a href="#全模组" class="headerlink" title="全模组"></a>全模组</h2></li>
-</ul>
-<br/>
-
-<br/>
-
-<h1 id="8-PCIe扩展槽"><a href="#8-PCIe扩展槽" class="headerlink" title="8.PCIe扩展槽"></a>8.PCIe扩展槽</h1><p>M.2和雷电接口是其衍生物</p>
-<p>通道数越多，版本越高，带宽越大</p>
-<br/>
-
-<br/>
-
-<h1 id="9-M-2插槽"><a href="#9-M-2插槽" class="headerlink" title="9.M.2插槽"></a>9.M.2插槽</h1><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.20.34.png" alt="截屏2022-01-31 16.20.34"></p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
       </tags>
   </entry>
 </search>

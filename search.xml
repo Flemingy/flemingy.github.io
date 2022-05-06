@@ -1337,140 +1337,6 @@ Port 443
       </tags>
   </entry>
   <entry>
-    <title>中华有魔法科学冲浪方案研究</title>
-    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
-<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
-<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
-<br/>
-
-<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
-<p>若直接在GitHub上下载速度会较慢，</p>
-<p>选择通过右键复制下载链接后在迅雷中下载</p>
-<br/>
-
-<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
-<p>百度搜Clash节点转到Github可以找到免费的机场</p>
-<br/>
-
-<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
-<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
-<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
-<p>可以在Profiles处通过以下两个方法加载你的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
-<br/>
-
-<p>加载完成后，在Proxies处选择合适的节点</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
-<br/>
-
-<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
-<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
-<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
-<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
-<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
-<br/>
-
-<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
-<ul>
-<li>Proxy SwitchyOmega</li>
-<li>Proxy SwitchySharp</li>
-</ul>
-<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
-<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
-<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
-<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE</title>
-    <url>/2021/10/06/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%A4%9A%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8U%E7%9B%98%E5%88%B6%E4%BD%9C/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
-<p>首先格式化U盘</p>
-<p>下载安装，利用DiskGenius</p>
-<p>给格式化后的U盘开分区，挂盘符</p>
-<p>目的是安装微PE时能够识别到U盘</p>
-<br/>
-
-<h1 id="二、PE盘制作："><a href="#二、PE盘制作：" class="headerlink" title="二、PE盘制作："></a>二、PE盘制作：</h1><p>下载并安装微PE</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/1.jpg" alt="001"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/2.jpg" alt="2"></p>
-<p>安装完成后删除其中的微PE工具箱</p>
-<p>备份EFI分区文件到本机（其中包含引导文件和WIM的压缩镜像，是用来启动PE系统的）</p>
-<p>有两种方式操作：</p>
-<ol>
-<li>备份</li>
-<li>复制（推荐）</li>
-</ol>
-<p>当所有盘符制作完毕后将其还原或粘贴恢复到一个新建的分区，以完成PE盘的制作</p>
-<br/>
-
-<h1 id="三、Mac盘制作："><a href="#三、Mac盘制作：" class="headerlink" title="三、Mac盘制作："></a>三、Mac盘制作：</h1><p>格式化U盘，转换分区表类型为GUID格式</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/3.png" alt="3"></p>
-<p>在DiskGenius中新建分区，目的是让TransMac识别到U盘</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/4.png" alt="4"></p>
-<p>关闭DiskGenius</p>
-<p>打开TransMac软件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/5.png" alt="5"></p>
-<p>选择提前准备好的Mac镜像文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/6.png" alt="6"></p>
-<p>进行烧录！</p>
-<br/>
-
-<h1 id="四、Linux盘制作："><a href="#四、Linux盘制作：" class="headerlink" title="四、Linux盘制作："></a>四、Linux盘制作：</h1><p>确认Linux镜像大小</p>
-<p>新建符合镜像大小的分区</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/7.png" alt="7"></p>
-<p>将镜像文件中的内容复制到新建的分区中</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/8.png" alt="8"></p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/9.png" alt="9"></p>
-<p>进行烧录！</p>
-<br/>
-
-<h1 id="五、Windows盘制作"><a href="#五、Windows盘制作" class="headerlink" title="五、Windows盘制作"></a>五、Windows盘制作</h1><p>Windows镜像中存在install.esd或install.wim文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/10.png" alt="10"></p>
-<p>这个文件大约占4-5G存储，为防止出现以下错误：</p>
-<p><a href="https://www.cnblogs.com/morgan363/p/13725110.html">解决FAT32格式U盘安装Windows 10时的报错（错误代码：0x8007000D）</a></p>
-<p>需要以管理员身份运行cmd，复制下面的命令到命令行</p>
-<p>修改盘符为实际情况下的盘符，然后执行</p>
-<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">//命令中的第一个<span class="selector-tag">@</span>改为win10镜像虚拟光驱的盘符，第二个<span class="selector-tag">@</span>改为U盘盘符。</span><br><span class="line">//运行命令，等待大概<span class="number">10</span>来分钟即可（取决于U盘写入速度）。</span><br><span class="line"></span><br><span class="line">dism /<span class="built_in">Split-Image</span> /ImageFile:<span class="selector-tag">@</span>:\sources\install.wim /SWMFile:<span class="selector-tag">@</span>:\sources\install.swm /FileSize:<span class="number">3000</span></span><br></pre></td></tr></table></figure>
-
-<p>文件被拆分为类似下图的文件</p>
-<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/11.png" alt="11"></p>
-<p>此时，可以进行Linux盘制作时的类似操作过程</p>
-<p>进行烧录！</p>
-<br/>
-
-<h1 id="六、保留盘（U盘性质）"><a href="#六、保留盘（U盘性质）" class="headerlink" title="六、保留盘（U盘性质）"></a>六、保留盘（U盘性质）</h1><p>将剩余部分新建开分区，挂盘符</p>
-<p>文件系统类型设置为exFAT</p>
-<p>此分区可以用来正常存储数据</p>
-<br/>
-
-<p>为了整洁美观，可以删除安装系统盘的盘符</p>
-<p>仅显示存储数据用的盘符，将其作为正常U盘使用</p>
-<br/>
-
-<p>至此，多系统安装启动U盘制作完成</p>
-<p>本篇学习来源：</p>
-<p><a href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
-]]></content>
-      <categories>
-        <category>资源</category>
-      </categories>
-      <tags>
-        <tag>工具</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>精确搜索浏览器常用指令</title>
     <url>/2021/12/03/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%B8%B8%E7%94%A8%E6%B5%8F%E8%A7%88%E5%99%A8%E6%90%9C%E7%B4%A2%E6%8C%87%E4%BB%A4/</url>
     <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="浏览器搜索指令"><a href="#浏览器搜索指令" class="headerlink" title="浏览器搜索指令"></a>浏览器搜索指令</h1><ol>
@@ -1526,6 +1392,62 @@ Port 443
 <br/>
 
 <h2 id="最详细的GOOGLE搜索指令大全"><a href="#最详细的GOOGLE搜索指令大全" class="headerlink" title="最详细的GOOGLE搜索指令大全"></a><a href="https://zhuanlan.zhihu.com/p/136076792">最详细的GOOGLE搜索指令大全</a></h2>]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>中华有魔法科学冲浪方案研究</title>
+    <url>/2021/09/02/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E4%B8%AD%E5%8D%8E%E6%9C%89%E9%AD%94%E6%B3%95%E7%A7%91%E5%AD%A6%E5%86%B2%E6%B5%AA%E6%96%B9%E6%A1%88%E7%A0%94%E7%A9%B6/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Clash本身仅仅是工具，稳定机场自寻。</p>
+<p><a href="https://docs.cfw.lbyczf.com/">Clash正式文字讲解</a></p>
+<p>好用的<a href="https://store.cloudss.org/">付费机场</a></p>
+<br/>
+
+<h3 id="1-download"><a href="#1-download" class="headerlink" title="1.download"></a>1.download</h3><p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="GithubClash"></p>
+<p>若直接在GitHub上下载速度会较慢，</p>
+<p>选择通过右键复制下载链接后在迅雷中下载</p>
+<br/>
+
+<h3 id="2-configuration"><a href="#2-configuration" class="headerlink" title="2.configuration"></a>2.configuration</h3><p>Clash中的[ ]可以理解为一个链接或者一个.yml文件</p>
+<p>百度搜Clash节点转到Github可以找到免费的机场</p>
+<br/>
+
+<p> <a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/r8jfr8YhogjfUWFoMgIRa8np+D+sE3XFBlLDcT9rFgoVq6AYVFthTsRriK4ImFH+3rSWfcNXl8o7t9L81MxDRfRc8BzFU1NMZZiuvNGRNJUrsgil++8HVnwLM30fuv88x2Pah4egTNMg==">https://github.com/pengyuange/freenode</a> 网址为例</p>
+<p>点击“Clash订阅”下面的链接右键另存为后可以得到一个.yml文件</p>
+<p>找到合适的URL地址或者下载了对应的.yml文件后</p>
+<p>可以在Profiles处通过以下两个方法加载你的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GithubClash.png" alt="ConfigurationClash"></p>
+<br/>
+
+<p>加载完成后，在Proxies处选择合适的节点</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProxiesClash.png" alt="ProxiesClash"></p>
+<br/>
+
+<h3 id="3-Start-Clash"><a href="#3-Start-Clash" class="headerlink" title="3.Start Clash"></a>3.Start Clash</h3><h4 id="Plan-A："><a href="#Plan-A：" class="headerlink" title="Plan A："></a>Plan A：</h4><p>在General中打开System Proxy(系统代理)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash1.png" alt="GeneralClash1"></p>
+<p>接下来在浏览器设置一些东西，先以Chrome为例：</p>
+<p>—&gt;右上方进入设置—&gt;搜索框输入代理—&gt;手动设置代理</p>
+<p>地址一般为127.0.0.1，端口是7890（即和Clash中General处的port数字一致）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/windowsClash.png" alt="windowsClash"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/GeneralClash2.png" alt="GeneralClash2"></p>
+<p>Proxy Mode需要check在Rule上，否则有问题(坑)</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/tools/ProblemClash.png" alt="ProblemClash"></p>
+<br/>
+
+<h4 id="Plan-B："><a href="#Plan-B：" class="headerlink" title="Plan B："></a>Plan B：</h4><p>下载插件，推荐插件：</p>
+<ul>
+<li>Proxy SwitchyOmega</li>
+<li>Proxy SwitchySharp</li>
+</ul>
+<p>管理更为简洁，且如果开启了系统代理，有时候你运行其他软件会受到影响。</p>
+<p>可以自定义规则，在自动切换模式中可以根据网址的不同自动选择使用或不使用代理</p>
+<p>推荐教程：<br>Proxy SwitchyOmega：<br><a href="http://jump.bdimg.com/safecheck/index?url=x+Z5mMbGPAu8w0M2d7ie3kBOFVp6z2nNKX1QlChbXiafl/c0qkmHZji+xQwZjXdfEgTo4eS7GRPPZ+NLUazHkOtJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">http://www.qishunwang.net/news_show_7430.aspx</a></p>
+<p>Proxy SwitchySharp：<br><a href="http://jump.bdimg.com/safecheck/index?url=rN3wPs8te/qPmgkmbVKxB9SAA87V3OGxUycjmL392KpozjLqSwwZEslgPgym2Q/I4MATWdaFjTlME8blaDpnGBnw+Md2du+XdTP9daTDP7tU7V5FLUsbR/teXjGIBFPcqvaNOsUrMq4tEf+WeTglSS0XMeCssZwLpiihjJYPl6E61Mj9U2K2ilXjEDVJ2+6EeNzU9S4tP2JFjQI2t9x8p2tJzYz0z8Ps4Ap1g2jVbLWCmE0mALs0Cp3WDTlQaPa7aqxod8UjCx+rvSI2tX+UQ+tJZ9w1eXyju30vzUzENF9FzwHMVTU0xlmK680ZE0lSuyCKX77wdWfAszfR+6/zzHY9qHh6BM0y">https://shipengliang.com/software-exp.html</a></p>
+]]></content>
       <categories>
         <category>资源</category>
       </categories>
@@ -1672,6 +1594,84 @@ Port 443
 <br/>
 
 <h1 id="9-M-2插槽"><a href="#9-M-2插槽" class="headerlink" title="9.M.2插槽"></a>9.M.2插槽</h1><p><img src="https://raw.githubusercontent.com/Flemingy/cdn/main/typora/%E6%88%AA%E5%B1%8F2022-01-31%2016.20.34.png" alt="截屏2022-01-31 16.20.34"></p>
+]]></content>
+      <categories>
+        <category>资源</category>
+      </categories>
+      <tags>
+        <tag>工具</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多系统安装启动U盘制作——Mac\Linux\Windows\PE</title>
+    <url>/2021/10/06/%E8%B5%84%E6%BA%90%E2%80%94%E2%80%94%E5%A4%9A%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85%E5%90%AF%E5%8A%A8U%E7%9B%98%E5%88%B6%E4%BD%9C/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="一、U盘准备："><a href="#一、U盘准备：" class="headerlink" title="一、U盘准备："></a>一、U盘准备：</h1><p>依据制作需求准备一个64G的U盘</p>
+<p>首先格式化U盘</p>
+<p>下载安装，利用DiskGenius</p>
+<p>给格式化后的U盘开分区，挂盘符</p>
+<p>目的是安装微PE时能够识别到U盘</p>
+<br/>
+
+<h1 id="二、PE盘制作："><a href="#二、PE盘制作：" class="headerlink" title="二、PE盘制作："></a>二、PE盘制作：</h1><p>下载并安装微PE</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/1.jpg" alt="001"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/2.jpg" alt="2"></p>
+<p>安装完成后删除其中的微PE工具箱</p>
+<p>备份EFI分区文件到本机（其中包含引导文件和WIM的压缩镜像，是用来启动PE系统的）</p>
+<p>有两种方式操作：</p>
+<ol>
+<li>备份</li>
+<li>复制（推荐）</li>
+</ol>
+<p>当所有盘符制作完毕后将其还原或粘贴恢复到一个新建的分区，以完成PE盘的制作</p>
+<br/>
+
+<h1 id="三、Mac盘制作："><a href="#三、Mac盘制作：" class="headerlink" title="三、Mac盘制作："></a>三、Mac盘制作：</h1><p>格式化U盘，转换分区表类型为GUID格式</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/3.png" alt="3"></p>
+<p>在DiskGenius中新建分区，目的是让TransMac识别到U盘</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/4.png" alt="4"></p>
+<p>关闭DiskGenius</p>
+<p>打开TransMac软件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/5.png" alt="5"></p>
+<p>选择提前准备好的Mac镜像文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/6.png" alt="6"></p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="四、Linux盘制作："><a href="#四、Linux盘制作：" class="headerlink" title="四、Linux盘制作："></a>四、Linux盘制作：</h1><p>确认Linux镜像大小</p>
+<p>新建符合镜像大小的分区</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/7.png" alt="7"></p>
+<p>将镜像文件中的内容复制到新建的分区中</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/8.png" alt="8"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/9.png" alt="9"></p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="五、Windows盘制作"><a href="#五、Windows盘制作" class="headerlink" title="五、Windows盘制作"></a>五、Windows盘制作</h1><p>Windows镜像中存在install.esd或install.wim文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/10.png" alt="10"></p>
+<p>这个文件大约占4-5G存储，为防止出现以下错误：</p>
+<p><a href="https://www.cnblogs.com/morgan363/p/13725110.html">解决FAT32格式U盘安装Windows 10时的报错（错误代码：0x8007000D）</a></p>
+<p>需要以管理员身份运行cmd，复制下面的命令到命令行</p>
+<p>修改盘符为实际情况下的盘符，然后执行</p>
+<figure class="highlight powershell"><table><tr><td class="code"><pre><span class="line">//命令中的第一个<span class="selector-tag">@</span>改为win10镜像虚拟光驱的盘符，第二个<span class="selector-tag">@</span>改为U盘盘符。</span><br><span class="line">//运行命令，等待大概<span class="number">10</span>来分钟即可（取决于U盘写入速度）。</span><br><span class="line"></span><br><span class="line">dism /<span class="built_in">Split-Image</span> /ImageFile:<span class="selector-tag">@</span>:\sources\install.wim /SWMFile:<span class="selector-tag">@</span>:\sources\install.swm /FileSize:<span class="number">3000</span></span><br></pre></td></tr></table></figure>
+
+<p>文件被拆分为类似下图的文件</p>
+<p><img src="https://cdn.jsdelivr.net/gh/xiaoshijiaonaitang/cdn@master/file/11.png" alt="11"></p>
+<p>此时，可以进行Linux盘制作时的类似操作过程</p>
+<p>进行烧录！</p>
+<br/>
+
+<h1 id="六、保留盘（U盘性质）"><a href="#六、保留盘（U盘性质）" class="headerlink" title="六、保留盘（U盘性质）"></a>六、保留盘（U盘性质）</h1><p>将剩余部分新建开分区，挂盘符</p>
+<p>文件系统类型设置为exFAT</p>
+<p>此分区可以用来正常存储数据</p>
+<br/>
+
+<p>为了整洁美观，可以删除安装系统盘的盘符</p>
+<p>仅显示存储数据用的盘符，将其作为正常U盘使用</p>
+<br/>
+
+<p>至此，多系统安装启动U盘制作完成</p>
+<p>本篇学习来源：</p>
+<p><a href="https://www.bilibili.com/video/BV1m7411B7KN">多系统四合一启动安装U盘制作 Mac+Linux+Win+PE</a></p>
 ]]></content>
       <categories>
         <category>资源</category>
